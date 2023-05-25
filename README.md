@@ -23,3 +23,7 @@ Ensemble de programme pour :
 * Construire un outil de fouille :
     * Produire des résumés des articles/résumés (pré-traiter avec ChatGPT ?) pour voir comment un sujet est traité (en fonction de mots-clés) = Utiliser gensim/équivalent pour produire un index basé sur la similarité cosinus = Pas tant de docs que ça au final donc ça devrait le faire + Gensim a une fonction de stream qui ne charge pas trop la mémoire (à voir comment on update ça)
     * Produire de l'intelligence pour la métropole : dataviz et information macro (utiliser les tags, les auteurs,...) + Thématiques ? On part surtout des tags pour pas avoir à gérer une usine à gaz. 
+
+## BUGS TO FIX :
+
+* Problème avec le scraping : connection abort sur la 7888e urls (on peut relancer pour remplir le dictionnaire à partir de là)
