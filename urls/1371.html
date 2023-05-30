@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Grand Lyon">
+<meta name="keywords" content="Millénaire 3">
+
+	
+		
+	
+	
+	<title>Les grands enjeux de l&#039;Open Data : Millenaire 3, Transformation urbaine		</title>
+
+		<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@millenaire3">
+
+			<meta name="twitter:title" content="Les grands enjeux de l&#039;Open Data | Millénaire 3">
+					<meta name="twitter:description" content="« Nous sommes encore très loin d&#039;une appropriation des données par le grand -- public. »">
+														<meta name="twitter:image" content="	https://www.millenaire3.com/var/m3/storage/images/_aliases/large/interview/les-grands-enjeux-de-l-open-data/93661-1-fre-FR/les-grands-enjeux-de-l-open-data.jpg">
+<meta name="twitter:image:alt" content="">
+
+										<meta name="twitter:creator" content="@millenaire3">
+			
+	<meta name="description" content="
+
+">
+		<!-- Bootstrap -->
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="/assets/css/style.min.css" type="text/css" rel="stylesheet" />
+
+	
+	<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/video-js/video-js.min.css" />
+
+<!-- Favicons, from http://realfavicongenerator.net/-->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/fav-icones/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/fav-icones/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/fav-icones/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/fav-icones/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/fav-icones/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/fav-icones/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/fav-icones/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/fav-icones/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/fav-icones/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+	<script type="text/javascript">
+		//Utilisation pour les scripts ajax
+		var rootUrl = "/";
+		var functionsInitialization = [];
+	</script>
+
+	<script type="text/javascript" src="/assets/vendor/tarteaucitronjs/tarteaucitron.js"></script>
+
+<script type="text/javascript">
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+
+        "orientation": "bottom", /* Banner position (top - bottom) */
+
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": true, /* Show the cookie list */
+
+        "showIcon": false, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* Disable auto consent */
+
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": false, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+        "mandatory": false, /* Show a message about mandatory cookies */
+    });
+
+    var tarteaucitronForceLanguage = "fr";
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
+
+    tarteaucitron.services.m3 = {
+        "key": "m3",
+        "type": "other",
+        "name": "Cookies internes Millénaire 3",
+        "uri": "",
+        "needConsent": true,
+        "cookies": ['cookieToken'],
+        "js": function () {
+            // When user allow cookie
+            "use strict";
+            registerCookieToken();
+            if(typeof whenM3CookieIsAccepted === "function")
+            {
+                // Fonction à définir dans les pages pour déclencher les scripts succeptibles de poser des cookies
+                whenM3CookieIsAccepted();
+            }
+        },
+        "fallback": function () {
+            // When user deny cookie
+            tarteaucitron.fallback(['m3-cookie-generation-zone'], function (x) {
+                // Remplacer la zone par "machin est désactivé"
+                return tarteaucitron.engage('m3');
+            });
+        }
+    };
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('m3');
+
+            tarteaucitron.user.matomoId = '58';
+        tarteaucitron.user.matomoHost = "https://statweb.grandlyon.com//";
+        (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
+    
+    (tarteaucitron.job = tarteaucitron.job || []).push('ausha');
+
+</script>
+</head>
+<body id="millenaire-3"  itemscope itemtype="http://schema.org/WebPage">
+			<header id="header">
+	<div id="print-top-menu" class="container">
+		<div class="row">
+        	<div class="col-xs-60">
+            	<img src="/assets/images/logo-millenaire-3-mini-blanc.png" alt="" style="float: left;">
+                <img src="/assets/images/logo-grand-lyon-la-metropole-blanc.png" alt="" style="float: right;">
+			</div>
+		</div>
+	</div>
+
+    <div id="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="clearfix" id="top-menu-content">
+                        <a href="#" title="Accéder au menu" class="link-sprite-focus m3-icons-btn-toggle-menu" id="btn-toggle-menu"></a>
+                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3-mini">
+                       	    <img src="/assets/images/logo-millenaire-3-mini.png" alt="" class="img-responsive" id="logo-mini-m3" />
+                        </a>
+
+                        <a class=" skippy sr-only sr-only-focusable" href="#content" title=""><span class="skiplink-text">Aller au contenu </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#main-menu" title=""><span class="skiplink-text">Aller au Menu principal </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#block-search" title=""><span class="skiplink-text">Aller à la recherche</span></a>
+
+                                                                                                                                                                                                                                                                                    <a href="http://www.grandlyon.com" target="_blank" rel="nofollow" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)" id="link-logo-glm">
+                            <img src="/assets/images/logo-grand-lyon-la-metropole.png" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toggle-header">
+            <div class="container">
+                <div class="row" id="toggle-header-content">
+                    <div class="col-xs-30 col-sm-17 col-md-13 block-logo" id="share-header">
+                                                
+                    	<span>
+	                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3">
+	                            <img src="/assets/images/logo-millenaire-3.png" alt="Logo Millénaire 3" class="img-responsive" />
+	                        </a>
+                        </span>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-20 col-md-19 block-baseline">
+                        <p>
+                            <img src="/assets/images/la-prospective-du-grand-lyon.png" alt="Sloggan Millénaire 3 : La prospective du Grand Lyon" class="img-responsive" />
+                        </p>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-23 col-md-11 col-lg-12 block-social-networks">
+						<ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+                    </div>
+                    																										<form action="/m3_search" method="get">
+	<div class="col-xs-60 col-sm-23 col-sm-offset-20 col-md-17 col-md-offset-0 col-lg-16 block-search">
+		<div class="input-group search-group" id="#block-search">
+            <label class="sr-only" for="search">Recherche</label>
+			<input id="search" type="search" class="search" value="" name="SearchText" placeholder="Rechercher sur le site"/>
+			<span class="input-group-btn">
+				<input id="search-submit" type="submit" value="" title="Lancer la recherche" class="m3-icons-search" />
+			</span>
+		</div>
+	</div>
+</form>
+                    <div class="col-xs-60 col-sm-60 col-md-47" id="main-menu" style="display:none">
+	<nav class="navbar navbar-default" role="navigation">
+		<ul class="nav navbar-nav">
+																	<li><a href="/societe" title=""><span class="ezstring-field">Société</span></a></li>
+		    								<li><a href="/modes-d-action" title=""><span class="ezstring-field">Modes d&#039;action</span></a></li>
+		    								<li class="active"><a href="/transformation-urbaine" title=""><span class="ezstring-field">Transformation urbaine</span> <span class="sr-only">(Menu déjà sélectionné)</span></a></li>
+		    								<li><a href="/politiques-publiques" title=""><span class="ezstring-field">Politiques Publiques</span></a></li>
+		    								<li><a href="/territoire" title=""><span class="ezstring-field">Territoire</span></a></li>
+		    								<li><a href="/soutenabilite" title=""><span class="ezstring-field">Soutenabilité</span></a></li>
+		             </ul>
+    </nav>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<div id="home">
+	    <div class="container" id="content">
+	    		    			                    <div class="row">
+        <div class="col-xs-60 block-breadcrumb" itemprop="breadcrumb">
+            <p class="before-breadcrumb">Vous êtes ici&nbsp;: </p><ol class="breadcrumb"><li><a title="Voir la page Accueil" href="/">Accueil</a></li><li><a title="Voir la page Transformation urbaine" href="/transformation-urbaine">Transformation urbaine</a></li><li class="active">Les grands enjeux de l&#039;Open Data</li></ol>        </div>
+    </div>
+
+                                                                                                                                
+	            	    			    						
+	    		    	
+            			
+<script type="text/javascript">
+	functionsInitialization.push(function ressourceInitialization(){
+		incrementerVues(5321);
+	});
+</script>
+
+<div class="row block-title">
+    <div class="col-xs-60 col-sm-47 col-md-47">
+        <h1 class="uppercase h1-special">
+							Les grands enjeux de l&#039;Open Data
+					</h1>
+    </div>
+
+	<div class="col-xs-60 col-sm-13 col-md-13 block-share">
+
+<ul class="clearfix share">
+	<li>
+		<!--a href="javascript:void(0);" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a-->
+		<a href="javascript:void(0);" data-toggle="collapse" data-target="#addtoany-container" aria-expanded="false" aria-controls="addtoany-container" role="button" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a>
+	</li>
+						<li><a href="/generated_pdf/5293" rel="nofollow" target="_blank" title="Télécharger la page en version PDF" class="m3-icons-share-pdf hidden-xs"></a></li>
+			<!--li><a href="https://www.millenaire3.com/layout/set/print/content/view/print/5293" target="_blank">p</a></li-->
+							<li id="print_current_content"><a href="javascript:window.print()" onclick="javascript:print()" rel="nofollow" title="Imprimer la page" class="m3-icons-share-print"></a></li>
+							<li><a href="/partage_email/5293" rel="nofollow" title="Partager ce contenu par e-mail" class="m3-icons-share-mail"></a></li>
+			</ul>
+
+</div>
+
+	<div class="collapse block-social-networks-share a2a_kit a2a_kit_size_32 a2a_default_style" id="addtoany-container">
+        <span class="tac_addtoanyshare"></span>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_linkedin"></a>
+    </div>
+
+<script type="text/javascript">
+	function deplierPartageReseauxSociaux()
+	{
+		fadeInOrFadeOut('#partages_reseaux_sociaux');
+	}
+
+	/**
+	* Affiche ou non (toogle), avec un effet JQuery
+	*/
+	function fadeInOrFadeOut(elementName)
+	{
+		$element = $(elementName);
+		if(! $element.hasClass("hide"))
+		{
+			$element.fadeOut(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+		else
+		{
+			$element.fadeIn(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+	}
+
+	// Alert a message when the user shares somewhere
+		function addThisEventHandler(evt) {
+		    switch (evt.type)
+		    {
+		        case "addthis.menu.share":
+		            incrementerPartages(5321, evt.data.service);
+		            break;
+		        default:
+		            console.log('received an unexpected event', evt);
+		    }
+		}
+
+	functionsInitialization.push(function shareInitialization()
+	{
+																						
+		// Listen to various events
+		try
+		{
+			addthis.addEventListener('addthis.menu.share', addThisEventHandler);
+		}
+		catch(err)
+		{}
+	});
+</script>
+
+</div>
+
+<div class="row">
+	<!--  main Content region -->
+        <div class="col-xs-60 col-sm-60 col-md-47">
+            <div class="item block-intro">
+                <p class="over-under-line uppercase">Interview de Simon CHIGNARD</p>
+
+                <div class="row">
+                				        	<div class="col-xs-60 col-sm-30 col-md-30">
+							    <figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/interview/les-grands-enjeux-de-l-open-data/93661-1-fre-FR/les-grands-enjeux-de-l-open-data.jpg"  width="227"   height="225"  class="img-responsive margin-bottom-5 " alt="" /></div></figure>
+			             				<div class="itw_qualite"><span class="ezstring-field">Etalab</span></div>
+	
+			            </div>
+			        
+								        	<div class="col-xs-60 col-sm-30 col-md-30 margin-bottom-15">
+			        				        	                        <p class="item-face-face">&lt;&lt; Nous sommes encore très loin d&#039;une appropriation des données par le grand -- public &gt;&gt;.</p>
+	                                            <div class="ezrichtext-field">
+</div>
+
+                        <div class="informations">
+                        	                            <div class="ressource-meta">
+		                        	<p class="keywords-title">Tag(s)&nbsp;:</p>
+	<ul class="list-inline keywords">
+			            
+	<li>
+		<a href="/tag/Data" title="">Data</a>	<li>
+
+	    	</ul>
+
+		                    </div>
+		                    <div class="ressource-meta">
+		                        	<span class="keywords-title">Date : <span class="publication_date">12/12/2012</span></span>
+
+		                    </div>
+		                </div>
+                    </div>
+                </div>
+            </div>
+
+                        	            	<div class="ezrichtext-field"><p><strong>Entretien r&eacute;alis&eacute; par Brice Dury, le 12 d&eacute;cembre 2012 </strong></p><p><strong>Auteur de l&rsquo;ouvrage <em>Open data, comprendre l&rsquo;ouverture des donn&eacute;es publiques</em> (FYP &eacute;ditions, 2012), dipl&ocirc;m&eacute; de T&eacute;l&eacute;com &Eacute;cole de Management, Simon Chignard a particip&eacute; &agrave; l&rsquo;animation de l&rsquo;ouverture des donn&eacute;es publiques de Rennes M&eacute;tropole. Consultant et formateur ind&eacute;pendant, il est vice-pr&eacute;sident de la Cantine num&eacute;rique rennaise</strong><em>.</em></p><p>&nbsp;</p><p><strong>Pouvez-vous raconter bri&egrave;vement votre parcours et ce qui vous a amen&eacute; &agrave; vous int&eacute;resser &agrave; l&rsquo;<em>open data&nbsp;</em>?</strong></p><p>Ce qui m&rsquo;a amen&eacute; &agrave; l&rsquo;ouverture des donn&eacute;es, c&rsquo;est que j&rsquo;ai particip&eacute; &agrave; titre b&eacute;n&eacute;vole &agrave; la cr&eacute;ation de La Cantine Rennaise (un lieu collaboratif autour du num&eacute;rique NDLR). &Agrave; l&rsquo;&eacute;poque j&rsquo;&eacute;tais directeur marketing dans une entreprise qui fait des syst&egrave;mes embarqu&eacute;s pour les transports. La cr&eacute;ation de La Cantine &agrave; Rennes correspondait &agrave; peu pr&egrave;s au moment o&ugrave; Rennes s&rsquo;est lanc&eacute;e dans l&rsquo;ouverture des donn&eacute;es publiques. L&rsquo;une des premi&egrave;res missions que s&rsquo;est donn&eacute;e La Cantine a &eacute;t&eacute; d&rsquo;organiser un certain nombre d&rsquo;animations autour du premier concours d&rsquo;applications lanc&eacute; par Rennes M&eacute;tropole dans le cadre de sa politique d&rsquo;ouverture des donn&eacute;es, fin 2010. Ensuite j&rsquo;ai fait partie du jury du concours, puis j&rsquo;ai eu l&rsquo;occasion d&rsquo;intervenir sur le sujet de l&rsquo;<em>open data</em> dans de nombreuses r&eacute;gions de France, ce qui m&rsquo;a permis d&rsquo;avoir une bonne vision des diff&eacute;rentes strat&eacute;gies territoriales et de mettre en perspective l&rsquo;exp&eacute;rience Rennaise. Cela m&rsquo;a donn&eacute; l&rsquo;envie d&rsquo;&eacute;crire un livre sur ce sujet de l&rsquo;<em>open data</em>.</p><p>&nbsp;</p><p><strong>Qu&rsquo;est-ce qui a pouss&eacute; Rennes &agrave; se lancer dans l&rsquo;<em>open data</em>&nbsp;?</strong></p><p>Il y a eu conjonction de plusieurs facteurs. Il y a toujours eu &agrave; Rennes la capacit&eacute; &agrave; tester des choses, un &laquo; droit &agrave; l&rsquo;exp&eacute;rimentation &raquo; assez fort qui fait qu&rsquo;on a pu essayer des choses, dont certaines ont march&eacute; et d&rsquo;autres non, sans pour autant que leurs auteurs soient devenus <em>persona non grata</em>. &Agrave; Rennes on sait se dire &laquo; pourquoi-pas&nbsp;?&nbsp;&raquo;, et l&rsquo;acceptation de l&rsquo;&eacute;chec participe beaucoup, je pense, &agrave; la capacit&eacute; d&rsquo;innovation.Les d&eacute;buts de la politique d&rsquo;ouverture des donn&eacute;es &agrave; Rennes correspondent aussi au moment de la fusion des services de communication de la ville et de la m&eacute;tropole, et l<em>&rsquo;open data </em>est alors l&rsquo;occasion de cr&eacute;er une dynamique d&rsquo;innovation suite &agrave; cette mutualisation.Enfin, dernier facteur, on a un acteur qui est K&eacute;olis Rennes, qui vient de r&eacute;cup&eacute;rer la d&eacute;l&eacute;gation de service public sur Le V&eacute;lo STAR, le syst&egrave;me de v&eacute;los en libre-service. Et &agrave; ce moment donn&eacute;, il y a quelqu&rsquo;un qui a propos&eacute; sur l&rsquo;App Store (la plateforme de t&eacute;l&eacute;chargement d&rsquo;applications d&rsquo;Apple NDLR) une application payante qui permettait de localiser les v&eacute;los, en r&eacute;cup&eacute;rant les donn&eacute;es sur le site web du V&eacute;lo STAR. Et c&rsquo;est l&agrave; que s&rsquo;est pos&eacute;e la question, de la m&ecirc;me mani&egrave;re d&rsquo;ailleurs qu&rsquo;&agrave; Paris et &agrave; Lyon. &Agrave; Rennes, plut&ocirc;t que de poursuivre le d&eacute;veloppeur, on a dit &laquo; pourquoi-pas&nbsp;?&nbsp;&raquo;, et tr&egrave;s vite la ville et K&eacute;olis Rennes ont d&eacute;cid&eacute; d&rsquo;ouvrir les donn&eacute;es sur les v&eacute;los en libre-service. En quelques semaines il y a une demi-douzaine d&rsquo;applications qui sont sorties&nbsp;! Cette premi&egrave;re exp&eacute;rience a &eacute;t&eacute; importante car elle a bien march&eacute; et elle a rassur&eacute; en montrant que &ccedil;a n&rsquo;&eacute;tait pas risqu&eacute;. Peu de temps apr&egrave;s, Rennes annonce qu&rsquo;elle se lance dans l<em>&rsquo;open data</em>, commence &agrave; &ecirc;tre m&eacute;diatis&eacute;e, et les &eacute;lus se disent alors que &ccedil;a peut &ecirc;tre une d&eacute;marche porteuse&hellip;</p><p>&nbsp;</p><p><strong>En quelques mots, comment expliqueriez-vous l&rsquo;<em>open data</em> &agrave; un n&eacute;ophyte&nbsp;?</strong></p><p>L&rsquo;<em>open data</em><strong>&nbsp;</strong>est un mouvement qui consiste &agrave; mettre des donn&eacute;es en ligne, de mani&egrave;re &agrave; en faciliter la r&eacute;utilisation. On parle de donn&eacute;es &laquo; ouvertes &raquo; quand elles r&eacute;pondent &agrave; un certain nombre de crit&egrave;res techniques. En Fran&ccedil;ais on a cependant une difficult&eacute; pour traduire le terme <em>open data</em>, car il y a trois mani&egrave;res de le comprendre. On peut d&rsquo;abord le traduire par &laquo;&nbsp;les donn&eacute;es ouvertes&nbsp;&raquo;, c&rsquo;est &agrave; dire une caract&eacute;ristique des donn&eacute;es. C&rsquo;est ensuite le terme qui d&eacute;signe plus largement la dynamique : le mouvement d&rsquo;ouverture des donn&eacute;es. Enfin, en anglais une injonction : &laquo; ouvrez vos donn&eacute;es&nbsp;!&nbsp;&raquo;.</p><p>&nbsp;</p><p><strong>D&rsquo;o&ugrave; vient selon vous le mouvement d&rsquo;ouverture des donn&eacute;es&nbsp;?</strong>&nbsp;</p><p>Je pense que le mouvement de l&rsquo;<em>open data</em> en France est un copi&eacute;-coll&eacute; du concept anglo-saxon. Aux Etats-Unis il a toujours eu l&rsquo;id&eacute;e que &laquo;&nbsp;ouvert&nbsp;&raquo; c&rsquo;est&nbsp; mieux que &laquo;&nbsp;ferm&eacute;&nbsp;&raquo;, tant dans l&rsquo;ouverture des&nbsp; march&eacute;s, des politiques, que des technologies. Et &agrave; un moment donn&eacute; il y a un certain nombre de gens qui ont consid&eacute;r&eacute; qu&rsquo;un gouvernement ouvert est plus efficace qu&rsquo;un gouvernement ferm&eacute;, et qu&rsquo;un gouvernement ouvert c&rsquo;est entre autre un gouvernement qui ouvre ses donn&eacute;es. &Ccedil;a a donc un lien avec le web 2.0, un web plus participatif dans lequel on n&rsquo;a plus un producteur et un consommateur, mais deux acteurs. Tim O&rsquo;Reilly dit bien cela quand il dit que dans un <em>open government</em>, le citoyen n&rsquo;est pas un administr&eacute; mais une partie prenante du syst&egrave;me. En France, contrairement aux Etats-Unis, le mouvement s&rsquo;est beaucoup focalis&eacute; autour de l&rsquo;<em>open data</em> et beaucoup moins autour de l&rsquo;<em>open government</em>. Les gens qui s&rsquo;y sont int&eacute;ress&eacute;s sont des gens issus de l&rsquo;informatique, et non de la chose publique, ce qui fait qu&rsquo;on a plut&ocirc;t vu &ccedil;a comme un objet technique que comme un objet politique.</p><p>&nbsp;</p><p><strong>&Agrave; la lecture de votre livre et des diff&eacute;rentes contributions sur le sujet que l&rsquo;on peut trouver sur internet, on constate qu&rsquo;apr&egrave;s une phase de&nbsp;&nbsp; promotion tous azimuts&nbsp;&raquo; de l&rsquo;<em>open data</em>, on entre aujourd&rsquo;hui dans une phase o&ugrave; l&rsquo;enjeu n&rsquo;est plus seulement la mise &agrave; disposition des donn&eacute;es, mais &eacute;galement l&rsquo;invention des m&eacute;thodologies qui permettront que cette diffusion des donn&eacute;es produise effectivement des analyses et des services utiles &agrave; la soci&eacute;t&eacute;. Quels sont aujourd&rsquo;hui les grandes questions et les grands enjeux du mouvement <em>open data</em>&nbsp;?</strong></p><p>On est a un moment o&ugrave; il y a deux choses en parall&egrave;le : d&rsquo;une part on est encore loin d&rsquo;avoir toutes les donn&eacute;es en ligne, et d&rsquo;autre part il faut se poser la question de l&rsquo;utilisation de ce qui est mis en ligne. Il y a un vrai probl&egrave;me d&rsquo;offre, avec des territoires o&ugrave; ce n&rsquo;est pas du tout ouvert, et m&ecirc;me dans les territoires o&ugrave; c&rsquo;est ouvert, on est encore tr&egrave;s loin d&rsquo;avoir fait le tour de l&rsquo;offre disponible en mati&egrave;re de donn&eacute;es. Parall&egrave;lement, l&rsquo;autre question qui se pose est de savoir comment faire pour que les gens s&rsquo;approprient ce qui est d&eacute;j&agrave; en ligne. On l&rsquo;a dit, en France ce sont surtout des personnes issues de l&rsquo;informatique qui se sont investies dans l&rsquo;open data. La plupart des acteurs et des m&eacute;diateurs traditionnels de l&rsquo;information ne se sont pas ou tr&egrave;s peu saisis du sujet : les journalistes, les associations de quartier, les associations militantes, les acteurs de la concertation, les entreprises, etc.</p><p>&nbsp;</p><p><strong>Vous proposez dans votre livre un &laquo;&nbsp;guide du r&eacute;utilisateur d&eacute;butant&nbsp;&raquo;&hellip; Que pourrait-on imaginer pour que des &laquo;&nbsp;non-technophiles&nbsp;&raquo; puissent utiliser ces donn&eacute;es et participer &agrave; la cr&eacute;ation de&nbsp; services ? </strong></p><p>Pour commencer, ce qu&rsquo;il faut c&rsquo;est une ambition politique derri&egrave;re l&rsquo;<em>open data</em>. La premi&egrave;re chose pour animer la diffusion des donn&eacute;es est de savoir ce qu&rsquo;on en attend. Il existe trois grands types d&rsquo;objectifs de l&rsquo;ouverture des donn&eacute;es : la transparence, qui consiste &agrave; dire ce que l&rsquo;on fait en mettant en ligne les donn&eacute;es de l&rsquo;action publique ; la participation, qui vise &agrave; faire r&eacute;agir, &agrave; faire intervenir les citoyens sur des sujets ; la cr&eacute;ation de services.</p><p>Pour amener un public plus large &agrave; s&rsquo;approprier les donn&eacute;es, il faut &eacute;viter de lui parler d&rsquo; <em>open data</em>. Le terme est porteur de trop de choses diff&eacute;rentes et c&rsquo;est un terme en anglais. Et m&ecirc;me en fran&ccedil;ais, &laquo; ouverture des donn&eacute;es &raquo; : qu&rsquo;est-ce que c&rsquo;est qu&rsquo;une donn&eacute;e&nbsp;? Qu&rsquo;est-ce que c&rsquo;est qu&rsquo;ouvrir ? Et une fois qu&rsquo;on est d&rsquo;accord sur les d&eacute;finitions il reste une m&eacute;diation qui est celle de l&rsquo;informatique, qui reste une vraie probl&eacute;matique. On est donc vraiment loin d&rsquo;une appropriation par le grand public. Ce qui fonctionne assez bien, c&rsquo;est l&rsquo;approche th&eacute;matique. On dit aux gens &laquo;&nbsp;venez, on va parler de tel ou tel sujet&nbsp;&raquo;. Par exemple &agrave; Rennes on organise des ateliers de sensibilisation &agrave; la culture de la donn&eacute;e et on a fait un atelier sur le Jardin du Thabor. D&eacute;j&agrave;, il n&rsquo;y a pas d&rsquo;ordinateur, on travaille &agrave; partir d&rsquo;une photo a&eacute;rienne du parc imprim&eacute;e. Les gens tracent leurs parcours dans le parc, puis en croisant on fait appara&icirc;tre les points d&rsquo;int&eacute;r&ecirc;ts (jeux pour enfants, sculptures, roseraie, arbres remarquables&hellip;). On explique ensuite qu&rsquo;&agrave; ces points d&rsquo;int&eacute;r&ecirc;ts qu&rsquo;on a d&eacute;finis correspondent des donn&eacute;es : par exemple un jeu pour enfant, situ&eacute; &agrave; tel endroit, accessible pour les 3 &agrave; 6 ans, avec tant de places. Puis on leur montre sur le portail <em>open data</em> que &ccedil;a correspond &agrave; un jeu de donn&eacute;es qui a &eacute;t&eacute; ouvert. Cela permet, &agrave; partir d&rsquo;un cas concret, de comprendre ce qu&rsquo;est une donn&eacute;e, comment elle est collect&eacute;e, &agrave; quoi elle pourrait servir, etc.</p><p>&nbsp;</p><p><strong>On comprend bien la fonction p&eacute;dagogique de ces ateliers. Il s&rsquo;agit l&agrave; de faire comprendre &agrave; des gens l&rsquo;int&eacute;r&ecirc;t qu&rsquo;ils peuvent trouver dans les usages de ces donn&eacute;es. Mais comment aller plus loin, amener des gens qui pourraient avoir un int&eacute;r&ecirc;t &agrave; utiliser ces donn&eacute;es &ndash; des journalistes, des sociologues, des entreprises &ndash; &agrave; s&rsquo;en emparer&nbsp;?</strong></p><p>Il y a deux pistes. La premi&egrave;re serait de ramener de la &laquo;&nbsp;culture data&nbsp;&raquo; dans toutes ces organisations. La Fing travaille sur un programme d&rsquo;Infolabs dans lequel des structures existantes se doteraient d&rsquo;une comp&eacute;tence d&rsquo;accompagnement &agrave; l&rsquo;utilisation des donn&eacute;es. Par exemple, une association pourrait &ecirc;tre guid&eacute;e, sur le sujet qui l&rsquo;int&eacute;resse, pour trouver les donn&eacute;es qui la concernent, les outils existants, les bonnes questions &agrave; se poser&hellip; La deuxi&egrave;me piste serait de former &agrave; ces m&eacute;tiers, d&rsquo;int&eacute;grer cette approche dans certains cursus, comme par exemple dans les &eacute;coles de journalisme. Et cela permettrait d&rsquo;ailleurs de pouvoir porter un regard critique sur ces donn&eacute;es. Les informaticiens sont dans le mythe de la &laquo;&nbsp;donn&eacute;e brute&nbsp;&raquo;, mais d&rsquo;autres approches permettraient sans doute d&rsquo;avoir un regard critique sur la mani&egrave;re dont les donn&eacute;es sont produites ou diffus&eacute;es.</p><p>&nbsp;</p><p><strong>On le voit aujourd&rsquo;hui, un nombre croissant de collectivit&eacute;s s&rsquo;engagent sur cette voie de l&rsquo;<em>open data.</em> Quel r&ocirc;le les collectivit&eacute;s peuvent-elles, doivent-elles jouer dans ce mouvement de l&rsquo;<em>open data</em>, au-del&agrave; de la simple mise &agrave; disposition de leurs donn&eacute;es&nbsp;?</strong></p><p>Pour la collectivit&eacute;, l&rsquo;<em>open data</em> est &eacute;minemment un projet d&rsquo;interface entre l&rsquo;interne et l&rsquo;externe. Le chef de projet <em>open data</em> ou la personne en charge de ce sujet doit en interne convaincre les agents et les coll&egrave;gues des services de &laquo; donner &raquo; des donn&eacute;es, et en externe faire l&rsquo;interface avec les r&eacute;utilisateurs, composer avec leurs attentes et leurs besoins.</p><p>Le r&ocirc;le de la collectivit&eacute; dans l&rsquo;ouverture des donn&eacute;es est &eacute;troitement li&eacute; &agrave; son rapport &agrave; l&rsquo;innovation ouverte. La mani&egrave;re d&rsquo;ouvrir les donn&eacute;es d&eacute;termine clairement la dynamique de r&eacute;utilisation qu&rsquo;on aura derri&egrave;re. Hormis les donn&eacute;es de mobilit&eacute;, personne ne s&rsquo;empare spontan&eacute;ment des donn&eacute;es. Il faut donc jouer un r&ocirc;le de stimulation sur le territoire : ce sont des concours, des hackatons (&eacute;v&eacute;nements o&ugrave; des d&eacute;veloppeurs se r&eacute;unissent pour faire de la programmation informatique collaborative NDLR), des ateliers, des infolabs (des lieux de m&eacute;diation sur les donn&eacute;es NDLR), etc 1.</p><p>Il y a un autre enjeu, c&rsquo;est celui de la durabilit&eacute;. C&rsquo;est aussi le r&ocirc;le de la collectivit&eacute; de mettre en valeur les utilisations qui ont &eacute;t&eacute; faites des donn&eacute;es. On peut par exemple cr&eacute;er un syst&egrave;me de labellisation, qui permette &agrave; la collectivit&eacute; de mettre en valeur des applications mobiles qui correspondent au bien public et r&eacute;pondent &agrave; certains crit&egrave;res, de cr&eacute;er un site ou une page qui les recense. La collectivit&eacute; peut donc estimer que cela fait partie de ses missions que de mettre en lumi&egrave;re certaines applications issues des r&eacute;utilisateurs.</p><p>&nbsp;</p><p><strong>On en vient donc au lien entre<em>&nbsp;open data </em>et politiques publiques. Comment la collectivit&eacute; peut-elle mettre en coh&eacute;rence les utilisations qui seront faites de ses donn&eacute;es avec ses objectifs de politiques publiques ? Dans une interview r&eacute;cente2 , le coordinateur des programmes de gestion de trafic du Grand Lyon insiste sur le risque de voir se d&eacute;velopper des applications qui iraient contre l&rsquo;int&eacute;r&ecirc;t g&eacute;n&eacute;ral&hellip;</strong></p><p>Cette interview est int&eacute;ressante, mais ce qui est &eacute;tonnant c&rsquo;est qu&rsquo;&agrave; aucun moment il n&rsquo;est envisag&eacute; que l&rsquo;<em>open data</em> puisse &ecirc;tre porteur d&rsquo;innovations que le Grand Lyon n&rsquo;ait pas imagin&eacute;es. L&rsquo;id&eacute;e d&rsquo;une innovation ouverte positive est compl&egrave;tement absente du propos. C&rsquo;est vrai que le risque de voir se cr&eacute;er des applications contre-productives, comme par exemple autour de la circulation routi&egrave;re dans la ville est une vraie question, mais moi je suis convaincu qu&rsquo;aujourd&rsquo;hui ouvrir les donn&eacute;es c&rsquo;est le meilleur moyen d&rsquo;en contr&ocirc;ler l&rsquo;usage.Il y a beaucoup de moyens pour la collectivit&eacute;, &agrave; tous les niveaux, de raccrocher les utilisations des donn&eacute;es &agrave; ses objectifs de politiques publiques. Il y a les syst&egrave;mes de labellisation que nous venons d&rsquo;&eacute;voquer mais pas seulement. Prenons par exemple la petite enfance, imaginons qu&rsquo;une collectivit&eacute; se positionne sur ce sujet et souhaite innover. Elle commence par identifier l&rsquo;ensemble des jeux de donn&eacute;es pertinents sur ce sujet. Ensuite on l&rsquo;a dit, sans animation il n&rsquo;y a pas de r&eacute;utilisations, il faut donc des actions de stimulation. Rien n&rsquo;emp&ecirc;che la collectivit&eacute;, dans ces actions de stimulation, de commencer &agrave; expliquer ses objectifs de politique publique. Elle pourra par exemple organiser un concours de cr&eacute;ation de services pour lequel elle dira que ce qu&rsquo;elle souhaite, c&rsquo;est encourager des services qui vont promouvoir et faciliter le recours &agrave; l&rsquo;accueil collectif des enfants&hellip; &Agrave; un autre niveau, la collectivit&eacute; peut aussi v&eacute;rifier les usages qui sont faits de ses donn&eacute;es. Les donn&eacute;es sont diffus&eacute;es par un &laquo; tuyau &raquo;, les API (<em>Application Programming Interface</em>, un interface de programmation NDLR) ; rien n&rsquo;emp&ecirc;che la collectivit&eacute; de dire qu&rsquo;elle coupe le tuyau si le r&eacute;utilisateur en fait un usage qui n&rsquo;est pas conforme &agrave; ses objectifs de politiques publiques. Par exemple &agrave; Londres <em>Transport for London </em>s&rsquo;est r&eacute;serv&eacute; le droit, &agrave; travers les clauses d&rsquo;utilisation de ses donn&eacute;es, d&rsquo;en stopper la diffusion pour les usages de nature &agrave; d&eacute;nigrer le service.</p><p>C&rsquo;est parce que la collectivit&eacute; dispose de tous ces moyens que je ne suis pas d&rsquo;accord avec le fait de ne pas ouvrir ses donn&eacute;es au pr&eacute;texte de la crainte du m&eacute;susage. Quand je dis qu&rsquo;ouvrir les donn&eacute;es c&rsquo;est mieux contr&ocirc;ler leur usage, c&rsquo;est que je pense aussi que la posture de vouloir tout fermer et tout contr&ocirc;ler n&rsquo;est pas durable. En Belgique, vous avez une super plateforme qui vous donne tous les horaires de la SNCB, l&rsquo;&eacute;quivalent de la SNCF, alors qu&rsquo;elle n&rsquo;a jamais ouvert ses donn&eacute;es&hellip; Cette plateforme a &eacute;t&eacute; cr&eacute;&eacute;e par des d&eacute;veloppeurs qui ont con&ccedil;u un syst&egrave;me tr&egrave;s bien fait, qui r&eacute;cup&egrave;re et diffuse toutes les donn&eacute;es horaires&hellip; Avec la TaM, l&rsquo;op&eacute;rateur de transports en commun de Montpellier, c&rsquo;est la m&ecirc;me chose, des d&eacute;veloppeurs ont cr&eacute;&eacute; la plateforme API Tam, qui offre pr&eacute;cis&eacute;ment l&rsquo;acc&egrave;s aux donn&eacute;es que la TaM ne veut pas donner. Et l&agrave;, l&rsquo;incertitude juridique est maximale pour tous les acteurs.</p><p>&nbsp;</p><p><strong>Lorsqu&rsquo;on parle des utilisations possibles des donn&eacute;es ouvertes, on parle souvent d&rsquo;innovation de service, de la cr&eacute;ation d&rsquo;applications web ou mobiles. Or on le dit de plus en plus, pour passer de l&rsquo;invention &agrave; l&rsquo;innovation il faut int&eacute;grer la question des usages, la mani&egrave;re dont l&rsquo;usager va percevoir et s&rsquo;approprier le service&hellip; Comment int&eacute;grer cette dimension &laquo;&nbsp;usager&nbsp;&raquo; dans les processus de d&eacute;veloppement de l&rsquo;<em>open data</em>&nbsp;?</strong></p><p>L&rsquo;exp&eacute;rience montre que la force d&rsquo;un certain nombre d&rsquo;applications qui ont &eacute;t&eacute; cr&eacute;&eacute;s lors de concours, c&rsquo;est de r&eacute;pondre &agrave; des besoins sp&eacute;cifiques au territoire concern&eacute;. La motivation des d&eacute;veloppeurs &agrave; participer &agrave; ces concours est souvent une question de proximit&eacute; et d&rsquo;appropriation territoriale. Et parmi eux un certain nombre a con&ccedil;u des outils &laquo; qu&rsquo;ils auraient aim&eacute; avoir &raquo; et &ccedil;a change un peu la donne. Dans le concours &agrave; Rennes aucune des grosses soci&eacute;t&eacute;s qui d&eacute;veloppent des applications mobiles d&rsquo;information aux voyageurs n&rsquo;a particip&eacute;, et on a pourtant eu pas mal d&rsquo;id&eacute;es d&rsquo;usages vraiment int&eacute;ressantes.</p><p>Il y a cependant une limite &agrave; &ccedil;a, c&rsquo;est que certains usages ne sont pas trait&eacute;s. Par exemple beaucoup d&rsquo;applications de mobilit&eacute; sont pens&eacute;es pour les usagers r&eacute;guliers, et peu pour les usagers occasionnels. Je crois vraiment &agrave; l&rsquo;id&eacute;e de faire travailler les d&eacute;veloppeurs, les chercheurs, sur des probl&eacute;matiques identifi&eacute;es. Prenons un exemple : on pourrait r&eacute;cup&eacute;rer l&rsquo;ensemble des statistiques d&eacute;taill&eacute;es de fr&eacute;quentation des piscines de la ville, &agrave; partir du syst&egrave;me de billetterie, qu&rsquo;on diffuserait avec d&rsquo;autres jeux de donn&eacute;es comme la m&eacute;t&eacute;o, les jours travaill&eacute;s, etc. Et on organiserait &agrave; partir de &ccedil;a un concours sur ce qu&rsquo;on arrive &agrave; raconter sur ces fr&eacute;quentations. Je suis s&ucirc;r qu&rsquo;on apprendrait plein de choses. Aux Etats-Unis, il y a un dispositif vraiment int&eacute;ressant qui est le site&nbsp;challenge.gov. Il propose des appels &agrave; projets sur toutes sortes de sujets. Le dernier exemple en date c&rsquo;est un concours organis&eacute; autour d&rsquo;une probl&eacute;matique &laquo; sant&eacute; et nutrition des adolescents &raquo;. Le site organise un concours qui r&eacute;compense celui qui, &agrave; partir des jeux de donn&eacute;es diffus&eacute;s, cr&eacute;e la meilleure application.</p><p>&nbsp;</p><p><strong>On parle de plus en plus de la &laquo;&nbsp;ville servicielle&nbsp;&raquo;&hellip; Quelles pourraient &ecirc;tre les cons&eacute;quences concr&egrave;tes de l&rsquo;ouverture des donn&eacute;es sur les mani&egrave;res de vivre l&rsquo;espace public dans la ville&nbsp;?</strong></p><p>Il y a un exemple int&eacute;ressant &agrave; New York. Comme dans la plupart des grandes villes am&eacute;ricaines il y a un service t&eacute;l&eacute;phonique, le 311, que l&rsquo;on peut appeler 24h/24 dans plusieurs langues. On peut appeler pour signaler un probl&egrave;me (une coupure d&rsquo;&eacute;lectricit&eacute;, des poubelles non ramass&eacute;es), pour poser une question (comment inscrire un enfant &agrave; la cr&egrave;che&hellip;). Bref, c&rsquo;est le<em>&nbsp;call center</em> de la ville. Chacun des appels est g&eacute;olocalis&eacute; et qualifi&eacute;, et le fichier d&rsquo;appels est mis en ligne en temps r&eacute;el sur la plateforme <em>open data</em> de la ville. Cela permet que des r&eacute;utilisateurs tiers se saisissent de ces donn&eacute;es, puissent travailler &agrave; une vraie vision de ce qui est en train de se passer dans la ville, et de reboucler ensuite en revenant vers les services de la ville pour livrer leur analyse ou leurs id&eacute;es. La ville est un syst&egrave;me, qui fonctionne comme une boucle gr&acirc;ce &agrave; cette &laquo;&nbsp;voie de retour&nbsp;&raquo;.</p><p>En fonctionnant ainsi, on est &agrave; l&rsquo;antith&egrave;se de la mani&egrave;re dont la ville intelligente est aujourd&rsquo;hui en train de se penser. C&rsquo;est pour cela qu&rsquo;il vaut mieux parler de ville servicielle que de ville intelligente, car pr&eacute;cis&eacute;ment la ville intelligente telle qu&rsquo;on nous la pr&eacute;sente est l&rsquo;antith&egrave;se de l&rsquo;<em>open data</em>. L&rsquo;image de la ville intelligente telle que les grands groupes sont en train de la dessiner, c&rsquo;est &laquo; la tour de contr&ocirc;le&nbsp;&raquo;. La ville de l<em>&rsquo;open data</em>, c&rsquo;est une ville dans lequel il y a de la participation. La question c&rsquo;est de savoir &agrave; quel moment j&rsquo;estime que l&rsquo;habitant de la ville n&rsquo;est pas qu&rsquo;un usager, mais qu&rsquo;il est partie prenante du service public. Et pour cela, l&rsquo;open data peut &ecirc;tre un vrai levier.</p><p>&nbsp;</p><p><strong>L<em>'open data</em> est finalement un ph&eacute;nom&egrave;ne assez nouveau en France. Si on se projette, comment voyez-vous ce mouvement &agrave; 10 ou 20 ans&nbsp;?</strong></p><p>On me demande souvent si c&rsquo;est une mode, ou m&ecirc;me quand &ccedil;a va passer&hellip; Je ne sais pas trop dire si on en parlera plus ou moins que maintenant, mais ce dont je suis convaincu c&rsquo;est que la notion d&rsquo;ouverture des syst&egrave;mes et des organisations est l&agrave; pour durer. On va de plus en plus vers des syst&egrave;mes interconnect&eacute;s, et on va de plus en plus vers des syst&egrave;mes dans lesquels une partie des choses seront faites par des tiers. Un bon exemple, qui n&rsquo;est pas du tout de l&rsquo;<em>open data</em>, c&rsquo;est Amazon. Une grande partie du succ&egrave;s d&rsquo;Amazon, c&rsquo;est d&rsquo;avoir ouvert une partie de son syst&egrave;me d&rsquo;information. C&rsquo;est &agrave; dire que je peux acheter des livres vendus par Amazon sur de nombreux autres sites que celui d&rsquo;Amazon : ils ont donn&eacute; des outils &agrave; des tiers pour le faire facilement. &Agrave; mon avis demain les syst&egrave;mes ouverts vont se diffuser de plus en plus. Cela ne veut pas dire que tout le monde fera tout, mais par exemple la collectivit&eacute; trouvera de plus en plus un int&eacute;r&ecirc;t &agrave; ouvrir ses syst&egrave;mes d&rsquo;information, &agrave; se dire que sur tel ou tel domaine &ccedil;a pourrait &ecirc;tre int&eacute;ressant de commencer &agrave; les ouvrir.</p><p><em>1-Simon Chignard propose, dans un billet du site compagnon de son ouvrage, une grille d&rsquo;analyse de l&rsquo;animation de l&rsquo;open data</em></p><p><em><em>2-Jean COLDEFY</em></em></p>
+</div>
+
+	        
+           	
+            
+            	<section class="print_hidden">
+		<div class="row">
+	     	<div class="col-xs-60 col-sm-60">
+	   			<h2 class="h4 h4-dossier block-title-overline margin-right-10">En lien avec le sujet</h2>
+	       	</div>
+	  	</div>
+	 	<div class="margin-bottom-30">
+	 		<section class="carousel3x3 margin-bottom-30">
+		 				         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2020/l-open-data-des-communes-sur-le-territoire-grandlyonnais" title="">L&#039;open data des communes sur le territoire grandlyonnais</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/2/2/8/458226-1-fre-FR/couv_open-data.png"  width="643"   height="907"  class="img-responsive margin-bottom-15" alt="Couverture du document L&#039;open data des communes sur le territoire grandlyonnais" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Enquête exploratoire sur la première phase d&#039;expérimentation d’accompagnement des communes de la Métropole de Lyon à l’ouverture des données publiques.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2019/nouvelles-mobilites-quel-role-pour-les-collectivites" title="">Nouvelles mobilités : quel rôle pour les collectivités ?</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/2/2/3/1/411322-5-fre-FR/Mobilites.jpg"  width="328"   height="329"  class="img-responsive margin-bottom-15" alt="vélo/covoiturage/tram/télétravail/territoire/bus/troyinette/péniche/marche" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Retour sur la séance information-débat organisée le 26 mars 2019.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2018/reclaiming-personal-data" title="">RECLAIMING PERSONAL DATA</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/1/6/4/4/254461-2-fre-FR/reclaiming personal data.PNG"  width="863"   height="863"  class="img-responsive margin-bottom-15" alt="Cover of the report " /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Lyon Metropole commits and experiments. </p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2018/la-metropole-de-lyon-et-les-donnees-personnelles-3" title="">La Métropole de Lyon et les données personnelles (3)</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/7/7/0/2/232077-1-fre-FR/marie amandine vermillon.jpg"  width="1536"   height="2048"  class="img-responsive margin-bottom-15" alt="" /></figure>
+  <p class="uppercase"><b>Interview de Marie-Amandine Vermillon et Martin Cahen</b></p>
+       		   		<p>Psychologue sociale et designer de services</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2018/la-metropole-de-lyon-et-les-donnees-personnelles-2" title="">La Métropole de Lyon et les données personnelles (2)</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/2/8/9/0/230982-2-fre-FR/WEB-169-portrait-Vernus1.jpg"  width="709"   height="472"  class="img-responsive margin-bottom-15" alt="" /></figure>
+  <p class="uppercase"><b>Interview de Nathalie Vernus Prost</b></p>
+       		   		<p>Administratrice générale des données de la Métropole de Lyon</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2018/la-metropole-de-lyon-et-les-donnees-personnelles-1" title="">La Métropole de Lyon et les données personnelles (1)</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/5/4/3/9/229345-5-fre-FR/Sarah_MEDJEK.jpg"  width="3448"   height="5172"  class="img-responsive margin-bottom-15" alt="" /></figure>
+  <p class="uppercase"><b>Interview de Sarah Medjek</b></p>
+       		   		<p>coordinatrice de la recherche de l&#039;expérimentation Mes Infos</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2018/reappropriation-des-donnees-personnelles" title="">Réappropriation des données personnelles</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/0/0/9/7/227900-13-fre-FR/réappropriation des données perso.PNG"  width="868"   height="868"  class="img-responsive margin-bottom-15" alt="Couverture de l&#039;étude" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Les collectivités territoriales face aux enjeux des données personnelles.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/D-un-monde-de-la-donnee-a-l-autre" title="">D&#039;un monde de la donnée à l&#039;autre</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/5/8/4/0/220485-7-fre-FR/d4UN MONDE DE LA DONN2E 0 L4AUTRE.PNG"  width="872"   height="872"  class="img-responsive margin-bottom-15" alt="Couverture de l&#039;étude" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Scénarios prospectifs sur les enjeux et les opportunités de la gouvernance des données.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2017/politiques-des-donnees-urbaines" title="">Politiques des données urbaines</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/4/8/8/4/214884-7-fre-FR/Politiques des données urbaines.PNG"  width="850"   height="850"  class="img-responsive margin-bottom-15" alt="Couverture de l&#039;étude" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Antoine Courmont présente les résultats de sa thèse en science politique réalisée en partenariat avec la Métropole de Lyon.</p>
+
+	</article>
+</div>
+
+							</section>
+		</div>
+	</section>
+
+        </div>
+<!--  /main Content region-->
+<!--  Right Sidebar -->
+        <div class="col-xs-60 col-md-13">
+            <div class="row">
+            	                            	                    		
+
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-dossiers">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="sidebar-picto m3-icons-sidebar-folders"></span>
+            <a title="" href=" /tous-les-dossiers ">   Dossiers
+            </a>
+        </h2>
+    </header>
+
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <div class="sidebar-block-content">
+        	                                    	<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/9/5/535989-1-fre-FR/3abfcaee6c8b-pms_light.jpg"  width="1413"   height="1414"  class="img-responsive margin-bottom-15" alt="Illustrations de personnes différentes sur une place" /></figure>
+                
+                <p class="publication-title"><a href="/dossiers/2023/action-publique-comment-penser-la-solidarite-depuis-un-territoire" title=""><span class="ezstring-field">Action publique : comment penser la solidarité depuis un territoire ?</span></a></p>
+	        
+            <footer class="sidebar-block-footer">
+            	                	<p><a  title="Consulter nos dossiers disponibles" href="/tous-les-dossiers">Tous les dossiers</a></p>
+                            </footer>
+        </div>
+    </div>
+</article>
+
+</div>
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-home">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="m3-icons-sidebar-picto-tags"></span>
+            <img src="/assets/images/unsprited/icons/tag.png" style= "margin-left: 4px; margin-right: 8px" alt="" />
+            <a href="/tous-les-tags" title="Consulter tous nos tags">Tags
+            </a>
+        </h2>
+    </header>
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <footer class="sidebar-block-footer">
+                            <p><a href="/tous-les-tags" title="Consulter tous nos tags">Tous les tags</a></p>
+                    </footer>
+    </div>
+</article>
+
+</div>
+	        </div>
+		</div>
+<!--  Right Sidebar-->
+</div>
+			<script>
+	function onYouTubeIframeAPIReady()
+	{
+		//Redimensionner les div de vidéos
+		var elements = document.getElementsByClassName("youtube_frame");
+		for(var i = 0 ; i < elements.length ; i++)
+		{
+			var element = elements[i];
+			var subElements = element.getElementsByClassName("youtube_player");
+			for(var j = 0 ; j < subElements.length ; j++)
+			{
+				var subElement = subElements[j];
+				var proportion = element.getAttribute("proportion");
+				var width = element.parentNode.offsetWidth;
+				var height = width * proportion;
+				subElement.setAttribute("width", "100%");
+				subElement.setAttribute("height", height);
+			}
+		}
+	}
+
+	functionsInitialization.push(onYouTubeIframeAPIReady);
+</script>	    </div>
+	</div>
+
+	<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="col-xs-60 col-sm-45 col-md-36 col-lg-39">
+                <nav class="navbar navbar-default footer-nav" role="navigation">
+                    <ul class="nav navbar-nav">
+                                                                            <li><a href="/qui-sommes-nous" title="">Qui sommes-nous</a></li>
+                        
+                        <li><a href="/newsletter_subscribe"><span lang="en">Newsletter</span></a></li>
+
+                        <li><a href="/formulaire/contactez_nous" >Contact</a></li>
+
+                                                                            <li><a href="/Accessibilite" >Accessibilité</a></li>
+                        
+                                                                            <li><a href="/plan-du-site" >Plan du site</a></li>
+                        
+                                                                            <li><a href="/mentions-legales" >Mentions légales</a></li>
+                        
+                                                                            <li><a href="/donnees-personnelles" >Données personnelles</a></li>
+                        
+                        <li><a href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-60 col-sm-15 hidden-md hidden-lg">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+                                                                                                                                                <div class="col-xs-60 col-sm-60 col-md-24 col-lg-21">
+                <a class="acces_metro" href="http://www.grandlyon.com" target="_blank" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)">Un site de la Métropole de Lyon</a>
+            </div>
+
+             <div class="hidden-xs visible-md visible-lg col-md-60 text-center">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+	
+	<div id="know-the-breakpoint"></div>
+	<script src="/assets/vendor/vendor.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/video-js/video.min.js"></script>
+<script src="/assets/vendor/video-js/lang/fr.js"></script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+	<script type="text/javascript">
+		functionsInitialization.push(function owlCarouselInitialization()
+		{
+		    $(".carousel3x3").owlCarousel({
+		        pagination: false,
+		        navigation: true,
+		        navigationText: [
+		            "<i class='glyphicon glyphicon-chevron-left'></i>",
+		            "<i class='glyphicon glyphicon-chevron-right'></i>"
+		        ],
+		        items: 3,
+		        itemsDesktop: [1160, 3],
+		        itemsDesktopSmall: [979, 3],
+		        itemsTablet:[600,2],
+		        itemsMobile: [479,1],
+		        scrollPerPage:true
+		    });
+		});
+
+		$(document).ready(function(){
+			$.each(functionsInitialization, function( index, value ) {
+				functionsInitialization[index]();
+			});
+		});
+	</script>
+</body>
+</html>

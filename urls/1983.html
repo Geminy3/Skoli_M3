@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Grand Lyon">
+<meta name="keywords" content="Millénaire 3">
+
+	
+		
+	
+	
+	<title>Robotique de service dans un environnement humain : Millenaire 3, Transformation urbaine		</title>
+
+		<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@millenaire3">
+
+			<meta name="twitter:title" content="Robotique de service dans un environnement humain | Millénaire 3">
+					<meta name="twitter:description" content="&quot; Aujourd&#039;hui, plutôt que de parler de robots, je préfère parler de « systèmes robotiques » ou de « technologies robotiques » que l&#039;on intègre dans des machines et produits divers&quot;">
+														<meta name="twitter:image" content="	https://www.millenaire3.com/var/m3/storage/images/_aliases/large/interview/robotique-de-service-dans-un-environnement-humain/88515-1-fre-FR/robotique-de-service-dans-un-environnement-humain.jpg">
+<meta name="twitter:image:alt" content="">
+
+										<meta name="twitter:creator" content="@millenaire3">
+			
+	<meta name="description" content="
+
+">
+		<!-- Bootstrap -->
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="/assets/css/style.min.css" type="text/css" rel="stylesheet" />
+
+	
+	<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/video-js/video-js.min.css" />
+
+<!-- Favicons, from http://realfavicongenerator.net/-->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/fav-icones/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/fav-icones/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/fav-icones/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/fav-icones/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/fav-icones/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/fav-icones/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/fav-icones/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/fav-icones/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/fav-icones/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+	<script type="text/javascript">
+		//Utilisation pour les scripts ajax
+		var rootUrl = "/";
+		var functionsInitialization = [];
+	</script>
+
+	<script type="text/javascript" src="/assets/vendor/tarteaucitronjs/tarteaucitron.js"></script>
+
+<script type="text/javascript">
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+
+        "orientation": "bottom", /* Banner position (top - bottom) */
+
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": true, /* Show the cookie list */
+
+        "showIcon": false, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* Disable auto consent */
+
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": false, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+        "mandatory": false, /* Show a message about mandatory cookies */
+    });
+
+    var tarteaucitronForceLanguage = "fr";
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
+
+    tarteaucitron.services.m3 = {
+        "key": "m3",
+        "type": "other",
+        "name": "Cookies internes Millénaire 3",
+        "uri": "",
+        "needConsent": true,
+        "cookies": ['cookieToken'],
+        "js": function () {
+            // When user allow cookie
+            "use strict";
+            registerCookieToken();
+            if(typeof whenM3CookieIsAccepted === "function")
+            {
+                // Fonction à définir dans les pages pour déclencher les scripts succeptibles de poser des cookies
+                whenM3CookieIsAccepted();
+            }
+        },
+        "fallback": function () {
+            // When user deny cookie
+            tarteaucitron.fallback(['m3-cookie-generation-zone'], function (x) {
+                // Remplacer la zone par "machin est désactivé"
+                return tarteaucitron.engage('m3');
+            });
+        }
+    };
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('m3');
+
+            tarteaucitron.user.matomoId = '58';
+        tarteaucitron.user.matomoHost = "https://statweb.grandlyon.com//";
+        (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
+    
+    (tarteaucitron.job = tarteaucitron.job || []).push('ausha');
+
+</script>
+</head>
+<body id="millenaire-3"  itemscope itemtype="http://schema.org/WebPage">
+			<header id="header">
+	<div id="print-top-menu" class="container">
+		<div class="row">
+        	<div class="col-xs-60">
+            	<img src="/assets/images/logo-millenaire-3-mini-blanc.png" alt="" style="float: left;">
+                <img src="/assets/images/logo-grand-lyon-la-metropole-blanc.png" alt="" style="float: right;">
+			</div>
+		</div>
+	</div>
+
+    <div id="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="clearfix" id="top-menu-content">
+                        <a href="#" title="Accéder au menu" class="link-sprite-focus m3-icons-btn-toggle-menu" id="btn-toggle-menu"></a>
+                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3-mini">
+                       	    <img src="/assets/images/logo-millenaire-3-mini.png" alt="" class="img-responsive" id="logo-mini-m3" />
+                        </a>
+
+                        <a class=" skippy sr-only sr-only-focusable" href="#content" title=""><span class="skiplink-text">Aller au contenu </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#main-menu" title=""><span class="skiplink-text">Aller au Menu principal </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#block-search" title=""><span class="skiplink-text">Aller à la recherche</span></a>
+
+                                                                                                                                                                                                                                                                                    <a href="http://www.grandlyon.com" target="_blank" rel="nofollow" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)" id="link-logo-glm">
+                            <img src="/assets/images/logo-grand-lyon-la-metropole.png" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toggle-header">
+            <div class="container">
+                <div class="row" id="toggle-header-content">
+                    <div class="col-xs-30 col-sm-17 col-md-13 block-logo" id="share-header">
+                                                
+                    	<span>
+	                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3">
+	                            <img src="/assets/images/logo-millenaire-3.png" alt="Logo Millénaire 3" class="img-responsive" />
+	                        </a>
+                        </span>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-20 col-md-19 block-baseline">
+                        <p>
+                            <img src="/assets/images/la-prospective-du-grand-lyon.png" alt="Sloggan Millénaire 3 : La prospective du Grand Lyon" class="img-responsive" />
+                        </p>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-23 col-md-11 col-lg-12 block-social-networks">
+						<ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+                    </div>
+                    																										<form action="/m3_search" method="get">
+	<div class="col-xs-60 col-sm-23 col-sm-offset-20 col-md-17 col-md-offset-0 col-lg-16 block-search">
+		<div class="input-group search-group" id="#block-search">
+            <label class="sr-only" for="search">Recherche</label>
+			<input id="search" type="search" class="search" value="" name="SearchText" placeholder="Rechercher sur le site"/>
+			<span class="input-group-btn">
+				<input id="search-submit" type="submit" value="" title="Lancer la recherche" class="m3-icons-search" />
+			</span>
+		</div>
+	</div>
+</form>
+                    <div class="col-xs-60 col-sm-60 col-md-47" id="main-menu" style="display:none">
+	<nav class="navbar navbar-default" role="navigation">
+		<ul class="nav navbar-nav">
+																	<li><a href="/societe" title=""><span class="ezstring-field">Société</span></a></li>
+		    								<li><a href="/modes-d-action" title=""><span class="ezstring-field">Modes d&#039;action</span></a></li>
+		    								<li class="active"><a href="/transformation-urbaine" title=""><span class="ezstring-field">Transformation urbaine</span> <span class="sr-only">(Menu déjà sélectionné)</span></a></li>
+		    								<li><a href="/politiques-publiques" title=""><span class="ezstring-field">Politiques Publiques</span></a></li>
+		    								<li><a href="/territoire" title=""><span class="ezstring-field">Territoire</span></a></li>
+		    								<li><a href="/soutenabilite" title=""><span class="ezstring-field">Soutenabilité</span></a></li>
+		             </ul>
+    </nav>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<div id="home">
+	    <div class="container" id="content">
+	    		    			                    <div class="row">
+        <div class="col-xs-60 block-breadcrumb" itemprop="breadcrumb">
+            <p class="before-breadcrumb">Vous êtes ici&nbsp;: </p><ol class="breadcrumb"><li><a title="Voir la page Accueil" href="/">Accueil</a></li><li><a title="Voir la page Transformation urbaine" href="/transformation-urbaine">Transformation urbaine</a></li><li class="active">Robotique de service dans un environnement humain</li></ol>        </div>
+    </div>
+
+                                                                                                                                
+	            	    			    						
+	    		    	
+            			
+<script type="text/javascript">
+	functionsInitialization.push(function ressourceInitialization(){
+		incrementerVues(5031);
+	});
+</script>
+
+<div class="row block-title">
+    <div class="col-xs-60 col-sm-47 col-md-47">
+        <h1 class="uppercase h1-special">
+							Robotique de service dans un environnement humain
+					</h1>
+    </div>
+
+	<div class="col-xs-60 col-sm-13 col-md-13 block-share">
+
+<ul class="clearfix share">
+	<li>
+		<!--a href="javascript:void(0);" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a-->
+		<a href="javascript:void(0);" data-toggle="collapse" data-target="#addtoany-container" aria-expanded="false" aria-controls="addtoany-container" role="button" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a>
+	</li>
+						<li><a href="/generated_pdf/5003" rel="nofollow" target="_blank" title="Télécharger la page en version PDF" class="m3-icons-share-pdf hidden-xs"></a></li>
+			<!--li><a href="https://www.millenaire3.com/layout/set/print/content/view/print/5003" target="_blank">p</a></li-->
+							<li id="print_current_content"><a href="javascript:window.print()" onclick="javascript:print()" rel="nofollow" title="Imprimer la page" class="m3-icons-share-print"></a></li>
+							<li><a href="/partage_email/5003" rel="nofollow" title="Partager ce contenu par e-mail" class="m3-icons-share-mail"></a></li>
+			</ul>
+
+</div>
+
+	<div class="collapse block-social-networks-share a2a_kit a2a_kit_size_32 a2a_default_style" id="addtoany-container">
+        <span class="tac_addtoanyshare"></span>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_linkedin"></a>
+    </div>
+
+<script type="text/javascript">
+	function deplierPartageReseauxSociaux()
+	{
+		fadeInOrFadeOut('#partages_reseaux_sociaux');
+	}
+
+	/**
+	* Affiche ou non (toogle), avec un effet JQuery
+	*/
+	function fadeInOrFadeOut(elementName)
+	{
+		$element = $(elementName);
+		if(! $element.hasClass("hide"))
+		{
+			$element.fadeOut(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+		else
+		{
+			$element.fadeIn(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+	}
+
+	// Alert a message when the user shares somewhere
+		function addThisEventHandler(evt) {
+		    switch (evt.type)
+		    {
+		        case "addthis.menu.share":
+		            incrementerPartages(5031, evt.data.service);
+		            break;
+		        default:
+		            console.log('received an unexpected event', evt);
+		    }
+		}
+
+	functionsInitialization.push(function shareInitialization()
+	{
+																						
+		// Listen to various events
+		try
+		{
+			addthis.addEventListener('addthis.menu.share', addThisEventHandler);
+		}
+		catch(err)
+		{}
+	});
+</script>
+
+</div>
+
+<div class="row">
+	<!--  main Content region -->
+        <div class="col-xs-60 col-sm-60 col-md-47">
+            <div class="item block-intro">
+                <p class="over-under-line uppercase">Interview de Christan LAUGIER</p>
+
+                <div class="row">
+                				        	<div class="col-xs-60 col-sm-30 col-md-30">
+							    <figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/interview/robotique-de-service-dans-un-environnement-humain/88515-1-fre-FR/robotique-de-service-dans-un-environnement-humain.jpg"  width="129"   height="187"  class="img-responsive margin-bottom-5 " alt="" /></div></figure>
+			             				<div class="itw_qualite"><span class="ezstring-field">Directeur de recherche et responsable de l&#039;équipe E-motion de l&#039;INRIA Rhône-Alpes (Grenoble)</span></div>
+	
+			            </div>
+			        
+								        	<div class="col-xs-60 col-sm-30 col-md-30 margin-bottom-15">
+			        				        	                        <p class="item-face-face">&lt;&lt; Aujourd&#039;hui, plutôt que de parler de robots, je préfère parler de « systèmes robotiques » ou de « technologies robotiques » que l&#039;on intègre dans des machines et produits divers &gt;&gt;.</p>
+	                                            <div class="ezrichtext-field">
+</div>
+
+                        <div class="informations">
+                        	                            <div class="ressource-meta">
+		                        	<p class="keywords-title">Tag(s)&nbsp;:</p>
+	<ul class="list-inline keywords">
+			            
+	<li>
+		<a href="/tag/numerique" title="">Numérique</a>, 	<li>
+
+	    	            
+	<li>
+		<a href="/tag/innovation" title="">Innovation</a>	<li>
+
+	    	</ul>
+
+		                    </div>
+		                    <div class="ressource-meta">
+		                        	<span class="keywords-title">Date : <span class="publication_date">28/01/2011</span></span>
+
+		                    </div>
+		                </div>
+                    </div>
+                </div>
+            </div>
+
+                        	            	<div class="ezrichtext-field"><p><strong>Interview r&eacute;alis&eacute;e le 28 janvier 2011 par Boris Chabanel</strong></p><p><em>L'&eacute;quipe-projet E-MOTION a pour ambition de d&eacute;velopper des mod&egrave;les et des m&eacute;thodes algorithmiques permettant &agrave; terme de construire des syst&egrave;mes artificiels dot&eacute;es de capacit&eacute;s de perception, de d&eacute;cision, et d'action suffisamment &eacute;volu&eacute;es et robustes pour autoriser un fonctionnement de ceux-ci dans des environnements ouverts et dynamiques. Les principaux domaines d'application vis&eacute;s par cette probl&eacute;matique de recherche concernent l&rsquo;introduction de syst&egrave;mes robotis&eacute;s &eacute;volu&eacute;s et s&eacute;curis&eacute;s dans l&rsquo;espace de la vie quotidienne. </em><br><em>Dans cet entretien, Christian Laugier explique que la caract&eacute;ristique fondamentale du robot de service est qu&rsquo;il est appel&eacute; &agrave; &eacute;voluer dans un environnement humain. A la t&ecirc;te de l&rsquo;&eacute;quipe E-Motion, il s&rsquo;efforce d&rsquo;adapter les capacit&eacute; de perception et de d&eacute;cision du robot &agrave; ce milieu sp&eacute;cifique</em>.<br>&nbsp;</p><p><strong><strong>Aujourd&rsquo;hui, on parle de robotique de service pour d&eacute;signer ce champ de la robotique qui se trouve en dehors des usines. Pour vous, que recouvre la robotique de service&nbsp;? </strong></strong></p><p>Pour moi, c&rsquo;est la nouvelle g&eacute;n&eacute;ration de la robotique. Diff&eacute;rentes &eacute;tudes montrent que la robotique industrielle ne sera plus le principal march&eacute; de la robotique. Elle sera largement d&eacute;tr&ocirc;n&eacute;e par la robotique de service qui devrait exploser d&rsquo;ici 20 &agrave; 30 ans. Si l&rsquo;on en croit ces &eacute;tudes, les robots et les technologies robotiques auront diffus&eacute;e dans tout notre environnement personnel et professionnel, pour assister de nombreux gestes de notre vie. La robotique de service c&rsquo;est avant tout la robotique qui s&rsquo;adresse &agrave; monsieur tout le monde, avec cependant des produits qui ne seront pas forc&eacute;ment appel&eacute;s<br>&laquo;&nbsp;robots&nbsp;&raquo;. La diff&eacute;rence fondamentale avec la robotique industrielle est que le robot de service est appel&eacute; &agrave; intervenir dans un milieu qui n&rsquo;a pas &eacute;t&eacute; con&ccedil;u pour lui. Nous entrons dans l&rsquo;&egrave;re du robot intervenant dans un environnement humain et en forte interaction avec les humains. Cette interaction peut &ecirc;tre une simple coexistence pacifique, ou une coop&eacute;ration effective. En ce sens, le robot de service doit disposer d&rsquo;une v&eacute;ritable capacit&eacute; d&rsquo;adaptation &agrave; son environnement et &agrave; l&rsquo;humain. Les notions d&rsquo;apprentissage, de mobilit&eacute; et d&rsquo;interaction naturelle et s&ucirc;re avec l&rsquo;homme sont ici essentielles.</p><p>&nbsp;</p><p><strong><strong>La robotique de service ne concerne donc pas la robotique professionnelle non manufacturi&egrave;re (robot chirurgical, robot de surveillance, robot nettoyeur, etc.)&nbsp;? </strong></strong></p><p>Comme il n&rsquo;y a pas de d&eacute;finition tr&egrave;s pr&eacute;cise de la robotique de service, on peut &ecirc;tre tent&eacute; d&rsquo;&eacute;largir son p&eacute;rim&egrave;tre. Toutefois, du point de vue de la recherche, on distingue g&eacute;n&eacute;ralement la robotique de service, dont la vocation serait essentiellement grand public, de la robotique d&rsquo;intervention et de la robotique m&eacute;dicale. La robotique d&rsquo;intervention renvoie aux robots utilis&eacute;s dans les mines, les canalisations, les milieux hostiles (comme par exemple le sous-marin, l&rsquo;espace, ou les environnements contamin&eacute;s), le civil ou le militaire, o&ugrave; encore les robots de surveillance, etc. Quant &agrave; la robotique m&eacute;dicale, c&rsquo;est encore autre chose dans la mesure o&ugrave; elle fait intervenir des m&eacute;decins et conduit &agrave; intervenir sur le corps humain. On retrouve cette distinction au niveau des journaux scientifiques ou des conf&eacute;rences sp&eacute;cialis&eacute;es, certains d&rsquo;entre eux portant sur la robotique de service, d&rsquo;autres sur la robotique d&rsquo;intervention, et d&rsquo;autres sur la robotique m&eacute;dicale.</p><p>&nbsp;</p><p><strong><strong>Pour vous, quelles sont les caract&eacute;ristiques fondamentales d&rsquo;un robot, celles qui permettent de le distinguer dans l&rsquo;univers des machines intelligentes&nbsp;? </strong></strong></p><p>Il y a une d&eacute;finition assez classique qui consiste &agrave; dire un robot pr&eacute;sente n&eacute;cessairement trois caract&eacute;ristiques : une capacit&eacute; de perception de l&rsquo;environnement, une capacit&eacute; d&rsquo;action sur le monde r&eacute;elle, une capacit&eacute; de d&eacute;cision autonome. Cela &eacute;tant dit, la morphologie du robot peut &ecirc;tre tr&egrave;s diverse. Elle d&eacute;pend largement de la fonction qui est assign&eacute;e au robot.</p><p>&nbsp;</p><p><strong>La robotique peut-elle &ecirc;tre assimil&eacute;e aux syst&egrave;mes dits intelligents&nbsp;?</strong></p><p>Aujourd&rsquo;hui, sur certaines voitures, il y a des fonctions de s&eacute;curit&eacute; ou d&rsquo;aide &agrave; la conduite qui utilisent des technologies robotiques, des capteurs, de l&rsquo;intelligence embarqu&eacute;e, etc. Pour autant, on n&rsquo;appelle pas ces fonctionnalit&eacute;s des robots. Si on disait aux conducteurs qu&rsquo;ils ach&egrave;tent des robots plut&ocirc;t que des voitures, je ne suis pas sur qu&rsquo;ils en ach&egrave;teraient. Les conducteurs veulent bien recevoir une assistance &agrave; la conduite pour accro&icirc;tre la s&eacute;curit&eacute; et le confort de conduite, mais ils souhaitent garder le contr&ocirc;le du v&eacute;hicule, m&ecirc;me si certaines fonctions comme le freinage o&ugrave; la r&eacute;gulation de la vitesse sont de plus en plus automatis&eacute;es. Il me semble qu&rsquo;il y a encore une r&eacute;ticence &agrave; utiliser le mot robot pour certains produits technologiques socialement importants et soumis &agrave; une l&eacute;gislation stricte, alors que l&rsquo;on n&rsquo;h&eacute;site pas &agrave; parler de &laquo; robot m&eacute;nagers &raquo; pour des appareils qui n&rsquo;avaient pas jusqu&rsquo;&agrave; pr&eacute;sent l&rsquo;ensemble des caract&eacute;ristiques que j&rsquo;&eacute;voquais pr&eacute;c&eacute;demment. Cela commence &agrave; changer avec la perc&eacute;e commerciale r&eacute;cente des robots aspirateurs, laveurs, ou tondeurs qui sont de plus en plus sophistiqu&eacute;s et performants. Il existe aussi beaucoup de syst&egrave;mes automatis&eacute;s qui int&egrave;grent des technologies robotiques, comme les m&eacute;tros automatiques o&ugrave; les syst&egrave;mes de pilotage automatique des avions. Cela n&rsquo;inqui&egrave;te pas les usagers qui sont alors passifs vis-&agrave;-vis de ces syst&egrave;mes.<br>Aujourd&rsquo;hui, plut&ocirc;t que de parler de robots, je pr&eacute;f&egrave;re parler de &laquo;&nbsp;syst&egrave;mes robotiques&nbsp;&raquo; ou de &laquo;&nbsp;technologies robotiques&nbsp;&raquo; que l&rsquo;on int&egrave;gre dans des machines et produits divers. De cette mani&egrave;re, on rapproche les robots des syst&egrave;mes intelligents qui utilisent des briques robotiques.</p><p>&nbsp;</p><p><strong><strong>Quelles sont les briques technologiques de la robotique qui ont le plus progress&eacute; ces dix derni&egrave;res ann&eacute;es&nbsp;? </strong></strong></p><p>Les &eacute;volutions dans le monde de la recherche se sont acc&eacute;l&eacute;r&eacute;es. Il y a eu des progr&egrave;s tr&egrave;s importants qui ont &eacute;t&eacute; accomplis en terme miniaturisation, d&rsquo;&eacute;nergie, d&rsquo;&eacute;lectronique, de puissance de calcul, de perception, de s&eacute;curit&eacute; et d&rsquo;informatique embarqu&eacute;e. Nous avons d&eacute;sormais les bases technologiques permettant de s&rsquo;attaquer aux vraies questions que pose l&rsquo;int&eacute;gration du robot dans un environnement humain : l&rsquo;autonomie, la compr&eacute;hension mutuelle entre l&rsquo;homme et le robot dans le respect de r&egrave;gles sociales et comportementales, la s&eacute;curit&eacute; pour pr&eacute;server l&rsquo;homme de comportements potentiellement dangereux du robot, mais aussi la morphologie et la taille puisque les robots de petite taille ont plus de chances d&rsquo;&ecirc;tres accept&eacute;s que des robots plus imposants.</p><p>&nbsp;</p><p><strong>Quels freins technologiques majeurs reste-t-il &agrave; lever &agrave; l&rsquo;avenir&nbsp;? </strong></p><p>Malgr&eacute; les progr&egrave;s r&eacute;alis&eacute;s, il reste encore beaucoup d&rsquo;efforts &agrave; faire en mati&egrave;re de batteries. L&rsquo;id&eacute;e serait d&rsquo;arriver &agrave; un robot autonome sur le plan &eacute;nerg&eacute;tique en mobilisant les &eacute;nergies renouvelables. Apr&egrave;s, il y a aussi la question des performances qui doivent &ecirc;tre am&eacute;lior&eacute;es et la question des co&ucirc;ts des composants qui doivent fortement baisser. Mais on avance dans le bon sens dans la mesure o&ugrave; l&rsquo;on utilise de plus en plus de capteurs et de l&rsquo;informatique embarqu&eacute;e dans des secteurs de plus en plus vari&eacute;s comme le m&eacute;nager, le transport, la surveillance, et m&ecirc;me les loisirs avec les jeux vid&eacute;o. Donc les couts sont orient&eacute;s vers le bas et la technologie progresse rapidement.</p><p>&nbsp;</p><p><strong><strong>Quel regard portez-vous sur les projets de robots humano&iuml;des polyvalents ? Sont-ils cr&eacute;dible sur le plan technologique&nbsp;?</strong></strong></p><p>L&rsquo;horizon est effectivement plus lointain. Aujourd&rsquo;hui, le principal march&eacute; du robot humano&iuml;de c&rsquo;est d&rsquo;abord celui des robots qui &eacute;quipent les laboratoires de recherche. On a beaucoup d&eacute;cri&eacute; les japonais qui se sont lanc&eacute; l&agrave;-dessus il y a une vingtaine d&rsquo;ann&eacute;es. Mais aujourd&rsquo;hui ils ont une r&eacute;elle avance technologique dans ce domaine, et les progr&egrave;s r&eacute;alis&eacute;s ont impact&eacute;s d&rsquo;autres domaines d&rsquo;application de la robotique. D&rsquo;autres pays s&rsquo;y sont mis plus tardivement en Asie, aux USA et en Europe.. En France, il y a plusieurs &eacute;quipes qui travaillent maintenant sur ces sujets en coop&eacute;ration avec le Japon, et une communaut&eacute; scientifique s&rsquo;est cr&eacute;&eacute;e dans le cadre du GDR Robotique. Il faut aussi mentionner la soci&eacute;t&eacute; Aldebaran qui est fortement pr&eacute;sente au niveau international sur ce secteur d&rsquo;activit&eacute;, et qui &eacute;tait pr&eacute;sente dans le pavillon France de l&rsquo;exposition universelle de Shanghai.<br>Ce qu&rsquo;il faut bien voir, c&rsquo;est que les travaux portant sur la robotique humano&iuml;de ont d&eacute;j&agrave; permis de faire des bonds en avant technologiques dans plusieurs domaines de la robotique. &nbsp;</p><p>&nbsp;</p><p><strong><strong>Avez-vous une id&eacute;e des applications de la robotique de service qui ont le plus de chances de se d&eacute;velopper dans les prochaines ann&eacute;es&nbsp;? </strong></strong></p><p>Les robots m&eacute;nagers de type aspirateur, laveur, ou tondeur de pelouse sont d&eacute;j&agrave; pr&eacute;sents sur le march&eacute;, et les offres commerciales se multiplient. Les premi&egrave;res offres commerciales sont venues des USA, et ils y a maintenant de plus en plus de produits propos&eacute;s par des firmes asiatiques.<br>A court terme, les robots de surveillance devraient se d&eacute;velopper de fa&ccedil;on significative dans la mesure o&ugrave; la technologie est bien adapt&eacute;e et les co&ucirc;ts sont faibles. Les jeux vid&eacute;o int&egrave;grent aussi de plus en plus de technologies robotiques sur l&rsquo;interaction. Dans le domaine du transport, il y a l&rsquo;automobile qui int&egrave;gre depuis quelques ann&eacute;es des technologies robotiques pour accro&icirc;tre la s&eacute;curit&eacute; et le confort de conduite. Je vais prendre un exemple. En 1997, nous avions d&eacute;velopp&eacute; &agrave; l&rsquo;Inria un syst&egrave;me d&rsquo;assistance au parking permettant de garer automatiquement les v&eacute;hicules. A l&rsquo;&eacute;poque, cela plaisait beaucoup aux chaines de t&eacute;l&eacute;visions mais pas vraiment aux constructeurs europ&eacute;ens. Par contre les constructeurs japonais ont rapidement compris que cette technologie une fois int&eacute;gr&eacute;e dans un v&eacute;hicule haut de gamme pouvait avoir un march&eacute;. Ainsi, Toyota a commercialis&eacute; au d&eacute;but des ann&eacute;es 2000 les premiers v&eacute;hicules ayant ce type de fonctionnalit&eacute;, d&rsquo;abord au Japon puis en Europe et aux USA. Comme une cons&eacute;quence conjointe de l&rsquo;&eacute;volution technologique de la derni&egrave;re d&eacute;cennie et de la demande soci&eacute;tale, on voit appara&icirc;tre de plus en plus de syst&egrave;mes d&rsquo;assistance et de s&eacute;curisation de la conduite automobile, comme les syst&egrave;mes de contr&ocirc;le de trajectoire ou les syst&egrave;mes permettant d&rsquo;asservir un v&eacute;hicule sur le v&eacute;hicule qui le pr&eacute;c&egrave;de. Demain ces syst&egrave;mes &eacute;quiperont tous les v&eacute;hicules.<br>A plus long terme, il y a le domaine de l&rsquo;assistance &agrave; la personne, notamment pour les personnes &acirc;g&eacute;es, qui devrait faire un bon en avant sous la pouss&eacute;e de la demande soci&eacute;tale. Pour l&rsquo;instant les solutions technologiques sont encore relativement peu d&eacute;velopp&eacute;es, mais l&rsquo;enjeu social et &eacute;conomique est extr&ecirc;mement important. Il est par exemple tr&egrave;s important de permettre aux personnes de rester chez eux le plus longtemps possible et dans les meilleures conditions possibles.</p><p>&nbsp;</p><p><strong><strong>Pouvez-vous nous pr&eacute;senter la recherche robotique r&eacute;alis&eacute;e &agrave; l&rsquo;Inria-Grenoble&nbsp;? </strong></strong></p><p>La recherche robotique existe depuis longtemps &agrave; Grenoble, bien avant que l&rsquo;Inria n&rsquo;arrive dans la r&eacute;gion. Au sein de l&rsquo;Inria, nous fonctionnons en &eacute;quipes-projet, qui sont souvent communes avec un laboratoire mixte CNRS/Universit&eacute; tel que le LIG &agrave; Grenoble. Nous pr&eacute;sentons un projet et une &eacute;quipe de recherche. Cette &eacute;quipe s&rsquo;engage alors dans un contrat de recherche portant g&eacute;n&eacute;ralement sur quatre ans et &agrave; l&rsquo;issu duquel elle est &eacute;valu&eacute;e par des experts externes. Suivant les r&eacute;sultats, l&rsquo;&eacute;quipe est autoris&eacute;e &agrave; poursuivre son travail pour quatre ans. Ce processus peut &ecirc;tre renouvel&eacute; encore une fois, la limite d&rsquo;une &eacute;quipe-projet &eacute;tant fix&eacute;e &agrave; douze ans. Jusque l&agrave;, j&rsquo;ai eu l&rsquo;occasion d&rsquo;animer plusieurs &eacute;quipes de recherche robotique successives dont les domaines d&rsquo;application ont &eacute;volu&eacute; au fil du temps. Par exemple, nous avons d&eacute;j&agrave; travaill&eacute; dans le pass&eacute; sur la manipulation dextre, la programmation automatique des robots, les applications m&eacute;dicales et le jeu vid&eacute;o. Aujourd&rsquo;hui, l&rsquo;&eacute;quipe E-motion, qui est la derni&egrave;re en date, travaille principalement sur la robotique mobile et les v&eacute;hicules intelligents, et commence &agrave; travailler sur le sujet de l&rsquo;assistance &agrave; la personne.</p><p>&nbsp;</p><p><strong><strong>Quels sont les axes de recherche de l&rsquo;&eacute;quipe E-Motion et quel est son ambition&nbsp;? </strong></strong></p><p>Le principal d&eacute;fi auquel nous nous attaquons est celui de la conception et du d&eacute;veloppement de mod&egrave;les permettant de contribuer &agrave; r&eacute;soudre le vieux r&ecirc;ve des chercheurs en robotique, &agrave; savoir la conception de robots capables de partager l&rsquo;espace de vie des humains. Dans ce cadre, notre ambition est de d&eacute;velopper des mod&egrave;les permettant &agrave; terme de construire des syst&egrave;mes artificiels dot&eacute;es de capacit&eacute;s de perception, de d&eacute;cision, et d'action suffisamment &eacute;volu&eacute;es et robustes pour autoriser un fonctionnement de ceux-ci dans des environnements ouverts, dynamiques, et peupl&eacute;s d&rsquo;humains. Cela nous conduit &agrave; aborder trois classes de probl&egrave;mes li&eacute;s respectivement &agrave; la perception de l&rsquo;espace et du mouvement, aux m&eacute;canismes de prise de d&eacute;cision pour la navigation autonome, et &agrave; la mod&eacute;lisation des comportements sensori-moteurs observ&eacute;s. Nous mettons l&rsquo;accent sur la fonction de mobilit&eacute; dans ces types d&rsquo;environnements complexes, que ce soit dans le cadre d&rsquo;applications d&rsquo;aide &agrave; la conduite automobile ou dans celui de l&rsquo;assistance &agrave; la mobilit&eacute; des personnes.<br>Cela nous am&egrave;ne &agrave; &eacute;tudier l&rsquo;interpr&eacute;tation en temps r&eacute;el des donn&eacute;es fournies par des capteurs d&rsquo;environnement. Nous avons &eacute;t&eacute; une des premi&egrave;res &eacute;quipes &agrave; s&rsquo;int&eacute;resser &agrave; la question de la capacit&eacute; de perception du robot en environnement dynamique et incertain. Ceci conduit en permanence &agrave; interpr&eacute;ter la situation courante &agrave; partir des donn&eacute;es bruit&eacute;es et partielles fournies par les capteurs, mais aussi &agrave; se projeter dans le futur proche par des m&eacute;canismes de pr&eacute;diction. C&rsquo;est par exemple ce que fait tout conducteur de voiture, en d&eacute;cidant &agrave; chaque instant des actions de conduite &agrave; avoir afin d&rsquo;&eacute;viter toute collision dans les secondes qui suivent. Cette probl&eacute;matique est primordiale pour l&rsquo;int&eacute;gration du robot dans un environnement humain qui est par d&eacute;finition fondamentalement incertain et en constante &eacute;volution.<br>Cette interaction &eacute;troite entre robot et humains nous conduit aussi &agrave; travailler avec des neurophysiologistes pour essayer de comprendre comment fonctionne l&rsquo;&ecirc;tre humain et &eacute;ventuellement s&rsquo;en inspirer. Par exemple, dans le cadre d&rsquo;un projet europ&eacute;en, nous avons d&eacute;velopp&eacute; un mod&egrave;le probabiliste des fonctions cognitives de repr&eacute;sentation de l&rsquo;espace et de navigation d&rsquo;un humain, fonctions qui ont &eacute;t&eacute; ensuite valid&eacute;es exp&eacute;rimentalement par nos partenaires neurophysiologistes sur des personnes plac&eacute;es en environnement virtuel. Un autre volet de nos travaux concerne les fonctions&nbsp; d&eacute;cisionnelles du robot, qui lui permettront de prendre en permanence les meilleures d&eacute;cisions sur les actions et mouvements &agrave; entreprendre, par exemple :&nbsp; quelle trajectoire et vitesse de d&eacute;placement choisir pour atteindre de mani&egrave;re s&ucirc;re l&rsquo;objectif fix&eacute; ? comment &eacute;viter un obstacle fixe ou en mouvement qui menace le robot ? quelle est la meilleure action a r&eacute;aliser dans les circonstances pr&eacute;sentes ?...</p><p>&nbsp;</p><p><strong><strong>Dans quelle mesure ces travaux de recherche robotique conduits &agrave; l&rsquo;Inria donnent-ils lieu &agrave; des projets collaboratifs, &agrave; des transferts de technologies &agrave; l&rsquo;&eacute;chelle rh&ocirc;nalpine&nbsp;? </strong></strong></p><p>Ce que l&rsquo;on peut dire tout d&rsquo;abord, c&rsquo;est que les efforts de recherche de l&rsquo;Inria se sont traduits par l&rsquo;&eacute;closion de plusieurs start-up qui ont permis la diffusion de nouvelles technologies dans le monde industriel. La premi&egrave;re a &eacute;t&eacute; cr&eacute;&eacute;e en 1982 et s&rsquo;appelait ITMI (Industrie et Technologie de la Machine Intelligente) et concernait la vision, la robotique et l&rsquo;intelligence artificielle. Cette soci&eacute;t&eacute; a &eacute;t&eacute; rachet&eacute;e ensuite par Cap Gemini. Une autre start-up, Aleph Technologies, a &eacute;t&eacute; cr&eacute;&eacute;e en 1989. Son activit&eacute; portait sur le domaine de la CAO Robotique, avec comme domaines d&rsquo;application la maintenance, l&rsquo;intervention et la r&eacute;paration robotis&eacute;e de gros &eacute;quipements comme des turbines ou des centrales nucl&eacute;aires. Elle a par exemple d&eacute;velopp&eacute; un module de planification de trajectoires pour robots dans le logiciel CAO CATIA de la soci&eacute;t&eacute; Dassault System. Depuis, Aleph Technologies a &eacute;t&eacute; rachet&eacute; par la soci&eacute;t&eacute; ALMA qui est bas&eacute;e &agrave; Saint-Martin d&rsquo;H&egrave;res. Enfin, la derni&egrave;re start-up en date s&rsquo;appelle Probayes, et elle est sp&eacute;cialis&eacute;e dans le d&eacute;veloppement de logiciels d&rsquo;aide &agrave; la d&eacute;cision bas&eacute;s sur le calcul probabiliste. Les applications concern&eacute;es sont tr&egrave;s diverses : finance, maintenance pr&eacute;ventive d&rsquo;&eacute;quipements, surveillance, gestion de la menace, ou encore assistance &agrave; la conduite automobile.<br>Par ailleurs, avec Probayes, nous travaillons &eacute;galement avec des partenaires industriels japonais, comme Toyota par exemple, avec lesquels nous avons conclus d&rsquo;importants contrats de valorisation ces derni&egrave;res ann&eacute;es. La sollicitation initiale pour cela est venue de Toyota, qui visite r&eacute;guli&egrave;rement les principales &eacute;quipes europ&eacute;ennes et am&eacute;ricaines, afin de rechercher les comp&eacute;tences et technologies qui les int&eacute;ressent. Nous venons de terminer un contrat de quatre ans, et l&rsquo;on enchaine sur un nouveau contrat de quatre ans, qui comprend &agrave; nouveau un volet recherche et un volet transfert. Les questions de propri&eacute;t&eacute; intellectuelles et de confidentialit&eacute; restent cependant difficiles &agrave; n&eacute;gocier. Pour nous, il est important que ces recherches d&eacute;bouchent sur des publications, mais lorsqu&rsquo;une entreprise comme Toyota souhaite breveter la technologie en question, cela conduit g&eacute;n&eacute;ralement &agrave; retarder les publications et &agrave; supprimer les parties critiques.<br>Concernant ces questions de transferts de technologie, les industriels fran&ccedil;ais n&rsquo;ont pas la m&ecirc;me approche. Ils travaillent soit en interne sur les sujets sensibles, soit dans le cadre de projets collaboratifs europ&eacute;ens ou nationaux avec l&rsquo;ANR et les p&ocirc;les de comp&eacute;titivit&eacute;. Nous travaillons aussi avec Renault et des constructeurs et &eacute;quipementiers europ&eacute;ens dans le cadre de tels projets. Les transferts de technologies se font g&eacute;n&eacute;ralement &agrave; travers les startups.</p><p>&nbsp;</p><p><strong>Si l&rsquo;on parle justement de projet de R&amp;D lanc&eacute;s dans le cadre de p&ocirc;les de comp&eacute;titivit&eacute;, quels sont les partenariats actuels de l&rsquo;Inria-Grenoble&nbsp;? </strong></p><p>Nous participons &agrave; de nombreux projets ANR dans le cadre de plusieurs p&ocirc;les de comp&eacute;titivit&eacute;s comme System@tic en Ile-de-France et Minalogic &agrave; Grenoble. Ces projets&nbsp; nous am&egrave;nent parfois &agrave; travailler avec l&rsquo;Inrets &agrave; Lyon. Actuellement, avec Probayes et des partenaires fran&ccedil;ais comme Renault et allemands comme Audi, nous sommes en train de d&eacute;poser un dossier aupr&egrave;s de Minalogic et des p&ocirc;les d&rsquo;Ile de France. Il s&rsquo;agit de travailler sur la d&eacute;finition de processus de normalisation et de certification de capteurs pour le monde automobile.<br><strong><strong>&nbsp;</strong></strong><br>&nbsp;</p><p><strong><strong>L&rsquo;Inria-Grenoble-Rh&ocirc;ne-Alpes est partie prenante du projet ROBOTEX de r&eacute;seau national de plateformes robotiques qui vient d&rsquo;&ecirc;tre retenu dans le cadre de l&rsquo;appel &agrave; projet EQUIPEX du Grand Emprunt. Quelle place occupe-t-elle dans ce projet et, plus largement, &agrave; l&rsquo;&eacute;chelle nationale et internationale&nbsp;? </strong></strong></p><p>Nous sommes encore en pleine discussion. Le projet vient juste d&rsquo;&ecirc;tre retenu, et la contribution des uns et des autres est en cours de sp&eacute;cification. Sur le site Grenoblois, c&rsquo;est GIPSA Lab qui est en charge de coordonner la contribution locale. Dans ce contexte, l&rsquo;Inria participe aux th&eacute;matiques Robotique humano&iuml;de et Robotique mobile. L&rsquo;INRIA fait &eacute;galement partie du GDR (Groupement de Recherche) Robotique mis en place en 2007 par le CNRS, et je fais partie du conseil scientifique du GDR.<br>Si l&rsquo;on se place &agrave; l&rsquo;&eacute;chelle internationale, il est clair que les travaux de l&rsquo;INRIA et du CNRS b&eacute;n&eacute;ficient d&rsquo;une v&eacute;ritable reconnaissance au sein de la communaut&eacute; scientifique. Nous participons &agrave; de nombreux comit&eacute;s internationaux. Par exemple, lorsque la principale conf&eacute;rence robotique, IEEE/RSJ Intelligent Robot and Systems, est venue pour la premi&egrave;re en France, en 1997, c&rsquo;&eacute;tait &agrave; Grenoble, et j&rsquo;en &eacute;tais le General Chair. La deuxi&egrave;me fois qu&rsquo;elle est venue en France, en 2008, c&rsquo;est une nouvelle fois l&rsquo;INRIA Grenoble Rh&ocirc;ne-Alpes qui l&rsquo;a organis&eacute; avec l&rsquo;INRIA Sophia-Antipolis&nbsp; &agrave; Nice. Sur le plan des collaborations internationales, nous sommes leader sur de nombreux projets de recherche collaborative en Robotique, surtout avec l&rsquo;Asie. Nous avons aussi mis en place en 1998 un laboratoire commun sur les v&eacute;hicules intelligents &agrave; Singapour, ce qui a engendr&eacute; pendant 6 ans de nombreux &eacute;changes fructueux. On peut aussi mentionner qu&rsquo;un chercheur de l&rsquo;INRIA Grenoble Rh&ocirc;ne-Alpes a pass&eacute; deux ans &agrave; Tsukuba au Japon, dans un laboratoire Franco-Japonais travaillant sur la robotique Humano&iuml;de, ce qui a permis de jeter les bases d&rsquo;une collaboration long terme b&eacute;n&eacute;fique pour tous.</p><p>&nbsp;</p><p><strong><strong>Existe-t-il un p&ocirc;le robotique grenoblois et quel est sa sp&eacute;cificit&eacute; &agrave; l&rsquo;&eacute;chelle nationale&nbsp;? </strong></strong></p><p>Nous avons effectivement des relations avec les autres laboratoires grenoblois, et notamment avec le GIPSA Lab et le laboratoire TIMC, mais on ne peut pas dire que nous sommes engag&eacute;s dans un partenariat de long terme vraiment structur&eacute;. Nous nous retrouvons sur certains projets ponctuels mais la collaboration reste encore &agrave; construire dans la dur&eacute;e. Autrement dit, pour l&rsquo;heure, il n&rsquo;existe pas de p&ocirc;le robotique f&eacute;d&eacute;r&eacute; &agrave; l&rsquo;&eacute;chelle Grenobloise.<br>Si l&rsquo;on brosse un tableau g&eacute;n&eacute;ral, il y a donc de la robotique dans les laboratoires LIG auquel est aussi rattach&eacute;e mon &eacute;quipe, GIPSA, TIM-C, mais aussi au CEA LETI. Sur le plan th&eacute;matique, le laboratoire TIM-C est reconnu comme l&rsquo;un des principaux p&ocirc;les nationaux en mati&egrave;re de robotique m&eacute;dicale. Le GIPSA Lab occupe quand &agrave; lui une position un peu diff&eacute;rente dans la mesure o&ugrave; il est li&eacute; &agrave; l&rsquo;automatique, et donc pas directement au GDR Robotique. Ses domaines de recherche en robotique concernent l&rsquo;interaction humain-robot, la conception et le contr&ocirc;le des mini drones, et le transport. Le CEA LETI est plus centr&eacute; sur les technologies de capteurs et de localisation.</p><p>&nbsp;</p><p><strong><strong>Globalement, quel regard portez-vous sur le potentiel technologique et industriel de la r&eacute;gion Rh&ocirc;ne-Alpes en mati&egrave;re de robotique de service&nbsp;? </strong></strong></p><p>Il y a un vrai potentiel technologique en Rh&ocirc;ne-Alpes. En revanche, les grands groupes industriels pr&eacute;sents sur le territoire ne se sont pas encore positionn&eacute;s sur le champ de la robotique de service. Celui-ci reste l&rsquo;apanage de PME qui ont certes des savoir-faire reconnus mais dont la taille leur conf&egrave;re un caract&egrave;re plut&ocirc;t artisanal. Quand on voit la strat&eacute;gie de Samsung ou de LG en Cor&eacute;e, ce n&rsquo;est pas du tout la m&ecirc;me chose. Elles ont fait de la robotique de service une priorit&eacute; et se donnent les moyens de repenser en profondeur et de mani&egrave;re tr&egrave;s rapide toute leur organisation, que ce soit au niveau des usines, de la formation du personnel, de l&rsquo;embauche de scientifiques &eacute;trangers, etc.<br>Autrement dit, la visibilit&eacute; industrielle de Rh&ocirc;ne-Alpes dans le domaine de la robotique de service est aujourd&rsquo;hui tr&egrave;s faible alors que le territoire dispose d&rsquo;une capacit&eacute; de recherche reconnue. C&rsquo;est en partie &agrave; cause de cette situation que certains projets de mise en place de syst&egrave;mes de &laquo; transport individuel public propre &raquo; &agrave; base de petits v&eacute;hicules &eacute;lectriques informatis&eacute;s ont &eacute;chou&eacute;s, notamment &agrave; Grenoble. Ce foss&eacute; entre le potentiel recherche et le tissu industriel en la mati&egrave;re &eacute;tonne souvent nos partenaires &eacute;trangers. Pour que cela change, il faudrait qu&rsquo;il y ait une r&eacute;elle volont&eacute; industrielle accompagn&eacute;e d&rsquo;un soutien politique.</p><p>&nbsp;</p><p><strong><strong>Quelles actions des pouvoirs publics pourraient &ecirc;tre favorables au d&eacute;veloppement de la robotique de service dans la r&eacute;gion&nbsp;? </strong></strong></p><p>Les collectivit&eacute;s pourraient jouer un r&ocirc;le important en mati&egrave;re d&rsquo;exp&eacute;rimentation grandeur nature. A ce titre, je regrette que l&rsquo;on ne soit toujours pas parvenu &agrave; faire aboutir les projets de v&eacute;hicules automatiques que l&rsquo;on projette depuis les ann&eacute;es 1990 &agrave; Grenoble, notamment sur la presqu&rsquo;&icirc;le scientifique. C&rsquo;est d&rsquo;autant plus dommage que les questions de mobilit&eacute; occupent uns place importante dans les politiques locales. Les collectivit&eacute;s rh&ocirc;nalpines devraient mobiliser l&rsquo;expertise pr&eacute;sente localement pour exp&eacute;rimenter de nouveaux syst&egrave;mes de transport !</p>
+</div>
+
+	        
+           	
+            
+            	<section class="print_hidden">
+		<div class="row">
+	     	<div class="col-xs-60 col-sm-60">
+	   			<h2 class="h4 h4-dossier block-title-overline margin-right-10">En lien avec le sujet</h2>
+	       	</div>
+	  	</div>
+	 	<div class="margin-bottom-30">
+	 		<section class="carousel3x3 margin-bottom-30">
+		 				         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2014/mutation-des-services-adaptation-des-villes" title="">Mutation des services, adaptation des villes</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/3/1/2/5/525213-1-fre-FR/1f4e99fdcad4-mutation-des-services-adaptation-des-villes.jpg"  width="420"   height="527"  class="img-responsive margin-bottom-15" alt="Photo de personnes en atelier de création" /></figure>
+  <p class="uppercase"><b>Texte de Daniel KAPLAN</b></p>
+	<p>Les villes ont l’opportunité d&#039;offrir de nouveaux agencements entre gouvernance, services, « communs » et pratiques collaboratives.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2021/joel-de-rosnay-resilience-et-sagesse-sont-les-mots-cles-pour-pouvoir-envisager-le-futur" title="">Joël de Rosnay : « “Résilience” et “sagesse” sont les mots-clés pour pouvoir envisager le futur »</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/3/6/9/489636-1-fre-FR/Portrait de Rosnay.jpg"  width="480"   height="480"  class="img-responsive margin-bottom-15" alt="Portrait de Joël de Rosnay" /></figure>
+  <p class="uppercase"><b>Interview de Joël de Rosnay</b></p>
+       		   		<p>Scientifique, prospectiviste, conférencier et écrivain</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/cahiers_m3/m3-societe-urbaine-et-action-publique-n-1" title="">M3 Société urbaine et action publique - N°1</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/6/2/5/485266-3-fre-FR/M3 - 1.PNG"  width="655"   height="655"  class="img-responsive margin-bottom-15" alt="Extrait de la couverture de la Revue M3 n°1" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Dans ce numéro : un dossier consacré à la ville numérique. </p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/cahiers_m3/cahier-millenaire-3-n-22-l-ere-de-l-information-enjeux-economiques-sociaux-et-democratiques" title="">Cahier Millénaire 3 n°22 : L&#039;ère de l&#039;information, enjeux économiques, sociaux et démocratiques</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/4/6/7/477646-1-fre-FR/cahier-millenaire3-n-22-l-ere-de-l-information-enjeux-economiques-sociaux-et-democratiques.jpg"  width="226"   height="320"  class="img-responsive margin-bottom-15" alt="Couverture du Cahier Millénaire3 n°22" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>L&#039;enjeu est de comprendre que si l&#039;ère de l&#039;information dans laquelle nous entrons est une donnée, forte, incontournable, qui s&#039;impose à tous, ce sont bien les acteurs de la société qui inventent les usages.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/dossiers/2019/intelligence-artificielle-ia" title="">Intelligence artificielle (IA)</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/1/5/6/256519-2-fre-FR/Dossier.PNG"  width="542"   height="541"  class="img-responsive margin-bottom-15" alt="Illustration reprise de la couverture de l&#039;étude &quot;L&#039;intelligence artificielle dans un système productif&quot;" /></figure>
+	<p>Quels sont les enjeux soulevés par l&#039;IA ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2019/les-industries-chinoises-de-l-intelligence-artificielle" title="">Les industries chinoises de l&#039;Intelligence artificielle</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/7/5/9/5/255957-2-fre-FR/deseta.jpg"  width="414"   height="415"  class="img-responsive margin-bottom-15" alt="Portrait de Gabriele de Seta " /></figure>
+  <p class="uppercase"><b>Interview de Gabriele de Seta</b></p>
+       		   		<p>Anthropologue des médias</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2019/les-postures-nationales-face-a-l-intelligence-artificielle" title="">Les postures nationales face à l&#039;Intelligence Artificielle</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/1/5/8/5/255851-3-fre-FR/Katzenbach.jpg"  width="357"   height="357"  class="img-responsive margin-bottom-15" alt="Portrait de Christian Katzenbach" /></figure>
+  <p class="uppercase"><b>Interview de Christian Katzenbach</b></p>
+       		   		<p>Senior Researcher à l&#039;Institute for Internet and Society de l&#039;Université Alexander von Humboldt de Berlin</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2019/collaboration-humain-machine-grace-a-l-intelligence-artificielle" title="">Collaboration humain-machine grâce à l&#039;intelligence artificielle</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/7/5/7/5/255757-2-fre-FR/Maguire.jpg"  width="354"   height="354"  class="img-responsive margin-bottom-15" alt="Portrait de Rachel Maguire" /></figure>
+  <p class="uppercase"><b>Interview de Rachel Maguire</b></p>
+       		   		<p>Directrice de recherche à l&#039;Institute for the Future, à Palo Alto (Californie)</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2019/actuariat-et-intelligence-articifielle-l-exemple-d-addactis" title="">Actuariat et intelligence articifielle : l&#039;exemple d&#039;Addactis</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/3/5/4/5/255453-3-fre-FR/PIERRE ARNAL.jpg"  width="320"   height="320"  class="img-responsive margin-bottom-15" alt="Portrait de Pierre Arnal" /></figure>
+  <p class="uppercase"><b>Interview de Pierre Arnal</b></p>
+       		   		<p>Vice-Président d’ADDACTIS GROUP</p>
+	
+	</article>
+</div>
+
+							</section>
+		</div>
+	</section>
+
+        </div>
+<!--  /main Content region-->
+<!--  Right Sidebar -->
+        <div class="col-xs-60 col-md-13">
+            <div class="row">
+            	                            	                    		
+
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-dossiers">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="sidebar-picto m3-icons-sidebar-folders"></span>
+            <a title="" href=" /tous-les-dossiers ">   Dossiers
+            </a>
+        </h2>
+    </header>
+
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <div class="sidebar-block-content">
+        	                                    	<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/9/5/535989-1-fre-FR/3abfcaee6c8b-pms_light.jpg"  width="1413"   height="1414"  class="img-responsive margin-bottom-15" alt="Illustrations de personnes différentes sur une place" /></figure>
+                
+                <p class="publication-title"><a href="/dossiers/2023/action-publique-comment-penser-la-solidarite-depuis-un-territoire" title=""><span class="ezstring-field">Action publique : comment penser la solidarité depuis un territoire ?</span></a></p>
+	        
+            <footer class="sidebar-block-footer">
+            	                	<p><a  title="Consulter nos dossiers disponibles" href="/tous-les-dossiers">Tous les dossiers</a></p>
+                            </footer>
+        </div>
+    </div>
+</article>
+
+</div>
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-home">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="m3-icons-sidebar-picto-tags"></span>
+            <img src="/assets/images/unsprited/icons/tag.png" style= "margin-left: 4px; margin-right: 8px" alt="" />
+            <a href="/tous-les-tags" title="Consulter tous nos tags">Tags
+            </a>
+        </h2>
+    </header>
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <footer class="sidebar-block-footer">
+                            <p><a href="/tous-les-tags" title="Consulter tous nos tags">Tous les tags</a></p>
+                    </footer>
+    </div>
+</article>
+
+</div>
+	        </div>
+		</div>
+<!--  Right Sidebar-->
+</div>
+			<script>
+	function onYouTubeIframeAPIReady()
+	{
+		//Redimensionner les div de vidéos
+		var elements = document.getElementsByClassName("youtube_frame");
+		for(var i = 0 ; i < elements.length ; i++)
+		{
+			var element = elements[i];
+			var subElements = element.getElementsByClassName("youtube_player");
+			for(var j = 0 ; j < subElements.length ; j++)
+			{
+				var subElement = subElements[j];
+				var proportion = element.getAttribute("proportion");
+				var width = element.parentNode.offsetWidth;
+				var height = width * proportion;
+				subElement.setAttribute("width", "100%");
+				subElement.setAttribute("height", height);
+			}
+		}
+	}
+
+	functionsInitialization.push(onYouTubeIframeAPIReady);
+</script>	    </div>
+	</div>
+
+	<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="col-xs-60 col-sm-45 col-md-36 col-lg-39">
+                <nav class="navbar navbar-default footer-nav" role="navigation">
+                    <ul class="nav navbar-nav">
+                                                                            <li><a href="/qui-sommes-nous" title="">Qui sommes-nous</a></li>
+                        
+                        <li><a href="/newsletter_subscribe"><span lang="en">Newsletter</span></a></li>
+
+                        <li><a href="/formulaire/contactez_nous" >Contact</a></li>
+
+                                                                            <li><a href="/Accessibilite" >Accessibilité</a></li>
+                        
+                                                                            <li><a href="/plan-du-site" >Plan du site</a></li>
+                        
+                                                                            <li><a href="/mentions-legales" >Mentions légales</a></li>
+                        
+                                                                            <li><a href="/donnees-personnelles" >Données personnelles</a></li>
+                        
+                        <li><a href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-60 col-sm-15 hidden-md hidden-lg">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+                                                                                                                                                <div class="col-xs-60 col-sm-60 col-md-24 col-lg-21">
+                <a class="acces_metro" href="http://www.grandlyon.com" target="_blank" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)">Un site de la Métropole de Lyon</a>
+            </div>
+
+             <div class="hidden-xs visible-md visible-lg col-md-60 text-center">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+	
+	<div id="know-the-breakpoint"></div>
+	<script src="/assets/vendor/vendor.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/video-js/video.min.js"></script>
+<script src="/assets/vendor/video-js/lang/fr.js"></script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+	<script type="text/javascript">
+		functionsInitialization.push(function owlCarouselInitialization()
+		{
+		    $(".carousel3x3").owlCarousel({
+		        pagination: false,
+		        navigation: true,
+		        navigationText: [
+		            "<i class='glyphicon glyphicon-chevron-left'></i>",
+		            "<i class='glyphicon glyphicon-chevron-right'></i>"
+		        ],
+		        items: 3,
+		        itemsDesktop: [1160, 3],
+		        itemsDesktopSmall: [979, 3],
+		        itemsTablet:[600,2],
+		        itemsMobile: [479,1],
+		        scrollPerPage:true
+		    });
+		});
+
+		$(document).ready(function(){
+			$.each(functionsInitialization, function( index, value ) {
+				functionsInitialization[index]();
+			});
+		});
+	</script>
+</body>
+</html>

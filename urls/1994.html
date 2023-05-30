@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Grand Lyon">
+<meta name="keywords" content="Millénaire 3">
+
+	
+		
+	
+	
+	<title>Projet GRAAL et robotique de service : Millenaire 3, Transformation urbaine		</title>
+
+		<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@millenaire3">
+
+			<meta name="twitter:title" content="Projet GRAAL et robotique de service | Millénaire 3">
+					<meta name="twitter:description" content="&quot;Après 10 ans de travail, la création de Probayes vise à appliquer ces logiciels d’inférence probabiliste à la robotique mais aussi à bien d’autres domaines comme la finance, les risques industriels...&quot;.">
+														<meta name="twitter:image" content="	https://www.millenaire3.com/var/m3/storage/images/_aliases/large/interview/projet-graal-et-robotique-de-service/87723-1-fre-FR/projet-graal-et-robotique-de-service.gif">
+<meta name="twitter:image:alt" content="">
+
+										<meta name="twitter:creator" content="@millenaire3">
+			
+	<meta name="description" content="
+Interview réalisée le 14 décembre 2010 par Boris ChabanelDirecteur de recherches au CNRS (INRIA Grenoble) dans le domaine de la Robotique, Emmanue...">
+		<!-- Bootstrap -->
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="/assets/css/style.min.css" type="text/css" rel="stylesheet" />
+
+	
+	<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/video-js/video-js.min.css" />
+
+<!-- Favicons, from http://realfavicongenerator.net/-->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/fav-icones/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/fav-icones/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/fav-icones/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/fav-icones/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/fav-icones/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/fav-icones/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/fav-icones/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/fav-icones/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/fav-icones/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+	<script type="text/javascript">
+		//Utilisation pour les scripts ajax
+		var rootUrl = "/";
+		var functionsInitialization = [];
+	</script>
+
+	<script type="text/javascript" src="/assets/vendor/tarteaucitronjs/tarteaucitron.js"></script>
+
+<script type="text/javascript">
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+
+        "orientation": "bottom", /* Banner position (top - bottom) */
+
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": true, /* Show the cookie list */
+
+        "showIcon": false, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* Disable auto consent */
+
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": false, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+        "mandatory": false, /* Show a message about mandatory cookies */
+    });
+
+    var tarteaucitronForceLanguage = "fr";
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
+
+    tarteaucitron.services.m3 = {
+        "key": "m3",
+        "type": "other",
+        "name": "Cookies internes Millénaire 3",
+        "uri": "",
+        "needConsent": true,
+        "cookies": ['cookieToken'],
+        "js": function () {
+            // When user allow cookie
+            "use strict";
+            registerCookieToken();
+            if(typeof whenM3CookieIsAccepted === "function")
+            {
+                // Fonction à définir dans les pages pour déclencher les scripts succeptibles de poser des cookies
+                whenM3CookieIsAccepted();
+            }
+        },
+        "fallback": function () {
+            // When user deny cookie
+            tarteaucitron.fallback(['m3-cookie-generation-zone'], function (x) {
+                // Remplacer la zone par "machin est désactivé"
+                return tarteaucitron.engage('m3');
+            });
+        }
+    };
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('m3');
+
+            tarteaucitron.user.matomoId = '58';
+        tarteaucitron.user.matomoHost = "https://statweb.grandlyon.com//";
+        (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
+    
+    (tarteaucitron.job = tarteaucitron.job || []).push('ausha');
+
+</script>
+</head>
+<body id="millenaire-3"  itemscope itemtype="http://schema.org/WebPage">
+			<header id="header">
+	<div id="print-top-menu" class="container">
+		<div class="row">
+        	<div class="col-xs-60">
+            	<img src="/assets/images/logo-millenaire-3-mini-blanc.png" alt="" style="float: left;">
+                <img src="/assets/images/logo-grand-lyon-la-metropole-blanc.png" alt="" style="float: right;">
+			</div>
+		</div>
+	</div>
+
+    <div id="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="clearfix" id="top-menu-content">
+                        <a href="#" title="Accéder au menu" class="link-sprite-focus m3-icons-btn-toggle-menu" id="btn-toggle-menu"></a>
+                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3-mini">
+                       	    <img src="/assets/images/logo-millenaire-3-mini.png" alt="" class="img-responsive" id="logo-mini-m3" />
+                        </a>
+
+                        <a class=" skippy sr-only sr-only-focusable" href="#content" title=""><span class="skiplink-text">Aller au contenu </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#main-menu" title=""><span class="skiplink-text">Aller au Menu principal </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#block-search" title=""><span class="skiplink-text">Aller à la recherche</span></a>
+
+                                                                                                                                                                                                                                                                                    <a href="http://www.grandlyon.com" target="_blank" rel="nofollow" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)" id="link-logo-glm">
+                            <img src="/assets/images/logo-grand-lyon-la-metropole.png" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toggle-header">
+            <div class="container">
+                <div class="row" id="toggle-header-content">
+                    <div class="col-xs-30 col-sm-17 col-md-13 block-logo" id="share-header">
+                                                
+                    	<span>
+	                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3">
+	                            <img src="/assets/images/logo-millenaire-3.png" alt="Logo Millénaire 3" class="img-responsive" />
+	                        </a>
+                        </span>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-20 col-md-19 block-baseline">
+                        <p>
+                            <img src="/assets/images/la-prospective-du-grand-lyon.png" alt="Sloggan Millénaire 3 : La prospective du Grand Lyon" class="img-responsive" />
+                        </p>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-23 col-md-11 col-lg-12 block-social-networks">
+						<ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+                    </div>
+                    																										<form action="/m3_search" method="get">
+	<div class="col-xs-60 col-sm-23 col-sm-offset-20 col-md-17 col-md-offset-0 col-lg-16 block-search">
+		<div class="input-group search-group" id="#block-search">
+            <label class="sr-only" for="search">Recherche</label>
+			<input id="search" type="search" class="search" value="" name="SearchText" placeholder="Rechercher sur le site"/>
+			<span class="input-group-btn">
+				<input id="search-submit" type="submit" value="" title="Lancer la recherche" class="m3-icons-search" />
+			</span>
+		</div>
+	</div>
+</form>
+                    <div class="col-xs-60 col-sm-60 col-md-47" id="main-menu" style="display:none">
+	<nav class="navbar navbar-default" role="navigation">
+		<ul class="nav navbar-nav">
+																	<li><a href="/societe" title=""><span class="ezstring-field">Société</span></a></li>
+		    								<li><a href="/modes-d-action" title=""><span class="ezstring-field">Modes d&#039;action</span></a></li>
+		    								<li class="active"><a href="/transformation-urbaine" title=""><span class="ezstring-field">Transformation urbaine</span> <span class="sr-only">(Menu déjà sélectionné)</span></a></li>
+		    								<li><a href="/politiques-publiques" title=""><span class="ezstring-field">Politiques Publiques</span></a></li>
+		    								<li><a href="/territoire" title=""><span class="ezstring-field">Territoire</span></a></li>
+		    								<li><a href="/soutenabilite" title=""><span class="ezstring-field">Soutenabilité</span></a></li>
+		             </ul>
+    </nav>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<div id="home">
+	    <div class="container" id="content">
+	    		    			                    <div class="row">
+        <div class="col-xs-60 block-breadcrumb" itemprop="breadcrumb">
+            <p class="before-breadcrumb">Vous êtes ici&nbsp;: </p><ol class="breadcrumb"><li><a title="Voir la page Accueil" href="/">Accueil</a></li><li><a title="Voir la page Transformation urbaine" href="/transformation-urbaine">Transformation urbaine</a></li><li class="active">Projet GRAAL et robotique de service</li></ol>        </div>
+    </div>
+
+                                                                                                                                
+	            	    			    						
+	    		    	
+            			
+<script type="text/javascript">
+	functionsInitialization.push(function ressourceInitialization(){
+		incrementerVues(4987);
+	});
+</script>
+
+<div class="row block-title">
+    <div class="col-xs-60 col-sm-47 col-md-47">
+        <h1 class="uppercase h1-special">
+							Projet GRAAL et robotique de service
+					</h1>
+    </div>
+
+	<div class="col-xs-60 col-sm-13 col-md-13 block-share">
+
+<ul class="clearfix share">
+	<li>
+		<!--a href="javascript:void(0);" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a-->
+		<a href="javascript:void(0);" data-toggle="collapse" data-target="#addtoany-container" aria-expanded="false" aria-controls="addtoany-container" role="button" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a>
+	</li>
+						<li><a href="/generated_pdf/4959" rel="nofollow" target="_blank" title="Télécharger la page en version PDF" class="m3-icons-share-pdf hidden-xs"></a></li>
+			<!--li><a href="https://www.millenaire3.com/layout/set/print/content/view/print/4959" target="_blank">p</a></li-->
+							<li id="print_current_content"><a href="javascript:window.print()" onclick="javascript:print()" rel="nofollow" title="Imprimer la page" class="m3-icons-share-print"></a></li>
+							<li><a href="/partage_email/4959" rel="nofollow" title="Partager ce contenu par e-mail" class="m3-icons-share-mail"></a></li>
+			</ul>
+
+</div>
+
+	<div class="collapse block-social-networks-share a2a_kit a2a_kit_size_32 a2a_default_style" id="addtoany-container">
+        <span class="tac_addtoanyshare"></span>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_linkedin"></a>
+    </div>
+
+<script type="text/javascript">
+	function deplierPartageReseauxSociaux()
+	{
+		fadeInOrFadeOut('#partages_reseaux_sociaux');
+	}
+
+	/**
+	* Affiche ou non (toogle), avec un effet JQuery
+	*/
+	function fadeInOrFadeOut(elementName)
+	{
+		$element = $(elementName);
+		if(! $element.hasClass("hide"))
+		{
+			$element.fadeOut(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+		else
+		{
+			$element.fadeIn(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+	}
+
+	// Alert a message when the user shares somewhere
+		function addThisEventHandler(evt) {
+		    switch (evt.type)
+		    {
+		        case "addthis.menu.share":
+		            incrementerPartages(4987, evt.data.service);
+		            break;
+		        default:
+		            console.log('received an unexpected event', evt);
+		    }
+		}
+
+	functionsInitialization.push(function shareInitialization()
+	{
+																						
+		// Listen to various events
+		try
+		{
+			addthis.addEventListener('addthis.menu.share', addThisEventHandler);
+		}
+		catch(err)
+		{}
+	});
+</script>
+
+</div>
+
+<div class="row">
+	<!--  main Content region -->
+        <div class="col-xs-60 col-sm-60 col-md-47">
+            <div class="item block-intro">
+                <p class="over-under-line uppercase">Interview de Emmanuel MAZER et Ronan LE HY</p>
+
+                <div class="row">
+                				        	<div class="col-xs-60 col-sm-30 col-md-30">
+							    <figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/interview/projet-graal-et-robotique-de-service/87723-1-fre-FR/projet-graal-et-robotique-de-service.gif"  width="115"   height="148"  class="img-responsive margin-bottom-5 " alt="" /></div></figure>
+			             				<div class="itw_qualite"><span class="ezstring-field">Pdg et ingénieur R&amp;D</span></div>
+	
+			            </div>
+			        
+								        	<div class="col-xs-60 col-sm-30 col-md-30 margin-bottom-15">
+			        				        	                        <p class="item-face-face">&lt;&lt; Après 10 ans de travail, la création de Probayes vise à appliquer ces logiciels d’inférence probabiliste à la robotique mais aussi à bien d’autres domaines comme la finance, les risques industriels... &gt;&gt;.</p>
+	                                            <div class="ezrichtext-field"><p>Interview r&eacute;alis&eacute;e le 14 d&eacute;cembre 2010 par Boris Chabanel</p><p>Directeur de recherches au CNRS (INRIA Grenoble) dans le domaine de la Robotique, Emmanuel Mazer a cr&eacute;&eacute; la soci&eacute;t&eacute; Probayes en 2003, dont la vocation est de d&eacute;velopper des solutions logicielles d&rsquo;aide &agrave; la d&eacute;cision bas&eacute;es sur une technologie innovante : le calcul probabiliste. Cette technologie permet la prise de d&eacute;cision en exploitant des connaissances, m&ecirc;mes partielles, provenant de donn&eacute;es (fouille de donn&eacute;es, datamining) ou d'experts (r&egrave;gles, mod&egrave;les formels). Probayes participe au projet de R&amp;D GRAAL co-labellis&eacute; par les p&ocirc;les de comp&eacute;titivit&eacute; Imaginove et Minalogic.</p><p>Ronan Le Hy est docteur en sciences cognitives de l&rsquo;Institut National Polytechnique de Grenoble. Il est aujourd&rsquo;hui ing&eacute;nieur R&amp;D au sein de la soci&eacute;t&eacute; Probayes, en charge du projet GRAAL.</p><p>Dans cette interview, Emmanuel Mazer et Ronan Le Hy &eacute;voquent notamment leur approche de la robotique de service, le savoir-faire d&eacute;velopp&eacute; par la soci&eacute;t&eacute; Probayes et l&rsquo;ambition du projet GRAAL.</p>
+</div>
+
+                        <div class="informations">
+                        			                    	<div class="ressource-meta">
+		                    									    								    		<p class="keywords-title">Réalisée par :</p>
+							    		<ul class="list-inline keywords">
+							    											    			<li>
+											   		<a href="/auteurs/Chabanel-Boris" title="Ouvrir la fiche de Boris CHABANEL">
+   	Boris CHABANEL
+</a>
+																									</li>
+																					</ul>
+															        </div>
+			                                            <div class="ressource-meta">
+		                        	<p class="keywords-title">Tag(s)&nbsp;:</p>
+	<ul class="list-inline keywords">
+			            
+	<li>
+		<a href="/tag/numerique" title="">Numérique</a>	<li>
+
+	    	</ul>
+
+		                    </div>
+		                    <div class="ressource-meta">
+		                        	<span class="keywords-title">Date : <span class="publication_date">14/12/2010</span></span>
+
+		                    </div>
+		                </div>
+                    </div>
+                </div>
+            </div>
+
+                        	            	<div class="ezrichtext-field"><p><strong><strong>Pouvez-vous nous rappeler l&rsquo;origine de la soci&eacute;t&eacute; Probayes&nbsp;? </strong></strong></p><p>E.M. : Probayes a &eacute;t&eacute; cr&eacute;&eacute;e en 2003. Elle emploie aujourd&rsquo;hui 22 personnes. Elle a &eacute;t&eacute; cr&eacute;&eacute;e avec le soutien du CNRS, de l'Universit&eacute; Joseph Fourier, de l'INRIA et de l'INPG. Probayes commercialise une technologie qui est issu du laboratoire GRAVIR (qui s&rsquo;appelle aujourd&rsquo;hui Laboratoire d&rsquo;Informatique de Grenoble). Il s&rsquo;agit d&rsquo;un logiciel d&rsquo;aide &agrave; la d&eacute;cision bas&eacute; sur le calcul probabiliste et prenant en compte l&rsquo;incompl&eacute;tude des donn&eacute;es et l&rsquo;imperfection des mod&egrave;les. Cette technologie est le fruit d&rsquo;une dizaine d&rsquo;ann&eacute;es de travail de l&rsquo;&eacute;quipe de recherche robotique dont je faisais partie &agrave; l&rsquo;INRIA.</p><p>&nbsp;</p><p><strong>Pourquoi avoir choisi cet axe de recherche&nbsp;? </strong></p><p>E.M. : Cette d&eacute;marche de recherche part du constat que le d&eacute;veloppement de la robotique suppose des avanc&eacute;es fortes en mati&egrave;re logicielle. Nous sommes arriv&eacute;s &agrave; la conclusion qu&rsquo;il fallait &ecirc;tre capable de&nbsp; traiter les incertitudes dans le domaine des syst&egrave;mes action-perception. Pendant longtemps, les robots ont &eacute;t&eacute; envisag&eacute;s comme les jeux vid&eacute;os. Leur int&eacute;gration dans le monde r&eacute;el passait par la conception d&rsquo;univers parfaitement maitris&eacute;s. La robotique industrielle est un parfait exemple de cette approche. Or, lorsque l&rsquo;on con&ccedil;oit des petits robots mobiles, on ne peut pas d&eacute;penser des millions pour tout maitriser, les plans des maisons, le coefficient de frottement des roues sur la moquette, etc. Plut&ocirc;t que d&rsquo;essayer de connaitre parfaitement cet environnement pour calibrer le syst&egrave;me, il faut d&eacute;velopper une th&eacute;orie permettant d&rsquo;int&eacute;grer et de mod&eacute;liser l&rsquo;incompl&eacute;tude des mod&egrave;les, l&rsquo;incompl&eacute;tude de nos connaissances. Il&nbsp; existe ainsi une th&eacute;orie des plausibilit&eacute;s qui se d&eacute;cline en deux grandes cat&eacute;gories. D&rsquo;une part, les probabilit&eacute;s et d&rsquo;autre part la th&eacute;orie des ensembles flous.<br>Dans ce cadre g&eacute;n&eacute;ral, nous avons formalis&eacute; une approche math&eacute;matique dans la lign&eacute; des travaux de Laplace au 18&egrave;me si&egrave;cle ou de Jaynes dans les ann&eacute;es 1950. Nous avons mis en musique cette th&eacute;orie gr&acirc;ce &agrave; l&rsquo;informatique pour mettre au point des logiciels de raisonnement probabiliste. Ainsi, il y a eu de nombreuses th&egrave;ses &agrave; l&rsquo;INRIA qui ont m&eacute;lang&eacute; le calcul d&rsquo;incertitude et le contr&ocirc;le des robots, notamment en mati&egrave;re de robotique mobile avec la construction de cartes issues de la perception. Apr&egrave;s 10 ans de travail, la cr&eacute;ation de Probayes vise &agrave; appliquer ces logiciels d&rsquo;inf&eacute;rence probabiliste &agrave; la robotique mais aussi &agrave; bien d&rsquo;autres domaines comme la finance, les risques industriels, etc.</p><p>&nbsp;</p><p><strong>Quelle diff&eacute;rence faites-vous entre la robotique industrielle et la robotique de service&nbsp;? </strong></p><p>E.M. : Pour moi la robotique de service renvoie aux applications de la robotique qui concernent la maison, les bureaux et l&rsquo;environnement des h&ocirc;pitaux, avec les tondeuses automatiques, les robots aspirateurs, les robots qui apportent le caf&eacute;, les robots qui apportent les plateaux repas ou des &eacute;quipements m&eacute;dicaux, etc. De m&ecirc;me, la voiture de Toyota qui se gare toute seule fait partie selon moi de cette famille robotique de service.</p><p>&nbsp;</p><p><strong><strong>La capacit&eacute; &agrave; se d&eacute;placer de fa&ccedil;on plus ou moins autonome serait donc un caract&egrave;re essentiel des robots de service&nbsp;? </strong></strong></p><p>R.L.H. : Non, je ne crois pas. Il me semble qu&rsquo;il n&rsquo;y a pas de grandes diff&eacute;rences entre les machines &eacute;voqu&eacute;es par Emmanuel et les dispositifs d&rsquo;intelligence r&eacute;partie comme la domotique. On retrouve les capteurs, la capacit&eacute; de communiquer, de commander des objets comme les stores, le chauffage, etc.<br>E.M. : Pour moi, ma machine &agrave; laver, mon lave-vaisselle ou ma machine &agrave; pain sont des robots. D&egrave;s qu&rsquo;il y a un fonctionnement automatique ou semi-automatique, qu&rsquo;il y a un minimum d&rsquo;intelligence artificielle avec diff&eacute;rentes boucle de r&eacute;troaction, qu&rsquo;il y a mise en mouvement de m&eacute;canismes, il me semble que l&rsquo;on peut parler de robotique.</p><p>&nbsp;</p><p><strong><strong>Quel regard portez-vous sur la multiplication ces derni&egrave;res ann&eacute;es des projets de robots humano&iuml;des polyvalents, lesquels restent le symbole le plus marquant des promesses de la robotique de service&nbsp;? </strong></strong></p><p>E.M. : Je pense qu&rsquo;il y a un tr&egrave;s fort imaginaire dans la robotique et c&rsquo;est assez dr&ocirc;le ! Par exemple, les japonais affirment leur ambition de concevoir des robots pour tenir compagnie aux gens. Ils imaginent un robot qui vous fait faire de l&rsquo;activit&eacute; physique, vous met en contact avec vos petits enfants, etc. Il est cens&eacute; entretenir une sorte de relation psychoaffective avec une personne. Cela pose question sur le plan philosophique. Je pense qu&rsquo;une soci&eacute;t&eacute; qui d&eacute;cide de s&rsquo;occuper de ses ain&eacute;s avec des robots se tire une balle dans le pied. Personnellement, j&rsquo;approche de la retraite et je n&rsquo;ai pas du tout envie que ce soit un robot qui s&rsquo;occupe de moi le moment venu&nbsp;!<br>En m&ecirc;me temps, il faut se rassurer. Ce sont des robots qui&nbsp; ne sont pas pr&ecirc;ts de voir le jour. Il suffit de remonter dans les ann&eacute;es 1970 et de se plonger dans les projets robotiques financ&eacute;s par la DARPA aux Etats-Unis ou ceux d&eacute;velopp&eacute;s au Japon. D&egrave;s cette &eacute;poque, ces projets annoncent qu&rsquo;ils vont mettre au point le robot humano&iuml;de intelligent dans les cinq ans. Je me souviens d&rsquo;un projet port&eacute; par la soci&eacute;t&eacute; japonaise Hitachi qui pr&eacute;sentait un robot capable de remonter un aspirateur en pi&egrave;ces d&eacute;tach&eacute;es de fa&ccedil;on autonome. On se dit que c&rsquo;est sans doute possible mais en r&eacute;alit&eacute; &ccedil;a ne l&rsquo;est pas du tout encore aujourd&rsquo;hui ! C&rsquo;est comme si vous annonciez pouvoir synth&eacute;tiser une cellule humaine prochainement. L&rsquo;id&eacute;e c&rsquo;est de faire r&ecirc;ver les financeurs avec des projets compl&egrave;tement irr&eacute;alistes. Autrement dit, le probl&egrave;me de la robotique de service pour les financeurs publics, c&rsquo;est d&rsquo;identifier les projets qui tiennent vraiment la route. Et c&rsquo;est comme &ccedil;a depuis trente ans. On peut remonter plus haut dans le temps &agrave; l&rsquo;&eacute;poque de Vaucanson. Il faut relire les lettres envoy&eacute;es par Vaucanson &agrave; Louis XV pour lui demander des financements pour ses robots. On retrouve les m&ecirc;mes projections fantasm&eacute;es qu&rsquo;aujourd&rsquo;hui ! En fait, la robotique ce n&rsquo;est pas une m&eacute;thode, c&rsquo;est l&rsquo;affirmation d&rsquo;une s&eacute;rie de buts plus ou moins irr&eacute;alistes. Cela dit, la recherche a aussi besoin de fantasmes et d&rsquo;horizons un peu utopiques pour donner un sens, une motivation aux efforts des uns et des autres.<br>En tous les cas, l&rsquo;histoire nous montre une chose : il n&rsquo;y aura pas de robots ayant une capacit&eacute; quelconque d&rsquo;aide &agrave; la personne avant des dizaines d&rsquo;ann&eacute;es ! Il faut bien comprendre que, techniquement, il y a un oc&eacute;an entre la situation actuelle et les perspectives affich&eacute;es par ces projets. D&rsquo;une certaine mani&egrave;re, ces projets sont une injure &agrave; la complexit&eacute; du vivant. Nous avons tellement de progr&egrave;s &agrave; accomplir dans la compr&eacute;hension de notre conscience, de la mise en mouvement du corps humain, etc.</p><p>&nbsp;</p><p><strong><strong>Probayes est impliqu&eacute;e dans le projet de R&amp;D GRAAL colabellis&eacute; par les p&ocirc;les de comp&eacute;titivit&eacute; Imaginove et Minalogic. Pouvez-vous nous rappeler l&rsquo;origine et les objectifs de ce projet&nbsp;? </strong></strong><br>R.L.H. : Au d&eacute;part, le projet GRAAL a &eacute;t&eacute; lanc&eacute; par Probayes et Ageod, une entreprise &eacute;ditrice de jeux vid&eacute;o bas&eacute;e elle-aussi &agrave; Meylan pr&egrave;s de Grenoble. Dans ce projet, auquel participe &eacute;galement l&rsquo;Inria-Grenoble, Probayes devait aider Ageod &agrave; programmer l&rsquo;intelligence artificielle des personnages de leurs jeux vid&eacute;o. Il s&rsquo;agissait de jeux vid&eacute;o de simulation historiques tr&egrave;s complexes faisant intervenir des centaines d&rsquo;unit&eacute;s &agrave; l&rsquo;&eacute;cran. Un an seulement apr&egrave;s le lancement du projet, Ageod a disparu. Ceci nous a conduit &agrave; &eacute;largir les objectifs du projet, ce qui a permis &agrave; POB Technology de nous rejoindre. POB Technology con&ccedil;oit, fabrique et commercialise des petits robots &agrave; destination essentiellement du monde &eacute;ducatif. Ce sont des robots tr&egrave;s ouverts, que l&rsquo;on peut programmer depuis un ordinateur avec un syst&egrave;me de petites icones, sur lesquels on peut rajouter de nouveaux capteurs, etc. POB Technology &eacute;quipe ainsi des acad&eacute;mies enti&egrave;res comme celles de Grenoble et de Versailles.<br>Aujourd&rsquo;hui, dans le cadre du projet GRAAL, Probayes s&rsquo;efforce d&rsquo;apporter &agrave; POB Technology des outils de programmation et des briques de comportements &laquo; intelligents &raquo;. Ces briques de comportements sont des petits logiciels qui permettent de faire diff&eacute;rentes taches au robot, avec par exemple une brique localisation dans l&rsquo;espace qui permet au robot de cartographier un espace qui lui est inconnu et de lui demander de se d&eacute;placer dans cet espace.</p><p>&nbsp;</p><p><strong><strong>Qu&rsquo;apportent les diff&eacute;rents partenaires du projet GRAAL&nbsp;? </strong></strong></p><p>R.L.H. : En pratique, nous travaillons directement sur les prototypes de robot que POB Technology nous a mis &agrave; disposition au fur et &agrave; mesure. Ce que d&eacute;veloppe Probayes dans le cadre de ce projet est bas&eacute; sur le moteur de raisonnement probabiliste que l&rsquo;on utilise pour la quasi-totalit&eacute; de notre activit&eacute;. Par exemple, pour d&eacute;velopper la capacit&eacute; du robot &agrave; se localiser dans une pi&egrave;ce, le raisonnement probabiliste va int&eacute;grer les d&eacute;placements des roues, la position de la t&ecirc;te du robot, les capteurs proxim&egrave;tres, l&rsquo;image de la cam&eacute;ra. A partir de toutes ces informations, le robot va &eacute;tablir un raisonnement pour d&eacute;terminer l&rsquo;endroit o&ugrave; il se trouve. De son c&ocirc;t&eacute;, l&rsquo;&eacute;quipe de l&rsquo;Inria apporte son expertise scientifique sur la programmation logicielle.</p><p>&nbsp;</p><p><strong>Les briques de comportements et le savoir-faire en mati&egrave;re de raisonnement probabiliste que vous d&eacute;veloppez dans le cadre du projet GRAAL ont-ils vocation &agrave; &ecirc;tre valoris&eacute;s au travers d&rsquo;autres applications robotiques&nbsp;? </strong></p><p>R.L.H. : Oui, tout &agrave; fait. L&rsquo;ambition du projet GRAAL est de concevoir diff&eacute;rentes briques de comportement avec POB Technology en d&eacute;veloppant leur dimension g&eacute;n&eacute;rique pour pouvoir les d&eacute;cliner vers d&rsquo;autres applications, qu&rsquo;elles soient robotiques ou non. Aujourd&rsquo;hui, POB Technology commercialise sa nouvelle gamme de robots qui va int&eacute;grer les briques de comportements que j&rsquo;&eacute;voquais. Par ailleurs, nous r&eacute;fl&eacute;chissons effectivement aux autres domaines d&rsquo;application possibles de cette technologie.<br>E.M. : Il s&rsquo;agit par exemple des autres fabricants intervenant &eacute;galement dans le domaine ludique et &eacute;ducatif. On peut &eacute;voquer &eacute;galement des contacts avec la soci&eacute;t&eacute; cor&eacute;enne LG qui se positionne comme un concurrent direct de la soci&eacute;t&eacute; robotique am&eacute;ricaine IRobot. LG vient faire son march&eacute; technologique pour travailler sur des petits robots mobiles. Mais pour l&rsquo;instant, ce n&rsquo;est pas all&eacute; plus loin. Il faut reconnaitre qu&rsquo;ils mettent des moyens consid&eacute;rables et qu&rsquo;ils n&rsquo;ont pas forc&eacute;ment besoin de nous&hellip;</p><p>&nbsp;</p><p><strong>Selon vous, quelles actions peuvent conduire les collectivit&eacute;s locales pour renforcer les acteurs et les projets li&eacute;s &agrave; la robotique de service en Rh&ocirc;ne-Alpes&nbsp;? </strong></p><p>E.M. : C&rsquo;est assez difficile de r&eacute;pondre &agrave; cette question. Probayes est une entreprise qui profite d&eacute;j&agrave; largement de financements publics, notamment au travers du projet GRAAL. Sans &laquo; vouloir cracher dans la soupe &raquo;, il est vrai que nous nous interrogeons souvent sur le sens et l&rsquo;apport des diff&eacute;rents dispositifs d&rsquo;appels &agrave; projets qui sont mis en place pour d&eacute;velopper l&rsquo;innovation. Pour nous, il manque souvent une finalit&eacute; industrielle aux projets de R&amp;D collaboratifs. Ces projets et les acteurs qui les portent n&rsquo;ont pas suffisamment la motivation d&rsquo;aboutir &agrave; des produits commercialisables. Le projet est une fin en soi alors que ce devrait &ecirc;tre le produit qui peut en d&eacute;couler. Par exemple, une grande entreprise a souvent le raisonnement suivant. Elle mise 10 dans un projet interne qu&rsquo;elle maitrise &agrave; 100% et elle mise 5 dans un projet qui re&ccedil;oit 5 de financements publics et d&rsquo;autres partenaires. Lorsqu&rsquo;il s&rsquo;agit de passer &agrave; la phase de commercialisation, lequel des deux projets va &ecirc;tre prioritaire ? Ce sera le premier parce que c&rsquo;est celui pour lequel elle a investi le plus de fonds propres ! On retrouve la m&ecirc;me situation aux Etats-Unis. Les &eacute;conomies industrialis&eacute;es d&eacute;pensent &agrave; fonds perdus dans de la R&amp;D non finalis&eacute;e&hellip;<br>Pour les grandes entreprises, ce n&rsquo;est pas un probl&egrave;me dans la mesure o&ugrave; les projets collaboratifs sont un moyen de financer &agrave; bon compte une partie de leur programme de R&amp;D. En revanche, le fait que les projets collaboratifs n&rsquo;aillent pas jusqu&rsquo;&agrave; l&rsquo;&eacute;tape de la valorisation commerciales est un vrai probl&egrave;me pour les petites entreprises partenaires. Si l&rsquo;on prend l&rsquo;exemple de Probayes, la seule fa&ccedil;on pour nous de g&eacute;n&eacute;rer des revenus r&eacute;currents &agrave; partir des briques logicielles que l&rsquo;on d&eacute;veloppe est que ces briques s&rsquo;incarnent dans des produits qui soient commercialis&eacute;s. Hors, si les projets de R&amp;D auxquels nous participons n&rsquo;aboutissent pas &agrave; des produits, on voit bien que l&rsquo;on ne peut pas capitaliser sur les travaux qui ont &eacute;t&eacute; conduits. Autrement dit, les appels &agrave; projets permettent certes de renforcer le terreau de R&amp;D des entreprises mais ils ne sont pas suffisamment incitatifs et coercitifs au niveau de la valorisation commerciale des efforts de R&amp;D.<br>Si on revient &agrave; la probl&eacute;matique de la robotique de service, cela veut dire qu&rsquo;il faut mettre en place un dispositif de projet dot&eacute; d&rsquo;un objectif clair, par exemple mettre au point un robot aspirateur, et o&ugrave; les principaux porteurs du projet s&rsquo;engagent &agrave; mettre un produit sur le march&eacute;. Une mani&egrave;re de responsabiliser les acteurs serait de sortir un peu de la logique de partenariat qui fonctionne aujourd&rsquo;hui au d&eacute;triment des partenaires les plus petits. Il faut clarifier les rapports &eacute;conomique en identifiant les grands industriels comme les commanditaires des projets et les obliger &agrave; formaliser des contrats de sous-traitance avec les autres partenaires. Les fonds publics seraient vers&eacute;s aux commanditaires selon un principe d&rsquo;avance sur les royalties li&eacute;es &agrave; la vente des produits issus du projet. Les commanditaires seraient ainsi incit&eacute;s &agrave; mieux rentabiliser leurs investissements et &agrave; se montrer plus exigeants vis-&agrave;-vis de leurs fournisseurs. Dans ce sch&eacute;ma, il reste toutefois &agrave; r&eacute;gler la question de la propri&eacute;t&eacute; intellectuelle qui ne peut revenir enti&egrave;rement aux commanditaires.</p><p>&nbsp;</p><p><strong><strong>Nous avons &agrave; Lyon un leader mondial de l&rsquo;&eacute;quipement domestique qui est SEB. Un acteur de cette nature pourrait-il assumer ce leadership sur un projet robotique de service rh&ocirc;nalpin&nbsp;? </strong></strong></p><p>E.M. : Oui, &agrave; mon avis c&rsquo;est une tr&egrave;s bonne id&eacute;e ! D&rsquo;ailleurs, nous travaillons un peu pour SEB. Je suis convaincu qu&rsquo;une entreprise comme SEB peut fabriquer un petit robot aspirateur facilement. Ce serait bien que ce projet soit port&eacute; dans le cadre incitatif que j&rsquo;&eacute;voquais pr&eacute;c&eacute;demment.</p>
+</div>
+
+	        
+           	
+            
+            	<section class="print_hidden">
+		<div class="row">
+	     	<div class="col-xs-60 col-sm-60">
+	   			<h2 class="h4 h4-dossier block-title-overline margin-right-10">En lien avec le sujet</h2>
+	       	</div>
+	  	</div>
+	 	<div class="margin-bottom-30">
+	 		<section class="carousel3x3 margin-bottom-30">
+		 				         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/jeunesse-culture-numerique-les-six-grands-constats-qui-concernent-deja-la-generation-z" title="">Jeunesse, culture &amp; numérique : les six grands constats qui concernent déjà la génération Z</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/5/0/4/8/538405-34-fre-FR/197b14863572-couv_culture-numerique_resume.png"  width="1571"   height="2222"  class="img-responsive margin-bottom-15" alt="Couverture Culture &amp; Jeunesse : Le rapport des jeunes à la culture. Revue de littérature" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Pour mieux imaginer l’offre culturelle proposée demain aux jeunes publics, acter les grandes transformations qui changent la donne dès aujourd’hui</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/2040-le-programme-culturel-du-territoire" title="">« 2040, le programme culturel du territoire »</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/1/5/3/8/538351-13-fre-FR/d4063945f94a-2040-Document_futur_2040.png"  width="1749"   height="2481"  class="img-responsive margin-bottom-15" alt="Couverture « 2040, le programme culturel du territoire », Le programme culturel de la métropole lyonnaise par et pour les jeunes" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Un grand fou rire dans la ville jusqu’à l’aurore, une résidence citoyenne accueillie par l’Émeute de Lyon, « Carmen » hacké par nos ados. C’est à Lyon, en 2040.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/culture-et-numerique-cinq-scenarios-prospectifs-pour-la-metropole-de-lyon" title="">Culture et numérique : cinq scénarios prospectifs pour la Métropole de Lyon</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/7/9/2/8/538297-8-fre-FR/c4932045548e-couv_culture-numerique.png"  width="1571"   height="2222"  class="img-responsive margin-bottom-15" alt="Couverture du document" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Et si demain le spectacle vivant se déroulait dans le métavers ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/pratiques-et-preferences-culturelles-des-jeunes-metropolitains" title="">Pratiques et préférences culturelles des jeunes métropolitains</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/3/4/2/8/538243-9-fre-FR/f0c52afe9292-couv_rapport-pratiques-focus-group1.png"  width="2125"   height="3006"  class="img-responsive margin-bottom-15" alt="Couverture Pratiques et préférences culturelles des jeunes métropolitains, Atelier et Focus Groups" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Quand les pratiques on line et URL se complètent et s’entremêlent.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/mediations-culturelles-des-innovations-deja-la" title="">Médiations culturelles : des innovations, déjà-là</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/1/8/538189-4-fre-FR/183db62024ab-couv_rapport_mediations-aspiration.png"  width="2125"   height="3006"  class="img-responsive margin-bottom-15" alt="Couverture Médiations culturelles : des innovations, déjà-là, Benchmark" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Une douzaine d’initiatives inspirantes de médiations culturelles. Pour en imaginer d’autres…</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/le-rapport-des-jeunes-a-la-culture" title="">Le rapport des jeunes à la culture</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/5/3/1/8/538135-19-fre-FR/2d69b2a3b578-couv_rapport_jeunes-culture.png"  width="2125"   height="3006"  class="img-responsive margin-bottom-15" alt="Couverture Le rapport des jeunes à la culture, Revue de littérature" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>De la « culture de la chambre » aux pratiques IRL, comment se construisent les pratiques culturelles et l’identité des jeunes aujourd’hui.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/dossiers/2023/le-spectacle-vivant-au-defi-de-la-jeunesse-et-du-numerique" title="">Le spectacle vivant au défi de la jeunesse et du numérique</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/9/4/7/537499-9-fre-FR/286093096e7e-illu_dossier.png"  width="557"   height="555"  class="img-responsive margin-bottom-15" alt="Illustration de trois personnes et un robot traversant le passage piéton d&#039;Abbey Road. Dans le fond : deux voitures, des arbres, un immeuble et la lune." /></figure>
+	<p>Retrouver dans ce dossier les fruits d’une démarche d’étude et d’enquête de plus d’un an, consacrée aux évolutions des relations entre jeunes publics, arts vivants et numérique.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/veille-m3-la-famille-digitale-pres-des-yeux-loin-du-caeur" title="">Veille M3 / La famille digitale : près des yeux, loin du cœur ?</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/9/9/6/536999-1-fre-FR/be8fea3c9d2e-years_and_years.jpg"  width="2000"   height="3000"  class="img-responsive margin-bottom-15" alt="Affiche de la série &quot;Years and Years&quot;" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Les réseaux sociaux s’incrustent au sein des familles : trait d’union ou facteur de division ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/mini-lexique-de-la-sobriete-numerique" title="">Mini-lexique de la sobriété numérique</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/3/4/1/3/533143-6-fre-FR/723772271b6b-numerique.png"  width="568"   height="568"  class="img-responsive margin-bottom-15" alt="Illustration d&#039;un ordinateur avec pleins d&#039;indicateurs différents (durabilité, réparabilité, reconditionné)" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>La sobriété énergétique s’imposera à n’en pas douter à nos futurs usages numérique. Quelques exemples des pistes déjà suivies par le monde de la tech.</p>
+
+	</article>
+</div>
+
+							</section>
+		</div>
+	</section>
+
+        </div>
+<!--  /main Content region-->
+<!--  Right Sidebar -->
+        <div class="col-xs-60 col-md-13">
+            <div class="row">
+            	                            	                    		
+
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-dossiers">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="sidebar-picto m3-icons-sidebar-folders"></span>
+            <a title="" href=" /tous-les-dossiers ">   Dossiers
+            </a>
+        </h2>
+    </header>
+
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <div class="sidebar-block-content">
+        	                                    	<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/9/5/535989-1-fre-FR/3abfcaee6c8b-pms_light.jpg"  width="1413"   height="1414"  class="img-responsive margin-bottom-15" alt="Illustrations de personnes différentes sur une place" /></figure>
+                
+                <p class="publication-title"><a href="/dossiers/2023/action-publique-comment-penser-la-solidarite-depuis-un-territoire" title=""><span class="ezstring-field">Action publique : comment penser la solidarité depuis un territoire ?</span></a></p>
+	        
+            <footer class="sidebar-block-footer">
+            	                	<p><a  title="Consulter nos dossiers disponibles" href="/tous-les-dossiers">Tous les dossiers</a></p>
+                            </footer>
+        </div>
+    </div>
+</article>
+
+</div>
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-home">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="m3-icons-sidebar-picto-tags"></span>
+            <img src="/assets/images/unsprited/icons/tag.png" style= "margin-left: 4px; margin-right: 8px" alt="" />
+            <a href="/tous-les-tags" title="Consulter tous nos tags">Tags
+            </a>
+        </h2>
+    </header>
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <footer class="sidebar-block-footer">
+                            <p><a href="/tous-les-tags" title="Consulter tous nos tags">Tous les tags</a></p>
+                    </footer>
+    </div>
+</article>
+
+</div>
+	        </div>
+		</div>
+<!--  Right Sidebar-->
+</div>
+			<script>
+	function onYouTubeIframeAPIReady()
+	{
+		//Redimensionner les div de vidéos
+		var elements = document.getElementsByClassName("youtube_frame");
+		for(var i = 0 ; i < elements.length ; i++)
+		{
+			var element = elements[i];
+			var subElements = element.getElementsByClassName("youtube_player");
+			for(var j = 0 ; j < subElements.length ; j++)
+			{
+				var subElement = subElements[j];
+				var proportion = element.getAttribute("proportion");
+				var width = element.parentNode.offsetWidth;
+				var height = width * proportion;
+				subElement.setAttribute("width", "100%");
+				subElement.setAttribute("height", height);
+			}
+		}
+	}
+
+	functionsInitialization.push(onYouTubeIframeAPIReady);
+</script>	    </div>
+	</div>
+
+	<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="col-xs-60 col-sm-45 col-md-36 col-lg-39">
+                <nav class="navbar navbar-default footer-nav" role="navigation">
+                    <ul class="nav navbar-nav">
+                                                                            <li><a href="/qui-sommes-nous" title="">Qui sommes-nous</a></li>
+                        
+                        <li><a href="/newsletter_subscribe"><span lang="en">Newsletter</span></a></li>
+
+                        <li><a href="/formulaire/contactez_nous" >Contact</a></li>
+
+                                                                            <li><a href="/Accessibilite" >Accessibilité</a></li>
+                        
+                                                                            <li><a href="/plan-du-site" >Plan du site</a></li>
+                        
+                                                                            <li><a href="/mentions-legales" >Mentions légales</a></li>
+                        
+                                                                            <li><a href="/donnees-personnelles" >Données personnelles</a></li>
+                        
+                        <li><a href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-60 col-sm-15 hidden-md hidden-lg">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+                                                                                                                                                <div class="col-xs-60 col-sm-60 col-md-24 col-lg-21">
+                <a class="acces_metro" href="http://www.grandlyon.com" target="_blank" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)">Un site de la Métropole de Lyon</a>
+            </div>
+
+             <div class="hidden-xs visible-md visible-lg col-md-60 text-center">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+	
+	<div id="know-the-breakpoint"></div>
+	<script src="/assets/vendor/vendor.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/video-js/video.min.js"></script>
+<script src="/assets/vendor/video-js/lang/fr.js"></script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+	<script type="text/javascript">
+		functionsInitialization.push(function owlCarouselInitialization()
+		{
+		    $(".carousel3x3").owlCarousel({
+		        pagination: false,
+		        navigation: true,
+		        navigationText: [
+		            "<i class='glyphicon glyphicon-chevron-left'></i>",
+		            "<i class='glyphicon glyphicon-chevron-right'></i>"
+		        ],
+		        items: 3,
+		        itemsDesktop: [1160, 3],
+		        itemsDesktopSmall: [979, 3],
+		        itemsTablet:[600,2],
+		        itemsMobile: [479,1],
+		        scrollPerPage:true
+		    });
+		});
+
+		$(document).ready(function(){
+			$.each(functionsInitialization, function( index, value ) {
+				functionsInitialization[index]();
+			});
+		});
+	</script>
+</body>
+</html>

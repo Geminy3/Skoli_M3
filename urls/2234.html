@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Grand Lyon">
+<meta name="keywords" content="Millénaire 3">
+
+	
+		
+	
+	
+	<title>Modélisation urbaine : atouts et limites de la simulation agent : Millenaire 3, Modes d&#039;action		</title>
+
+		<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@millenaire3">
+
+			<meta name="twitter:title" content="Modélisation urbaine : atouts et limites de la simulation agent | Millénaire 3">
+					<meta name="twitter:description" content="
+Frédéric Amblard est Maître de conférences à l’Université Toulouse 1 Capitole et au sein de l’équipe Système Multi-Agent Coopératifs de ...">
+														<meta name="twitter:image" content="	https://www.millenaire3.com/var/m3/storage/images/_aliases/large/8/0/1/7/207108-8-fre-FR/modelisation-urbaine-atouts-et-limites-de-la-simulation-agent.PNG">
+<meta name="twitter:image:alt" content="Portrait de Frédéric Amblard ">
+
+										<meta name="twitter:creator" content="@millenaire3">
+			
+	<meta name="description" content="
+Frédéric Amblard est Maître de conférences à l’Université Toulouse 1 Capitole et au sein de l’équipe Système Multi-Agent Coopératifs de ...">
+		<!-- Bootstrap -->
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="/assets/css/style.min.css" type="text/css" rel="stylesheet" />
+
+	
+	<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/video-js/video-js.min.css" />
+
+<!-- Favicons, from http://realfavicongenerator.net/-->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/fav-icones/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/fav-icones/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/fav-icones/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/fav-icones/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/fav-icones/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/fav-icones/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/fav-icones/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/fav-icones/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/fav-icones/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+	<script type="text/javascript">
+		//Utilisation pour les scripts ajax
+		var rootUrl = "/";
+		var functionsInitialization = [];
+	</script>
+
+	<script type="text/javascript" src="/assets/vendor/tarteaucitronjs/tarteaucitron.js"></script>
+
+<script type="text/javascript">
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+
+        "orientation": "bottom", /* Banner position (top - bottom) */
+
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": true, /* Show the cookie list */
+
+        "showIcon": false, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* Disable auto consent */
+
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": false, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+        "mandatory": false, /* Show a message about mandatory cookies */
+    });
+
+    var tarteaucitronForceLanguage = "fr";
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
+
+    tarteaucitron.services.m3 = {
+        "key": "m3",
+        "type": "other",
+        "name": "Cookies internes Millénaire 3",
+        "uri": "",
+        "needConsent": true,
+        "cookies": ['cookieToken'],
+        "js": function () {
+            // When user allow cookie
+            "use strict";
+            registerCookieToken();
+            if(typeof whenM3CookieIsAccepted === "function")
+            {
+                // Fonction à définir dans les pages pour déclencher les scripts succeptibles de poser des cookies
+                whenM3CookieIsAccepted();
+            }
+        },
+        "fallback": function () {
+            // When user deny cookie
+            tarteaucitron.fallback(['m3-cookie-generation-zone'], function (x) {
+                // Remplacer la zone par "machin est désactivé"
+                return tarteaucitron.engage('m3');
+            });
+        }
+    };
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('m3');
+
+            tarteaucitron.user.matomoId = '58';
+        tarteaucitron.user.matomoHost = "https://statweb.grandlyon.com//";
+        (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
+    
+    (tarteaucitron.job = tarteaucitron.job || []).push('ausha');
+
+</script>
+</head>
+<body id="millenaire-3"  itemscope itemtype="http://schema.org/WebPage">
+			<header id="header">
+	<div id="print-top-menu" class="container">
+		<div class="row">
+        	<div class="col-xs-60">
+            	<img src="/assets/images/logo-millenaire-3-mini-blanc.png" alt="" style="float: left;">
+                <img src="/assets/images/logo-grand-lyon-la-metropole-blanc.png" alt="" style="float: right;">
+			</div>
+		</div>
+	</div>
+
+    <div id="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="clearfix" id="top-menu-content">
+                        <a href="#" title="Accéder au menu" class="link-sprite-focus m3-icons-btn-toggle-menu" id="btn-toggle-menu"></a>
+                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3-mini">
+                       	    <img src="/assets/images/logo-millenaire-3-mini.png" alt="" class="img-responsive" id="logo-mini-m3" />
+                        </a>
+
+                        <a class=" skippy sr-only sr-only-focusable" href="#content" title=""><span class="skiplink-text">Aller au contenu </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#main-menu" title=""><span class="skiplink-text">Aller au Menu principal </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#block-search" title=""><span class="skiplink-text">Aller à la recherche</span></a>
+
+                                                                                                                                                                                                                                                                                    <a href="http://www.grandlyon.com" target="_blank" rel="nofollow" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)" id="link-logo-glm">
+                            <img src="/assets/images/logo-grand-lyon-la-metropole.png" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toggle-header">
+            <div class="container">
+                <div class="row" id="toggle-header-content">
+                    <div class="col-xs-30 col-sm-17 col-md-13 block-logo" id="share-header">
+                                                
+                    	<span>
+	                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3">
+	                            <img src="/assets/images/logo-millenaire-3.png" alt="Logo Millénaire 3" class="img-responsive" />
+	                        </a>
+                        </span>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-20 col-md-19 block-baseline">
+                        <p>
+                            <img src="/assets/images/la-prospective-du-grand-lyon.png" alt="Sloggan Millénaire 3 : La prospective du Grand Lyon" class="img-responsive" />
+                        </p>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-23 col-md-11 col-lg-12 block-social-networks">
+						<ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+                    </div>
+                    																										<form action="/m3_search" method="get">
+	<div class="col-xs-60 col-sm-23 col-sm-offset-20 col-md-17 col-md-offset-0 col-lg-16 block-search">
+		<div class="input-group search-group" id="#block-search">
+            <label class="sr-only" for="search">Recherche</label>
+			<input id="search" type="search" class="search" value="" name="SearchText" placeholder="Rechercher sur le site"/>
+			<span class="input-group-btn">
+				<input id="search-submit" type="submit" value="" title="Lancer la recherche" class="m3-icons-search" />
+			</span>
+		</div>
+	</div>
+</form>
+                    <div class="col-xs-60 col-sm-60 col-md-47" id="main-menu" style="display:none">
+	<nav class="navbar navbar-default" role="navigation">
+		<ul class="nav navbar-nav">
+																	<li><a href="/societe" title=""><span class="ezstring-field">Société</span></a></li>
+		    								<li class="active"><a href="/modes-d-action" title=""><span class="ezstring-field">Modes d&#039;action</span> <span class="sr-only">(Menu déjà sélectionné)</span></a></li>
+		    								<li><a href="/transformation-urbaine" title=""><span class="ezstring-field">Transformation urbaine</span></a></li>
+		    								<li><a href="/politiques-publiques" title=""><span class="ezstring-field">Politiques Publiques</span></a></li>
+		    								<li><a href="/territoire" title=""><span class="ezstring-field">Territoire</span></a></li>
+		    								<li><a href="/soutenabilite" title=""><span class="ezstring-field">Soutenabilité</span></a></li>
+		             </ul>
+    </nav>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<div id="home">
+	    <div class="container" id="content">
+	    		    			                    <div class="row">
+        <div class="col-xs-60 block-breadcrumb" itemprop="breadcrumb">
+            <p class="before-breadcrumb">Vous êtes ici&nbsp;: </p><ol class="breadcrumb"><li><a title="Voir la page Accueil" href="/">Accueil</a></li><li><a title="Voir la page Modes d&#039;action" href="/modes-d-action">Modes d&#039;action</a></li><li class="active">Modélisation urbaine : atouts et limites de la simulation agent</li></ol>        </div>
+    </div>
+
+                                                                                                                                
+	            	    			    						
+	    		    	
+            			
+<script type="text/javascript">
+	functionsInitialization.push(function ressourceInitialization(){
+		incrementerVues(10518);
+	});
+</script>
+
+<div class="row block-title">
+    <div class="col-xs-60 col-sm-47 col-md-47">
+        <h1 class="uppercase h1-special">
+							Modélisation urbaine : atouts et limites de la simulation agent
+					</h1>
+    </div>
+
+	<div class="col-xs-60 col-sm-13 col-md-13 block-share">
+
+<ul class="clearfix share">
+	<li>
+		<!--a href="javascript:void(0);" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a-->
+		<a href="javascript:void(0);" data-toggle="collapse" data-target="#addtoany-container" aria-expanded="false" aria-controls="addtoany-container" role="button" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a>
+	</li>
+						<li><a href="/generated_pdf/10564" rel="nofollow" target="_blank" title="Télécharger la page en version PDF" class="m3-icons-share-pdf hidden-xs"></a></li>
+			<!--li><a href="https://www.millenaire3.com/layout/set/print/content/view/print/10564" target="_blank">p</a></li-->
+							<li id="print_current_content"><a href="javascript:window.print()" onclick="javascript:print()" rel="nofollow" title="Imprimer la page" class="m3-icons-share-print"></a></li>
+							<li><a href="/partage_email/10564" rel="nofollow" title="Partager ce contenu par e-mail" class="m3-icons-share-mail"></a></li>
+			</ul>
+
+</div>
+
+	<div class="collapse block-social-networks-share a2a_kit a2a_kit_size_32 a2a_default_style" id="addtoany-container">
+        <span class="tac_addtoanyshare"></span>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_linkedin"></a>
+    </div>
+
+<script type="text/javascript">
+	function deplierPartageReseauxSociaux()
+	{
+		fadeInOrFadeOut('#partages_reseaux_sociaux');
+	}
+
+	/**
+	* Affiche ou non (toogle), avec un effet JQuery
+	*/
+	function fadeInOrFadeOut(elementName)
+	{
+		$element = $(elementName);
+		if(! $element.hasClass("hide"))
+		{
+			$element.fadeOut(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+		else
+		{
+			$element.fadeIn(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+	}
+
+	// Alert a message when the user shares somewhere
+		function addThisEventHandler(evt) {
+		    switch (evt.type)
+		    {
+		        case "addthis.menu.share":
+		            incrementerPartages(10518, evt.data.service);
+		            break;
+		        default:
+		            console.log('received an unexpected event', evt);
+		    }
+		}
+
+	functionsInitialization.push(function shareInitialization()
+	{
+																						
+		// Listen to various events
+		try
+		{
+			addthis.addEventListener('addthis.menu.share', addThisEventHandler);
+		}
+		catch(err)
+		{}
+	});
+</script>
+
+</div>
+
+<div class="row">
+	<!--  main Content region -->
+        <div class="col-xs-60 col-sm-60 col-md-47">
+            <div class="item block-intro">
+                <p class="over-under-line uppercase">Interview de Frédéric Amblard</p>
+
+                <div class="row">
+                				        	<div class="col-xs-60 col-sm-30 col-md-30">
+							    <figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/8/0/1/7/207108-8-fre-FR/modelisation-urbaine-atouts-et-limites-de-la-simulation-agent.PNG"  width="487"   height="487"  class="img-responsive margin-bottom-5 " alt="Portrait de Frédéric Amblard " /></div></figure>
+			             				<div class="itw_qualite"><span class="ezstring-field">Maître de conférences à l&#039;Université Toulouse 1 Capitole</span></div>
+	
+			            </div>
+			        
+								        	<div class="col-xs-60 col-sm-30 col-md-30 margin-bottom-15">
+			        				        	                        <p class="item-face-face">&lt;&lt; Outil de structuration de la pensée et d’organisation des savoirs, la modélisation agent permet de mener une réflexion collective sur des problématiques du territoire, de projeter des modèles de décision au niveau collectif ou encore de confronter différents modèles de décision &gt;&gt;.</p>
+	                                            <div class="ezrichtext-field"><p>Fr&eacute;d&eacute;ric Amblard est Ma&icirc;tre de conf&eacute;rences &agrave; l&rsquo;Universit&eacute; Toulouse 1 Capitole et au sein de l&rsquo;&eacute;quipe Syst&egrave;me Multi-Agent Coop&eacute;ratifs de l&rsquo;Institut de Recherche en Informatique de Toulouse. Il s&rsquo;int&eacute;resse depuis plus de 15 ans &agrave; la simulation sociale, notamment via les syst&egrave;mes multi-agents. Ses centres d&rsquo;int&eacute;r&ecirc;ts&nbsp;? Les dynamiques d&rsquo;opinions, l&rsquo;&eacute;volution des r&eacute;seaux sociaux ou encore l&rsquo;&eacute;laboration de m&eacute;thodes et outils g&eacute;n&eacute;rant des populations synth&eacute;tiques r&eacute;alistes pour des simulations multi-agents.</p><p>Il discute ici les atouts et limites des simulations multi-agent dans le champ social et de l&rsquo;action publique.&nbsp;</p>
+</div>
+
+                        <div class="informations">
+                        			                    	<div class="ressource-meta">
+		                    									    								    		<p class="keywords-title">Réalisée par :</p>
+							    		<ul class="list-inline keywords">
+							    											    			<li>
+											   		<a href="/auteurs/MAURIS-DEMOURIOUX-Sylvie" title="Ouvrir la fiche de Sylvie  MAURIS-DEMOURIOUX">
+   	Sylvie  MAURIS-DEMOURIOUX
+</a>
+																									</li>
+																					</ul>
+															        </div>
+			                                            <div class="ressource-meta">
+		                        	<p class="keywords-title">Tag(s)&nbsp;:</p>
+	<ul class="list-inline keywords">
+			            
+	<li>
+		<a href="/tag/urbanisme" title="">Urbanisme</a>, 	<li>
+
+	    	            
+	<li>
+		<a href="/tag/Data" title="">Data</a>	<li>
+
+	    	</ul>
+
+		                    </div>
+		                    <div class="ressource-meta">
+		                        	<span class="keywords-title">Date : <span class="publication_date">27/09/2016</span></span>
+
+		                    </div>
+		                </div>
+                    </div>
+                </div>
+            </div>
+
+            
+           	            	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>En matière de simulation sociale, la simulation agent semble très présente. En quoi consiste-t-elle ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+													</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>La mod&eacute;lisation agent s&rsquo;int&eacute;resse &agrave; l&rsquo;articulation entre comportements individuels et collectifs, en s&rsquo;appuyant sur la mod&eacute;lisation des comportements sociaux des agents et &agrave; leurs interactions. C&rsquo;est une mod&eacute;lisation informatique puisqu&rsquo;elle mod&eacute;lise sous une forme algorithmique le comportement des agents et leurs interactions. De mani&egrave;re basique, les algorithmes permettent de formuler des r&egrave;gles comme &laquo;&nbsp;si telle chose alors telle autre chose&nbsp;&raquo;. L&rsquo;&eacute;tat des agents varie alors dans le programme en fonction de ces algorithmes. Elle se distingue en cela des mod&eacute;lisations statistiques ou math&eacute;matiques qui s&rsquo;appuient sur des indicateurs mesurant, par exemple, diff&eacute;rents &eacute;tats d&rsquo;une population (indicateurs de bien-&ecirc;tre, de pauvret&eacute;, d&rsquo;emploi, etc.).&nbsp;</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Elle implique donc une connaissance fine des comportements ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>mettre sa connaissance en algorithmes implique de n’en retenir que des éléments clés</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Effectivement, cette mod&eacute;lisation repose sur une collaboration entre mod&eacute;lisateurs et sp&eacute;cialistes issus des sciences humaines et sociales. Sociologues, psychologues, g&eacute;ographes, historiens, politologues&hellip; vont donner au mod&egrave;le l&rsquo;assise th&eacute;orique n&eacute;cessaire pour mod&eacute;liser les comportements impl&eacute;ment&eacute;s dans le mod&egrave;le. Cette collaboration repr&eacute;sente d&eacute;j&agrave; une premi&egrave;re difficult&eacute; car elle suppose un dialogue entre l&rsquo;informaticien et des chercheurs qui n&rsquo;ont, bien souvent, pas de pratique de la mod&eacute;lisation. En fait, la posture diff&egrave;re un peu selon les disciplines. Pour beaucoup de sociologues, surtout ceux ayant une approche qualitative, la mod&eacute;lisation du social est un peu taboue&nbsp;car jug&eacute;e trop r&eacute;ductrice. L&rsquo;impl&eacute;mentation du mod&egrave;le sociologique implique ce que Christophe Sibertin-Blanc appelle une &laquo;&nbsp;hypoth&egrave;que num&eacute;rique&nbsp;&raquo;. Or, mettre sa connaissance en algorithmes implique de n&rsquo;en retenir que des &eacute;l&eacute;ments cl&eacute;s. Malgr&eacute; ces r&eacute;ticences, depuis quelques ann&eacute;es, il y a un engouement certain pour cet outil. Les sociologues y viennent peu &agrave; peu. La situation est diff&eacute;rente du c&ocirc;t&eacute; des g&eacute;ographes qui s&rsquo;int&eacute;ressent depuis longtemps aux syst&egrave;mes complexes dans lesquels la mod&eacute;lisation agent est pr&eacute;sente depuis le d&eacute;but. Il y a un vrai courant de mod&eacute;lisation agent en g&eacute;ographie&nbsp;avec les travaux des laboratoires G&eacute;ographie-Cit&eacute;s (Universit&eacute; de la Sorbonne) ou LIENSS &agrave; La Rochelle et le r&eacute;seau MAPS&hellip; Cette appropriation a &eacute;t&eacute; facilit&eacute;e par la possibilit&eacute; de spatialiser le syst&egrave;me multi-agents (SMA) avec l&rsquo;utilisation d&rsquo;un Syst&egrave;me d&rsquo;Information G&eacute;ographique (SIG). Ces deux outils sont tr&egrave;s compl&eacute;mentaires&nbsp;: avec ses agents mobiles en interaction, le SMA apporte une dynamique au SIG. &nbsp;</p><p>Les historiens ont aussi d&eacute;velopp&eacute;s un mouvement de simulation tr&egrave;s int&eacute;ressant. Ils se sont plut&ocirc;t focalis&eacute;s sur des mod&egrave;les ayant peu d&rsquo;hypoth&egrave;ses comportementales mais beaucoup de donn&eacute;es &agrave; l&rsquo;instar de la reconstruction d&rsquo;une soci&eacute;t&eacute; ancienne des indiens Anasazis dans la vall&eacute;e Mesa Verde par l&rsquo;&eacute;quipe de l&rsquo;arch&eacute;ologue Tim Kohler de l&rsquo;universit&eacute; de l&rsquo;&Eacute;tat de Washington. Mais, &agrave; ma connaissance, il n&rsquo;y a pas vraiment de tentatives similaires sur l&rsquo;&eacute;poque contemporaine.&nbsp;</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Quelles sont les principales applications de ces modèles ?</strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>c’est une démarche très intéressante pour affiner la compréhension des phénomènes puisque pour réaliser le modèle, il faut travailler sur la connaissance, la simplifier, la synthétiser</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Il y a une esp&egrave;ce d&rsquo;engouement pour une utilisation pr&eacute;dictive. Personnellement, je m&rsquo;en m&eacute;fie car il reste difficile d&rsquo;&eacute;valuer la justesse des comportements impl&eacute;ment&eacute;s, m&ecirc;me si les donn&eacute;es comportementales sont de plus en plus disponibles, et donc de valider les mod&egrave;les.&nbsp; C&rsquo;est surtout un bon argument de vente pour la recherche de financements&nbsp;!&nbsp;</p><p>En revanche, c&rsquo;est une d&eacute;marche tr&egrave;s int&eacute;ressante pour affiner la compr&eacute;hension des ph&eacute;nom&egrave;nes puisque pour r&eacute;aliser le mod&egrave;le, il faut travailler sur la connaissance, la simplifier, la synth&eacute;tiser.En amont, la d&eacute;marche de mod&eacute;lisation demande d&rsquo;organiser les donn&eacute;es collect&eacute;es, de s&eacute;lectionner les hypoth&egrave;ses les plus importantes, puis le mod&egrave;le permet de projeter ces hypoth&egrave;ses dans le temps ou de passer de comportements individuels &agrave; des comportements collectifs et enfin, en aval, les r&eacute;sultats donnent un retour sur les hypoth&egrave;ses. La mod&eacute;lisation est un outil de structuration de la pens&eacute;e et d&rsquo;organisation des savoirs.<strong>&nbsp;&nbsp;</strong>Prenons une collectivit&eacute; qui s&rsquo;int&eacute;resse &agrave; la mobilit&eacute; r&eacute;sidentielle. M&ecirc;me si les g&eacute;ographes et urbanistes ont des id&eacute;es sur l&rsquo;algorithme de d&eacute;cision utilis&eacute; par les individus dans leur choix de r&eacute;sidence, il leur est difficile de projeter cela sur l&rsquo;ensemble du territoire. Un SMA permet de projeter des mod&egrave;les de d&eacute;cision au niveau collectif ou encore de confronter diff&eacute;rents mod&egrave;les de d&eacute;cision.&nbsp;</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>C’est donc un outil utile pour réfléchir à l’action publique ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>Le principal problème actuellement est celui de l’échelle</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Toutes pr&eacute;cautions prises, c&rsquo;est un outil tr&egrave;s int&eacute;ressant pour discuter avec les acteurs politiques, que ce soit pour les questions d&rsquo;am&eacute;nagement ou autres. Il permet de mener une r&eacute;flexion collective sur des probl&eacute;matiques du territoire. Dans une vis&eacute;e prospective, il peut donner &agrave; voir des &eacute;volutions collectives, donner une id&eacute;e des futurs possibles. La phase d&rsquo;&eacute;laboration permet de choisir collectivement les hypoth&egrave;ses &agrave; retenir, de simuler les jeux d&rsquo;acteurs, de pr&eacute;senter diff&eacute;remment les connaissances empiriques. La simulation peut s&rsquo;accompagner de jeux de r&ocirc;le pouvant intervenir &agrave; diff&eacute;rentes &eacute;tapes de la mod&eacute;lisation et permettant des allers-retours avec le mod&egrave;le. L&rsquo;association ComMod a d&rsquo;ailleurs d&eacute;velopp&eacute; une approche qualifi&eacute;e de &laquo; mod&eacute;lisation d'accompagnement &raquo;&nbsp;: elle utilise notamment la simulation multi-agents, les SIG et des jeux de r&ocirc;les pour aborder des probl&eacute;matiques de gestion des ressources renouvelables. D&rsquo;autres chercheurs ont d&eacute;velopp&eacute; des outils similaires&nbsp;: par exemple le programme Wat-A-Game de Nils Ferrand de l&rsquo;Irstea de Montpellier qui am&egrave;ne l&rsquo;ensemble des acteurs de la gestion de l&rsquo;eau d&rsquo;un territoire &agrave; mod&eacute;liser leur propre socio-hydrosyst&egrave;me.&nbsp; Le principal probl&egrave;me actuellement est celui de l&rsquo;&eacute;chelle. La d&eacute;marche est tr&egrave;s solide pour travailler sur des zones spatiales limit&eacute;es, &agrave; l&rsquo;&eacute;chelle d&rsquo;un ou plusieurs villages, et sur une probl&eacute;matique sp&eacute;cifique. Par contre, travailler &agrave; l&rsquo;&eacute;chelle d&rsquo;une m&eacute;tropole reste pour l&rsquo;instant tr&egrave;s compliqu&eacute;. La mod&eacute;lisation d&rsquo;accompagnement se retrouve aussi confront&eacute;e aux difficult&eacute;s li&eacute;es &agrave; toute d&eacute;marche participative&nbsp;notamment la question de la mobilisation de l&rsquo;ensemble des acteurs concern&eacute;s et la question de leur repr&eacute;sentation. Autant de difficult&eacute;s qui sont accentu&eacute;es sur un grand territoire. &nbsp;</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Comment aborder le social sur un territoire ? Y-a-t-il des entrées plus adaptées que d’autres comme les types de populations, les problématiques, les lieux ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>C’est la problématique étudiée qui dicte le modèle et ce qui est écarté ou retenu</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>G&eacute;n&eacute;ralement, le point d&rsquo;entr&eacute;e est une probl&eacute;matique comme la gestion de l&rsquo;eau ou la s&eacute;gr&eacute;gation urbaine, bien que cela ne soit pas exclusif d&rsquo;autres dynamiques. La mod&eacute;lisation repose sur une approche syst&eacute;mique, donc il faut inclure les processus ou les aspects qui sont en lien avec ce qu&rsquo;on cherche. Ce qui n&rsquo;a pas d&rsquo;influence peut &ecirc;tre &eacute;cart&eacute;. C&rsquo;est la probl&eacute;matique &eacute;tudi&eacute;e qui dicte le mod&egrave;le et ce qui est &eacute;cart&eacute; ou retenu. R&eacute;aliser un mod&egrave;le large d&rsquo;un territoire sans probl&eacute;matique cibl&eacute;e rend son utilisation tr&egrave;s complexe.En effet, il est alors tr&egrave;s difficile de d&eacute;terminer quelles sont les interactions significatives. En multipliant les probl&eacute;matiques, on multiplie les couplages hypoth&eacute;tiques. Au final, le mod&egrave;le sera aussi difficile &agrave; comprendre que la r&eacute;alit&eacute;.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Le social est souvent traduit sous forme d’indicateurs tels que le nombre d’espace vert, le confort thermique ou sonore, le nombre d’équipements de loisir et très rarement par des indicateurs plus qualitatifs. Pourquoi ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+													</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>La difficult&eacute; avec les donn&eacute;es qualitatives est de les mesurer. Pour rentrer une donn&eacute;e dans un mod&egrave;le, elle doit pouvoir s&rsquo;exprimer sous forme d&rsquo;une variable qui va interagir avec d&rsquo;autres variables. L&rsquo;information doit pouvoir &ecirc;tre num&eacute;ris&eacute;e sous forme d&rsquo;un algorithme m&ecirc;me en l&rsquo;absence de donn&eacute;es. C&rsquo;est difficile de s&rsquo;accorder sur une formalisation simple de la connaissance qu&rsquo;on a du ph&eacute;nom&egrave;ne. &nbsp;Comment formaliser les interactions sociales entre groupes par exemple&nbsp;?&nbsp; La sociologue Aude Sturma,dans le cadre de sa th&egrave;se sur &laquo;&nbsp;<em>les d&eacute;fis de l&rsquo;assainissement &agrave; Mayotte : Dynamiques de changement social et effets pervers de</em></p><p><em>l&rsquo;action publique&nbsp;</em>&raquo; (Universit&eacute; Toulouse Jean-Jaur&egrave;s) a observ&eacute; les interactions entre gestion de l&rsquo;eau et structures sociales. Mayotte se caract&eacute;risait par un syst&egrave;me traditionnel d&rsquo;entraide entre riches et pauvres&nbsp;: les plus riches payent l&rsquo;eau pour les plus pauvres et re&ccedil;oivent en &eacute;change diff&eacute;rents services (jardinage, garde d&rsquo;enfants&hellip;). La mise en place d&rsquo;un syst&egrave;me de traitement de l&rsquo;eau et d&rsquo;une facturation individualis&eacute;e &agrave; la charge des usagers a boulevers&eacute; cette coop&eacute;ration informelle. Comme les plus riches qui soutenaient les communaut&eacute;s ne pouvaient pas payer pour tout le monde, il n&rsquo;y avait plus de raison de coop&eacute;rer avec eux. Cela a provoqu&eacute; un repli sur des solutions de gestion individuelle et une mise en danger du lien social. Pour traiter cette question, Aude Sturma a choisi une triple approche&nbsp;: qualitative classique, quantitative avec des questionnaires et de mod&eacute;lisation pour montrer les impacts de la variation du prix de l&rsquo;eau sur le lien social. Pour &eacute;laborer son mod&egrave;le, elle a fait des choix sur la mani&egrave;re de repr&eacute;senter et mod&eacute;liser le lien social, choix qui peuvent (et ont &eacute;t&eacute;) critiqu&eacute;s. &nbsp;Questionner les choix est fondamental.Ainsi, le mod&egrave;le de s&eacute;gr&eacute;gation de Schelling utilise le concept de tol&eacute;rance pour reproduire des ph&eacute;nom&egrave;nes de s&eacute;gr&eacute;gation. Or, cette notion ne correspond pas forc&eacute;ment &agrave; grand-chose d&rsquo;un point de vue sociologique. C&rsquo;est un artifice planqu&eacute; dans le mod&egrave;le qui permet d&rsquo;obtenir de la s&eacute;gr&eacute;gation mais qui n&rsquo;a pas de r&eacute;alit&eacute; sociologique tr&egrave;s tangible. Dans ce cas pr&eacute;cis, les mod&egrave;les travaillant sur la s&eacute;gr&eacute;gation essaient de reformuler cette notion de tol&eacute;rance&nbsp;par les concepts de similarit&eacute; sociale, d&rsquo;entre-soi. Quels que soient les choix faits, la mod&eacute;lisation permet de lever les ambigu&iuml;t&eacute;s. Ce qui est impl&eacute;ment&eacute; est v&eacute;rifiable et il n&rsquo;y a plus de pirouettes rh&eacute;toriques possibles, une posture qu&rsquo;affectionnent assez souvent, les sociologues pour prouver ce qu&rsquo;ils avancent.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>La modélisation agent intègre-t-elle des outils issus de l’intelligence artificielle ou d’autres domaines ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+													</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>L&rsquo;intelligence artificielle permet de mod&eacute;liser des algorithmes de d&eacute;cision comme les r&eacute;seaux de neurones. Plut&ocirc;t que d&rsquo;essayer de poser des r&egrave;gles de d&eacute;cision ad hoc, plus ou moins bancales, on les remplace par des programmes d&rsquo;intelligence artificielle connus pour prendre des d&eacute;cisions optimales dans certains contextes. Dans un mod&egrave;le agent, chaque agent peut &ecirc;tre dot&eacute; d&rsquo;un tel algorithme qui lui permet de prendre ses d&eacute;cisions tout seul apr&egrave;s une phase d&rsquo;apprentissage. Dans le meilleur des cas, les agents d&eacute;cident comme des vrais &ecirc;tres humains. Cet aspect r&eacute;aliste est int&eacute;ressant dans le cadre de d&eacute;marche prospective. En revanche, il ne donne aucun levier pour tester des alternatives car il n&rsquo;est pas possible de donner un sens &agrave; la d&eacute;cision, de la comprendre, la retravailler ou l&rsquo;interpr&eacute;ter. D&rsquo;un c&ocirc;t&eacute;, on sait que l&rsquo;algorithme construit les meilleures d&eacute;cisions puisque cela a &eacute;t&eacute; &eacute;valu&eacute; pr&eacute;alablement, de l&rsquo;autre on perd&nbsp;la capacit&eacute; d&rsquo;expliciter ces r&egrave;gles de d&eacute;cision. Pour tester une autre situation, il faut soit faire apprendre de nouvelles r&egrave;gles aux agents, soit les faire s&rsquo;adapter &agrave; de nouvelles conditions. Il peut aussi &ecirc;tre difficile de savoir quel algorithme de d&eacute;cision impl&eacute;menter. En fait, bien qu&rsquo;une fonction d&rsquo;&eacute;valuation permette d&rsquo;ajuster l&rsquo;algorithme en le faisant correspondre &agrave; la d&eacute;cision la plus probable d&rsquo;un humain lambda, rien ne dit que la d&eacute;cision d&rsquo;un humain r&eacute;el se rapproche de cette &eacute;valuation. C&rsquo;est une situation similaire &agrave; la fonction d&rsquo;utilit&eacute; utilis&eacute;e en &eacute;conomie&nbsp;: on peut optimiser cette fonction mais est-ce que pour autant chaque individu optimise cette fonction dans la vie r&eacute;elle&nbsp;? Par ailleurs, ce syst&egrave;me est assez couteux en temps de calcul donc il est adapt&eacute; pour des populations de quelques dizaines d&rsquo;individus au maximum.&nbsp;</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>L’essor des « big data » et l’ouverture des données peuvent-elle changer la manière de modéliser les comportements ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>Ceci dit, si le big data s’avère peu probant pour les comportements individuels, il est très porteur pour les données environnementales et les comportements collectifs</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Effectivement, depuis quelques ann&eacute;es, ce ph&eacute;nom&egrave;ne a suscit&eacute; beaucoup d&rsquo;espoir. Les mod&egrave;les se nourrissent de plus en plus fr&eacute;quemment de donn&eacute;es.&nbsp; La quantit&eacute; de donn&eacute;es disponibles, par le web notamment, a laiss&eacute; croire que les donn&eacute;es pourraient se substituer aux hypoth&egrave;ses comportementales. Il me semble que l&rsquo;engouement s&rsquo;estompe un peu pour plusieurs raisons. Tout d&rsquo;abord, la qualit&eacute; des donn&eacute;es est pauvre, particuli&egrave;rement celle des donn&eacute;es des r&eacute;seaux sociaux (Facebook, twitter, etc.). De plus, les donn&eacute;es disponibles se r&eacute;v&egrave;lent insuffisantes pour comprendre les motivations des individus. Par exemple, sur les dynamiques d&rsquo;opinions, il est difficile de faire coller les donn&eacute;es avec ce qu&rsquo;on voudrait mettre dans nos mod&egrave;les concernant par exemple la r&eacute;vision des croyances et la mise &agrave; jour des opinions. Ensuite, il y a la question du couplage des donn&eacute;es entre elles. Comment interagissent-elles&nbsp;? Les donn&eacute;es sectorielles, th&eacute;matiques sur les transports, l&rsquo;&eacute;nergie sont disponibles mais leurs interactions restent largement m&eacute;connues. Les hypoth&egrave;ses de couplage sont donc souvent un peu sorties du chapeau&hellip; Ceci dit, si le big data s&rsquo;av&egrave;re peu probant pour les comportements individuels, il est tr&egrave;s porteur pour les donn&eacute;es environnementales et les comportements collectifs. Pouvoir int&eacute;grer des donn&eacute;es r&eacute;elles et des dynamiques sur les donn&eacute;es, m&ecirc;me sans en connaitre les processus, permet de simuler des ph&eacute;nom&egrave;nes int&eacute;ressants. Ainsi, un mod&egrave;le peut simuler des pics de pollution de l&rsquo;air, soit en simulant un processus soit en utilisant une s&eacute;rie r&eacute;elle, et observer comment la population r&eacute;agit, comment elle adapte ses comportements de d&eacute;placement. &nbsp;</p><p><strong>&nbsp;</strong></p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Dans une démarche de modélisation d’un espace urbain, sur quels points faut-il être particulièrement attentif ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+													</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Tout d&rsquo;abord, adopter une approche th&eacute;matique avec une probl&eacute;matique bien d&eacute;finie pour &eacute;viter d&rsquo;avoir un mod&egrave;le aussi complexe que le territoire lui-m&ecirc;me. Pour aborder plusieurs questions, mieux vaut r&eacute;aliser plusieurs mod&egrave;les sp&eacute;cifiques et les coupler ensuite.</p><p>Ensuite, je dirais que la question de l&rsquo;&eacute;chelle se pose assez vite. Il y a toujours une &eacute;chelle pertinente pour mod&eacute;liser le ph&eacute;nom&egrave;ne, qu&rsquo;elle soit spatiale ou/et temporelle. Ces &eacute;chelles sont essentielles pour penser l&rsquo;articulation des ph&eacute;nom&egrave;nes entre eux, ph&eacute;nom&egrave;nes ayant eux-m&ecirc;mes diff&eacute;rentes &eacute;chelles. Par exemple, articuler l&rsquo;&eacute;chelle de la d&eacute;cision politique et celle de la vie quotidienne des individus.&nbsp;</p><p>Enfin, il ne faut pas s&rsquo;emballer sur les r&eacute;sultats. Le c&ocirc;t&eacute; &laquo;&nbsp;Simcity&nbsp;&raquo; de certains mod&egrave;les, par exemple avec visualisation 3D des r&eacute;sultats, peut donner &agrave; l&rsquo;observateur le sentiment que la vie se d&eacute;roule sous yeux, qu&rsquo;il est possible de pr&eacute;dire le futur. Bien qu&rsquo;il y ait un peu de &ccedil;a, il faut garder en t&ecirc;te que le mod&egrave;le repose sur les hypoth&egrave;ses projet&eacute;es des mod&eacute;lisateurs, les donn&eacute;es utilis&eacute;es, etc.&nbsp;</p>
+</div>
+
+		</div>
+	</div>
+</div>
+            
+            
+            	<section class="print_hidden">
+		<div class="row">
+	     	<div class="col-xs-60 col-sm-60">
+	   			<h2 class="h4 h4-dossier block-title-overline margin-right-10">En lien avec le sujet</h2>
+	       	</div>
+	  	</div>
+	 	<div class="margin-bottom-30">
+	 		<section class="carousel3x3 margin-bottom-30">
+		 				         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/le-rapport-a-la-proprete-urbaine" title="">Le rapport à la propreté urbaine</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/7/1/1/9/539117-1-fre-FR/28150f8a9283-rapport_proprete.png"  width="619"   height="873"  class="img-responsive margin-bottom-15" alt="Couverture du document" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Cette étude propose une revue de la littérature en sciences sociales pour mieux appréhender les attitudes et comportements des habitants en matière de propreté urbaine.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2014/l-impense-des-usages" title="">L&#039;impensé des usages</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/5/1/5/525159-1-fre-FR/c753ca79c609-l-impense-des-usages.jpg"  width="198"   height="249"  class="img-responsive margin-bottom-15" alt="Dessin d&#039;architectes qui dessinent un plan" /></figure>
+  <p class="uppercase"><b>Texte de Gaëtan BRISEPIERRE, Catherine GRANDCLEMENT et Vincent RENAULD</b></p>
+	<p>L’appropriation des bâtiments verts, leur bon usage, conditionnent leur efficacité même. Changeons de regard et privilégions les compromis socio-techniques contre la pédagogie verticale.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2014/reconstruire-un-consensus-sur-la-densite" title="">Reconstruire un consensus sur la densité</a></h3>
+		  <p class="uppercase"><b>Texte de Julien CASALS</b></p>
+	<p>Et si on donnait vraiment la parole (et les moyens d’agir) aux habitants ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2022/20-enjeux-pour-l-amenagement-la-conception-et-les-usages-des-espaces-publics" title="">20 enjeux pour l’aménagement, la conception et les usages des espaces publics</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/2/5/2/522529-1-fre-FR/863ef860b45b-TLMD_voltaire.jpg"  width="618"   height="348"  class="img-responsive margin-bottom-15" alt="Photo de l&#039;événement Tout l&#039;monde dehors, Lyon 3e" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Un espace public ? Des espaces publics ? Pour quels usages ? Dans le fond, de quoi parle-t-on ? Nos vidéos vous l’expliquent.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2022/podcast-memoires-retroprospective-histoire-de-la-communaute-urbaine-de-lyon" title="">[Podcast] Mémoires – Rétroprospective / Histoire de la Communauté Urbaine de Lyon</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/5/4/2/522459-1-fre-FR/89b4696250a5-vignette_B.png"  width="1401"   height="1401"  class="img-responsive margin-bottom-15" alt="Couverture de Mémoires - Rétroprospective" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Découvrez Mémoires - Rétroprospective, le podcast de Millénaire 3, sur les 45 ans d’histoire de la Communauté Urbaine de Lyon (1969-2014).</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2022/jonathan-sebbane-sogaris-l-immobilier-logistique-devient-de-plus-en-plus-urbain-petit-et-banalise" title="">Jonathan Sebbane, Sogaris : « L’immobilier logistique devient de plus en plus urbain, petit et banalisé »</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/7/9/0/2/522097-1-fre-FR/64747668ba88-sogaris.JPG"  width="3098"   height="3097"  class="img-responsive margin-bottom-15" alt="Portrait de Jonathan Sebbane" /></figure>
+  <p class="uppercase"><b>Interview de Jonathan Sebbane</b></p>
+       		   		<p>Directeur Général de Sogaris</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2021/l-art-urbain-dans-la-fabrique-de-la-ville-entre-convergences-et-divergences" title="">L’art urbain dans la fabrique de la ville, entre convergences et divergences</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/2/3/5/9/499532-1-fre-FR/unvillagedeschimeres.PNG"  width="595"   height="595"  class="img-responsive margin-bottom-15" alt="Construction urbaine" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Comment l’art s’intègre-t-il dans la fabrique de la ville ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/m3_magazine/m3-societe-urbaine-et-action-publique-n-8" title="">M3 Société urbaine et action publique - N°8</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/4/7/8/5/485874-1-fre-FR/M3 - 8.PNG"  width="632"   height="632"  class="img-responsive margin-bottom-15" alt="Extrait de la couverture de la revue &quot;M3 Société urbaine et action publique - N°8&quot;" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Dans ce numéro : un dossier consacré à la ville servicielle.<br /><br /></p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/m3_magazine/m3-societe-urbaine-et-action-publique-n-7" title="">M3 Société urbaine et action publique - N°7</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/0/8/5/485806-1-fre-FR/M3 - 7.PNG"  width="656"   height="652"  class="img-responsive margin-bottom-15" alt="Extrait de la couverture de la revue &quot;M3 Société urbaine et action publique - N°7&quot;" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Dans ce numéro : un dossier consacré au phénomène du &quot;bâtir vert&quot;. </p>
+
+	</article>
+</div>
+
+							</section>
+		</div>
+	</section>
+
+        </div>
+<!--  /main Content region-->
+<!--  Right Sidebar -->
+        <div class="col-xs-60 col-md-13">
+            <div class="row">
+            	                            	                    		
+
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-dossiers">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="sidebar-picto m3-icons-sidebar-folders"></span>
+            <a title="" href=" /tous-les-dossiers ">   Dossiers
+            </a>
+        </h2>
+    </header>
+
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <div class="sidebar-block-content">
+        	                                    	<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/9/5/535989-1-fre-FR/3abfcaee6c8b-pms_light.jpg"  width="1413"   height="1414"  class="img-responsive margin-bottom-15" alt="Illustrations de personnes différentes sur une place" /></figure>
+                
+                <p class="publication-title"><a href="/dossiers/2023/action-publique-comment-penser-la-solidarite-depuis-un-territoire" title=""><span class="ezstring-field">Action publique : comment penser la solidarité depuis un territoire ?</span></a></p>
+	        
+            <footer class="sidebar-block-footer">
+            	                	<p><a  title="Consulter nos dossiers disponibles" href="/tous-les-dossiers">Tous les dossiers</a></p>
+                            </footer>
+        </div>
+    </div>
+</article>
+
+</div>
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-home">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="m3-icons-sidebar-picto-tags"></span>
+            <img src="/assets/images/unsprited/icons/tag.png" style= "margin-left: 4px; margin-right: 8px" alt="" />
+            <a href="/tous-les-tags" title="Consulter tous nos tags">Tags
+            </a>
+        </h2>
+    </header>
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <footer class="sidebar-block-footer">
+                            <p><a href="/tous-les-tags" title="Consulter tous nos tags">Tous les tags</a></p>
+                    </footer>
+    </div>
+</article>
+
+</div>
+	        </div>
+		</div>
+<!--  Right Sidebar-->
+</div>
+			<script>
+	function onYouTubeIframeAPIReady()
+	{
+		//Redimensionner les div de vidéos
+		var elements = document.getElementsByClassName("youtube_frame");
+		for(var i = 0 ; i < elements.length ; i++)
+		{
+			var element = elements[i];
+			var subElements = element.getElementsByClassName("youtube_player");
+			for(var j = 0 ; j < subElements.length ; j++)
+			{
+				var subElement = subElements[j];
+				var proportion = element.getAttribute("proportion");
+				var width = element.parentNode.offsetWidth;
+				var height = width * proportion;
+				subElement.setAttribute("width", "100%");
+				subElement.setAttribute("height", height);
+			}
+		}
+	}
+
+	functionsInitialization.push(onYouTubeIframeAPIReady);
+</script>	    </div>
+	</div>
+
+	<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="col-xs-60 col-sm-45 col-md-36 col-lg-39">
+                <nav class="navbar navbar-default footer-nav" role="navigation">
+                    <ul class="nav navbar-nav">
+                                                                            <li><a href="/qui-sommes-nous" title="">Qui sommes-nous</a></li>
+                        
+                        <li><a href="/newsletter_subscribe"><span lang="en">Newsletter</span></a></li>
+
+                        <li><a href="/formulaire/contactez_nous" >Contact</a></li>
+
+                                                                            <li><a href="/Accessibilite" >Accessibilité</a></li>
+                        
+                                                                            <li><a href="/plan-du-site" >Plan du site</a></li>
+                        
+                                                                            <li><a href="/mentions-legales" >Mentions légales</a></li>
+                        
+                                                                            <li><a href="/donnees-personnelles" >Données personnelles</a></li>
+                        
+                        <li><a href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-60 col-sm-15 hidden-md hidden-lg">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+                                                                                                                                                <div class="col-xs-60 col-sm-60 col-md-24 col-lg-21">
+                <a class="acces_metro" href="http://www.grandlyon.com" target="_blank" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)">Un site de la Métropole de Lyon</a>
+            </div>
+
+             <div class="hidden-xs visible-md visible-lg col-md-60 text-center">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+	
+	<div id="know-the-breakpoint"></div>
+	<script src="/assets/vendor/vendor.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/video-js/video.min.js"></script>
+<script src="/assets/vendor/video-js/lang/fr.js"></script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+	<script type="text/javascript">
+		functionsInitialization.push(function owlCarouselInitialization()
+		{
+		    $(".carousel3x3").owlCarousel({
+		        pagination: false,
+		        navigation: true,
+		        navigationText: [
+		            "<i class='glyphicon glyphicon-chevron-left'></i>",
+		            "<i class='glyphicon glyphicon-chevron-right'></i>"
+		        ],
+		        items: 3,
+		        itemsDesktop: [1160, 3],
+		        itemsDesktopSmall: [979, 3],
+		        itemsTablet:[600,2],
+		        itemsMobile: [479,1],
+		        scrollPerPage:true
+		    });
+		});
+
+		$(document).ready(function(){
+			$.each(functionsInitialization, function( index, value ) {
+				functionsInitialization[index]();
+			});
+		});
+	</script>
+</body>
+</html>

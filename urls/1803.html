@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Grand Lyon">
+<meta name="keywords" content="Millénaire 3">
+
+	
+		
+	
+	
+	<title>Farming, serveurs parallèles et revente de personnages : économie informelle et jeu vidéo : Millenaire 3, Société		</title>
+
+		<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@millenaire3">
+
+			<meta name="twitter:title" content="Farming, serveurs parallèles et revente de personnages : économie informelle et jeu vidéo | Millénaire 3">
+					<meta name="twitter:description" content="
+Bruno Vétel est Maître de Conférences en Sciences de l&#039;Information et de la Communication à l&#039;IAE de Poitiers et chercheur au CEREGE, ses travau...">
+														<meta name="twitter:image" content="	https://www.millenaire3.com/var/m3/storage/images/_aliases/large/8/3/0/8/228038-1-fre-FR/PG_itw_B_Vetel.png">
+<meta name="twitter:image:alt" content="">
+
+										<meta name="twitter:creator" content="@CultOrd">
+			
+	<meta name="description" content="
+Bruno Vétel est Maître de Conférences en Sciences de l&#039;Information et de la Communication à l&#039;IAE de Poitiers et chercheur au CEREGE, ses travau...">
+		<!-- Bootstrap -->
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="/assets/css/style.min.css" type="text/css" rel="stylesheet" />
+
+	
+	<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/video-js/video-js.min.css" />
+
+<!-- Favicons, from http://realfavicongenerator.net/-->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/fav-icones/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/fav-icones/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/fav-icones/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/fav-icones/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/fav-icones/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/fav-icones/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/fav-icones/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/fav-icones/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/fav-icones/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+	<script type="text/javascript">
+		//Utilisation pour les scripts ajax
+		var rootUrl = "/";
+		var functionsInitialization = [];
+	</script>
+
+	<script type="text/javascript" src="/assets/vendor/tarteaucitronjs/tarteaucitron.js"></script>
+
+<script type="text/javascript">
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+
+        "orientation": "bottom", /* Banner position (top - bottom) */
+
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": true, /* Show the cookie list */
+
+        "showIcon": false, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* Disable auto consent */
+
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": false, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+        "mandatory": false, /* Show a message about mandatory cookies */
+    });
+
+    var tarteaucitronForceLanguage = "fr";
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
+
+    tarteaucitron.services.m3 = {
+        "key": "m3",
+        "type": "other",
+        "name": "Cookies internes Millénaire 3",
+        "uri": "",
+        "needConsent": true,
+        "cookies": ['cookieToken'],
+        "js": function () {
+            // When user allow cookie
+            "use strict";
+            registerCookieToken();
+            if(typeof whenM3CookieIsAccepted === "function")
+            {
+                // Fonction à définir dans les pages pour déclencher les scripts succeptibles de poser des cookies
+                whenM3CookieIsAccepted();
+            }
+        },
+        "fallback": function () {
+            // When user deny cookie
+            tarteaucitron.fallback(['m3-cookie-generation-zone'], function (x) {
+                // Remplacer la zone par "machin est désactivé"
+                return tarteaucitron.engage('m3');
+            });
+        }
+    };
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('m3');
+
+            tarteaucitron.user.matomoId = '58';
+        tarteaucitron.user.matomoHost = "https://statweb.grandlyon.com//";
+        (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
+    
+    (tarteaucitron.job = tarteaucitron.job || []).push('ausha');
+
+</script>
+</head>
+<body id="millenaire-3"  itemscope itemtype="http://schema.org/WebPage">
+			<header id="header">
+	<div id="print-top-menu" class="container">
+		<div class="row">
+        	<div class="col-xs-60">
+            	<img src="/assets/images/logo-millenaire-3-mini-blanc.png" alt="" style="float: left;">
+                <img src="/assets/images/logo-grand-lyon-la-metropole-blanc.png" alt="" style="float: right;">
+			</div>
+		</div>
+	</div>
+
+    <div id="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="clearfix" id="top-menu-content">
+                        <a href="#" title="Accéder au menu" class="link-sprite-focus m3-icons-btn-toggle-menu" id="btn-toggle-menu"></a>
+                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3-mini">
+                       	    <img src="/assets/images/logo-millenaire-3-mini.png" alt="" class="img-responsive" id="logo-mini-m3" />
+                        </a>
+
+                        <a class=" skippy sr-only sr-only-focusable" href="#content" title=""><span class="skiplink-text">Aller au contenu </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#main-menu" title=""><span class="skiplink-text">Aller au Menu principal </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#block-search" title=""><span class="skiplink-text">Aller à la recherche</span></a>
+
+                                                                                                                                                                                                                                                                                    <a href="http://www.grandlyon.com" target="_blank" rel="nofollow" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)" id="link-logo-glm">
+                            <img src="/assets/images/logo-grand-lyon-la-metropole.png" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toggle-header">
+            <div class="container">
+                <div class="row" id="toggle-header-content">
+                    <div class="col-xs-30 col-sm-17 col-md-13 block-logo" id="share-header">
+                                                
+                    	<span>
+	                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3">
+	                            <img src="/assets/images/logo-millenaire-3.png" alt="Logo Millénaire 3" class="img-responsive" />
+	                        </a>
+                        </span>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-20 col-md-19 block-baseline">
+                        <p>
+                            <img src="/assets/images/la-prospective-du-grand-lyon.png" alt="Sloggan Millénaire 3 : La prospective du Grand Lyon" class="img-responsive" />
+                        </p>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-23 col-md-11 col-lg-12 block-social-networks">
+						<ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+                    </div>
+                    																										<form action="/m3_search" method="get">
+	<div class="col-xs-60 col-sm-23 col-sm-offset-20 col-md-17 col-md-offset-0 col-lg-16 block-search">
+		<div class="input-group search-group" id="#block-search">
+            <label class="sr-only" for="search">Recherche</label>
+			<input id="search" type="search" class="search" value="" name="SearchText" placeholder="Rechercher sur le site"/>
+			<span class="input-group-btn">
+				<input id="search-submit" type="submit" value="" title="Lancer la recherche" class="m3-icons-search" />
+			</span>
+		</div>
+	</div>
+</form>
+                    <div class="col-xs-60 col-sm-60 col-md-47" id="main-menu" style="display:none">
+	<nav class="navbar navbar-default" role="navigation">
+		<ul class="nav navbar-nav">
+																	<li class="active"><a href="/societe" title=""><span class="ezstring-field">Société</span> <span class="sr-only">(Menu déjà sélectionné)</span></a></li>
+		    								<li><a href="/modes-d-action" title=""><span class="ezstring-field">Modes d&#039;action</span></a></li>
+		    								<li><a href="/transformation-urbaine" title=""><span class="ezstring-field">Transformation urbaine</span></a></li>
+		    								<li><a href="/politiques-publiques" title=""><span class="ezstring-field">Politiques Publiques</span></a></li>
+		    								<li><a href="/territoire" title=""><span class="ezstring-field">Territoire</span></a></li>
+		    								<li><a href="/soutenabilite" title=""><span class="ezstring-field">Soutenabilité</span></a></li>
+		             </ul>
+    </nav>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<div id="home">
+	    <div class="container" id="content">
+	    		    			                    <div class="row">
+        <div class="col-xs-60 block-breadcrumb" itemprop="breadcrumb">
+            <p class="before-breadcrumb">Vous êtes ici&nbsp;: </p><ol class="breadcrumb"><li><a title="Voir la page Accueil" href="/">Accueil</a></li><li><a title="Voir la page Société" href="/societe">Société</a></li><li class="active">Farming, serveurs parallèles et revente de personnages : économie informelle et jeu vidéo</li></ol>        </div>
+    </div>
+
+                                                                                                                                
+	            	    			    						
+	    		    	
+            			
+<script type="text/javascript">
+	functionsInitialization.push(function ressourceInitialization(){
+		incrementerVues(12775);
+	});
+</script>
+
+<div class="row block-title">
+    <div class="col-xs-60 col-sm-47 col-md-47">
+        <h1 class="uppercase h1-special">
+							Farming, serveurs parallèles et revente de personnages : économie informelle et jeu vidéo
+					</h1>
+    </div>
+
+	<div class="col-xs-60 col-sm-13 col-md-13 block-share">
+
+<ul class="clearfix share">
+	<li>
+		<!--a href="javascript:void(0);" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a-->
+		<a href="javascript:void(0);" data-toggle="collapse" data-target="#addtoany-container" aria-expanded="false" aria-controls="addtoany-container" role="button" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a>
+	</li>
+						<li><a href="/generated_pdf/12824" rel="nofollow" target="_blank" title="Télécharger la page en version PDF" class="m3-icons-share-pdf hidden-xs"></a></li>
+			<!--li><a href="https://www.millenaire3.com/layout/set/print/content/view/print/12824" target="_blank">p</a></li-->
+							<li id="print_current_content"><a href="javascript:window.print()" onclick="javascript:print()" rel="nofollow" title="Imprimer la page" class="m3-icons-share-print"></a></li>
+							<li><a href="/partage_email/12824" rel="nofollow" title="Partager ce contenu par e-mail" class="m3-icons-share-mail"></a></li>
+			</ul>
+
+</div>
+
+	<div class="collapse block-social-networks-share a2a_kit a2a_kit_size_32 a2a_default_style" id="addtoany-container">
+        <span class="tac_addtoanyshare"></span>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_linkedin"></a>
+    </div>
+
+<script type="text/javascript">
+	function deplierPartageReseauxSociaux()
+	{
+		fadeInOrFadeOut('#partages_reseaux_sociaux');
+	}
+
+	/**
+	* Affiche ou non (toogle), avec un effet JQuery
+	*/
+	function fadeInOrFadeOut(elementName)
+	{
+		$element = $(elementName);
+		if(! $element.hasClass("hide"))
+		{
+			$element.fadeOut(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+		else
+		{
+			$element.fadeIn(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+	}
+
+	// Alert a message when the user shares somewhere
+		function addThisEventHandler(evt) {
+		    switch (evt.type)
+		    {
+		        case "addthis.menu.share":
+		            incrementerPartages(12775, evt.data.service);
+		            break;
+		        default:
+		            console.log('received an unexpected event', evt);
+		    }
+		}
+
+	functionsInitialization.push(function shareInitialization()
+	{
+																						
+		// Listen to various events
+		try
+		{
+			addthis.addEventListener('addthis.menu.share', addThisEventHandler);
+		}
+		catch(err)
+		{}
+	});
+</script>
+
+</div>
+
+<div class="row">
+	<!--  main Content region -->
+        <div class="col-xs-60 col-sm-60 col-md-47">
+            <div class="item block-intro">
+                <p class="over-under-line uppercase">Interview de Bruno Vetel</p>
+
+                <div class="row">
+                				        	<div class="col-xs-60 col-sm-30 col-md-30">
+							    <figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/8/3/0/8/228038-1-fre-FR/PG_itw_B_Vetel.png"  width="310"   height="358"  class="img-responsive margin-bottom-5 " alt="" /></div></figure>
+			             				<div class="itw_qualite"><span class="ezstring-field">Maître de Conférences en Sciences de l&#039;Information et de la Communication</span></div>
+	
+			            </div>
+			        
+								        	<div class="col-xs-60 col-sm-30 col-md-30 margin-bottom-15">
+			        				        	                        <p class="item-face-face">&lt;&lt; l’ironie de la chose, c’est que les farmers paient aussi des abonnements, et qu’on n’a pas envie de les voir partir &gt;&gt;.</p>
+	                                            <div class="ezrichtext-field"><p>Bruno V&eacute;tel est Ma&icirc;tre de Conf&eacute;rences en Sciences de l'Information et de la Communication &agrave; l'IAE de Poitiers et chercheur au CEREGE,&nbsp;ses travaux portent sur l&rsquo;&eacute;conomie du jeu vid&eacute;o, notamment du jeu en ligne Dofus, et sur la communaut&eacute; de ses utilisateurs.</p><p>&nbsp;</p>
+</div>
+
+                        <div class="informations">
+                        			                    	<div class="ressource-meta">
+		                    									    								    		<p class="keywords-title">Réalisée par :</p>
+							    		<ul class="list-inline keywords">
+							    											    			<li>
+											   		<a href="/auteurs/grosdemouge-pierre" title="Ouvrir la fiche de Pierre GROSDEMOUGE">
+   	Pierre GROSDEMOUGE
+</a>
+																									</li>
+																					</ul>
+															        </div>
+			                                            <div class="ressource-meta">
+		                        	<p class="keywords-title">Tag(s)&nbsp;:</p>
+	<ul class="list-inline keywords">
+			            
+	<li>
+		<a href="/tag/numerique" title="">Numérique</a>, 	<li>
+
+	    	            
+	<li>
+		<a href="/tag/Economie" title="">Économie</a>	<li>
+
+	    	</ul>
+
+		                    </div>
+		                    <div class="ressource-meta">
+		                        	<span class="keywords-title">Date : <span class="publication_date">20/02/2018</span></span>
+
+		                    </div>
+		                </div>
+                    </div>
+                </div>
+            </div>
+
+            
+           	            	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Comment présenter Dofus à ceux qui ne connaissent pas le monde du jeu vidéo ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>Le jeu compte autour de 10 millions de joueurs, il a été décliné en dessin animés, en mangas</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Il s&rsquo;agit d&rsquo;un jeu vid&eacute;o fran&ccedil;ais en ligne, massivement multi-joueur (MMOG), sorti en 2004. Il est d&eacute;velopp&eacute; et &eacute;dit&eacute; par l&rsquo;entreprise fran&ccedil;aise Ankama, qui est bas&eacute;e dans le nord de la France, &agrave; Roubaix. C&rsquo;&eacute;tait une petite startup en 2004, c&rsquo;est aujourd&rsquo;hui une v&eacute;ritable multinationale. Le jeu compte autour de 10 millions de joueurs, il a &eacute;t&eacute; d&eacute;clin&eacute; en dessin anim&eacute;s, en mangas&hellip; Ils emploient aujourd'hui plus 400 personnes, Disney les avait approch&eacute;s pour les racheter. Une telle dur&eacute;e de vie et un tel succ&egrave;s sont exceptionnels dans le paysage des jeux vid&eacute;o en ligne, et m&ecirc;me uniques pour un jeu fran&ccedil;ais.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>À quoi ressemble le jeu, concrètement ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+													</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>On est dans un univers &laquo;&nbsp;m&eacute;di&eacute;val fantastique&nbsp;&raquo;, fait de chevaliers, de dragons, de donjons&hellip; dessin&eacute;s dans un style manga, tr&egrave;s color&eacute;. Les joueurs incarnent des aventuriers (guerriers, voleurs, magiciens&hellip;) et cherchent &agrave; mener &agrave; bien des qu&ecirc;tes en s&rsquo;associant entre eux au sein de &laquo;&nbsp;guildes&nbsp;&raquo;, en combattant diff&eacute;rents monstres mais en affrontant aussi d&rsquo;autres &eacute;quipes de joueurs, ou en faisant du commerce, de l&rsquo;artisanat&hellip;</p><p>Chaque joueur cherche &agrave; am&eacute;liorer son personnage en collectant de la monnaie du jeu. Cette monnaie lui permet d&rsquo;acheter de nouvelles armes, de nouvelles comp&eacute;tences. Au fur et &agrave; mesure, ce personnage devient plus puissant, acqui&egrave;re des &laquo;&nbsp;points d&rsquo;exp&eacute;rience&nbsp;&raquo; et peut affronter de nouvelles &eacute;preuves.</p><p>Techniquement, le logiciel du jeu doit &ecirc;tre h&eacute;berg&eacute; sur un serveur, sorte d&rsquo;ordinateur central auquel se connectent les joueurs. C&rsquo;est ce que l&rsquo;on appelle une architecture clients/serveur.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>En quoi peut-on parler d’une « économie du jeu » ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>Sur chaque serveur, il y a donc un véritable marché d’objets, avec son offre et sa demande. </q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Toute la progression que le joueur peut r&eacute;aliser dans le jeu est b&acirc;tie sur la collecte et l&rsquo;accumulation de la monnaie du jeu (le Kama). Cette monnaie est cr&eacute;&eacute;e par l&rsquo;action des joueurs : plus ils agissent, plus ils tuent de monstres par exemple, plus la quantit&eacute; de monnaie pr&eacute;sente dans le jeu augmente. C&rsquo;est aux joueurs que revient donc la cr&eacute;ation mon&eacute;taire. Avec cette monnaie, on peut acheter des comp&eacute;tences, mais aussi des objets &agrave; d&rsquo;autres joueurs. Sur chaque serveur, il y a donc un v&eacute;ritable march&eacute; d&rsquo;objets, avec son offre et sa demande.</p><p>Le grand probl&egrave;me est que ces march&eacute;s demandent &agrave; &ecirc;tre r&eacute;gul&eacute;s pour qu&rsquo;ils fonctionnent bien, puisqu&rsquo;un march&eacute; ne fonctionne pas tout seul. Si on laisse faire, &agrave; la mode n&eacute;olib&eacute;rale, g&eacute;n&eacute;ralement &ccedil;a ne marche pas, en tous cas dans les jeux en ligne. Le principal ph&eacute;nom&egrave;ne, c&rsquo;est la sp&eacute;culation et l&rsquo;inflation des monnaies. Il y a des ph&eacute;nom&egrave;nes de th&eacute;saurisation : des personnes vont acheter des objets rares et les conserver pour les revendre au meilleur moment, lorsqu&rsquo;ils deviennent tr&egrave;s rares et que leur cours monte. Et vu que ce sont des &eacute;conomies assez petites, ces m&eacute;canismes peuvent compl&egrave;tement d&eacute;stabiliser les prix, et renverser une grosse partie de la m&eacute;canique de jeu, du &laquo;&nbsp;gameplay&nbsp;&raquo;, qui repose sur la raret&eacute; relative des objets dans le jeu&nbsp;: tout devient trop cher ! Ces ph&eacute;nom&egrave;nes sont donc tr&egrave;s dangereux pour les concepteurs du jeu, qui g&egrave;rent le fonctionnement de la plateforme. Ils peuvent bloquer une bonne partie du jeu, et entrainer des ph&eacute;nom&egrave;nes d&rsquo;&eacute;viction : faire que des joueurs quittent la table, arr&ecirc;tent de payer leur abonnement. Le risque est donc de ruiner le jeu.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Les joueurs qui thésaurisent ainsi respectent finalement les règles du jeu. Ils en ont le droit. Certaines pratiques des joueurs peuvent elles s’apparenter à ce que l’on appelle une « économie informelle » ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>C’est la pratique du « farming », on « cultive » des pièces d’or</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Il y en a plusieurs. Je pense en premier lieu, justement, &agrave; cette production mon&eacute;taire, qui peut prendre des dimensions informelles, voire atteindre les limites de la l&eacute;galit&eacute;. Certains joueurs rep&egrave;rent par exemple que tuer un certain type de monstre g&eacute;n&egrave;re &eacute;norm&eacute;ment de pi&egrave;ces d&rsquo;or, ils vont donc se sp&eacute;cialiser dans l&rsquo;action de tuer ce monstre pour r&eacute;colter des pi&egrave;ces d&rsquo;or. Ils vont &laquo;&nbsp;industrialiser&nbsp;&raquo; la chasse et produire &eacute;norm&eacute;ment de pi&egrave;ces d&rsquo;or. C&rsquo;est la pratique du &laquo;&nbsp;farming&nbsp;&raquo;, on &laquo;&nbsp;cultive&nbsp;&raquo; des pi&egrave;ces d&rsquo;or. Cette monnaie peut alors &ecirc;tre inject&eacute;e dans l&rsquo;&eacute;conomie du jeu, mais elle peut aussi &ecirc;tre revendue, contre des euros sonnants et tr&eacute;buchants, sur diff&eacute;rents march&eacute;s parall&egrave;les. Il existe des sites sp&eacute;cialis&eacute;s, des plateformes ind&eacute;pendantes, qui sont des plateformes de courtage. On les trouve sur internet, elles sont consultables de partout. Pour tous les jeux de ce type existant (il y en a des dizaines), on peut y acheter et vendre de la monnaie du jeu contre des euros, des dollars&hellip; L&rsquo;existence de ces plateformes de courtage incite donc fortement certains joueurs &agrave; amplifier leur production mon&eacute;taire dans le jeu, pour gagner de l&rsquo;argent.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Comment se font les échanges ? On va sur le site et on achète la monnaie du jeu avec sa carte bleue ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>Les courtiers qui vendent l’argent du jeu se trouvent plutôt en Chine, ou dans les pays de l’Est, on ne sait pas très bien</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Oui, plus g&eacute;n&eacute;ralement via un paiement en ligne PayPal. Ensuite ces courtiers ont des complices &agrave; l&rsquo;int&eacute;rieur du jeu, des joueurs qui ont amass&eacute; de l&rsquo;argent du jeu et vont &laquo;&nbsp;offrir&nbsp;&raquo; &agrave; votre personnage le nombre de pi&egrave;ces d&rsquo;or correspondant &agrave; ce que vous avez pay&eacute;. C&rsquo;est ces joueurs qu&rsquo;on appelle les &laquo;&nbsp;gold farmers&nbsp;&raquo;. Ces &eacute;changes, selon une logique de chambre de compensation, sont donc asynchrones (1. Vous payez sur une plateforme, 2. Vous recevez dans le jeu ce que vous avez achet&eacute;), les notions de confiance, de r&eacute;putation sont donc centrales sur ces circuits commerciaux. Les joueurs vont passer du temps &agrave; trouver des sites de confiance, chercher les recommandations d&rsquo;autres joueurs, pour &eacute;viter de se faire arnaquer, de payer sans avoir de monnaie en retour dans le jeu.</p><p>Les courtiers qui vendent l&rsquo;argent du jeu se trouvent plut&ocirc;t en Chine, ou dans les pays de l&rsquo;Est, on ne sait pas tr&egrave;s bien. &Ccedil;a reste des activit&eacute;s tr&egrave;s floues, autour desquelles il y a beaucoup de fantasmes. Les enqu&ecirc;tes montrent notamment l&rsquo;activit&eacute; de la Chine, o&ugrave; des acteurs se sont fortement sp&eacute;cialis&eacute; dans ce <em>farming</em>, en poussant au maximum l&rsquo;organisation du travail, afin de cr&eacute;er des fili&egrave;res d&rsquo;approvisionnement massive en monnaie du jeu qui est donc &eacute;chang&eacute;e contre la monnaie r&eacute;elle des joueurs occidentaux.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Il y a donc une sorte de division du travail, certains pays se spécialisent dans le farming, la production de monnaie, et d’autres pays achètent ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>C’est une organisation que l’on retrouve pour le commerce informel entourant les jeux en ligne</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Exactement, c&rsquo;est ce que montrent les enqu&ecirc;tes sur le sujet, notamment des enqu&ecirc;tes r&eacute;alis&eacute;es &agrave; Oxford. C&rsquo;est une organisation que l&rsquo;on retrouve pour le commerce informel entourant les jeux en ligne, mais aussi pour les ventes de &laquo;&nbsp;like&nbsp;&raquo; sur Facebook par exemple. L&agrave; ce sont des pays comme Madagascar qui dominent le march&eacute;.</p><p>Ce que montrent mes recherches autour d&rsquo;un jeu comme Dofus, c&rsquo;est que cette r&eacute;partition des taches se fait &eacute;galement entre classes sociales, &agrave; l&rsquo;int&eacute;rieur d&rsquo;un m&ecirc;me pays. Les joueurs des pays riches, qui paient leur abonnement et ont envie de passer moins de temps &agrave; r&eacute;aliser des taches basiques et r&eacute;p&eacute;titives r&eacute;mun&egrave;rent des joueurs &eacute;trangers pour le faire &agrave; leur place. Mais ils paient aussi des joueurs issus de milieux populaires, dans leur propre pays. Je le montre &agrave; propos de Dofus : quand on va en banlieue parisienne, ou en banlieue lilloise, on s&rsquo;aper&ccedil;oit que les jeunes des milieux populaires font ce travail de <em>farming</em>. Les entretiens r&eacute;alis&eacute;s avec eux montrent comment ces joueurs expliquent qu&rsquo;ils &laquo;&nbsp;rentabilisent le jeu&nbsp;&raquo; : issus de milieux populaires, ils ne partent pas en vacances, et sont coinc&eacute;s &agrave; la maison pendant les cong&eacute;s scolaires, sans forc&eacute;ment de moyens de locomotion ni d&rsquo;argent de poche pour aller &laquo;&nbsp;en ville&nbsp;&raquo;. Ils restent donc chez eux, et collectent de l&rsquo;argent du jeu &agrave; longueur de journ&eacute;e, pour le vendre &agrave; des joueurs d&rsquo;une autre classe sociale, en &eacute;change d&rsquo;euros.</p><p>Ces jeunes n&rsquo;ont g&eacute;n&eacute;ralement pas les comp&eacute;tences n&eacute;cessaires pour mettre en place un syst&egrave;me de courtage, de chambre de compensation ou de vente en ligne s&eacute;curis&eacute;e. Les &eacute;changes se font donc diff&eacute;remment, c&rsquo;est plut&ocirc;t de la d&eacute;brouille, du bricolage : Certains se donnent rends-vous dans un arr&ecirc;t de bus, pour s&rsquo;&eacute;changer le code d&rsquo;acc&egrave;s contre un ch&egrave;que. D&rsquo;autres se retrouvent avec leur ordinateur sous le bras, et se connectent en m&ecirc;me temps pour r&eacute;aliser le transfert d&rsquo;argent du jeu</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Comment font-ils pour prendre contact, pour se rencontrer ?</strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>La véritable prise de contact se faisait par e-mail.</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Ce commerce passe beaucoup par les sites classiques de petites annonces. Ils mettent souvent des faux num&eacute;ros de t&eacute;l&eacute;phone, puisque un num&eacute;ro est obligatoire sur ces sites, et lors de mon enqu&ecirc;te, je tombais souvent sur des vieilles dames qui n&rsquo;en pouvaient plus qu&rsquo;on les appelle pour leur acheter &laquo;&nbsp;un personnage de Dofus&nbsp;&raquo; alors qu&rsquo;elles ne savaient m&ecirc;me pas ce que c&rsquo;&eacute;tait et n&rsquo;avaient parfois m&ecirc;me pas d&rsquo;ordinateur. La v&eacute;ritable prise de contact se faisait par e-mail. Ce recours aux petites annonces fonctionne notamment pour les reventes de personnages.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>La revente de personnages ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>On trouve donc ces personnages en vente sur les sites de petites annonces, entre les cafetières et les scooters d’occasion.</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Si l&rsquo;on peut &eacute;changer de la monnaie entre personnages dans le jeu, ce n&rsquo;est pas le cas des caract&eacute;ristiques qui sont attach&eacute;es &agrave; un personnage : plus on joue longtemps avec un personnage, plus il devient comp&eacute;tent, plus il acqui&egrave;re un niveau d&rsquo;exp&eacute;rience important&hellip;&nbsp;Certains joueurs sont pr&ecirc;ts &agrave; payer, l&agrave; aussi, pour b&eacute;n&eacute;ficier directement d&rsquo;un personnage de niveau &eacute;lev&eacute;. Ils vont donc racheter un personnage exp&eacute;riment&eacute;. Des personnages qui se vendent jusqu&rsquo;&agrave; 200&euro; pour un jeu comme Dofus, et parfois beaucoup plus pour d&rsquo;autres jeux. Et on trouve donc ces personnages en vente sur les sites de petites annonces, entre les cafeti&egrave;res et les scooters d&rsquo;occasion.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>On les trouve sur des sites grand-public, comme Le Bon Coin ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>En 2007, Amazon a interdit la vente d’objets virtuels</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>C&rsquo;est sur des sites grand public. Mais l&agrave; encore, tout va d&eacute;pendre de la politique de la plateforme, ici de sa politique quant au commerce d&rsquo;objets virtuels.</p><p>Si on prend l&rsquo;exemple d&rsquo;Amazon, la plateforme permettait, jusqu&rsquo;en 2007 ce type de commerce. Amazon &eacute;tait alors largement utilis&eacute;e par les joueurs de Word o&ugrave; Warcraft par exemple, pour la vente de personnage ou d&rsquo;objets vid&eacute;o ludiques. En 2007, Amazon a interdit la vente d&rsquo;objets virtuels sur sa plateforme et les joueurs ont migr&eacute; sur d&rsquo;autres sites moins connus de revente d&rsquo;objets d&rsquo;occasion.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Vos recherches portent également sur la mise en place de « serveurs privés », ou de « serveurs parallèles ». De quoi s’agit-il, et peut-on parler, là aussi, d’une économie informelle ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>certains joueurs vont aussi copier le code du jeu et le faire tourner dans leur coin</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Absolument. On est l&agrave; souvent dans une zone grise, une forme de tol&eacute;rance, et on est dans certains cas dans des pratiques illicites.</p><p>Ces jeux ont des infrastructures client/serveur, et ont donc des limitations techniques qui font qu&rsquo;on ne peut rassembler qu&rsquo;un nombre de joueurs limit&eacute;s sur un serveur, sur un terrain de jeux. Quand on d&eacute;passe un certain nombre de joueurs, on doit cr&eacute;er un nouveau serveur, un autre terrain de jeu qui aura la m&ecirc;me base logicielle mais une vie propre, une &eacute;conomie propre et ind&eacute;pendante. L&rsquo;entreprise &eacute;ditrice du jeu ouvre donc de nouveaux serveurs, mais certains joueurs vont aussi copier le code du jeu et le faire tourner dans leur coin. Ils ont alors la maitrise de son fonctionnement, de sa vie sociale et de sa vie &eacute;conomique. Ce type de serveurs priv&eacute;s ou pirates sont apparus d&egrave;s les ann&eacute;es 1990. Le Jeu Ultima Online par exemple a vu ses premiers serveurs priv&eacute;s apparaitre avant m&ecirc;me que le jeu officiel ne soit lanc&eacute;. Lorsque la version &laquo;&nbsp;beta&nbsp;&raquo; du jeu est sortie, des gens ont fait du <em>reverse ingeneering</em> et ont mis en place des serveurs priv&eacute;s d&rsquo;Ultima Online. Les serveurs priv&eacute;s sont donc intimement li&eacute;s aux jeux en ligne. D&egrave;s qu&rsquo;il y a un nouveau MMOG, des gens vont tout de suite essayer d&rsquo;ouvrir le ventre du logiciel pour le copier.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Chaque serveur développe son propre marché, qui évolue d’une manière propre en fonction des joueurs et des attitudes des gens qui tiennent les serveurs. </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+													</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Oui, selon les dynamiques sociales du jeu. Donc chaque serveur d&eacute;veloppe un fonctionnement &eacute;conomique diff&eacute;rent. Il y a les serveurs de base, h&eacute;berg&eacute;s dans l&rsquo;entreprise qui cr&eacute;e le jeu. L&agrave;, l&rsquo;entreprise peut agir, r&eacute;guler les march&eacute;s pour que la vie &eacute;conomique de ses diff&eacute;rents serveurs reste coh&eacute;rente. Mais quand apparaissent des serveurs priv&eacute;s, des &laquo;&nbsp;serveurs pirates&nbsp;&raquo;, ils sont g&eacute;r&eacute;s par d&rsquo;autres personnes qui peuvent chercher &agrave; stabiliser l&rsquo;&eacute;conomie, les volumes d&rsquo;&eacute;changes, d&rsquo;une fa&ccedil;on compl&egrave;tement diff&eacute;rente. Ces serveurs priv&eacute;s accueillent des populations de joueurs plus restreinte et ce sont donc des plus petites &eacute;conomies, avec des volumes de monnaie du jeu et &eacute;changes d&rsquo;objets moins importants.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Quel est l’intérêt pour des joueurs d’aller sur ces serveurs pirates ou parallèles, plutôt que sur les serveurs officiels des créateurs du jeu ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>C’est d’abord un intérêt social </q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>C&rsquo;est d&rsquo;abord un int&eacute;r&ecirc;t social : ces serveurs priv&eacute;s sont de deux types : soit extr&ecirc;mement petits, une poign&eacute;e de joueurs se retrouvent dessus. Dans le cas de Dofus, qui s&rsquo;adresse &agrave; des adolescents&nbsp;: on a 5 &agrave; 10 joueurs, qui se retrouvent. On invite ses copains, dans une sorte de salle de jeu virtuel, une maison de poup&eacute;e ou de Playmobil virtuel. Avec l&rsquo;attrait pour un adolescent du cot&eacute; ill&eacute;gal&nbsp;: on cherche &agrave; impressionner ses copains en montrant qu&rsquo;on est capable de fabriquer cette petite salle de jeu, on invite ses amis comme on les inviterait &agrave; discuter sur une chatroom. Ensuite il y a des serveurs &agrave; plus grosses &eacute;chelle, avec plusieurs milliers de joueurs. L&agrave; il y a g&eacute;n&eacute;ralement sur le serveur des formes de boutiques virtuelles, sur lesquelles on peut acheter des bonus permettant de progresser plus vite dans le jeu. Cela passe alors par de micro transaction financi&egrave;res, via PayPal ou par SMS, syst&egrave;mes de paiement bien adapt&eacute;s aux comportements &eacute;conomiques des adolescents.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Le fait de monter un serveur parallèle est-il systématiquement illégal ?</strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>on garde un œil sur ce qui se fait sur ces petits serveurs privés pour s’en inspirer et faire évoluer le jeu.</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>On est souvent dans une zone grise, &ccedil;a d&eacute;pend compl&egrave;tement de la politique choisie par l&rsquo;entreprise qui d&eacute;tient le jeu. ANKAMA, la soci&eacute;t&eacute; qui produit Dofus, a longtemps eu une politique consid&eacute;rant que les serveurs priv&eacute;s faisaient du parasitisme. Ils profitaient d&rsquo;un logiciel con&ccedil;u et r&eacute;alis&eacute; par les salari&eacute;s d&rsquo;ANKAMA pour faire de l&rsquo;argent avec. ANKAMA avait donc une politique d&rsquo;intimidation : courriers de mises en demeure, prise de contact avec les h&eacute;bergeurs louant les serveurs (OVH par exemple), pour avoir les adresses des personnes qui h&eacute;bergeaient un serveur priv&eacute;&hellip; Et dans 90% des cas, les personnes - qui sont g&eacute;n&eacute;ralement des jeunes, obtemp&eacute;raient. C&rsquo;&eacute;tait une politique de menace de poursuites en justice. Aux alentours de 2010, ils ont voulu faire des proc&egrave;s &agrave; certains gros serveurs, embl&eacute;matiques, qui r&eacute;alisaient beaucoup de profits, des dizaines de milliers d&rsquo;euros. Ils ont voulu faire un proc&egrave;s servant d&rsquo;exemple.</p><p>Mais MOJANG (l&rsquo;entreprise &eacute;ditrice du jeu MINECRAFT) a eu une politique compl&egrave;tement diff&eacute;rente : ils con&ccedil;oivent un logiciel de jeu, toujours en logistique client/serveur, et ils proposent aux gens d&rsquo;acheter la possibilit&eacute; d&rsquo;installer leur propre serveur. Ils ont fait ce choix dans l&rsquo;id&eacute;e qu&rsquo;ils ne pourraient de toute fa&ccedil;on pas emp&ecirc;cher ces copies, et cette d&eacute;marche leur permettait de garder la main sur les innovations techniques, les exp&eacute;rimentations men&eacute;es sur ces serveurs priv&eacute;s. Un peu dans la m&ecirc;me logiques que les logiciels open source : tout le monde participe &agrave; faire &eacute;voluer le programme. Les programmeurs continuent &agrave; d&eacute;velopper le jeu sur leurs serveurs, mais on garde un &oelig;il sur ce qui se fait sur ces petits serveurs priv&eacute;s pour s&rsquo;en inspirer et faire &eacute;voluer le jeu. On impl&eacute;mente ensuite les initiatives int&eacute;ressantes, ce qui permet finalement d&rsquo;externaliser une partie de la R&amp;D, de la cr&eacute;ativit&eacute;, qui &eacute;tait avant uniquement dans l&rsquo;entreprise. C&rsquo;est le mod&egrave;le de Minecraft. L&rsquo;&eacute;conomie informelle sert de moteur d&rsquo;innovation.</p><p>On a vu ensuite des gens se sp&eacute;cialiser dans la fourniture de ces serveurs Minecraft. Ils proposaient des serveurs d&eacute;j&agrave; tout install&eacute;s, et les revendaient directement &agrave; ceux qui n&rsquo;ont pas les comp&eacute;tences techniques pour installer &ccedil;a. Ils leur proposaient ensuite de rajouter, sur ces serveurs, une boutique virtuelle sur laquelle les joueurs allaient pouvoir d&eacute;penser leurs euros.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Quand c’est Mojang qui propose cette possibilité d’installer son propre serveur, on n’est pas dans l’économie informelle, on est dans un modèle économique d’achat légal du droit d’utiliser, d’exploiter le logiciel… mais par contre, quand les personnes vont plus loin, installent leur propre boutique et revendent des serveurs déjà installés, on dépasse la licence légale qui a été achetée auprès de Mojang ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>On fait miroiter un salaire, une embauche, mais finalement l’entreprise retire profit de cette activité informelle</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>C&rsquo;est l&agrave; qu&rsquo;on est dans une zone grise. Mojang n&rsquo;intervient pas. Il faudrait v&eacute;rifier les conditions d&eacute;finies, le contrat sign&eacute; &agrave; l&rsquo;achat du logiciel. Est-ce que Mojang s&rsquo;est r&eacute;serv&eacute; le droit de pouvoir interdire de gagner de l&rsquo;argent avec un serveur, ou est-ce que la licence le permet ? Ce n&rsquo;est pas si &eacute;vident. Dans le cas de Mojang, c&rsquo;est particuli&egrave;rement int&eacute;ressant, puisqu&rsquo;ils ont eu la volont&eacute; d&rsquo;utiliser le travail fait par les programmateurs qui avaient cette activit&eacute; d&rsquo;installation de serveurs, ou de modification du logiciel. Beaucoup de jeunes programmeurs l&rsquo;ont fait pour se faire reconnaitre professionnellement ! Certains avaient m&ecirc;me des accords tacites avec l&rsquo;entreprise, c&rsquo;est du moins ce qu&rsquo;on entend : ils montraient leur savoir-faire dans le cadre de cette activit&eacute; informelle, et Mojang se serait engag&eacute;e &agrave; recruter les meilleurs d&rsquo;entre eux par ce biais. Mais elle ne l&rsquo;a pas fait. On trouve sur le net plusieurs controverses de ce type, des d&eacute;tenteurs de serveurs Minecraft &laquo;&nbsp;parall&egrave;les&nbsp;&raquo;, ou pirates, qui ont l&rsquo;impression de s&rsquo;&ecirc;tre fait avoir en montrant l&rsquo;&eacute;tendue de leur savoir-faire, leur comp&eacute;tence, leur capacit&eacute; &agrave; am&eacute;liorer le jeu&hellip;&nbsp;et dont on a repris les id&eacute;es sans qu&rsquo;ils ne soient finalement embauch&eacute;s. On fait miroiter un salaire, une embauche, mais finalement l&rsquo;entreprise retire profit de cette activit&eacute; informelle, la valorise financi&egrave;rement, mais ne formalise pas l&rsquo;activit&eacute; des programmeurs. ANKAMA s&rsquo;inspire d&rsquo;avantage maintenant de ce mod&egrave;le, en r&eacute;alisant que c&rsquo;est sans doute plus profitable.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>C’est donc une manière pour ces farmers d’accepter de faire le « sale boulot », ces tâches répétitives ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>Ils vont trouver du sens dans cette activité. Notamment en restaurant une certaine image d’eux-mêmes en mettant en avant leur multi activité</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Ils ne se vivent pas comme &ccedil;a. Soit ils se disent qu&rsquo;ils le font parce qu&rsquo;ils n&rsquo;ont pas le choix, parce que c&rsquo;est ce qui leur permet de continuer &agrave; jouer, de s&rsquo;abonner, et donc de retrouver leurs copains dans le jeu. Soit ils vont trouver du sens dans cette activit&eacute;. Notamment en restaurant une certaine image d&rsquo;eux-m&ecirc;mes en mettant en avant leur multi activit&eacute; : ils &eacute;coutent de la musique, ou ils regardent un film o&ugrave; ils font leurs devoirs en m&ecirc;me temps qu&rsquo;ils produisent de la monnaie du jeu, et consid&egrave;rent donc que leur activit&eacute; ne peut pas se r&eacute;duire &agrave; ce sale boulot. Il y a aussi un farming qui se fait &agrave; une &eacute;chelle plus industrielle, l&agrave; le joueur ouvre plusieurs sessions du jeu en m&ecirc;me temps, en se connectant avec plusieurs personnages, sur une m&ecirc;me machine, lorsque le jeu le permet, ou sur plusieurs machines diff&eacute;rentes.</p><p>On parle alors de multi farming, sur plusieurs fen&ecirc;tres en m&ecirc;me temps ou plusieurs machines, ce qui implique de nouvelles comp&eacute;tences, de nouvelles techniques : il faut &ecirc;tre extr&ecirc;mement organis&eacute; pour cliquer tour &agrave; tour sur les 10 fen&ecirc;tres ouvertes en m&ecirc;me temps. L&rsquo;attention est alors enti&egrave;rement accapar&eacute;e par ces exigences organisationnelles.</p><p>Ceux qui sont dans ce type de farming cherchent effectivement &agrave; g&eacute;n&eacute;rer du cash, et pas seulement &agrave; se r&eacute;abonner.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Quelles sommes peuvent-ils gagner ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q> Ils étaient davantage dans une recherche de « fun », de vertige.</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>Difficile &agrave; dire, car les gens qui <em>farment</em> dans ces proportions sont plus durs &agrave; rencontrer en France. Mais j&rsquo;en ai eu un exemple, des jeunes qui se livraient &agrave; ce type de <em>multi-farming</em> en France. Ils &eacute;taient davantage dans une recherche de &laquo;&nbsp;fun&nbsp;&raquo;, de vertige. Ils faisaient &ccedil;a sur le grand &eacute;cran de leurs t&eacute;l&eacute;visions, et &eacute;taient dans une logique de d&eacute;fi face &agrave; la complexit&eacute; de la t&acirc;che.</p><p>J&rsquo;ai rencontr&eacute; des Gold farmers &eacute;trangers, sur des plateformes sur lesquelles on se connecte normalement pour n&eacute;gocier les prix. Eux utilisent beaucoup de bots, c&rsquo;est &agrave; dire de petits programmes qui font une partie de ces t&acirc;ches r&eacute;p&eacute;titives &agrave; leur place. Et eux se chargent de v&eacute;rifier que ces personnages autonomes, et leur boucle d&rsquo;action basique ne sont pas bloqu&eacute;s soit par un bug, soit par des mod&eacute;rateurs du jeu. Si les bots sont rep&eacute;r&eacute;s, ils sont &eacute;ject&eacute;s du jeu. Les bots sont plus facilement rep&eacute;r&eacute;s, leur activit&eacute; est tellement m&eacute;tronomique qu&rsquo;elle est identifiable dans les statistiques des serveurs, contrairement au farming manuel. ANKAMA a tent&eacute; de mettre en place des proc&eacute;dures pour automatiser l&rsquo;&eacute;jection de ces farmers manuels, mais ils se sont heurt&eacute;s &agrave; la fronde des joueurs lambda qui, eux aussi, ont de temps a autres des activit&eacute;s de farming afin de collecter de l&rsquo;or, de faire progresser leur personnage&hellip; et ils se retrouvaient &eacute;ject&eacute;s comme s&rsquo;ils avaient eu une activit&eacute; inconvenante alors que c&rsquo;&eacute;tait d&rsquo;honn&ecirc;tes joueurs, payant leur abonnement&hellip;</p><p>Les dirigeants d&rsquo;ANKAMA ont alors estim&eacute; que c&rsquo;&eacute;tait trop risqu&eacute; en termes de r&eacute;putation de mettre en place ces algorithmes de d&eacute;tection. Ils ont pr&eacute;f&eacute;r&eacute; garder une certaine proportion de farming, plut&ocirc;t que de mettre dehors des joueurs de bonne foi.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+                        	<div class="interview-item">
+	<div class="tb-margin-16">
+		<p class="over-under-line"><strong>Finalement, est-ce que ces pratiques de farming sont nuisibles à l’industrie du jeu ? Ou bien est-ce qu’elles font partie de son économie et lui assure aussi une part de croissance ? </strong></p>
+    </div> 
+	<div class="row block-total-height-container">
+		<div class="col-xs-60 col-sm-60 col-md-20 block-total-height-container-container">
+			<div class="block-total-height block-grey block-sidebar-left">
+				<p class="comment-highlighted">
+																<q>si on enlève les farmers de Dofus, le jeu ne fonctionne plus</q></p>
+								</div>
+		</div>
+		<div class="col-xs-60 col-sm-60 col-md-40 reponse-interview">
+			<div class="ezrichtext-field"><p>D&rsquo;un point de vue purement fonctionnel, elles ne sont pas nuisibles. C&rsquo;est une d&eacute;l&eacute;gation de tache. Les joueurs me l&rsquo;ont dit : si on enl&egrave;ve les farmers de Dofus, le jeu ne fonctionne plus. On a d&eacute;l&eacute;gu&eacute; &agrave; ces personnes les taches de production mon&eacute;taire dans le jeu, et si on leur enl&egrave;ve, il n&rsquo;y a plus de cr&eacute;ation mon&eacute;taire suffisante pour que l&rsquo;&eacute;conomie fonctionne correctement. Donc c&rsquo;est devenu un rouage indispensable au fonctionnement du jeu. D&rsquo;autant que les joueurs occidentaux ou riches n&rsquo;accepteraient plus, pour une part d&rsquo;entre eux, de faire cette basse besogne&hellip;</p><p>C&lsquo;est assez fascinant, parce que si on observe &ccedil;a d&rsquo;un point de vue d&rsquo;informaticien, on se dit que les concepteurs ont la ma&icirc;trise totale du jeu, de l&rsquo;environnement. Ils ont l&rsquo;algorithme, le programme, ils peuvent faire ce qu&rsquo;ils veulent. Mais en fait, <strong>la complexit&eacute; sociale, la part de l&rsquo;activit&eacute; informelle, deviennent telles qu&rsquo;&agrave; un moment donn&eacute;, ce n&rsquo;est plus eux qui peuvent r&eacute;guler la situation.</strong> Ils peuvent intervenir &agrave; la marge, r&eacute;soudre quelques probl&egrave;mes critiques pour le fonctionnement du jeu. Ils vont faire en sorte que tel objet r&eacute;apparaisse plus vite &agrave; l&rsquo;int&eacute;rieur du jeu, pour qu&rsquo;il soit moins rare et que les prix diminuent. Mais ils ne peuvent pas faire ce qu&rsquo;ils veulent, et ils ne savent pas faire ce qu&rsquo;ils veulent. Ils sont en interd&eacute;pendance totale avec toutes les sortes de joueurs : ceux qui paient leurs abonnements, ceux qui passent leur temps &agrave; collecter de l&rsquo;argent pour le revendre aux autres, ceux qui veulent jouer sans passer par les premi&egrave;res &eacute;tapes&hellip;</p><p><strong>On pourrait supprimer ces premi&egrave;res &eacute;tapes, ces t&acirc;ches r&eacute;p&eacute;titives, mais l&rsquo;ironie de la chose, c&rsquo;est que les farmers paient aussi des abonnements, et qu&rsquo;on n&rsquo;a pas envie de les voir partir !</strong> Les Game designer me l&rsquo;ont dit : on peut potentiellement tout faire, tout changer, mais c&rsquo;est une alchimie sociale et &eacute;conomique tellement complexe qu&rsquo;on pr&eacute;f&egrave;re ne pas y toucher. Ils ont peur de d&eacute;stabiliser un syst&egrave;me qui fonctionne &laquo;&nbsp;grosso modo&nbsp;&raquo;, par un alliage d&rsquo;&eacute;conomie formelle et informelle. Ils pr&eacute;f&egrave;rent ne pas prendre le risque de tout perdre, de voir les joueurs partir. Donc surtout, &laquo;&nbsp;m&ecirc;me si on ne comprend pas grand-chose, &ccedil;a fonctionne, et on intervient donc le moins possible&nbsp;&raquo;.</p><p>C&rsquo;est un gros probl&egrave;me pour ces entreprises vid&eacute;o ludiques, car cela implique qu&rsquo;elles aient dans leurs &eacute;quipes des personnes qui soient &agrave; la fois comp&eacute;tentes en programmation, mais qui aient &eacute;galement des notions d&rsquo;&eacute;conomie, et une id&eacute;e assez pr&eacute;cise sur ce qui peut &ecirc;tre ludique en terme de dynamique &eacute;conomique. Si l&rsquo;&eacute;conomie d&rsquo;un jeu devient trop compliqu&eacute;e, trop fluctuante, les joueurs s&rsquo;en vont. Ils doivent aussi savoir quels m&eacute;canismes &eacute;conomiques vont fonctionner de fa&ccedil;on p&eacute;renne.</p><p><strong>Le seul moyen d&rsquo;en sortir, c&rsquo;est ce que font les jeux Facebook : c&rsquo;est de ne pas y rentrer! C&rsquo;est &agrave; dire de cr&eacute;er des jeux qui ne permettent pas les &eacute;changes entre les joueurs</strong>. Et dans lesquels on dit : si vous voulez acheter des comp&eacute;tences, ou des objets, il faut les acheter en euros, directement au concepteur du jeu. Mais m&ecirc;me comme &ccedil;a, les joueurs arrivent &agrave; d&eacute;tourner le syst&egrave;me pour s&rsquo;&eacute;changer des choses entre eux, notamment en utilisant les options permettant de se faire des cadeaux. Mais &ccedil;a ne permet pas de d&eacute;velopper une &eacute;conomie aussi complexe que celle d&rsquo;un jeu comme DOFUS.</p>
+</div>
+
+		</div>
+	</div>
+</div>
+            
+            
+            	<section class="print_hidden">
+		<div class="row">
+	     	<div class="col-xs-60 col-sm-60">
+	   			<h2 class="h4 h4-dossier block-title-overline margin-right-10">En lien avec le sujet</h2>
+	       	</div>
+	  	</div>
+	 	<div class="margin-bottom-30">
+	 		<section class="carousel3x3 margin-bottom-30">
+		 				         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2021/mon-travail-et-nous" title="">Mon travail et nous</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/7/5/9/509576-1-fre-FR/couv_travail.PNG"  width="614"   height="876"  class="img-responsive margin-bottom-15" alt="Couverture de Mon travail et nous" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>60 tendances pour questionner les exigences de l&#039;organisation et le besoin d&#039;harmonie au travail.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2017/le-design-generatif-un-nouveau-modele-pour-l-industrie" title="">Le design génératif : un nouveau modèle pour l&#039;industrie.</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/5/1/8/9/219815-9-fre-FR/le-design-generatif-un-nouveau-modele-pour-l-industrie.PNG"  width="386"   height="385"  class="img-responsive margin-bottom-15" alt="Portrait de Sylvain Legrand" /></figure>
+  <p class="uppercase"><b>Interview de Sylvain Legrand</b></p>
+       		   		<p>Directeur territorial des ventes, Autodesk</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/les-collectifs-numeriques-source-d-imaginaire-politique" title="">Les collectifs numériques, source d&#039;imaginaire politique</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/5/0/2/5/115205-6-fre-FR/noun_peer to peer_3537387.png"  width="642"   height="612"  class="img-responsive margin-bottom-15" alt="Représentation de la notion de &quot;peer to peer&quot; par une image d&#039;ordinateur mis en réseau" /></figure>
+  <p class="uppercase"><b>Texte de Valérie PEUGEOT</b></p>
+	<p>« Quand on se penche sur ce qui se passe dans les territoires de France et d’ailleurs, on observe un foisonnement d’individus et de collectifs qui cherchent, inventent, construisent pour répondre aux besoins que ni la puissance publique, ni les acteurs traditionnels du marché ne semblent en capacité de satisfaire ».</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2014/Axeleo-ou-l-innovation-sous-l-angle-du-business-model" title="">Axeleo ou l’innovation sous l’angle du business model</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/0/3/7/27306-10-fre-FR/Axeleo ou l’innovation sous l’angle du business model.jpg"  width="320"   height="320"  class="img-responsive margin-bottom-15" alt="Portrait de Eric Burdier" /></figure>
+  <p class="uppercase"><b>Interview de Eric BURDIER</b></p>
+       		   		<p>Directeur d&#039;Axeleo</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2014/la-ville-durable-vue-du-japon" title="">La ville durable vue du Japon</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/interview/2014/la-ville-durable-vue-du-japon/11387-1-fre-FR/la-ville-durable-vue-du-japon.jpg"  width="144"   height="283"  class="img-responsive margin-bottom-15" alt="Benoît Granier, Nicolas Leprêtre, doctorants en Sciences politiques" /></figure>
+  <p class="uppercase"><b>Interview de Benoit GRANIER et Nicolas LEPRÊTRE</b></p>
+       		   		<p>Doctorants Sciences politique</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/jeunesse-culture-numerique-les-six-grands-constats-qui-concernent-deja-la-generation-z" title="">Jeunesse, culture &amp; numérique : les six grands constats qui concernent déjà la génération Z</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/5/0/4/8/538405-34-fre-FR/197b14863572-couv_culture-numerique_resume.png"  width="1571"   height="2222"  class="img-responsive margin-bottom-15" alt="Couverture Culture &amp; Jeunesse : Le rapport des jeunes à la culture. Revue de littérature" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Pour mieux imaginer l’offre culturelle proposée demain aux jeunes publics, acter les grandes transformations qui changent la donne dès aujourd’hui</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/2040-le-programme-culturel-du-territoire" title="">« 2040, le programme culturel du territoire »</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/1/5/3/8/538351-13-fre-FR/d4063945f94a-2040-Document_futur_2040.png"  width="1749"   height="2481"  class="img-responsive margin-bottom-15" alt="Couverture « 2040, le programme culturel du territoire », Le programme culturel de la métropole lyonnaise par et pour les jeunes" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Un grand fou rire dans la ville jusqu’à l’aurore, une résidence citoyenne accueillie par l’Émeute de Lyon, « Carmen » hacké par nos ados. C’est à Lyon, en 2040.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/culture-et-numerique-cinq-scenarios-prospectifs-pour-la-metropole-de-lyon" title="">Culture et numérique : cinq scénarios prospectifs pour la Métropole de Lyon</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/7/9/2/8/538297-8-fre-FR/c4932045548e-couv_culture-numerique.png"  width="1571"   height="2222"  class="img-responsive margin-bottom-15" alt="Couverture du document" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Et si demain le spectacle vivant se déroulait dans le métavers ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2023/pratiques-et-preferences-culturelles-des-jeunes-metropolitains" title="">Pratiques et préférences culturelles des jeunes métropolitains</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/3/4/2/8/538243-9-fre-FR/f0c52afe9292-couv_rapport-pratiques-focus-group1.png"  width="2125"   height="3006"  class="img-responsive margin-bottom-15" alt="Couverture Pratiques et préférences culturelles des jeunes métropolitains, Atelier et Focus Groups" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Quand les pratiques on line et URL se complètent et s’entremêlent.</p>
+
+	</article>
+</div>
+
+							</section>
+		</div>
+	</section>
+
+        </div>
+<!--  /main Content region-->
+<!--  Right Sidebar -->
+        <div class="col-xs-60 col-md-13">
+            <div class="row">
+            	                            	                    		
+
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-dossiers">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="sidebar-picto m3-icons-sidebar-folders"></span>
+            <a title="" href=" /tous-les-dossiers ">   Dossiers
+            </a>
+        </h2>
+    </header>
+
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <div class="sidebar-block-content">
+        	                                    	<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/9/5/535989-1-fre-FR/3abfcaee6c8b-pms_light.jpg"  width="1413"   height="1414"  class="img-responsive margin-bottom-15" alt="Illustrations de personnes différentes sur une place" /></figure>
+                
+                <p class="publication-title"><a href="/dossiers/2023/action-publique-comment-penser-la-solidarite-depuis-un-territoire" title=""><span class="ezstring-field">Action publique : comment penser la solidarité depuis un territoire ?</span></a></p>
+	        
+            <footer class="sidebar-block-footer">
+            	                	<p><a  title="Consulter nos dossiers disponibles" href="/tous-les-dossiers">Tous les dossiers</a></p>
+                            </footer>
+        </div>
+    </div>
+</article>
+
+</div>
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-home">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="m3-icons-sidebar-picto-tags"></span>
+            <img src="/assets/images/unsprited/icons/tag.png" style= "margin-left: 4px; margin-right: 8px" alt="" />
+            <a href="/tous-les-tags" title="Consulter tous nos tags">Tags
+            </a>
+        </h2>
+    </header>
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <footer class="sidebar-block-footer">
+                            <p><a href="/tous-les-tags" title="Consulter tous nos tags">Tous les tags</a></p>
+                    </footer>
+    </div>
+</article>
+
+</div>
+	        </div>
+		</div>
+<!--  Right Sidebar-->
+</div>
+			<script>
+	function onYouTubeIframeAPIReady()
+	{
+		//Redimensionner les div de vidéos
+		var elements = document.getElementsByClassName("youtube_frame");
+		for(var i = 0 ; i < elements.length ; i++)
+		{
+			var element = elements[i];
+			var subElements = element.getElementsByClassName("youtube_player");
+			for(var j = 0 ; j < subElements.length ; j++)
+			{
+				var subElement = subElements[j];
+				var proportion = element.getAttribute("proportion");
+				var width = element.parentNode.offsetWidth;
+				var height = width * proportion;
+				subElement.setAttribute("width", "100%");
+				subElement.setAttribute("height", height);
+			}
+		}
+	}
+
+	functionsInitialization.push(onYouTubeIframeAPIReady);
+</script>	    </div>
+	</div>
+
+	<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="col-xs-60 col-sm-45 col-md-36 col-lg-39">
+                <nav class="navbar navbar-default footer-nav" role="navigation">
+                    <ul class="nav navbar-nav">
+                                                                            <li><a href="/qui-sommes-nous" title="">Qui sommes-nous</a></li>
+                        
+                        <li><a href="/newsletter_subscribe"><span lang="en">Newsletter</span></a></li>
+
+                        <li><a href="/formulaire/contactez_nous" >Contact</a></li>
+
+                                                                            <li><a href="/Accessibilite" >Accessibilité</a></li>
+                        
+                                                                            <li><a href="/plan-du-site" >Plan du site</a></li>
+                        
+                                                                            <li><a href="/mentions-legales" >Mentions légales</a></li>
+                        
+                                                                            <li><a href="/donnees-personnelles" >Données personnelles</a></li>
+                        
+                        <li><a href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-60 col-sm-15 hidden-md hidden-lg">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+                                                                                                                                                <div class="col-xs-60 col-sm-60 col-md-24 col-lg-21">
+                <a class="acces_metro" href="http://www.grandlyon.com" target="_blank" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)">Un site de la Métropole de Lyon</a>
+            </div>
+
+             <div class="hidden-xs visible-md visible-lg col-md-60 text-center">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+	
+	<div id="know-the-breakpoint"></div>
+	<script src="/assets/vendor/vendor.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/video-js/video.min.js"></script>
+<script src="/assets/vendor/video-js/lang/fr.js"></script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+	<script type="text/javascript">
+		functionsInitialization.push(function owlCarouselInitialization()
+		{
+		    $(".carousel3x3").owlCarousel({
+		        pagination: false,
+		        navigation: true,
+		        navigationText: [
+		            "<i class='glyphicon glyphicon-chevron-left'></i>",
+		            "<i class='glyphicon glyphicon-chevron-right'></i>"
+		        ],
+		        items: 3,
+		        itemsDesktop: [1160, 3],
+		        itemsDesktopSmall: [979, 3],
+		        itemsTablet:[600,2],
+		        itemsMobile: [479,1],
+		        scrollPerPage:true
+		    });
+		});
+
+		$(document).ready(function(){
+			$.each(functionsInitialization, function( index, value ) {
+				functionsInitialization[index]();
+			});
+		});
+	</script>
+</body>
+</html>

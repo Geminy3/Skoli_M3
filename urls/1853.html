@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Grand Lyon">
+<meta name="keywords" content="Millénaire 3">
+
+	
+		
+	
+	
+	<title>La place des mathématiques à Lyon : Millenaire 3, Territoire		</title>
+
+		<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@millenaire3">
+
+			<meta name="twitter:title" content="La place des mathématiques à Lyon | Millénaire 3">
+					<meta name="twitter:description" content="&quot;Je suis la seule des médailles Fields françaises actuellement en vie à avoir une activité scientifique hors Paris. Ce n’est pas un hasard que ce soit à Lyon !&quot;">
+														<meta name="twitter:image" content="	https://www.millenaire3.com/var/m3/storage/images/_aliases/large/7/6/0/7/87067-1-fre-FR/Cedric_Villani_01.gif">
+<meta name="twitter:image:alt" content="">
+
+										<meta name="twitter:creator" content="@millenaire3">
+			
+	<meta name="description" content="
+
+">
+		<!-- Bootstrap -->
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="/assets/css/style.min.css" type="text/css" rel="stylesheet" />
+
+	
+	<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/video-js/video-js.min.css" />
+
+<!-- Favicons, from http://realfavicongenerator.net/-->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/fav-icones/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/fav-icones/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/fav-icones/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/fav-icones/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/fav-icones/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/fav-icones/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/fav-icones/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/fav-icones/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/fav-icones/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+	<script type="text/javascript">
+		//Utilisation pour les scripts ajax
+		var rootUrl = "/";
+		var functionsInitialization = [];
+	</script>
+
+	<script type="text/javascript" src="/assets/vendor/tarteaucitronjs/tarteaucitron.js"></script>
+
+<script type="text/javascript">
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+
+        "orientation": "bottom", /* Banner position (top - bottom) */
+
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": true, /* Show the cookie list */
+
+        "showIcon": false, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* Disable auto consent */
+
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": false, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+        "mandatory": false, /* Show a message about mandatory cookies */
+    });
+
+    var tarteaucitronForceLanguage = "fr";
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
+
+    tarteaucitron.services.m3 = {
+        "key": "m3",
+        "type": "other",
+        "name": "Cookies internes Millénaire 3",
+        "uri": "",
+        "needConsent": true,
+        "cookies": ['cookieToken'],
+        "js": function () {
+            // When user allow cookie
+            "use strict";
+            registerCookieToken();
+            if(typeof whenM3CookieIsAccepted === "function")
+            {
+                // Fonction à définir dans les pages pour déclencher les scripts succeptibles de poser des cookies
+                whenM3CookieIsAccepted();
+            }
+        },
+        "fallback": function () {
+            // When user deny cookie
+            tarteaucitron.fallback(['m3-cookie-generation-zone'], function (x) {
+                // Remplacer la zone par "machin est désactivé"
+                return tarteaucitron.engage('m3');
+            });
+        }
+    };
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('m3');
+
+            tarteaucitron.user.matomoId = '58';
+        tarteaucitron.user.matomoHost = "https://statweb.grandlyon.com//";
+        (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
+    
+    (tarteaucitron.job = tarteaucitron.job || []).push('ausha');
+
+</script>
+</head>
+<body id="millenaire-3"  itemscope itemtype="http://schema.org/WebPage">
+			<header id="header">
+	<div id="print-top-menu" class="container">
+		<div class="row">
+        	<div class="col-xs-60">
+            	<img src="/assets/images/logo-millenaire-3-mini-blanc.png" alt="" style="float: left;">
+                <img src="/assets/images/logo-grand-lyon-la-metropole-blanc.png" alt="" style="float: right;">
+			</div>
+		</div>
+	</div>
+
+    <div id="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="clearfix" id="top-menu-content">
+                        <a href="#" title="Accéder au menu" class="link-sprite-focus m3-icons-btn-toggle-menu" id="btn-toggle-menu"></a>
+                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3-mini">
+                       	    <img src="/assets/images/logo-millenaire-3-mini.png" alt="" class="img-responsive" id="logo-mini-m3" />
+                        </a>
+
+                        <a class=" skippy sr-only sr-only-focusable" href="#content" title=""><span class="skiplink-text">Aller au contenu </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#main-menu" title=""><span class="skiplink-text">Aller au Menu principal </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#block-search" title=""><span class="skiplink-text">Aller à la recherche</span></a>
+
+                                                                                                                                                                                                                                                                                    <a href="http://www.grandlyon.com" target="_blank" rel="nofollow" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)" id="link-logo-glm">
+                            <img src="/assets/images/logo-grand-lyon-la-metropole.png" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toggle-header">
+            <div class="container">
+                <div class="row" id="toggle-header-content">
+                    <div class="col-xs-30 col-sm-17 col-md-13 block-logo" id="share-header">
+                                                
+                    	<span>
+	                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3">
+	                            <img src="/assets/images/logo-millenaire-3.png" alt="Logo Millénaire 3" class="img-responsive" />
+	                        </a>
+                        </span>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-20 col-md-19 block-baseline">
+                        <p>
+                            <img src="/assets/images/la-prospective-du-grand-lyon.png" alt="Sloggan Millénaire 3 : La prospective du Grand Lyon" class="img-responsive" />
+                        </p>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-23 col-md-11 col-lg-12 block-social-networks">
+						<ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+                    </div>
+                    																										<form action="/m3_search" method="get">
+	<div class="col-xs-60 col-sm-23 col-sm-offset-20 col-md-17 col-md-offset-0 col-lg-16 block-search">
+		<div class="input-group search-group" id="#block-search">
+            <label class="sr-only" for="search">Recherche</label>
+			<input id="search" type="search" class="search" value="" name="SearchText" placeholder="Rechercher sur le site"/>
+			<span class="input-group-btn">
+				<input id="search-submit" type="submit" value="" title="Lancer la recherche" class="m3-icons-search" />
+			</span>
+		</div>
+	</div>
+</form>
+                    <div class="col-xs-60 col-sm-60 col-md-47" id="main-menu" style="display:none">
+	<nav class="navbar navbar-default" role="navigation">
+		<ul class="nav navbar-nav">
+																	<li><a href="/societe" title=""><span class="ezstring-field">Société</span></a></li>
+		    								<li><a href="/modes-d-action" title=""><span class="ezstring-field">Modes d&#039;action</span></a></li>
+		    								<li><a href="/transformation-urbaine" title=""><span class="ezstring-field">Transformation urbaine</span></a></li>
+		    								<li><a href="/politiques-publiques" title=""><span class="ezstring-field">Politiques Publiques</span></a></li>
+		    								<li class="active"><a href="/territoire" title=""><span class="ezstring-field">Territoire</span> <span class="sr-only">(Menu déjà sélectionné)</span></a></li>
+		    								<li><a href="/soutenabilite" title=""><span class="ezstring-field">Soutenabilité</span></a></li>
+		             </ul>
+    </nav>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<div id="home">
+	    <div class="container" id="content">
+	    		    			                    <div class="row">
+        <div class="col-xs-60 block-breadcrumb" itemprop="breadcrumb">
+            <p class="before-breadcrumb">Vous êtes ici&nbsp;: </p><ol class="breadcrumb"><li><a title="Voir la page Accueil" href="/">Accueil</a></li><li><a title="Voir la page Territoire" href="/territoire">Territoire</a></li><li class="active">La place des mathématiques à Lyon</li></ol>        </div>
+    </div>
+
+                                                                                                                                
+	            	    			    						
+	    		    	
+            			
+<script type="text/javascript">
+	functionsInitialization.push(function ressourceInitialization(){
+		incrementerVues(4949);
+	});
+</script>
+
+<div class="row block-title">
+    <div class="col-xs-60 col-sm-47 col-md-47">
+        <h1 class="uppercase h1-special">
+							La place des mathématiques à Lyon
+					</h1>
+    </div>
+
+	<div class="col-xs-60 col-sm-13 col-md-13 block-share">
+
+<ul class="clearfix share">
+	<li>
+		<!--a href="javascript:void(0);" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a-->
+		<a href="javascript:void(0);" data-toggle="collapse" data-target="#addtoany-container" aria-expanded="false" aria-controls="addtoany-container" role="button" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a>
+	</li>
+						<li><a href="/generated_pdf/4921" rel="nofollow" target="_blank" title="Télécharger la page en version PDF" class="m3-icons-share-pdf hidden-xs"></a></li>
+			<!--li><a href="https://www.millenaire3.com/layout/set/print/content/view/print/4921" target="_blank">p</a></li-->
+							<li id="print_current_content"><a href="javascript:window.print()" onclick="javascript:print()" rel="nofollow" title="Imprimer la page" class="m3-icons-share-print"></a></li>
+							<li><a href="/partage_email/4921" rel="nofollow" title="Partager ce contenu par e-mail" class="m3-icons-share-mail"></a></li>
+			</ul>
+
+</div>
+
+	<div class="collapse block-social-networks-share a2a_kit a2a_kit_size_32 a2a_default_style" id="addtoany-container">
+        <span class="tac_addtoanyshare"></span>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_linkedin"></a>
+    </div>
+
+<script type="text/javascript">
+	function deplierPartageReseauxSociaux()
+	{
+		fadeInOrFadeOut('#partages_reseaux_sociaux');
+	}
+
+	/**
+	* Affiche ou non (toogle), avec un effet JQuery
+	*/
+	function fadeInOrFadeOut(elementName)
+	{
+		$element = $(elementName);
+		if(! $element.hasClass("hide"))
+		{
+			$element.fadeOut(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+		else
+		{
+			$element.fadeIn(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+	}
+
+	// Alert a message when the user shares somewhere
+		function addThisEventHandler(evt) {
+		    switch (evt.type)
+		    {
+		        case "addthis.menu.share":
+		            incrementerPartages(4949, evt.data.service);
+		            break;
+		        default:
+		            console.log('received an unexpected event', evt);
+		    }
+		}
+
+	functionsInitialization.push(function shareInitialization()
+	{
+																						
+		// Listen to various events
+		try
+		{
+			addthis.addEventListener('addthis.menu.share', addThisEventHandler);
+		}
+		catch(err)
+		{}
+	});
+</script>
+
+</div>
+
+<div class="row">
+	<!--  main Content region -->
+        <div class="col-xs-60 col-sm-60 col-md-47">
+            <div class="item block-intro">
+                <p class="over-under-line uppercase">Interview de Cédric VILLANI</p>
+
+                <div class="row">
+                				        	<div class="col-xs-60 col-sm-30 col-md-30">
+							    <figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/7/6/0/7/87067-1-fre-FR/Cedric_Villani_01.gif"  width="227"   height="166"  class="img-responsive margin-bottom-5 " alt="" /></div></figure>
+			             				<div class="itw_qualite"><span class="ezstring-field">Mathématicien</span></div>
+	
+			            </div>
+			        
+								        	<div class="col-xs-60 col-sm-30 col-md-30 margin-bottom-15">
+			        				        	                        <p class="item-face-face">&lt;&lt; Je suis la seule des médailles Fields françaises actuellement en vie à avoir une activité scientifique hors Paris. Ce n’est pas un hasard que ce soit à Lyon ! &gt;&gt;.</p>
+	                                            <div class="ezrichtext-field">
+</div>
+
+                        <div class="informations">
+                        			                    	<div class="ressource-meta">
+		                    									    								    		<p class="keywords-title">Réalisée par :</p>
+							    		<ul class="list-inline keywords">
+							    											    			<li>
+											   		<a href="/auteurs/JAMBAUD-Anne-Caroline" title="Ouvrir la fiche de Anne-Caroline JAMBAUD">
+   	Anne-Caroline JAMBAUD
+</a>
+																									</li>
+																					</ul>
+															        </div>
+			                                            <div class="ressource-meta">
+		                        	<p class="keywords-title">Tag(s)&nbsp;:</p>
+	<ul class="list-inline keywords">
+			            
+	<li>
+		<a href="/tag/recherche" title="">Recherche</a>	<li>
+
+	    	</ul>
+
+		                    </div>
+		                    <div class="ressource-meta">
+		                        	<span class="keywords-title">Date : <span class="publication_date">31/08/2010</span></span>
+
+		                    </div>
+		                </div>
+                    </div>
+                </div>
+            </div>
+
+                        	            	<div class="ezrichtext-field"><p>Propos recueillis par Anne-Caroline Jambaud&nbsp; le 1er septembre 2010</p><p>&nbsp;</p><p><strong><strong>Qu&rsquo;avez-vous ressenti en recevant la m&eacute;daille Fields&nbsp;?</strong></strong></p><p>J&rsquo;&eacute;tais tr&egrave;s fier, extr&ecirc;mement &eacute;mu. Pour le coup c&rsquo;est la terre enti&egrave;re qui nous regarde&hellip; enfin presque ! Mais je ne prends pas cette m&eacute;daille seulement pour moi.</p><p>Les trois-quarts de mes r&eacute;sultats les plus importants ont &eacute;t&eacute; faits en collaboration et je n&rsquo;aurais pas pu les faire sans mes collaborateurs. Je suis tr&egrave;s social de ce point de vue. <strong>C&rsquo;est donc une reconnaissance pour toute une communaut&eacute; de recherche.</strong> C&rsquo;est aussi une reconnaissance pour la communaut&eacute; fran&ccedil;aise.</p><p>&nbsp;</p><p><strong><strong><strong><strong>C</strong></strong><strong>omment expliquez-vous la vitalit&eacute; des math&eacute;matiques fran&ccedil;aises&nbsp;?</strong></strong></strong></p><p>D&rsquo;abord, il y a une grande tradition math&eacute;matique. Et ce n&rsquo;est pas des blagues les traditions&nbsp;! Les math&eacute;matiques c&rsquo;est autant une science qu&rsquo;un art, et l&rsquo;art &ccedil;a se transmet, il y a des courants d&rsquo;id&eacute;es qui se d&eacute;veloppent.</p><p><strong>Parmi les &eacute;l&eacute;ments qui caract&eacute;risent l&rsquo;esprit fran&ccedil;ais math&eacute;matique il y a le go&ucirc;t pour l&rsquo;abstraction</strong>. On se fait d&rsquo;ailleurs souvent brocarder par nos confr&egrave;res anglo-saxons pour &ccedil;a. Les Fran&ccedil;ais aiment bien tout abstraire. Quand c&rsquo;est pouss&eacute; &agrave; l&rsquo;extr&ecirc;me, c&rsquo;est catastrophique, c&rsquo;est d&eacute;l&eacute;t&egrave;re, mais quand c&rsquo;est &agrave; bonne dose, c&rsquo;est tr&egrave;s bien.</p><p>En France, il y a &eacute;galement des institutions qui marchent bien : les classes pr&eacute;paratoires, les Ecoles Normales Sup&eacute;rieures (ENS), l&rsquo;Ecole Polytechnique. Ces institutions sont des p&eacute;pini&egrave;res de scientifiques, et de math&eacute;maticiens en particulier. Ce sont des institutions qui ont de gros d&eacute;fauts et qui participent de probl&egrave;mes structurels consid&eacute;rables dans l&rsquo;enseignement sup&eacute;rieur, mais elles ont aussi des grands avantages.</p><p><strong>Il est clair que la r&eacute;ussite math&eacute;matique fran&ccedil;aise ne serait pas ce qu&rsquo;elle est sans les ENS</strong>. Je suis un pur produit du syst&egrave;me ENS, j&rsquo;ai pass&eacute; 8 ans &agrave; l&rsquo;ENS Paris, 10 ans &agrave; l&rsquo;ENS Lyon. Evidemment les ENS seules ne font rien. J&rsquo;ai d&ucirc; aller chercher mes collaborateurs partout dans le monde. Et la recherche se fait dans les universit&eacute;s avant tout. Les ENS doivent &ecirc;tre associ&eacute;es aux universit&eacute;s pour que &ccedil;a marche bien. L&rsquo;ENS c&rsquo;est une sorte de catalyseur.</p><p>&nbsp;</p><p><strong>Vos ann&eacute;es &agrave; Lyon ont-elles &eacute;t&eacute; d&eacute;terminantes dans votre parcours&nbsp;?</strong></p><p>&Ccedil;a a &eacute;t&eacute; capital&nbsp;! Certes, Paris est la capitale mondiale des maths. Mais ce n&rsquo;est pas forc&eacute;ment dans la capitale qu&rsquo;on se d&eacute;veloppe le mieux. Et dans mon cas, comme dans plein d&rsquo;autres, il valait beaucoup mieux s&rsquo;installer &agrave; Lyon que rester &agrave; Paris.</p><p>A l&rsquo;ENS Lyon, j&rsquo;arrivais dans une petite structure tr&egrave;s dynamique, o&ugrave; j&rsquo;avais les coud&eacute;es franches, scientifiquement et administrativement. D&egrave;s mon arriv&eacute;e, je suis devenu pr&eacute;sident de la commission de sp&eacute;cialistes. On m&rsquo;a fait confiance pour g&eacute;rer le recrutement. J&rsquo;ai pu faire venir mes invit&eacute;s, organiser mon s&eacute;minaire. Cela n&rsquo;aurait pas &eacute;t&eacute; le cas dans un tr&egrave;s gros d&eacute;partement o&ugrave; il y aurait eu, sans doute, beaucoup plus de vedettes. Pour organiser un s&eacute;minaire, il aurait fallu composer avec elles. L&agrave;, non. Je pouvais faire ce que je voulais, prendre les choses en main, poser des questions. Il est tr&egrave;s important de poser des questions idiotes, cela permet de progresser. Quand c&rsquo;est votre s&eacute;minaire, que vous &ecirc;tes chez vous, en famille, vous n&rsquo;avez pas peur de poser des questions idiotes. Si c&rsquo;est devant cent personnes avec tous les grands pontes, vous n&rsquo;allez pas oser.</p><p>De plus, l&rsquo;ENS Lyon r&eacute;unissait des petits laboratoires o&ugrave; l&rsquo;on pouvait discuter beaucoup, o&ugrave; toutes les disciplines &eacute;taient repr&eacute;sent&eacute;es &ndash; &agrave; petites doses. C&rsquo;est beaucoup plus enrichissant que quand vous avez un grand laboratoire avec un c&ocirc;t&eacute; &laquo; force de frappe &raquo; qui vous pousse toujours plus vers la sp&eacute;cialisation.<strong> A Lyon, j'ai appris &agrave; me diversifier, j&rsquo;ai pris plus d&rsquo;autonomie et j&rsquo;ai pu organiser les choses moi m&ecirc;me. </strong></p><p>&nbsp;</p><p><strong><strong>Si Paris est la capitale mondiale des math&eacute;matiques, comment se positionne Lyon dans ce domaine&nbsp;?</strong></strong></p><p>Les math&eacute;matiques lyonnaises sont extr&ecirc;mement fortes, les Lyonnais ont raison d&rsquo;en &ecirc;tre fiers. <strong>Je suis la seule des m&eacute;dailles Fields fran&ccedil;aises actuellement en vie &agrave; avoir une activit&eacute; scientifique hors Paris</strong>. Ce n&rsquo;est pas un hasard que ce soit &agrave; Lyon ! En France, c&rsquo;est un p&ocirc;le tr&egrave;s important pour les math&eacute;matiques.</p><p>&nbsp;</p><p><strong><strong>Vous avez tenu &agrave; garder un poste &agrave; Lyon et lorsque vous vous pr&eacute;sentez, vous prenez toujours la peine de pr&eacute;ciser que vous &ecirc;tes &nbsp;&laquo;&nbsp;professeur &agrave; Lyon&nbsp;&raquo;. Pourquoi avez-vous souhait&eacute; garder des attaches lyonnaises&nbsp;?</strong></strong></p><p><strong>J&rsquo;ai insist&eacute; pour garder un poste &agrave; Lyon pour plusieurs raisons. D&rsquo;abord pour promouvoir Lyon.</strong> C&rsquo;est une question symbolique. C&rsquo;est important pour moi de bien marquer que l&rsquo;IHP, Institut Henri Poincar&eacute;, qui un institut national, peut &ecirc;tre dirig&eacute; par n&rsquo;importe qui, et pas seulement un parisien. C&rsquo;est une question de fiert&eacute; provinciale. Je suis n&eacute; en Corr&egrave;ze, puis j&rsquo;ai v&eacute;cu &agrave; Toulon, et &agrave; Lyon. J&rsquo;ai habit&eacute; dix ans &agrave; Lyon et je me consid&egrave;re comme lyonnais, mes enfants sont n&eacute;s &agrave; Lyon, c&rsquo;est &agrave; Lyon que je suis vraiment devenu un math&eacute;maticien&hellip; Et franchement, c&rsquo;est ma ville pr&eacute;f&eacute;r&eacute;e. <strong>A Lyon, il y a une ambiance qu&rsquo;on ne retrouve nulle part ailleurs.</strong> A la fois une offre culturelle bien suffisante (&agrave; Paris il y en a beaucoup trop), une vie de proximit&eacute; (je faisais mes courses au march&eacute; de la Croix-Rousse trois fois par semaine), une qualit&eacute; de nourriture, une qualit&eacute; de vie&hellip; extraordinaires&nbsp;!</p><p>&nbsp;</p><p><strong><strong>Vous parlez de &laquo;&nbsp;fiert&eacute; provinciale&nbsp;&raquo;, avez-vous souffert d&rsquo;une forme de m&eacute;pris de la part des Parisiens&nbsp;?</strong></strong></p><p>Oui, j&rsquo;en ai souffert quand j&rsquo;&eacute;tais lyonnais. Les Parisiens ne se rendent pas toujours compte, mais il leur arrive de laisser &eacute;chapper des remarques tr&egrave;s d&eacute;sobligeantes, sans faire expr&egrave;s. Il y a une attitude qui peut &ecirc;tre interpr&eacute;t&eacute;e comme m&eacute;prisante, qui est souvent juste de la maladresse.</p><p>C&rsquo;est donc important pour moi de garder un pied &agrave; Paris et un pied &agrave; Lyon, disant aux Lyonnais que les Parisiens peuvent les aider, aux Parisiens qu&rsquo;il ne faut pas trop leur taper sur le nez&hellip;</p><p>Ensuite <strong>garder une attache lyonnaise m&rsquo;assure une ind&eacute;pendance vis-&agrave;-vis de mes tutelles parisiennes</strong>. Et puis <strong>je suis convaincu que Lyon, en terme d&rsquo;enseignement sup&eacute;rieur, est extraordinaire</strong> ! Il y a un tissu d&rsquo;&eacute;coles d&rsquo;ing&eacute;nieurs et d&rsquo;&eacute;tablissements d&rsquo;enseignement sup&eacute;rieur qui est presque sans &eacute;quivalent en France. Et des &eacute;coles normales sup&eacute;rieures ! Quand on parle &laquo; ENS &raquo; on pense tout de suite &agrave; la parisienne, mais la lyonnaise est extr&ecirc;mement bien.</p><p><strong>Le d&eacute;veloppement harmonieux de la province est extr&ecirc;mement important</strong>. Et pour cela, il y a une attitude g&eacute;n&eacute;rale &agrave; changer. A Paris, ils se posent vraiment en comp&eacute;titeurs &eacute;crasants. A mon avis, la bonne formule est celle du leader qui va aider les autres, avec leur accord. A partir du moment o&ugrave; les provinciaux ne se sentiront plus &eacute;cras&eacute;s par les Parisiens et que les Parisiens ne se sentiront pas oblig&eacute;s de faire respecter leur sup&eacute;riorit&eacute; mais l&rsquo;utiliseront pour se poser en leader des autres, l&agrave; ce sera extr&ecirc;mement costaud je crois ! Cela permettra de <strong>retourner en force la faiblesse actuelle du d&eacute;s&eacute;quilibre Paris / province. </strong></p><p>&nbsp;</p><p><strong><strong>La m&eacute;daille Fields vous donne-t-elle des responsabilit&eacute;s particuli&egrave;res, un r&ocirc;le de mod&egrave;le, vis-&agrave;-vis des &eacute;tudiants&nbsp;?</strong></strong></p><p>Cela conf&egrave;re effectivement un r&ocirc;le tr&egrave;s important de mod&egrave;le pour les jeunes. Il s&rsquo;agit de d&eacute;terminer des carri&egrave;res et d&rsquo;orienter les gens. Par ailleurs, je repr&eacute;sente un domaine particulier au sein des math&eacute;matiques : l&rsquo;analyse. C&rsquo;est important que les jeunes s&rsquo;orientent dans les diff&eacute;rentes branches des math&eacute;matiques. Mais<strong> j&rsquo;ai la r&eacute;putation d&rsquo;&ecirc;tre quelqu&rsquo;un qui a un spectre relativement large, qui est curieux, qui s&rsquo;int&eacute;resse aux diff&eacute;rentes connexions.</strong> &Ccedil;a aussi, c&rsquo;est quelque chose qu&rsquo;il faut transmettre aux jeunes.</p><p>&nbsp;</p><p><strong><strong>L&rsquo;&eacute;nonc&eacute; de vos divers travaux est extraordinairement complexe&hellip; Mais y a t-il des caract&eacute;ristiques communes&nbsp;?</strong></strong></p><p>J&rsquo;aime bien les probl&egrave;mes ancr&eacute;s dans la r&eacute;alit&eacute;, en tout cas dans la physique, l&rsquo;&eacute;conomie ou d&rsquo;autres sciences. J&rsquo;aime bien les &eacute;nonc&eacute;s simples. Les probl&egrave;mes dans lesquels on trouve des connexions entre diff&eacute;rentes branches des math&eacute;matiques. Les probl&egrave;mes qui s&rsquo;attaquent avec des moyens &eacute;l&eacute;mentaires. Dans ma fa&ccedil;on de r&eacute;fl&eacute;chir &agrave; un probl&egrave;me, je suis un analyste :<strong> j&rsquo;analyse le probl&egrave;me en d&eacute;tail et je cherche &agrave; le r&eacute;soudre de mani&egrave;re pr&eacute;cise avec une solution sur mesure, plut&ocirc;t que de chercher des th&eacute;ories g&eacute;n&eacute;rales. </strong></p><p>&nbsp;</p><p><strong><strong>Est-ce que votre m&eacute;daille Fields va faire grimper l&rsquo;universit&eacute; de Lyon dans le classement de l&rsquo;universit&eacute; de Shanga&iuml; - qui s&rsquo;&eacute;labore notamment sur le crit&egrave;re du nombre de prix Nobel ou de m&eacute;dailles Fields obtenus&nbsp;? </strong></strong></p><p>Je n&rsquo;en sais rien&nbsp;! C&rsquo;est une question qui regarde le pr&eacute;sident de l&rsquo;universit&eacute; ; je n&rsquo;ai pas de sentiment fort par rapport &agrave; &ccedil;a.<br>Tant qu&rsquo;&agrave; faire, j&rsquo;aimerais bien que cela puisse rejaillir sur l&rsquo;universit&eacute; de Lyon. <strong>Mais ce que je voudrais vraiment, c&rsquo;est que l&rsquo;universit&eacute; de Lyon soit forte,</strong> et cette force ne se mesure pas dans les classements comme celui-ci.</p><p>&nbsp;</p><p><strong><strong>Ce classement de l&rsquo;universit&eacute; de Shanga&iuml;, qui rel&egrave;gue les universit&eacute;s et grandes &eacute;coles fran&ccedil;aises dans ses tr&eacute;fonds, est tr&egrave;s d&eacute;cri&eacute;. Le jugez-vous pertinent&nbsp;?</strong></strong></p><p>Non, c&rsquo;est une connerie&nbsp;! En revanche, les cons&eacute;quences du classement ne sont pas toutes mauvaises. Il y a un point tr&egrave;s pol&eacute;mique et tr&egrave;s sensible autour de la question du nombre d&rsquo;universit&eacute;s, de leur taille. Personnellement, je consid&egrave;re qu&rsquo;il y a trop d&rsquo;universit&eacute;s en France et qu&rsquo;il faut trouver une solution pour arriver &agrave; davantage de concentration. En respectant les probl&egrave;mes humains, les particularismes de chacun, bref en faisant tr&egrave;s attention. Car beaucoup d&rsquo;universit&eacute;s, &ccedil;a veut dire tr&egrave;s peu d&rsquo;&eacute;tudiants, donc des professeurs isol&eacute;s, et c&rsquo;est une catastrophe. <strong>Si le classement de Shanga&iuml; peut aider &agrave; apporter un peu de concentration dans le paysage universitaire fran&ccedil;ais, &ccedil;a ne ferait pas de mal. </strong></p><p>&nbsp;</p><p><strong>Vous avez pu dire que vous aviez trouv&eacute; &agrave; Lyon un climat extr&ecirc;mement favorable &agrave; la recherche. Pensez-vous que les collectivit&eacute;s locales, les pouvoirs publics peuvent favoriser cet esprit&nbsp; et comment&nbsp;?</strong></p><p>Bien s&ucirc;r ! Et c&rsquo;est tr&egrave;s important. Il y a beaucoup de leviers d&rsquo;intervention : les structures d&rsquo;accueil pour les chercheurs invit&eacute;s, le financements des r&eacute;novations de locaux, les aides logistiques pour des cycles de conf&eacute;rences grand public, permettant des mises en relation entre chercheurs et grand public&hellip; Mais <strong>la qualit&eacute; de l&rsquo;accueil des chercheurs invit&eacute;s, &ccedil;a c&rsquo;est extr&ecirc;mement important. </strong></p><p>&nbsp;</p><p><strong><strong><strong><strong>Qu&rsquo;est-ce qui vous pla&icirc;t dans les math&eacute;matiques&nbsp;?</strong></strong></strong></strong></p><p><strong>La beaut&eacute; et la surprise</strong>. La beaut&eacute; r&eacute;side dans les constructions &eacute;l&eacute;gantes et harmonieuses. La surprise provient d&rsquo;un rapprochement inattendu. On dit que Mahler aimait bien aux moments les plus tragiques de ses symphonies, &agrave; leur paroxysme, mettre un petit air genre comptine enfantine. Il para&icirc;t m&ecirc;me qu&rsquo;il en a parl&eacute; &agrave; Freud, pensant qu&rsquo;il devait y avoir quelque chose derri&egrave;re ! &Ccedil;a c&rsquo;est un &eacute;l&eacute;ment surprenant&nbsp;!</p><p>&nbsp;</p><p><strong>La beaut&eacute; peut-&ecirc;tre gratuite, d&eacute;sint&eacute;ress&eacute;e&hellip; Comment r&eacute;agissez-vous quand on vous interroge sur les applications de vos recherches, autrement dit leur &laquo;&nbsp;utilit&eacute;&nbsp;&raquo;&nbsp;?</strong></p><p>Les math&eacute;matiques c&rsquo;est aussi bien une science qu&rsquo;un art, mais &eacute;galement une activit&eacute; sociale.</p><p>Les math&eacute;matiques sont donc aussi utilitaires. Il ne faut pas dire : on d&eacute;veloppe les maths pour la grandeur de l&rsquo;esprit humain et on se fout des applications.<strong> Les maths, il faut aussi les d&eacute;velopper parce qu&rsquo;elle sont belles, sans &ecirc;tre prisonnier de l&rsquo;aspect utilitaire.</strong> Certains sont sensibles &agrave; l&rsquo;aspect utilitaire, d&rsquo;autres (plus nombreux) &agrave; l&rsquo;aspect esth&eacute;tique. La bonne attitude est entre les deux. En tout cas, ni la vision utilitariste, ni la vision purement esth&eacute;tique ne me paraissent bonnes. Les maths, c&rsquo;est tout &agrave; la fois.</p><p>&nbsp;</p><p><strong><strong>Les maths sont souvent un crit&egrave;re de s&eacute;lection &agrave; l&rsquo;&eacute;cole : on envoie les meilleurs &eacute;l&egrave;ves en fili&egrave;re scientifique&hellip; Qu&rsquo;en pensez-vous&nbsp;?</strong></strong></p><p>C&rsquo;est un biais naturel, parce que les maths &ccedil;a se quantifie, &ccedil;a se note &agrave; peu pr&egrave;s objectivement. Donc c&rsquo;est un peu normal que ce soit devenu comme &ccedil;a. C&rsquo;est une tendance contre laquelle il faut lutter, d&rsquo;abord parce que &ccedil;a peut rendre les maths antipathiques.</p><p>Mais je ne pense pas que ce soit autant une s&eacute;lection qu&rsquo;auparavant. Mais c&rsquo;est encore tr&egrave;s ancr&eacute; dans l&rsquo;esprit des gens.</p><p><strong><strong>On r&eacute;sume souvent les maths, de fa&ccedil;on un peu h&acirc;tive, au calcul&hellip;</strong></strong></p><p>Non !&nbsp; Les maths, c&rsquo;est d&rsquo;abord le raisonnement logique, l&rsquo;abstraction, la th&eacute;orie. Il faut comprendre ce qu&rsquo;est une preuve, inventer et imaginer des arguments. Il n&rsquo;y a pas de voie toute faite : <strong>il y a tout un effort d&rsquo;imagination pour trouver un encha&icirc;nement logique, un effort de rigueur pour qu&rsquo;il soit bon.</strong> C&rsquo;est tout simplement r&eacute;fl&eacute;chir &agrave; des probl&egrave;mes&hellip;</p><p><strong><strong>Notre environnement quotidien est plein de probl&egrave;mes math&eacute;matiques&hellip;</strong></strong></p><p>Regardez ce papier froiss&eacute;, et bien c&rsquo;est un probl&egrave;me de physique th&eacute;orique tr&egrave;s complexe&nbsp;! Comment se forment les lignes de brisure&nbsp;? A l&rsquo;ENS, quelqu&rsquo;un travaillait l&agrave; dessus. Pierre-Gilles de Gennes (prix Nobel de physique 1991) &eacute;tait un sp&eacute;cialiste&nbsp;pour ce genre de choses. Il avait remarqu&eacute; que quand on casse un spaghetti il se casse toujours en trois, jamais en deux. <strong>Dans tous les d&eacute;tails de la vie quotidienne, il y a des tas de ph&eacute;nom&egrave;nes incompr&eacute;hensibles. </strong>Derri&egrave;re, se cachent des probl&egrave;mes th&eacute;oriques de physique ou de math. Evidemment, il ne s&rsquo;agit pas &agrave; chaque fois de refaire toute la complexit&eacute; du monde mais d&rsquo;extraire en quelques formules et concepts th&eacute;oriques les raisons fondamentales par lesquelles on peut expliquer ces ph&eacute;nom&egrave;nes quotidiens. Il y a mille et une occasions de s&rsquo;interroger, partout, tout le temps !</p><p>&nbsp;</p><p><strong>Vous attendiez-vous &agrave; recevoir la m&eacute;daille Fields&nbsp;?</strong></p><p>Personnellement,<strong> je me donnais 40% de chances d&rsquo;avoir la m&eacute;daille Fields</strong>. Dans la vie, j&rsquo;aime beaucoup &eacute;valuer les probabilit&eacute;s. Je me donne 70% de chances pour que telle personne agisse de telle fa&ccedil;on. On ne peut pas tout calculer, mais on peut &eacute;valuer 90% des param&egrave;tres, en fonction de ce qu&rsquo;on voit, de ce qu&rsquo;on sait, de ce qu&rsquo;on sent. Et puis ensuite, un nouvel &eacute;l&eacute;ment arrive et on r&eacute;&eacute;value.</p><p>Vous avez vu ce manga qui s&rsquo;appelle &laquo; Death note &raquo; ? J&rsquo;&eacute;tais hyper accro ! C&rsquo;est super intelligent, tr&egrave;s brillant. On y voit des jeunes extr&ecirc;mement dou&eacute;s qui se battent de mani&egrave;re tr&egrave;s subtile intellectuellement. Au c&oelig;ur de l&rsquo;action il y a un cahier magique qui vient d&rsquo;un autre monde. Si on inscrit le nom d&rsquo;un individu et la cause de sa mort sur ce carnet, il va mourir. A partir de l&agrave;, s&rsquo;&eacute;laborent des constructions mentales extr&ecirc;mement compliqu&eacute;es. Celui qui joue le r&ocirc;le du d&eacute;tective pense toujours en termes statistiques. A chaque nouvel &eacute;l&eacute;ment il affine les probabilit&eacute;s. J&rsquo;aime bien cette fa&ccedil;on de faire.</p>
+</div>
+
+	        
+           	
+            
+            	<section class="print_hidden">
+		<div class="row">
+	     	<div class="col-xs-60 col-sm-60">
+	   			<h2 class="h4 h4-dossier block-title-overline margin-right-10">En lien avec le sujet</h2>
+	       	</div>
+	  	</div>
+	 	<div class="margin-bottom-30">
+	 		<section class="carousel3x3 margin-bottom-30">
+		 				         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2022/veille-m3-pour-une-meilleure-qualite-de-l-air-l-auto-defense-sanitaire" title="">Veille M3 / Pour une meilleure qualité de l’air, l&#039;auto-défense sanitaire ?</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/1/0/3/9/529301-1-fre-FR/03979b09fc81-Les-Diidents-Une-annee-dans-la-bulle-conspirationniste.jpg"  width="400"   height="643"  class="img-responsive margin-bottom-15" alt="Couverture du livre Les dissidents d&#039;Anthony Mansuy" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Après la poussée de complotisme constatée pendant la pandémie, quels enseignements tirer pour réconcilier sciences et engagement citoyen ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2014/l-ethique-en-consultation" title="">L&#039;éthique en consultation</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/7/2/7/4/524727-1-fre-FR/9b4d947f9286-L-ethique-en-consultation.jpg"  width="233"   height="350"  class="img-responsive margin-bottom-15" alt="" /></figure>
+  <p class="uppercase"><b>Texte de Marianne CHOUTEAU</b></p>
+	<p>Comment proposer un cadre normatif à l’exercice de la recherche tout en permettant une indispensable liberté scientifique ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/dossiers/2013/les-sciences-humaines-et-sociales-la-metropole-de-lyon-archives" title="">Les Sciences Humaines et Sociales &amp; la Métropole de Lyon (archives)</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/4/3/5/9/489534-4-fre-FR/SHS &amp; Métropole.PNG"  width="483"   height="483"  class="img-responsive margin-bottom-15" alt="Ecriture &quot;SHS&quot; blanche sur fond de rond rouge" /></figure>
+	<p>Des bulletins pour approfondir vos connaissances au sujet de la vie des sciences humaines et sociales de la Métropole Lyon-St Étienne</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2013/au-fil-des-humanites" title="">Au fil des humanités</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/0/2/0/8/488020-1-fre-FR/Au fil des humanités.PNG"  width="714"   height="873"  class="img-responsive margin-bottom-15" alt="Couverture de l&#039;ouvrage &quot;Au fil des humanités&quot;" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Huit récits d&#039;aventures scientifiques dans la région lyonnaise.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/Collaborations-avec-la-recherche" title="">Collaborations avec la recherche</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/0/7/6/6/486670-1-fre-FR/Collaborations.PNG"  width="453"   height="605"  class="img-responsive margin-bottom-15" alt="Couverture de l&#039;étude &quot;Collaborations avec la recherche&quot;" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Ce document retrace les collaborations entreprises ou réalisées au cours des 5 premières années d’existence du Grand Lyon en tant que Métropole.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/savoirs-et-action-publique-etat-des-lieux-2013-des-collaborations-avec-l-enseignement-superieur-et-la-recherche" title="">Savoirs et action publique : Etat des lieux 2013 des collaborations avec l&#039;Enseignement Supérieur et la Recherche</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/4/7/7/4/484774-1-fre-FR/Etat des lieux 2013.PNG"  width="556"   height="562"  class="img-responsive margin-bottom-15" alt="Extrait de la couverture de l&#039;étude &quot;Savoirs et action publique : Etat des lieux 2013 des collaborations avec l&#039;Enseignement Supérieur et la Recherche&quot;" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Cette nouvelle édition traduit un renouvellement significatif des projets engagés avec les sphères académiques. Parmi la cinquantaine de collaborations recensées, la recherche de connaissances au service de l’action apparaît comme un fil conducteur.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/savoirs-et-action-publique-etat-des-lieux-2012-des-collaborations-avec-l-enseignement-superieur-et-la-recherche" title="">Savoirs et action publique : Etat des lieux 2012 des collaborations avec l&#039;Enseignement Supérieur et la Recherche</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/0/7/4/484706-1-fre-FR/Etat des lieux 2012.PNG"  width="552"   height="558"  class="img-responsive margin-bottom-15" alt="Vue de la couverture de l&#039;étude &quot;Savoirs et action publique : Etat des lieux 2012 des collaborations avec l&#039;Enseignement Supérieur et la Recherche/&quot;" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Cette nouvelle édition du livret des partenariats de recherche entre le Grand Lyon, l’Agence d&#039;urbanisme de Lyon et les milieux académiques s’étoffe en présentant 52 collaborations engagées.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/savoirs-et-action-publique-etat-des-lieux-2010-des-collaborations-avec-l-enseignement-superieur-et-la-recherche" title="">Savoirs et action publique : Etat des lieux 2010 des collaborations avec l&#039;Enseignement Supérieur et la Recherche</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/8/3/6/4/484638-1-fre-FR/Etat des lieux 2010.PNG"  width="548"   height="567"  class="img-responsive margin-bottom-15" alt="Extrait de la couverture de l&#039;étude &quot;Savoirs et action publique : Etat des lieux 2010 des collaborations avec l&#039;Enseignement Supérieur et la Recherche&quot;" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>L’état des lieux présenté dans ce document montre que les collaborations du Grand Lyon et celles de l’Agence d’Urbanisme avec les établissements d’enseignement supérieur et de recherche ne sont pas récentes.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/shs/les-sciences-humaines-et-sociales-la-metropole-bulletin-de-veille-n-13" title="">Les Sciences Humaines et Sociales la Métropole : Bulletin de veille n°13</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/2/0/5/4/484502-4-fre-FR/13.PNG"  width="322"   height="322"  class="img-responsive margin-bottom-15" alt="Extrait de la première page du bulletin de veille n°13" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Qui a peur du grand méchant Mooc ?</p>
+
+	</article>
+</div>
+
+							</section>
+		</div>
+	</section>
+
+        </div>
+<!--  /main Content region-->
+<!--  Right Sidebar -->
+        <div class="col-xs-60 col-md-13">
+            <div class="row">
+            	                            	                    		
+
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-dossiers">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="sidebar-picto m3-icons-sidebar-folders"></span>
+            <a title="" href=" /tous-les-dossiers ">   Dossiers
+            </a>
+        </h2>
+    </header>
+
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <div class="sidebar-block-content">
+        	                                    	<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/9/5/535989-1-fre-FR/3abfcaee6c8b-pms_light.jpg"  width="1413"   height="1414"  class="img-responsive margin-bottom-15" alt="Illustrations de personnes différentes sur une place" /></figure>
+                
+                <p class="publication-title"><a href="/dossiers/2023/action-publique-comment-penser-la-solidarite-depuis-un-territoire" title=""><span class="ezstring-field">Action publique : comment penser la solidarité depuis un territoire ?</span></a></p>
+	        
+            <footer class="sidebar-block-footer">
+            	                	<p><a  title="Consulter nos dossiers disponibles" href="/tous-les-dossiers">Tous les dossiers</a></p>
+                            </footer>
+        </div>
+    </div>
+</article>
+
+</div>
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-home">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="m3-icons-sidebar-picto-tags"></span>
+            <img src="/assets/images/unsprited/icons/tag.png" style= "margin-left: 4px; margin-right: 8px" alt="" />
+            <a href="/tous-les-tags" title="Consulter tous nos tags">Tags
+            </a>
+        </h2>
+    </header>
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <footer class="sidebar-block-footer">
+                            <p><a href="/tous-les-tags" title="Consulter tous nos tags">Tous les tags</a></p>
+                    </footer>
+    </div>
+</article>
+
+</div>
+	        </div>
+		</div>
+<!--  Right Sidebar-->
+</div>
+			<script>
+	function onYouTubeIframeAPIReady()
+	{
+		//Redimensionner les div de vidéos
+		var elements = document.getElementsByClassName("youtube_frame");
+		for(var i = 0 ; i < elements.length ; i++)
+		{
+			var element = elements[i];
+			var subElements = element.getElementsByClassName("youtube_player");
+			for(var j = 0 ; j < subElements.length ; j++)
+			{
+				var subElement = subElements[j];
+				var proportion = element.getAttribute("proportion");
+				var width = element.parentNode.offsetWidth;
+				var height = width * proportion;
+				subElement.setAttribute("width", "100%");
+				subElement.setAttribute("height", height);
+			}
+		}
+	}
+
+	functionsInitialization.push(onYouTubeIframeAPIReady);
+</script>	    </div>
+	</div>
+
+	<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="col-xs-60 col-sm-45 col-md-36 col-lg-39">
+                <nav class="navbar navbar-default footer-nav" role="navigation">
+                    <ul class="nav navbar-nav">
+                                                                            <li><a href="/qui-sommes-nous" title="">Qui sommes-nous</a></li>
+                        
+                        <li><a href="/newsletter_subscribe"><span lang="en">Newsletter</span></a></li>
+
+                        <li><a href="/formulaire/contactez_nous" >Contact</a></li>
+
+                                                                            <li><a href="/Accessibilite" >Accessibilité</a></li>
+                        
+                                                                            <li><a href="/plan-du-site" >Plan du site</a></li>
+                        
+                                                                            <li><a href="/mentions-legales" >Mentions légales</a></li>
+                        
+                                                                            <li><a href="/donnees-personnelles" >Données personnelles</a></li>
+                        
+                        <li><a href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-60 col-sm-15 hidden-md hidden-lg">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+                                                                                                                                                <div class="col-xs-60 col-sm-60 col-md-24 col-lg-21">
+                <a class="acces_metro" href="http://www.grandlyon.com" target="_blank" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)">Un site de la Métropole de Lyon</a>
+            </div>
+
+             <div class="hidden-xs visible-md visible-lg col-md-60 text-center">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+	
+	<div id="know-the-breakpoint"></div>
+	<script src="/assets/vendor/vendor.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/video-js/video.min.js"></script>
+<script src="/assets/vendor/video-js/lang/fr.js"></script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+	<script type="text/javascript">
+		functionsInitialization.push(function owlCarouselInitialization()
+		{
+		    $(".carousel3x3").owlCarousel({
+		        pagination: false,
+		        navigation: true,
+		        navigationText: [
+		            "<i class='glyphicon glyphicon-chevron-left'></i>",
+		            "<i class='glyphicon glyphicon-chevron-right'></i>"
+		        ],
+		        items: 3,
+		        itemsDesktop: [1160, 3],
+		        itemsDesktopSmall: [979, 3],
+		        itemsTablet:[600,2],
+		        itemsMobile: [479,1],
+		        scrollPerPage:true
+		    });
+		});
+
+		$(document).ready(function(){
+			$.each(functionsInitialization, function( index, value ) {
+				functionsInitialization[index]();
+			});
+		});
+	</script>
+</body>
+</html>

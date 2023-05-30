@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Grand Lyon">
+<meta name="keywords" content="Millénaire 3">
+
+	
+		
+	
+	
+	<title>Robotique et de domotique : Millenaire 3, Transformation urbaine		</title>
+
+		<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@millenaire3">
+
+			<meta name="twitter:title" content="Robotique et de domotique | Millénaire 3">
+					<meta name="twitter:description" content="« L’interopérabilité des protocoles est la clé pour constituer une offre domotique globale, simple et abordable ».">
+														<meta name="twitter:image" content="	https://www.millenaire3.com/var/m3/storage/images/_aliases/large/interview/robotique-et-de-domotique/88371-1-fre-FR/robotique-et-de-domotique.gif">
+<meta name="twitter:image:alt" content="">
+
+										<meta name="twitter:creator" content="@GeoffroyBing">
+			
+	<meta name="description" content="
+Domadoo est une entreprise de e-commerce spécialisée dans la vente de produits domotiques. Fondée en 2006, dans un marché français fragile, Doma...">
+		<!-- Bootstrap -->
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="/assets/css/style.min.css" type="text/css" rel="stylesheet" />
+
+	
+	<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/video-js/video-js.min.css" />
+
+<!-- Favicons, from http://realfavicongenerator.net/-->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/fav-icones/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/fav-icones/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/fav-icones/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/fav-icones/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/fav-icones/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/fav-icones/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/fav-icones/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/fav-icones/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/fav-icones/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+	<script type="text/javascript">
+		//Utilisation pour les scripts ajax
+		var rootUrl = "/";
+		var functionsInitialization = [];
+	</script>
+
+	<script type="text/javascript" src="/assets/vendor/tarteaucitronjs/tarteaucitron.js"></script>
+
+<script type="text/javascript">
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+
+        "orientation": "bottom", /* Banner position (top - bottom) */
+
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": true, /* Show the cookie list */
+
+        "showIcon": false, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* Disable auto consent */
+
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": false, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+        "mandatory": false, /* Show a message about mandatory cookies */
+    });
+
+    var tarteaucitronForceLanguage = "fr";
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
+
+    tarteaucitron.services.m3 = {
+        "key": "m3",
+        "type": "other",
+        "name": "Cookies internes Millénaire 3",
+        "uri": "",
+        "needConsent": true,
+        "cookies": ['cookieToken'],
+        "js": function () {
+            // When user allow cookie
+            "use strict";
+            registerCookieToken();
+            if(typeof whenM3CookieIsAccepted === "function")
+            {
+                // Fonction à définir dans les pages pour déclencher les scripts succeptibles de poser des cookies
+                whenM3CookieIsAccepted();
+            }
+        },
+        "fallback": function () {
+            // When user deny cookie
+            tarteaucitron.fallback(['m3-cookie-generation-zone'], function (x) {
+                // Remplacer la zone par "machin est désactivé"
+                return tarteaucitron.engage('m3');
+            });
+        }
+    };
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('m3');
+
+            tarteaucitron.user.matomoId = '58';
+        tarteaucitron.user.matomoHost = "https://statweb.grandlyon.com//";
+        (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
+    
+    (tarteaucitron.job = tarteaucitron.job || []).push('ausha');
+
+</script>
+</head>
+<body id="millenaire-3"  itemscope itemtype="http://schema.org/WebPage">
+			<header id="header">
+	<div id="print-top-menu" class="container">
+		<div class="row">
+        	<div class="col-xs-60">
+            	<img src="/assets/images/logo-millenaire-3-mini-blanc.png" alt="" style="float: left;">
+                <img src="/assets/images/logo-grand-lyon-la-metropole-blanc.png" alt="" style="float: right;">
+			</div>
+		</div>
+	</div>
+
+    <div id="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="clearfix" id="top-menu-content">
+                        <a href="#" title="Accéder au menu" class="link-sprite-focus m3-icons-btn-toggle-menu" id="btn-toggle-menu"></a>
+                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3-mini">
+                       	    <img src="/assets/images/logo-millenaire-3-mini.png" alt="" class="img-responsive" id="logo-mini-m3" />
+                        </a>
+
+                        <a class=" skippy sr-only sr-only-focusable" href="#content" title=""><span class="skiplink-text">Aller au contenu </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#main-menu" title=""><span class="skiplink-text">Aller au Menu principal </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#block-search" title=""><span class="skiplink-text">Aller à la recherche</span></a>
+
+                                                                                                                                                                                                                                                                                    <a href="http://www.grandlyon.com" target="_blank" rel="nofollow" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)" id="link-logo-glm">
+                            <img src="/assets/images/logo-grand-lyon-la-metropole.png" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toggle-header">
+            <div class="container">
+                <div class="row" id="toggle-header-content">
+                    <div class="col-xs-30 col-sm-17 col-md-13 block-logo" id="share-header">
+                                                
+                    	<span>
+	                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3">
+	                            <img src="/assets/images/logo-millenaire-3.png" alt="Logo Millénaire 3" class="img-responsive" />
+	                        </a>
+                        </span>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-20 col-md-19 block-baseline">
+                        <p>
+                            <img src="/assets/images/la-prospective-du-grand-lyon.png" alt="Sloggan Millénaire 3 : La prospective du Grand Lyon" class="img-responsive" />
+                        </p>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-23 col-md-11 col-lg-12 block-social-networks">
+						<ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+                    </div>
+                    																										<form action="/m3_search" method="get">
+	<div class="col-xs-60 col-sm-23 col-sm-offset-20 col-md-17 col-md-offset-0 col-lg-16 block-search">
+		<div class="input-group search-group" id="#block-search">
+            <label class="sr-only" for="search">Recherche</label>
+			<input id="search" type="search" class="search" value="" name="SearchText" placeholder="Rechercher sur le site"/>
+			<span class="input-group-btn">
+				<input id="search-submit" type="submit" value="" title="Lancer la recherche" class="m3-icons-search" />
+			</span>
+		</div>
+	</div>
+</form>
+                    <div class="col-xs-60 col-sm-60 col-md-47" id="main-menu" style="display:none">
+	<nav class="navbar navbar-default" role="navigation">
+		<ul class="nav navbar-nav">
+																	<li><a href="/societe" title=""><span class="ezstring-field">Société</span></a></li>
+		    								<li><a href="/modes-d-action" title=""><span class="ezstring-field">Modes d&#039;action</span></a></li>
+		    								<li class="active"><a href="/transformation-urbaine" title=""><span class="ezstring-field">Transformation urbaine</span> <span class="sr-only">(Menu déjà sélectionné)</span></a></li>
+		    								<li><a href="/politiques-publiques" title=""><span class="ezstring-field">Politiques Publiques</span></a></li>
+		    								<li><a href="/territoire" title=""><span class="ezstring-field">Territoire</span></a></li>
+		    								<li><a href="/soutenabilite" title=""><span class="ezstring-field">Soutenabilité</span></a></li>
+		             </ul>
+    </nav>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<div id="home">
+	    <div class="container" id="content">
+	    		    			                    <div class="row">
+        <div class="col-xs-60 block-breadcrumb" itemprop="breadcrumb">
+            <p class="before-breadcrumb">Vous êtes ici&nbsp;: </p><ol class="breadcrumb"><li><a title="Voir la page Accueil" href="/">Accueil</a></li><li><a title="Voir la page Transformation urbaine" href="/transformation-urbaine">Transformation urbaine</a></li><li class="active">Robotique et de domotique</li></ol>        </div>
+    </div>
+
+                                                                                                                                
+	            	    			    						
+	    		    	
+            			
+<script type="text/javascript">
+	functionsInitialization.push(function ressourceInitialization(){
+		incrementerVues(5023);
+	});
+</script>
+
+<div class="row block-title">
+    <div class="col-xs-60 col-sm-47 col-md-47">
+        <h1 class="uppercase h1-special">
+							Robotique et de domotique
+					</h1>
+    </div>
+
+	<div class="col-xs-60 col-sm-13 col-md-13 block-share">
+
+<ul class="clearfix share">
+	<li>
+		<!--a href="javascript:void(0);" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a-->
+		<a href="javascript:void(0);" data-toggle="collapse" data-target="#addtoany-container" aria-expanded="false" aria-controls="addtoany-container" role="button" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a>
+	</li>
+						<li><a href="/generated_pdf/4995" rel="nofollow" target="_blank" title="Télécharger la page en version PDF" class="m3-icons-share-pdf hidden-xs"></a></li>
+			<!--li><a href="https://www.millenaire3.com/layout/set/print/content/view/print/4995" target="_blank">p</a></li-->
+							<li id="print_current_content"><a href="javascript:window.print()" onclick="javascript:print()" rel="nofollow" title="Imprimer la page" class="m3-icons-share-print"></a></li>
+							<li><a href="/partage_email/4995" rel="nofollow" title="Partager ce contenu par e-mail" class="m3-icons-share-mail"></a></li>
+			</ul>
+
+</div>
+
+	<div class="collapse block-social-networks-share a2a_kit a2a_kit_size_32 a2a_default_style" id="addtoany-container">
+        <span class="tac_addtoanyshare"></span>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_linkedin"></a>
+    </div>
+
+<script type="text/javascript">
+	function deplierPartageReseauxSociaux()
+	{
+		fadeInOrFadeOut('#partages_reseaux_sociaux');
+	}
+
+	/**
+	* Affiche ou non (toogle), avec un effet JQuery
+	*/
+	function fadeInOrFadeOut(elementName)
+	{
+		$element = $(elementName);
+		if(! $element.hasClass("hide"))
+		{
+			$element.fadeOut(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+		else
+		{
+			$element.fadeIn(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+	}
+
+	// Alert a message when the user shares somewhere
+		function addThisEventHandler(evt) {
+		    switch (evt.type)
+		    {
+		        case "addthis.menu.share":
+		            incrementerPartages(5023, evt.data.service);
+		            break;
+		        default:
+		            console.log('received an unexpected event', evt);
+		    }
+		}
+
+	functionsInitialization.push(function shareInitialization()
+	{
+																						
+		// Listen to various events
+		try
+		{
+			addthis.addEventListener('addthis.menu.share', addThisEventHandler);
+		}
+		catch(err)
+		{}
+	});
+</script>
+
+</div>
+
+<div class="row">
+	<!--  main Content region -->
+        <div class="col-xs-60 col-sm-60 col-md-47">
+            <div class="item block-intro">
+                <p class="over-under-line uppercase">Interview de David BONNAMOUR</p>
+
+                <div class="row">
+                				        	<div class="col-xs-60 col-sm-30 col-md-30">
+							    <figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/interview/robotique-et-de-domotique/88371-1-fre-FR/robotique-et-de-domotique.gif"  width="227"   height="300"  class="img-responsive margin-bottom-5 " alt="" /></div></figure>
+			             				<div class="itw_qualite"><span class="ezstring-field">PDG de Domadoo</span></div>
+	
+			            </div>
+			        
+								        	<div class="col-xs-60 col-sm-30 col-md-30 margin-bottom-15">
+			        				        	                        <p class="item-face-face">&lt;&lt; L’interopérabilité des protocoles est la clé pour constituer une offre domotique globale, simple et abordable &gt;&gt;.</p>
+	                                            <div class="ezrichtext-field"><p>Domadoo est une entreprise de e-commerce sp&eacute;cialis&eacute;e dans la vente de produits domotiques. Fond&eacute;e en 2006, dans un march&eacute; fran&ccedil;ais fragile, Domadoo entreprend depuis d&rsquo;&eacute;largir le cercle des utilisateurs de produits domotiques &agrave; la faveur d&rsquo;une strat&eacute;gie de r&eacute;f&eacute;rencement et de positionnement offensive sur Internet. Malgr&eacute; un chiffre d&rsquo;affaires encore modeste (600 k&euro; en 2010, 4 personnes), l&rsquo;ambition de l&rsquo;entreprise n&rsquo;en est pas moins de devenir un des leaders fran&ccedil;ais, voire europ&eacute;ens de la distribution en ligne de produits domotiques.</p><p>David Bonnamour, PDG de Domadoo, nous fait partager sa vision de la domotique en France et les raisons de croire (enfin !) en son d&eacute;ploiement dans les foyers. Il soutient &eacute;galement les liens &eacute;troits qui existent entre les concepts de robotique et de domotique derri&egrave;re l&rsquo;id&eacute;e commune de syst&egrave;mes intelligents capables d&rsquo;interagir avec leur environnement. Faisant le pari de l&rsquo;assistance aux personnes &acirc;g&eacute;es ou handicap&eacute;es, Domadoo souhaite aujourd&rsquo;hui s&rsquo;inscrire plus activement dans les r&eacute;seaux d&rsquo;acteurs de la r&eacute;gion.&nbsp;</p>
+</div>
+
+                        <div class="informations">
+                        			                    	<div class="ressource-meta">
+		                    									    								    		<p class="keywords-title">Réalisée par :</p>
+							    		<ul class="list-inline keywords">
+							    											    			<li>
+											   		<a href="/auteurs/bing-geoffroy" title="Ouvrir la fiche de Geoffroy BING">
+   	Geoffroy BING
+</a>
+																									</li>
+																					</ul>
+															        </div>
+			                                            <div class="ressource-meta">
+		                        	<p class="keywords-title">Tag(s)&nbsp;:</p>
+	<ul class="list-inline keywords">
+			            
+	<li>
+		<a href="/tag/numerique" title="">Numérique</a>, 	<li>
+
+	    	            
+	<li>
+		<a href="/tag/usage" title="">Usage</a>	<li>
+
+	    	</ul>
+
+		                    </div>
+		                    <div class="ressource-meta">
+		                        	<span class="keywords-title">Date : <span class="publication_date">01/02/2011</span></span>
+
+		                    </div>
+		                </div>
+                    </div>
+                </div>
+            </div>
+
+                        	            	<div class="ezrichtext-field"><p><strong><strong>Quelle est la vision de Domadoo sur le march&eacute; de la domotique&nbsp;?</strong></strong></p><p>Il y a dix ans, le march&eacute; fran&ccedil;ais de la domotique orient&eacute;e grand public &eacute;tait inexistant, les produits &eacute;taient tr&egrave;s &eacute;litistes et haut de gamme. Aujourd&rsquo;hui, le terme &laquo;&nbsp;domotique&nbsp;&raquo; est presque connot&eacute; n&eacute;gativement. Au d&eacute;part, notre vision &eacute;tait donc de r&eacute;pondre d&rsquo;abord aux attentes de la communaut&eacute; existante d&rsquo;utilisateurs de la domotique qui regroupait essentiellement des passionn&eacute;s et qui s&rsquo;approvisionnait souvent &agrave; l&rsquo;&eacute;tranger. Aujourd&rsquo;hui, en voyant arriv&eacute; d&rsquo;autres protocoles et la g&eacute;n&eacute;ralisation de l&rsquo;informatique dans les foyers, nous pensons que des offres grand public, faciles d&rsquo;usage, vont voir le jour &agrave; court terme et se retrouver dans les rayons de la grande distribution. Notre vision &agrave; long terme est donc d&rsquo;&ecirc;tre un acteur majeur de la domotique.</p><p>&nbsp;</p><p><strong><strong>Pouvez-vous nous expliquer pourquoi, depuis le temps qu&rsquo;on en parle, la domotique s&rsquo;est&nbsp; si peu d&eacute;mocratis&eacute;e&nbsp;?</strong></strong></p><p>La domotique existe depuis longtemps mais reste tr&egrave;s &eacute;litiste et r&eacute;serv&eacute;e &agrave; des habitations haut de gamme. Pour autant, nous avons eu l&rsquo;occasion de nous rendre &agrave; plusieurs reprises &agrave; de grands salons sur les nouvelles technologies, tel que le C.E.S. (Consumer Electronic Show), la grand-messe de l&rsquo;&eacute;lectronique grand public, o&ugrave; nous avons pris connaissance des technologies naissantes, ouvrant la voie &agrave; une offre croissante de produits domotiques, &agrave; des prix abordables, mais qui malheureusement tardent &agrave; arriver sur le march&eacute; Fran&ccedil;ais, ou n&rsquo;y arrivent parfois jamais. Dans la grande distribution sp&eacute;cialis&eacute;e, l&rsquo;offre domotique est tr&egrave;s limit&eacute;e et se r&eacute;sume parfois &agrave; une t&eacute;l&eacute;commande et 3 prises command&eacute;es.</p><p>&nbsp;</p><p><strong><strong>Est-ce que le frein technologique est le frein essentiel&nbsp;?</strong></strong></p><p>La domotique grand public repose encore souvent aujourd&rsquo;hui sur des technologies anciennes. Le X10 par exemple est une technologie courant porteur o&ugrave; les messages et ordres sont envoy&eacute;s sur la ligne de 220V, ce qui all&egrave;ge consid&eacute;rablement l&rsquo;installation du dispositif puisqu&rsquo;aucun c&acirc;ble n&rsquo;est &agrave; installer. Ses faibles co&ucirc;ts et sa facilit&eacute; d&rsquo;installation la destinent donc &agrave; un usage grand public. Pour autant, c&rsquo;est une technologie vieillissante qui doit avoir plus de 15 ans, et dont les capacit&eacute;s fonctionnelles sont limit&eacute;es, exigeant le plus souvent un ordinateur pour un pilotage globale de l&rsquo;installation et l&rsquo;interconnexion avec d&rsquo;autres protocoles.</p><p>Depuis 2 ans, commencent enfin &agrave; arriver sur le march&eacute;, de nouvelles technologies qui r&eacute;pondent &agrave; toutes les exigences n&eacute;cessaires &agrave; un d&eacute;veloppement de la domotique grand public : facilit&eacute; d&rsquo;installation avec l&rsquo;usage du sans fil, fiabilit&eacute;, capacit&eacute; d&rsquo;actions &eacute;volu&eacute;es et surtout interop&eacute;rables.</p><p>&nbsp;</p><p><strong>Le d&eacute;ploiement de la domotique semble achopper sur la capacit&eacute; &agrave; rendre les appareils domestiques interop&eacute;rables. Pouvez-vous nous en expliquer l&rsquo;enjeu ?</strong></p><p>L&rsquo;interop&eacute;rabilit&eacute; des protocoles est la cl&eacute; pour constituer une offre domotique globale, simple et abordable. L&rsquo;enjeu dans une installation domotique est en effet de la rendre capable de faire communiquer les ouvrants, l&rsquo;&eacute;clairage, les t&eacute;l&eacute;communications, les alarmes, le chauffage, la climatisation, le multim&eacute;dia. Quand on veut couvrir tout ce spectre, on se rend compte que c&rsquo;est un gros lego, un enchev&ecirc;trement de nombreuses technologies diff&eacute;rentes qui ne se parlent pas forc&eacute;ment entre elles. Les produits les plus transversaux co&ucirc;tant alors tr&egrave;s chers.</p><p>&nbsp;</p><p><strong>Est-ce qu&rsquo;il y a des raisons de croire que l&rsquo;interop&eacute;rabilit&eacute; des appareils va se g&eacute;n&eacute;raliser&nbsp;?</strong></p><p>A l&rsquo;heure actuelle, deux nouvelles technologies &eacute;mergent plus particuli&egrave;rement, le Z-Wave et le ZigBee. La force de ces protocoles, encore plus que leurs capacit&eacute;s technologiques, est leur ouverture &agrave; de nombreux domaines et &agrave; plusieurs fabricants. Ils sont amen&eacute;s &agrave; devenir des standards, utilis&eacute;s dans les t&eacute;l&eacute;commandes, mat&eacute;riels HiFi et vid&eacute;o, motorisation, climatisation, centrales d&rsquo;alarme, &hellip; en remplacement de l&rsquo;infrarouge ou des protocoles propri&eacute;taires &agrave; chaque fabricant !</p><p>L&rsquo;offre Z-Wave, qui est pour l&rsquo;instant en avance par rapport au ZigBee, regroupe d&eacute;j&agrave; plus d&rsquo;une dizaine de fabricants et couvre un spectre fonctionnel tr&egrave;s large, dont les produits peuvent nativement communiquer entre eux sans passer par des passerelles particuli&egrave;res ou un ordinateur.</p><p>Malheureusement, certains fabricants qui ont d&eacute;cid&eacute; d&rsquo;utiliser ces nouveaux protocoles, continuent &agrave; verrouiller leurs produits. C&rsquo;est une mani&egrave;re de pr&eacute;server un avantage concurrentiel. Le fait d&rsquo;ouvrir leur protocole dynamiserait le march&eacute; ! C&rsquo;est une dynamique de cloisonnement du march&eacute; qui n&rsquo;est pas propice au d&eacute;veloppement de la domotique.</p><p>&nbsp;</p><p><strong><strong>Pensez-vous que nous sommes &agrave; un tournant aujourd&rsquo;hui dans le d&eacute;veloppement de la domotique ?</strong></strong></p><p>Le fait que de gros acteurs du secteur des t&eacute;l&eacute;communications s&rsquo;int&eacute;ressent au domaine est un signal assez fort de ce changement. Orange, SFR, Bouygues, etc , tous r&eacute;fl&eacute;chissent &agrave; int&eacute;grer dans leur box la fonction de domotique. Le nerf de la guerre est de savoir ce que je peux vendre au client via la box pour 30 euros par mois. Quand ils auront fait le tour de la question du multim&eacute;dia, ils vont aller chercher d&rsquo;autres choses comme la vid&eacute;osurveillance par exemple. Mais ils sont d&eacute;pendants de la m&ecirc;me chose que nous, &agrave; savoir de technologies fiables et s&eacute;curis&eacute;es. A titre personnel, je sens que les choses bougent en ce qui concerne la domotique grand public depuis environ deux ans.</p><p>&nbsp;</p><p><strong>Quelle diff&eacute;rence fa&icirc;tes-vous entre domotique et robotique&nbsp;?</strong></p><p>Je fais tr&egrave;s peu de diff&eacute;rence entre les deux. Une motorisation de volet battant, c&rsquo;est un robot quelque part. Peut-&ecirc;tre que dans la robotique, c&rsquo;est l&rsquo;intelligence artificielle et l&rsquo;autonomie d&rsquo;action qui en d&eacute;coule qui sont mises en avant. Mais, dans les deux cas, nous sommes face &agrave; l&rsquo;id&eacute;e du sc&eacute;nario : par rapport &agrave; un &eacute;v&eacute;nement pr&eacute;cis et dans des conditions donn&eacute;es, il s&rsquo;agit d&rsquo;effectuer une action adapt&eacute;e. Ev&eacute;nement, condition, et action constituent le triptyque dans lequel se d&eacute;ploient la domotique et la robotique. Ce sont les m&ecirc;mes fondamentaux. Pour illustrer la proximit&eacute; des concepts de robotique et de domotique, je citerais le cas d&rsquo;un produit domotique, Adhoco que j&rsquo;ai d&eacute;couvert r&eacute;cemment. Adhoco, soci&eacute;t&eacute; suisse, propose une centrale domotique qui fait de l&rsquo;apprentissage, une forme de domotique adaptative. L&rsquo;id&eacute;e n&rsquo;est pas de la programmer. Elle est pos&eacute;e, elle d&eacute;tecte en <em>plug and play</em> les appareils &agrave; commander, et pendant les premiers jours suivant l&rsquo;installation, elle d&eacute;tecte vos habitudes &agrave; votre domicile : les d&eacute;placements, les ouvertures de portes,&nbsp; le r&eacute;glage du chauffage, l&rsquo;allumage de la lumi&egrave;re, etc. Au bout d&rsquo;un certain temps, apr&egrave;s avoir m&eacute;moris&eacute; ces habitudes, le dispositif est capable de les anticiper et d&rsquo;ajuster le fonctionnement des appareils en cons&eacute;quence. C&rsquo;est donc un outil de confort qui finit par faire les choses &agrave; votre place d&rsquo;une part et de surveillance d&rsquo;autre part, en particulier des personnes &acirc;g&eacute;es. Par exemple, le syst&egrave;me d&eacute;tecte et informe par SMS ou email lors d&rsquo;un comportement inhabituel (si personne ne se l&egrave;ve par exemple). Je crois vraiment en l&rsquo;interconnectivit&eacute; des appareils, en une forme d&rsquo;intelligence collective. Demain, quand je mettrai l&rsquo;alarme en quittant mon domicile, mon aspirateur Roomba se mettra aussit&ocirc;t &agrave; travailler, et les &eacute;clairages ou appareils que j&rsquo;ai oubli&eacute; d&rsquo;&eacute;teindre seront arr&ecirc;t&eacute;s automatiquement afin de r&eacute;aliser des &eacute;conomies d&rsquo;&eacute;nergie. C&rsquo;est l&rsquo;interaction entre les appareils qui constitue l&rsquo;intelligence du syst&egrave;me. Pas besoin de concentrer toute l&rsquo;intelligence dans un seul appareil. C&rsquo;est pour moi le sc&eacute;nario le plus probable. Je pense que les visions de d&eacute;veloppement des robots domestiques d&rsquo;il y a quelques ann&eacute;es ne sont plus les m&ecirc;mes qu&rsquo;aujourd&rsquo;hui.</p><p>&nbsp;</p><p><strong><strong>Quelle est la strat&eacute;gie que vous comptez adopter pour vous imposer dans la distribution internet de produits domotiques&nbsp;?</strong></strong></p><p>Nous avons, d&egrave;s la cr&eacute;ation de la soci&eacute;t&eacute;, orient&eacute; notre strat&eacute;gie sur le e-commerce en domotique pour le particulier, avec une politique de communication et d&rsquo;assistance forte et un r&eacute;f&eacute;rencement de produits intensif. Aujourd&rsquo;hui, avec 1600 produits r&eacute;f&eacute;renc&eacute;s sur notre site, une logistique internalis&eacute;e ma&icirc;tris&eacute;e, un blog &agrave; vocation &eacute;ducative, un site de support en ligne r&eacute;actif, une visibilit&eacute; Internet forte et un chiffre d&rsquo;affaire croissant, nous avons atteint en 5 ans notre premier&nbsp;objectif d&rsquo;&ecirc;tre un acteur probant du e-commerce sur ce march&eacute;. Nous comptons &agrave; l&rsquo;avenir, d&eacute;velopper l&rsquo;activit&eacute; que nous entretenons d&eacute;j&agrave; avec le monde des professionnels de l&rsquo;installation, de l&rsquo;int&eacute;gration, et de la formation.</p><p>&nbsp;</p><p><strong><strong>Est-ce que la domotique sera capable demain, non pas seulement de proposer du confort dans la maison, mais un r&eacute;el service &agrave; la personne&nbsp;?</strong></strong></p><p>Je pense en effet, que l&rsquo;on peut voir la domotique sous l&rsquo;angle des services. Nous croyons beaucoup aux services aux personnes &acirc;g&eacute;es ou handicap&eacute;es. On sait qu&rsquo;il y a un besoin croissant et que c&rsquo;est une mani&egrave;re de valoriser la domotique. Ces personnes sont les premi&egrave;res &agrave; avoir besoin de ces technologies. On travaille actuellement avec d&rsquo;autres entreprises sur l&rsquo;apport de la domotique dans l&rsquo;aide &agrave; la personne. On est sur un r&eacute;el service.&nbsp; Nous souhaiterions travailler avec des partenaires de la robotique sur ce sujet, et avec des acteurs dans le domaine du handicap, ou du vieillissement.</p>
+</div>
+
+	        
+           	
+            
+            	<section class="print_hidden">
+		<div class="row">
+	     	<div class="col-xs-60 col-sm-60">
+	   			<h2 class="h4 h4-dossier block-title-overline margin-right-10">En lien avec le sujet</h2>
+	       	</div>
+	  	</div>
+	 	<div class="margin-bottom-30">
+	 		<section class="carousel3x3 margin-bottom-30">
+		 				         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/Faciliter-la-relation-a-l-administration" title="">Faciliter la relation à l&#039;administration</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/1/0/6/9/189601-13-fre-FR/Faciliter la relation à l&#039;administration.PNG"  width="548"   height="548"  class="img-responsive margin-bottom-15" alt="Illustration représentant un usager ayant accès à ses documents depuis son smartphone" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Vivre la Ville Intelligente (11)</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2016/vieillir-dans-la-ville-intelligente" title="">Vieillir dans la ville intelligente</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/3/6/9/189636-12-fre-FR/Vieillir dans la ville intelligente.PNG"  width="546"   height="545"  class="img-responsive margin-bottom-15" alt="Illustration représentant des application sur smartphone sui peuvent être utiles pour une personne âgée." /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Vivre la Ville Intelligente (10)</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2016/optimiser-ses-deplacements" title="">Optimiser ses déplacements</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/6/5/9/189566-12-fre-FR/Optimiser ses déplacements.PNG"  width="548"   height="547"  class="img-responsive margin-bottom-15" alt="Illustration représentant un individu ayant le choix sur son smartphone de différents modes de déplacement, (taxi, vélo, bus, tram, voiture)" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Vivre la Ville Intelligente (9)</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2016/les-relations-entre-les-acteurs-de-la-ville-intelligente" title="">Les relations entre les acteurs de la ville intelligente</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/0/1/5/9/189510-13-fre-FR/Les relations entre les acteurs de la ville intelligente.PNG"  width="547"   height="547"  class="img-responsive margin-bottom-15" alt="Illustration représentant deux individu, l&#039;un est un usager, l&#039;autre un fonctionnaire" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Orchestrer la Ville Intelligente (8)</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2016/l-effervescence-de-la-ville-intelligente" title="">L&#039;effervescence de la ville intelligente</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/4/3/9/189349-13-fre-FR/l-effervescence-de-la-ville-intelligente.jpg"  width="553"   height="553"  class="img-responsive margin-bottom-15" alt="Illustration représentant les domaines sur lesquels la ville intelligente agit (mobilité, citoyenneté et action publique, sécurité, économie, réseaux, environnement)" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Comprendre la ville intelligente (4)</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/dossiers/2016/la-ville-intelligente-archives" title="">La ville intelligente (archives)</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/6/6/1/9/189166-21-fre-FR/Dossier.jpg"  width="425"   height="425"  class="img-responsive margin-bottom-15" alt="Extrait d&#039;une infographie du dossier" /></figure>
+	<p>Comprendre, orchestrer et vivre la ville intelligente.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/dossiers/2011/citic-numerique-et-espace-urbain-archives" title="">CITIC-NUMÉRIQUE ET ESPACE URBAIN (archives)</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/5/6/8/8/128865-5-fre-FR/VirtualWorld.jpg"  width="4016"   height="4016"  class="img-responsive margin-bottom-15" alt="Photographie d&#039;un personne utilisant un plan sur tablette pour observer le territoire sur lequel il se situ" /></figure>
+	<p>Actes de la journée du 15 octobre 2010 consacrée aux enjeux de la &quot;ville numérique&quot;.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/ludicite-facilateur-d-urbanite" title="">Ludicité facilateur d&#039;urbanité</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/5/7/6/8/128675-4-fre-FR/Ludicité - Tube mode doux de la Croix Rousse - Jacques Léone  Grand lyon.PNG"  width="600"   height="600"  class="img-responsive margin-bottom-15" alt="Photographie de l&#039;intérieur du tube mode doux de la Croix Rousse, Lyon" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Les perspectives de l’utilisation du ludique dans le cadre de la ville contemporaine.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/kaleidoscope-des-re-mediations-publiques-urbaines-a-l-heure-de-la-ville-numerique-et-hybride" title="">Kaléidoscope des (re)médiations publiques urbaines à l&#039;heure de la ville numérique et hybride</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/1/0/6/8/128601-5-fre-FR/Kaléidoscope.jpg"  width="1280"   height="1280"  class="img-responsive margin-bottom-15" alt="Vue aérienne d&#039;une ville" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>La ville hybride reformule tous les enjeux de la ville contemporaine.</p>
+
+	</article>
+</div>
+
+							</section>
+		</div>
+	</section>
+
+        </div>
+<!--  /main Content region-->
+<!--  Right Sidebar -->
+        <div class="col-xs-60 col-md-13">
+            <div class="row">
+            	                            	                    		
+
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-dossiers">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="sidebar-picto m3-icons-sidebar-folders"></span>
+            <a title="" href=" /tous-les-dossiers ">   Dossiers
+            </a>
+        </h2>
+    </header>
+
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <div class="sidebar-block-content">
+        	                                    	<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/9/5/535989-1-fre-FR/3abfcaee6c8b-pms_light.jpg"  width="1413"   height="1414"  class="img-responsive margin-bottom-15" alt="Illustrations de personnes différentes sur une place" /></figure>
+                
+                <p class="publication-title"><a href="/dossiers/2023/action-publique-comment-penser-la-solidarite-depuis-un-territoire" title=""><span class="ezstring-field">Action publique : comment penser la solidarité depuis un territoire ?</span></a></p>
+	        
+            <footer class="sidebar-block-footer">
+            	                	<p><a  title="Consulter nos dossiers disponibles" href="/tous-les-dossiers">Tous les dossiers</a></p>
+                            </footer>
+        </div>
+    </div>
+</article>
+
+</div>
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-home">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="m3-icons-sidebar-picto-tags"></span>
+            <img src="/assets/images/unsprited/icons/tag.png" style= "margin-left: 4px; margin-right: 8px" alt="" />
+            <a href="/tous-les-tags" title="Consulter tous nos tags">Tags
+            </a>
+        </h2>
+    </header>
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <footer class="sidebar-block-footer">
+                            <p><a href="/tous-les-tags" title="Consulter tous nos tags">Tous les tags</a></p>
+                    </footer>
+    </div>
+</article>
+
+</div>
+	        </div>
+		</div>
+<!--  Right Sidebar-->
+</div>
+			<script>
+	function onYouTubeIframeAPIReady()
+	{
+		//Redimensionner les div de vidéos
+		var elements = document.getElementsByClassName("youtube_frame");
+		for(var i = 0 ; i < elements.length ; i++)
+		{
+			var element = elements[i];
+			var subElements = element.getElementsByClassName("youtube_player");
+			for(var j = 0 ; j < subElements.length ; j++)
+			{
+				var subElement = subElements[j];
+				var proportion = element.getAttribute("proportion");
+				var width = element.parentNode.offsetWidth;
+				var height = width * proportion;
+				subElement.setAttribute("width", "100%");
+				subElement.setAttribute("height", height);
+			}
+		}
+	}
+
+	functionsInitialization.push(onYouTubeIframeAPIReady);
+</script>	    </div>
+	</div>
+
+	<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="col-xs-60 col-sm-45 col-md-36 col-lg-39">
+                <nav class="navbar navbar-default footer-nav" role="navigation">
+                    <ul class="nav navbar-nav">
+                                                                            <li><a href="/qui-sommes-nous" title="">Qui sommes-nous</a></li>
+                        
+                        <li><a href="/newsletter_subscribe"><span lang="en">Newsletter</span></a></li>
+
+                        <li><a href="/formulaire/contactez_nous" >Contact</a></li>
+
+                                                                            <li><a href="/Accessibilite" >Accessibilité</a></li>
+                        
+                                                                            <li><a href="/plan-du-site" >Plan du site</a></li>
+                        
+                                                                            <li><a href="/mentions-legales" >Mentions légales</a></li>
+                        
+                                                                            <li><a href="/donnees-personnelles" >Données personnelles</a></li>
+                        
+                        <li><a href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-60 col-sm-15 hidden-md hidden-lg">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+                                                                                                                                                <div class="col-xs-60 col-sm-60 col-md-24 col-lg-21">
+                <a class="acces_metro" href="http://www.grandlyon.com" target="_blank" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)">Un site de la Métropole de Lyon</a>
+            </div>
+
+             <div class="hidden-xs visible-md visible-lg col-md-60 text-center">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+	
+	<div id="know-the-breakpoint"></div>
+	<script src="/assets/vendor/vendor.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/video-js/video.min.js"></script>
+<script src="/assets/vendor/video-js/lang/fr.js"></script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+	<script type="text/javascript">
+		functionsInitialization.push(function owlCarouselInitialization()
+		{
+		    $(".carousel3x3").owlCarousel({
+		        pagination: false,
+		        navigation: true,
+		        navigationText: [
+		            "<i class='glyphicon glyphicon-chevron-left'></i>",
+		            "<i class='glyphicon glyphicon-chevron-right'></i>"
+		        ],
+		        items: 3,
+		        itemsDesktop: [1160, 3],
+		        itemsDesktopSmall: [979, 3],
+		        itemsTablet:[600,2],
+		        itemsMobile: [479,1],
+		        scrollPerPage:true
+		    });
+		});
+
+		$(document).ready(function(){
+			$.each(functionsInitialization, function( index, value ) {
+				functionsInitialization[index]();
+			});
+		});
+	</script>
+</body>
+</html>

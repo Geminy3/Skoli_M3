@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Grand Lyon">
+<meta name="keywords" content="Millénaire 3">
+
+	
+		
+	
+	
+	<title>Conception éco-culturelle d&#039;un centre de recherche : Millenaire 3, Modes d&#039;action		</title>
+
+		<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@millenaire3">
+
+			<meta name="twitter:title" content="Conception éco-culturelle d&#039;un centre de recherche | Millénaire 3">
+					<meta name="twitter:description" content="">
+														<meta name="twitter:image" content="	https://www.millenaire3.com/var/m3/storage/images/_aliases/large/0/5/4/1/41450-1-fre-FR/Alain-Hays.jpg">
+<meta name="twitter:image:alt" content="Alain Hays, Centre de recherche scientifique du XTBG — Académie des Sciences de Chine.">
+
+										<meta name="twitter:creator" content="@millenaire3">
+			
+	<meta name="description" content="">
+		<!-- Bootstrap -->
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="/assets/css/style.min.css" type="text/css" rel="stylesheet" />
+
+	
+	<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/video-js/video-js.min.css" />
+
+<!-- Favicons, from http://realfavicongenerator.net/-->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/fav-icones/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/fav-icones/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/fav-icones/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/fav-icones/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/fav-icones/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/fav-icones/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/fav-icones/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/fav-icones/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/fav-icones/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+	<script type="text/javascript">
+		//Utilisation pour les scripts ajax
+		var rootUrl = "/";
+		var functionsInitialization = [];
+	</script>
+
+	<script type="text/javascript" src="/assets/vendor/tarteaucitronjs/tarteaucitron.js"></script>
+
+<script type="text/javascript">
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+
+        "orientation": "bottom", /* Banner position (top - bottom) */
+
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": true, /* Show the cookie list */
+
+        "showIcon": false, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* Disable auto consent */
+
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": false, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+        "mandatory": false, /* Show a message about mandatory cookies */
+    });
+
+    var tarteaucitronForceLanguage = "fr";
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
+
+    tarteaucitron.services.m3 = {
+        "key": "m3",
+        "type": "other",
+        "name": "Cookies internes Millénaire 3",
+        "uri": "",
+        "needConsent": true,
+        "cookies": ['cookieToken'],
+        "js": function () {
+            // When user allow cookie
+            "use strict";
+            registerCookieToken();
+            if(typeof whenM3CookieIsAccepted === "function")
+            {
+                // Fonction à définir dans les pages pour déclencher les scripts succeptibles de poser des cookies
+                whenM3CookieIsAccepted();
+            }
+        },
+        "fallback": function () {
+            // When user deny cookie
+            tarteaucitron.fallback(['m3-cookie-generation-zone'], function (x) {
+                // Remplacer la zone par "machin est désactivé"
+                return tarteaucitron.engage('m3');
+            });
+        }
+    };
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('m3');
+
+            tarteaucitron.user.matomoId = '58';
+        tarteaucitron.user.matomoHost = "https://statweb.grandlyon.com//";
+        (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
+    
+    (tarteaucitron.job = tarteaucitron.job || []).push('ausha');
+
+</script>
+</head>
+<body id="millenaire-3"  itemscope itemtype="http://schema.org/WebPage">
+			<header id="header">
+	<div id="print-top-menu" class="container">
+		<div class="row">
+        	<div class="col-xs-60">
+            	<img src="/assets/images/logo-millenaire-3-mini-blanc.png" alt="" style="float: left;">
+                <img src="/assets/images/logo-grand-lyon-la-metropole-blanc.png" alt="" style="float: right;">
+			</div>
+		</div>
+	</div>
+
+    <div id="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="clearfix" id="top-menu-content">
+                        <a href="#" title="Accéder au menu" class="link-sprite-focus m3-icons-btn-toggle-menu" id="btn-toggle-menu"></a>
+                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3-mini">
+                       	    <img src="/assets/images/logo-millenaire-3-mini.png" alt="" class="img-responsive" id="logo-mini-m3" />
+                        </a>
+
+                        <a class=" skippy sr-only sr-only-focusable" href="#content" title=""><span class="skiplink-text">Aller au contenu </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#main-menu" title=""><span class="skiplink-text">Aller au Menu principal </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#block-search" title=""><span class="skiplink-text">Aller à la recherche</span></a>
+
+                                                                                                                                                                                                                                                                                    <a href="http://www.grandlyon.com" target="_blank" rel="nofollow" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)" id="link-logo-glm">
+                            <img src="/assets/images/logo-grand-lyon-la-metropole.png" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toggle-header">
+            <div class="container">
+                <div class="row" id="toggle-header-content">
+                    <div class="col-xs-30 col-sm-17 col-md-13 block-logo" id="share-header">
+                                                
+                    	<span>
+	                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3">
+	                            <img src="/assets/images/logo-millenaire-3.png" alt="Logo Millénaire 3" class="img-responsive" />
+	                        </a>
+                        </span>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-20 col-md-19 block-baseline">
+                        <p>
+                            <img src="/assets/images/la-prospective-du-grand-lyon.png" alt="Sloggan Millénaire 3 : La prospective du Grand Lyon" class="img-responsive" />
+                        </p>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-23 col-md-11 col-lg-12 block-social-networks">
+						<ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+                    </div>
+                    																										<form action="/m3_search" method="get">
+	<div class="col-xs-60 col-sm-23 col-sm-offset-20 col-md-17 col-md-offset-0 col-lg-16 block-search">
+		<div class="input-group search-group" id="#block-search">
+            <label class="sr-only" for="search">Recherche</label>
+			<input id="search" type="search" class="search" value="" name="SearchText" placeholder="Rechercher sur le site"/>
+			<span class="input-group-btn">
+				<input id="search-submit" type="submit" value="" title="Lancer la recherche" class="m3-icons-search" />
+			</span>
+		</div>
+	</div>
+</form>
+                    <div class="col-xs-60 col-sm-60 col-md-47" id="main-menu" style="display:none">
+	<nav class="navbar navbar-default" role="navigation">
+		<ul class="nav navbar-nav">
+																	<li><a href="/societe" title=""><span class="ezstring-field">Société</span></a></li>
+		    								<li class="active"><a href="/modes-d-action" title=""><span class="ezstring-field">Modes d&#039;action</span> <span class="sr-only">(Menu déjà sélectionné)</span></a></li>
+		    								<li><a href="/transformation-urbaine" title=""><span class="ezstring-field">Transformation urbaine</span></a></li>
+		    								<li><a href="/politiques-publiques" title=""><span class="ezstring-field">Politiques Publiques</span></a></li>
+		    								<li><a href="/territoire" title=""><span class="ezstring-field">Territoire</span></a></li>
+		    								<li><a href="/soutenabilite" title=""><span class="ezstring-field">Soutenabilité</span></a></li>
+		             </ul>
+    </nav>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<div id="home">
+	    <div class="container" id="content">
+	    		    			                    <div class="row">
+        <div class="col-xs-60 block-breadcrumb" itemprop="breadcrumb">
+            <p class="before-breadcrumb">Vous êtes ici&nbsp;: </p><ol class="breadcrumb"><li><a title="Voir la page Accueil" href="/">Accueil</a></li><li><a title="Voir la page Modes d&#039;action" href="/modes-d-action">Modes d&#039;action</a></li><li class="active">Conception éco-culturelle d&#039;un centre de recherche</li></ol>        </div>
+    </div>
+
+                                                                                                                                
+	            	    			    						
+	    		    	
+            			
+    <script type="text/javascript">
+	functionsInitialization.push(function ressourceInitialization(){
+		incrementerVues(2531);
+	});
+</script>
+
+<div class="row block-title">
+    <div class="col-xs-60 col-sm-47 col-md-47">
+        <h1 class="uppercase h1-special">
+							Conception éco-culturelle d&#039;un centre de recherche
+					</h1>
+    </div>
+
+	<div class="col-xs-60 col-sm-13 col-md-13 block-share">
+
+<ul class="clearfix share">
+	<li>
+		<!--a href="javascript:void(0);" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a-->
+		<a href="javascript:void(0);" data-toggle="collapse" data-target="#addtoany-container" aria-expanded="false" aria-controls="addtoany-container" role="button" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a>
+	</li>
+						<li><a href="/generated_pdf/2503" rel="nofollow" target="_blank" title="Télécharger la page en version PDF" class="m3-icons-share-pdf hidden-xs"></a></li>
+			<!--li><a href="https://www.millenaire3.com/layout/set/print/content/view/print/2503" target="_blank">p</a></li-->
+							<li id="print_current_content"><a href="javascript:window.print()" onclick="javascript:print()" rel="nofollow" title="Imprimer la page" class="m3-icons-share-print"></a></li>
+							<li><a href="/partage_email/2503" rel="nofollow" title="Partager ce contenu par e-mail" class="m3-icons-share-mail"></a></li>
+			</ul>
+
+</div>
+
+	<div class="collapse block-social-networks-share a2a_kit a2a_kit_size_32 a2a_default_style" id="addtoany-container">
+        <span class="tac_addtoanyshare"></span>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_linkedin"></a>
+    </div>
+
+<script type="text/javascript">
+	function deplierPartageReseauxSociaux()
+	{
+		fadeInOrFadeOut('#partages_reseaux_sociaux');
+	}
+
+	/**
+	* Affiche ou non (toogle), avec un effet JQuery
+	*/
+	function fadeInOrFadeOut(elementName)
+	{
+		$element = $(elementName);
+		if(! $element.hasClass("hide"))
+		{
+			$element.fadeOut(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+		else
+		{
+			$element.fadeIn(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+	}
+
+	// Alert a message when the user shares somewhere
+		function addThisEventHandler(evt) {
+		    switch (evt.type)
+		    {
+		        case "addthis.menu.share":
+		            incrementerPartages(2531, evt.data.service);
+		            break;
+		        default:
+		            console.log('received an unexpected event', evt);
+		    }
+		}
+
+	functionsInitialization.push(function shareInitialization()
+	{
+																						
+		// Listen to various events
+		try
+		{
+			addthis.addEventListener('addthis.menu.share', addThisEventHandler);
+		}
+		catch(err)
+		{}
+	});
+</script>
+
+</div>
+
+
+    <div class="row">
+        <div class="col-xs-60 col-sm-60 col-md-47">
+            <div class="block-intro">
+                <div class="row">
+                                            <div class="col-xs-60 col-sm-30 col-md-30">
+                                <figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/0/5/4/1/41450-1-fre-FR/Alain-Hays.jpg"  width="182"   height="179"  class="img-responsive margin-bottom-5 " alt="Alain Hays, Centre de recherche scientifique du XTBG — Académie des Sciences de Chine." /></div></figure>
+                        </div>
+                    
+                                            <div class="col-xs-60 col-sm-30 col-md-30">
+                                            <p class="over-under-line intro-category">
+                           Texte d&#039;Alain HAYS
+                        </p>
+                        <h1 class="intro-title"><span class="ezstring-field"></span></h1>
+                        <div class="eztext-field"></div>
+                        <div class="informations">
+                            <div class="ressource-meta">
+                                	<p class="keywords-title">Tag(s)&nbsp;:</p>
+	<ul class="list-inline keywords">
+			            
+	<li>
+		<a href="/tag/biodiversite" title="">Biodiversité</a>, 	<li>
+
+	    	            
+	<li>
+		<a href="/tag/recherche" title="">Recherche</a>	<li>
+
+	    	</ul>
+
+                            </div>
+                            <div class="ressource-meta">
+                                	<span class="keywords-title">Date : <span class="publication_date">01/06/2014</span></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                        <div class="row" style="overflow: hidden;">
+                <div class="col-xs-60 col-sm-60 col-md-16 block-total-height-container-container hidden-xs hidden-sm">
+                    <div class="block-total-height block-grey block-author">
+                        <div class="row"><div class="col-xs-60 hidden-xs hidden-sm"><figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/auteurs/hays-alain/8770-2-fre-FR/hays-alain.jpg"  width="200"   height="199"  class="img-responsive margin-bottom-5 " alt="" /></div><figcaption><span class="copyright">&copy;&nbsp;XTBG</span></figcaption></figure></div></div><p class="author-informations-adaptative"><a href="/auteurs/hays-alain" title="Ouvrir la fiche de l'auteur"><span class="author-name">
+			Alain&nbsp;HAYS
+		</span></a><div class="auteur_accroche"><span class="ezstring-field">Consultant international et designer en chef du Centre de recherche scientifique du XTBG — Académie des Sciences de Chine.</span></div></p>
+                    </div>
+                </div>
+                <div class="col-xs-60 col-sm-15 hidden-md hidden-lg">
+                    <div class="row"><div class="col-xs-60 hidden-xs hidden-sm"><figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/auteurs/hays-alain/8770-2-fre-FR/hays-alain.jpg"  width="200"   height="199"  class="img-responsive margin-bottom-5 " alt="" /></div><figcaption><span class="copyright">&copy;&nbsp;XTBG</span></figcaption></figure></div></div><p class="author-informations-adaptative"><a href="/auteurs/hays-alain" title="Ouvrir la fiche de l'auteur"><span class="author-name">
+			Alain&nbsp;HAYS
+		</span></a><div class="auteur_accroche"><span class="ezstring-field">Consultant international et designer en chef du Centre de recherche scientifique du XTBG — Académie des Sciences de Chine.</span></div></p>
+                </div>
+                <div class="col-xs-60 col-sm-60 col-md-44">
+                    <div class="ezrichtext-field"><p>Texte &eacute;crit pour la revue M3 n&deg;7</p><p><em>&Agrave; l&rsquo;extr&ecirc;me sud-ouest de la Chine, au Yunnan, se love dans les m&eacute;andres d&rsquo;un affluent du M&eacute;kong le plus grand jardin botanique de Chine : le &laquo;&nbsp;Xishuangbanna Tropical Botanical Garden (XTBG)&nbsp;&raquo; de l&rsquo;Acad&eacute;mie des sciences de Chine (CAS). R&eacute;cit d&rsquo;une conception &eacute;co-culturelle tr&egrave;s exigeante.</em></p><p>Nous sommes au pays des Dai, l&rsquo;une des 55 minorit&eacute;s ethniques parlant tha&iuml;, de culture animiste et bouddhiste. Sur 1 125 hectares, de riches collections d&rsquo;arbres et de plantes se m&ecirc;lent &agrave; la for&ecirc;t tropicale native. Des chercheurs y viennent du monde entier &eacute;tudier les &eacute;cosyst&egrave;mes forestiers et une infinit&eacute; de sujets li&eacute;s &agrave; la conservation de la biodiversit&eacute;.Le XTBG, haut lieu touristique, a &eacute;t&eacute; r&eacute;cemment remembr&eacute; afin de r&eacute;pondre &agrave; l&rsquo;afflux des visiteurs et aux besoins de son centre de recherche fond&eacute; en 1959. Il fut d&eacute;cid&eacute; de b&acirc;tir un nouveau centre scientifique : une &laquo;&nbsp;Plate-forme de bio&eacute;nergie et biologie de la conservation&nbsp;&raquo; de premier plan pour le sud-est asiatique. Le professeur Chen Jin, directeur du XTBG-CAS, allait me confier, &agrave; titre de Designer en chef, tout le plan directeur et la conception des &eacute;difices, l&rsquo;ex&eacute;cution des plans techniques incombant &agrave; l&rsquo;Institut de Design du Yunnan.</p><h4>&nbsp;</h4><h4>Concept &laquo; &eacute;co-culturel &raquo; : une vision du &laquo; Green Building - B&acirc;tir Vert &raquo; - GBBV</h4><p>Le concept d&rsquo;&laquo; &eacute;co-culture &raquo; induit la prise en compte simultan&eacute;e de la probl&eacute;matique &eacute;cologique au sens premier du terme et celle du mode de vie des populations locales, de leur exp&eacute;rience en mati&egrave;re de protection durable de l&rsquo;environnement et d&rsquo;adaptation au climat. Nous avions r&eacute;affirm&eacute; ce concept &laquo;&nbsp;&eacute;co-culturel&nbsp;&raquo; lors du congr&egrave;s &laquo;&nbsp;Cultures et Biodiversit&eacute;&nbsp;&raquo; qui se tint au Yunnan en l&rsquo;an 2000, r&eacute;unissant institutions chinoises et grandes agences internationales de conservation de la nature. Cet &eacute;v&egrave;nement souligna l&rsquo;importance de la diversit&eacute; culturelle des populations pour le maintien de la biodiversit&eacute; et le poids des savoirs fondamentaux qu&rsquo;ont su d&eacute;velopper pendant des si&egrave;cles les peuples autochtones.</p><p>N&rsquo;en va-t-il pas de m&ecirc;me en architecture et urbanisme ? La tendance &agrave; l&rsquo;application de solutions standardis&eacute;es dites &laquo;&nbsp;&eacute;cologiques&nbsp;&raquo; ou &laquo;&nbsp;green&nbsp;&raquo; en tout lieu et par tout pays, m&ecirc;me si elles sont th&eacute;oriquement efficaces, n&rsquo;&eacute;tait-elle pas questionnable voire d&eacute;raisonnable ? Il fallut une vision courageuse du directeur du XTBG pour que soit prise en compte l&rsquo;architecture locale dans la conception de ce nouveau centre scientifique qui se voulait moderne et fonctionnel. De plus, une autre demande avait &eacute;t&eacute; formul&eacute;e : comment retrouver l&rsquo;&laquo;&nbsp;&acirc;me&nbsp;&raquo; de ce lieu singulier et incarner la devise de l&rsquo;institution &laquo;&nbsp;Sens des Responsabilit&eacute;s et R&eacute;alit&eacute;s; Sinc&eacute;rit&eacute; et Harmonie&nbsp;&raquo;&nbsp;? Vaste programme&hellip; Il nous fallut rechercher des solutions &agrave; la fois simples, &eacute;conomiques, &eacute;cologiques, fonctionnelles et conviviales : techniques de construction conventionnelles ex&eacute;cutables par des entreprises locales, &eacute;clairage naturel privil&eacute;gi&eacute; et transparence interne en minimisant les murs pleins, optimisation de la protection contre le rayonnement solaire, climatisation permettant la ventilation crois&eacute;e, v&eacute;g&eacute;tation formant partie int&eacute;grante du projet, non-usage de bois tropical imputrescible, parquets en bambou, r&eacute;cup&eacute;ration des eaux pluviales pour r&eacute;servoirs anti-incendie, chauffe-eau solaires, r&eacute;duction maximum des voies d&rsquo;acc&egrave;s, minimisation des aires asphalt&eacute;es, transport pi&eacute;tonnier ou par navettes &eacute;lectriques. Chaque phase du projet donna lieu &agrave; des d&eacute;bats longs et passionn&eacute;s avec les cadres, chercheurs et techniciens de l&rsquo;institution ; un r&eacute;el processus participatif se mit en place et se poursuivit pendant la supervision du chantier.</p><h4>&nbsp;</h4><h4>Le projet du nouveau Centre de recherche</h4><p>Les b&acirc;timents du Centre de recherche devaient se situer sur un terrain &eacute;troit surplombant le fleuve Luosuo. Je les regroupai en deux p&ocirc;les. Le premier ensemble rassemblait autour de deux grands bassins-fontaines un b&acirc;timent administratif et de recherche, un auditorium avec sa caf&eacute;t&eacute;ria et une grande biblioth&egrave;que. Le second p&ocirc;le se d&eacute;veloppait en oblique du premier en pleine for&ecirc;t tropicale humide que nous avions d&eacute;cid&eacute; de conserver. Trois grandes unit&eacute;s de 54 laboratoires allaient y prendre place. Je con&ccedil;us &eacute;galement un agr&eacute;able restaurant ouvert sur le fleuve pour le personnel et les visiteurs. Un complexe r&eacute;sidentiel devait offrir une vingtaine de villas pour les cadres et experts &eacute;trangers. Environ 28 000 m2 de construction furent ainsi r&eacute;alis&eacute;s sur 12 ha de terrain am&eacute;nag&eacute; avec routes et infrastructures pour un investissement global d&rsquo;une dizaine de millions d&rsquo;euros. Ce qui reste tr&egrave;s &eacute;conomique pour un tel projet.</p><h4>&nbsp;</h4><h4>Conception &eacute;co-culturelle et bioclimatisme</h4><p>Gr&acirc;ce &agrave; l&rsquo;&eacute;tude pr&eacute;liminaire de terrain, nous avons pu rep&eacute;rer les &eacute;l&eacute;ments &laquo;&nbsp;constructifs&nbsp;&raquo; des habitations locales utiles &agrave; notre projet. L&rsquo;habitat traditionnel des Dai est extroverti, ouvert sur la nature, profitant d&rsquo;amples espaces int&eacute;rieurs-ext&eacute;rieurs bien ombr&eacute;s ; il invite &agrave; la convivialit&eacute;. M&rsquo;en inspirant, je multipliai les larges balcons terrasses et les auvents profonds m&ecirc;me en &eacute;tage. Par de hautes baies vitr&eacute;es pliantes, les salles de r&eacute;unions, la caf&eacute;t&eacute;ria, la biblioth&egrave;que, le restaurant et les villas pourraient s&rsquo;ouvrir totalement sur l&rsquo;ext&eacute;rieur tout en restant &agrave; l&rsquo;abri du soleil et des pluies gr&acirc;ce &agrave; des galeries lat&eacute;rales et &agrave; des profonds d&eacute;pass&eacute;s de toiture. Le dehors et le dedans, paysage et architecture devaient se fondre organiquement. J&rsquo;accordai une grande importance &agrave; l&rsquo;orientation des b&acirc;timents. Les donn&eacute;es climatologiques pr&eacute;cises nous &eacute;taient fournies par la station m&eacute;t&eacute;orologique du XTBG. J&rsquo;inventai une sorte de &laquo;&nbsp;compas climatologique&nbsp;&raquo; empirique, qui facilitait sur tous les plans le rep&eacute;rage des secteurs potentiellement chauds &agrave; prot&eacute;ger et des espaces naturellement frais &agrave; privil&eacute;gier. L&rsquo;agencement des ouvertures des pi&egrave;ces en vis-&agrave;-vis et la disposition transversale des vastes salles de laboratoire, ouvrantes sur leurs c&ocirc;t&eacute;s oppos&eacute;s, facilit&egrave;rent une ventilation crois&eacute;e naturelle. Le matin, il &eacute;tait agr&eacute;able de pouvoir ouvrir librement fen&ecirc;tres et baies, afin de laisser circuler l&rsquo;air frais. Ce que permettait aussi, et ce n&rsquo;est pas courant, l&rsquo;auditorium &eacute;quip&eacute; d&rsquo;un balcon int&eacute;rieur sur son pourtour avec fen&ecirc;tres coulissantes et syst&egrave;me de persiennes automatis&eacute;es (illumination et ventilation naturelles). En compl&eacute;ment du syst&egrave;me d&rsquo;air conditionn&eacute;, des ventilateurs plafonniers furent install&eacute;s dans chaque pi&egrave;ce et chaque laboratoire.</p><h4>&nbsp;</h4><h4>V&eacute;cu et lieu au coeur de l&rsquo;&laquo; &eacute;co-culture &raquo;</h4><p>L&rsquo;homme et ses accommodations pragmatiques se retrouvent au coeur du syst&egrave;me bioclimatique et non pas une machinerie contraignante aussi sophistiqu&eacute;e et performante soit-elle id&eacute;alis&eacute;e. &Agrave; l&rsquo;usage, les chercheurs utilisent de pr&eacute;f&eacute;rence les ventilateurs en laissant grandes ouvertes les portes et fen&ecirc;tres. Plaisir de ne pas &ecirc;tre confin&eacute;s, de profiter des larges balcons-galeries et de la for&ecirc;t native&hellip; Quand la temp&eacute;rature ext&eacute;rieure devient insupportable, ils optimisent d&rsquo;eux-m&ecirc;mes l&rsquo;air conditionn&eacute; en conjonction avec les ventilateurs tant pour un meilleur confort que pour baisser la puissance de refroidissement. Les galeries ombrantes qui flanquent chaque &eacute;difice sont reli&eacute;es par une &laquo;&nbsp;garden gallery&nbsp;&raquo; qui permet, les jours de pluie, de se rendre &agrave; l&rsquo;abri d&rsquo;une extr&eacute;mit&eacute; &agrave; l&rsquo;autre du centre de recherche. Aucun d&eacute;tail ne fut gratuit ; convivialit&eacute; et fonctionnalit&eacute; se r&eacute;pondent comme imagin&eacute;es. M&ecirc;me les jaillissements des deux fontaines en corolles invers&eacute;es avaient un but suppl&eacute;mentaire : programm&eacute;es, elles annoncent les heures d&rsquo;embauche et les moments tant attendus des repas &mdash; clepsydres g&eacute;antes de l&rsquo;espace-temps. Avoir conserv&eacute; la for&ecirc;t native et construit &laquo; autour&nbsp;&raquo; d&rsquo;elle, non seulement participa au bioclimatisme recherch&eacute; mais conf&eacute;rait au complexe scientifique une sorte de &laquo; v&eacute;cu &raquo; tr&egrave;s particulier : d&egrave;s son ach&egrave;vement, son architecture &eacute;co-culturelle semblait appartenir au lieu depuis toujours&hellip;</p><p>L&rsquo;ann&eacute;e de son inauguration, le projet re&ccedil;ut le &nbsp; Prix d&rsquo;excellence 2011 des projets d&rsquo;investissement national chinois&nbsp;&raquo; d&eacute;cern&eacute; par la Commission nationale pour la r&eacute;forme et le d&eacute;veloppement (NDRC). Il est le premier centre de recherche scientifique de l&rsquo;Acad&eacute;mie des sciences de Chine &agrave; avoir re&ccedil;u cette haute distinction</p>
+</div>
+
+                                                        </div>
+            </div>
+            
+            	<section class="print_hidden">
+		<div class="row">
+	     	<div class="col-xs-60 col-sm-60">
+	   			<h2 class="h4 h4-dossier block-title-overline margin-right-10">En lien avec le sujet</h2>
+	       	</div>
+	  	</div>
+	 	<div class="margin-bottom-30">
+	 		<section class="carousel3x3 margin-bottom-30">
+		 				         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/apprendre-des-abeilles-sauvages" title="">Apprendre des abeilles sauvages</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/ressources/apprendre-des-abeilles-sauvages/120751-1-fre-FR/apprendre-des-abeilles-sauvages.jpg"  width="450"   height="337"  class="img-responsive margin-bottom-15" alt="Charlotte Visage" /></figure>
+  <p class="uppercase"><b>Texte d&#039;Adeline Charvet et Charlotte VISAGE</b></p>
+	<p>la thématique des abeilles interroge la place de la biodiversité en milieu urbain.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2004/les-enjeux-de-l-observation-scientifique-sur-le-fleuve" title="">Les enjeux de l’observation scientifique sur le fleuve</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/6/0/4/74069-5-fre-FR/Jean-Paul Bravard.PNG"  width="382"   height="382"  class="img-responsive margin-bottom-15" alt="Portrait de Jean-Paul Bravard" /></figure>
+  <p class="uppercase"><b>Interview de Jean-Paul BRAVARD</b></p>
+       		   		<p>Président de la Zone Atelier du Bassin Rhône en 2004</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2014/l-observatoire-des-papillons-des-jardins-regard-du-chercheur" title="">L&#039;observatoire des papillons des jardins : regard du chercheur</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/interview/2014/l-observatoire-des-papillons-des-jardins-regard-du-chercheur/11297-1-fre-FR/L-observatoire-des-papillons-des-jardins-regard-du-chercheur.png"  width="165"   height="220"  class="img-responsive margin-bottom-15" alt="" /></figure>
+  <p class="uppercase"><b>Interview de Benoît FONTAINE</b></p>
+       		   		<p>Chercheur</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/vers-quels-lendemains-allons-nous-sciences-techniques" title="">Vers quels lendemains allons-nous : sciences &amp; techniques</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/2/2/8/8229-3-fre-FR/LYON2020.PNG"  width="396"   height="534"  class="img-responsive margin-bottom-15" alt="Couverture de l&#039;étude &quot; Vers quels lendemains allons-nous ? &quot;" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Le XXème siècle a été riche en découvertes scientifiques. Que reste-t-il à découvrir d&#039;aussi exceptionnel que le principe de la vaccination ou nos planètes voisines ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2022/veille-m3-pour-une-meilleure-qualite-de-l-air-l-auto-defense-sanitaire" title="">Veille M3 / Pour une meilleure qualité de l’air, l&#039;auto-défense sanitaire ?</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/1/0/3/9/529301-1-fre-FR/03979b09fc81-Les-Diidents-Une-annee-dans-la-bulle-conspirationniste.jpg"  width="400"   height="643"  class="img-responsive margin-bottom-15" alt="Couverture du livre Les dissidents d&#039;Anthony Mansuy" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Après la poussée de complotisme constatée pendant la pandémie, quels enseignements tirer pour réconcilier sciences et engagement citoyen ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2014/regards-croises-sur-les-sciences-participatives-l-exemple-de-l-observatoire-des-papillons-des-jardins" title="">Regards croisés sur les sciences participatives : l’exemple de l’observatoire des papillons des jardins</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/1/2/3/5/525321-2-fre-FR/4efac9b63614-Regards-croises-sur-les-sciences-participatives-l-exemple-de-l-observatoire-des-papillons-des-jardins.png"  width="276"   height="234"  class="img-responsive margin-bottom-15" alt="" /></figure>
+  <p class="uppercase"><b>Étude</b></p>
+	<p>Les sciences citoyennes, plutôt &quot;sciences&quot; ou plutôt &quot;citoyennes&quot; ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2014/l-ethique-en-consultation" title="">L&#039;éthique en consultation</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/7/2/7/4/524727-1-fre-FR/9b4d947f9286-L-ethique-en-consultation.jpg"  width="233"   height="350"  class="img-responsive margin-bottom-15" alt="" /></figure>
+  <p class="uppercase"><b>Texte de Marianne CHOUTEAU</b></p>
+	<p>Comment proposer un cadre normatif à l’exercice de la recherche tout en permettant une indispensable liberté scientifique ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2022/agriculture-regenerative-promesses-et-limites-d-un-concept-seduisant" title="">Agriculture régénérative : promesses et limites d’un concept séduisant</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/7/6/6/3/523667-1-fre-FR/54344aa89075-agriculture_regenerative.png"  width="567"   height="567"  class="img-responsive margin-bottom-15" alt="Illustration d&#039;un champs" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Face aux crises qui menacent durablement la production alimentaire mondiale, quelles solutions propose l’agriculture « régénérative » ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/ressources/2022/economie-regenerative-un-principe-directeur-pour-l-economie-circulaire" title="">Économie régénérative : un principe directeur pour l’économie circulaire ?</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/5/3/523589-4-fre-FR/b6927b494f22-litterature-academique2.png"  width="567"   height="567"  class="img-responsive margin-bottom-15" alt="Illustration de livres" /></figure>
+  <p class="uppercase"><b>Article</b></p>
+	<p>Au sein du champ académique, quelle place pour le concept d’économie régénérative ?</p>
+
+	</article>
+</div>
+
+							</section>
+		</div>
+	</section>
+
+        </div>
+        <aside class="col-xs-60 col-sm-60 col-md-13">
+            <div class="row">
+                                                                                    		
+
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-dossiers">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="sidebar-picto m3-icons-sidebar-folders"></span>
+            <a title="" href=" /tous-les-dossiers ">   Dossiers
+            </a>
+        </h2>
+    </header>
+
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <div class="sidebar-block-content">
+        	                                    	<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/9/5/535989-1-fre-FR/3abfcaee6c8b-pms_light.jpg"  width="1413"   height="1414"  class="img-responsive margin-bottom-15" alt="Illustrations de personnes différentes sur une place" /></figure>
+                
+                <p class="publication-title"><a href="/dossiers/2023/action-publique-comment-penser-la-solidarite-depuis-un-territoire" title=""><span class="ezstring-field">Action publique : comment penser la solidarité depuis un territoire ?</span></a></p>
+	        
+            <footer class="sidebar-block-footer">
+            	                	<p><a  title="Consulter nos dossiers disponibles" href="/tous-les-dossiers">Tous les dossiers</a></p>
+                            </footer>
+        </div>
+    </div>
+</article>
+
+</div>
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-home">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="m3-icons-sidebar-picto-tags"></span>
+            <img src="/assets/images/unsprited/icons/tag.png" style= "margin-left: 4px; margin-right: 8px" alt="" />
+            <a href="/tous-les-tags" title="Consulter tous nos tags">Tags
+            </a>
+        </h2>
+    </header>
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <footer class="sidebar-block-footer">
+                            <p><a href="/tous-les-tags" title="Consulter tous nos tags">Tous les tags</a></p>
+                    </footer>
+    </div>
+</article>
+
+</div>
+            </div>
+        </aside>
+    </div>
+			<script>
+	function onYouTubeIframeAPIReady()
+	{
+		//Redimensionner les div de vidéos
+		var elements = document.getElementsByClassName("youtube_frame");
+		for(var i = 0 ; i < elements.length ; i++)
+		{
+			var element = elements[i];
+			var subElements = element.getElementsByClassName("youtube_player");
+			for(var j = 0 ; j < subElements.length ; j++)
+			{
+				var subElement = subElements[j];
+				var proportion = element.getAttribute("proportion");
+				var width = element.parentNode.offsetWidth;
+				var height = width * proportion;
+				subElement.setAttribute("width", "100%");
+				subElement.setAttribute("height", height);
+			}
+		}
+	}
+
+	functionsInitialization.push(onYouTubeIframeAPIReady);
+</script>	    </div>
+	</div>
+
+	<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="col-xs-60 col-sm-45 col-md-36 col-lg-39">
+                <nav class="navbar navbar-default footer-nav" role="navigation">
+                    <ul class="nav navbar-nav">
+                                                                            <li><a href="/qui-sommes-nous" title="">Qui sommes-nous</a></li>
+                        
+                        <li><a href="/newsletter_subscribe"><span lang="en">Newsletter</span></a></li>
+
+                        <li><a href="/formulaire/contactez_nous" >Contact</a></li>
+
+                                                                            <li><a href="/Accessibilite" >Accessibilité</a></li>
+                        
+                                                                            <li><a href="/plan-du-site" >Plan du site</a></li>
+                        
+                                                                            <li><a href="/mentions-legales" >Mentions légales</a></li>
+                        
+                                                                            <li><a href="/donnees-personnelles" >Données personnelles</a></li>
+                        
+                        <li><a href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-60 col-sm-15 hidden-md hidden-lg">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+                                                                                                                                                <div class="col-xs-60 col-sm-60 col-md-24 col-lg-21">
+                <a class="acces_metro" href="http://www.grandlyon.com" target="_blank" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)">Un site de la Métropole de Lyon</a>
+            </div>
+
+             <div class="hidden-xs visible-md visible-lg col-md-60 text-center">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+	
+	<div id="know-the-breakpoint"></div>
+	<script src="/assets/vendor/vendor.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/video-js/video.min.js"></script>
+<script src="/assets/vendor/video-js/lang/fr.js"></script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+	<script type="text/javascript">
+		functionsInitialization.push(function owlCarouselInitialization()
+		{
+		    $(".carousel3x3").owlCarousel({
+		        pagination: false,
+		        navigation: true,
+		        navigationText: [
+		            "<i class='glyphicon glyphicon-chevron-left'></i>",
+		            "<i class='glyphicon glyphicon-chevron-right'></i>"
+		        ],
+		        items: 3,
+		        itemsDesktop: [1160, 3],
+		        itemsDesktopSmall: [979, 3],
+		        itemsTablet:[600,2],
+		        itemsMobile: [479,1],
+		        scrollPerPage:true
+		    });
+		});
+
+		$(document).ready(function(){
+			$.each(functionsInitialization, function( index, value ) {
+				functionsInitialization[index]();
+			});
+		});
+	</script>
+</body>
+</html>

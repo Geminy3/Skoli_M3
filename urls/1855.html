@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Grand Lyon">
+<meta name="keywords" content="Millénaire 3">
+
+	
+		
+	
+	
+	<title>Le robot iCub capable de coopérere avec l&#039;Homme : Millenaire 3, Transformation urbaine		</title>
+
+		<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@millenaire3">
+
+			<meta name="twitter:title" content="Le robot iCub capable de coopérere avec l&#039;Homme | Millénaire 3">
+					<meta name="twitter:description" content="&quot;Nous cherchons à rendre le robot capable de s&#039;intégrer et d&#039;apprendre dans un environnement inconnu, de se familiariser avec les objets constitutifs de cet environnement, de les manipuler, et de prendre les bonnes décisions&quot;.">
+														<meta name="twitter:image" content="	https://www.millenaire3.com/var/m3/storage/images/_aliases/large/0/6/3/7/87360-1-fre-FR/Peter_Ford_Dominey.gif">
+<meta name="twitter:image:alt" content="">
+
+										<meta name="twitter:creator" content="@millenaire3">
+			
+	<meta name="description" content="
+Interview réalisée par Geoffroy Bing, le 23 novembre 2010Peter Ford Dominey, directeur de recherche en neurosciences et robotique (ICSC-CNRS) nous ...">
+		<!-- Bootstrap -->
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="/assets/css/style.min.css" type="text/css" rel="stylesheet" />
+
+	
+	<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendor/video-js/video-js.min.css" />
+
+<!-- Favicons, from http://realfavicongenerator.net/-->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/fav-icones/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/fav-icones/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/fav-icones/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/fav-icones/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/fav-icones/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/fav-icones/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/fav-icones/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/fav-icones/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/fav-icones/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/images/fav-icones/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+	<script type="text/javascript">
+		//Utilisation pour les scripts ajax
+		var rootUrl = "/";
+		var functionsInitialization = [];
+	</script>
+
+	<script type="text/javascript" src="/assets/vendor/tarteaucitronjs/tarteaucitron.js"></script>
+
+<script type="text/javascript">
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+
+        "orientation": "bottom", /* Banner position (top - bottom) */
+
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": true, /* Show the cookie list */
+
+        "showIcon": false, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* Disable auto consent */
+
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": false, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+        "mandatory": false, /* Show a message about mandatory cookies */
+    });
+
+    var tarteaucitronForceLanguage = "fr";
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
+
+    tarteaucitron.services.m3 = {
+        "key": "m3",
+        "type": "other",
+        "name": "Cookies internes Millénaire 3",
+        "uri": "",
+        "needConsent": true,
+        "cookies": ['cookieToken'],
+        "js": function () {
+            // When user allow cookie
+            "use strict";
+            registerCookieToken();
+            if(typeof whenM3CookieIsAccepted === "function")
+            {
+                // Fonction à définir dans les pages pour déclencher les scripts succeptibles de poser des cookies
+                whenM3CookieIsAccepted();
+            }
+        },
+        "fallback": function () {
+            // When user deny cookie
+            tarteaucitron.fallback(['m3-cookie-generation-zone'], function (x) {
+                // Remplacer la zone par "machin est désactivé"
+                return tarteaucitron.engage('m3');
+            });
+        }
+    };
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('m3');
+
+            tarteaucitron.user.matomoId = '58';
+        tarteaucitron.user.matomoHost = "https://statweb.grandlyon.com//";
+        (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
+    
+    (tarteaucitron.job = tarteaucitron.job || []).push('ausha');
+
+</script>
+</head>
+<body id="millenaire-3"  itemscope itemtype="http://schema.org/WebPage">
+			<header id="header">
+	<div id="print-top-menu" class="container">
+		<div class="row">
+        	<div class="col-xs-60">
+            	<img src="/assets/images/logo-millenaire-3-mini-blanc.png" alt="" style="float: left;">
+                <img src="/assets/images/logo-grand-lyon-la-metropole-blanc.png" alt="" style="float: right;">
+			</div>
+		</div>
+	</div>
+
+    <div id="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="clearfix" id="top-menu-content">
+                        <a href="#" title="Accéder au menu" class="link-sprite-focus m3-icons-btn-toggle-menu" id="btn-toggle-menu"></a>
+                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3-mini">
+                       	    <img src="/assets/images/logo-millenaire-3-mini.png" alt="" class="img-responsive" id="logo-mini-m3" />
+                        </a>
+
+                        <a class=" skippy sr-only sr-only-focusable" href="#content" title=""><span class="skiplink-text">Aller au contenu </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#main-menu" title=""><span class="skiplink-text">Aller au Menu principal </span></a>
+                        <a class=" skippy sr-only sr-only-focusable" href="#block-search" title=""><span class="skiplink-text">Aller à la recherche</span></a>
+
+                                                                                                                                                                                                                                                                                    <a href="http://www.grandlyon.com" target="_blank" rel="nofollow" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)" id="link-logo-glm">
+                            <img src="/assets/images/logo-grand-lyon-la-metropole.png" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toggle-header">
+            <div class="container">
+                <div class="row" id="toggle-header-content">
+                    <div class="col-xs-30 col-sm-17 col-md-13 block-logo" id="share-header">
+                                                
+                    	<span>
+	                        <a href="/" title="Retourner à l'accueil de Millénaire 3" id="link-logo-millenaire-3">
+	                            <img src="/assets/images/logo-millenaire-3.png" alt="Logo Millénaire 3" class="img-responsive" />
+	                        </a>
+                        </span>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-20 col-md-19 block-baseline">
+                        <p>
+                            <img src="/assets/images/la-prospective-du-grand-lyon.png" alt="Sloggan Millénaire 3 : La prospective du Grand Lyon" class="img-responsive" />
+                        </p>
+                    </div>
+
+                    <div class="col-xs-30 col-sm-23 col-md-11 col-lg-12 block-social-networks">
+						<ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+                    </div>
+                    																										<form action="/m3_search" method="get">
+	<div class="col-xs-60 col-sm-23 col-sm-offset-20 col-md-17 col-md-offset-0 col-lg-16 block-search">
+		<div class="input-group search-group" id="#block-search">
+            <label class="sr-only" for="search">Recherche</label>
+			<input id="search" type="search" class="search" value="" name="SearchText" placeholder="Rechercher sur le site"/>
+			<span class="input-group-btn">
+				<input id="search-submit" type="submit" value="" title="Lancer la recherche" class="m3-icons-search" />
+			</span>
+		</div>
+	</div>
+</form>
+                    <div class="col-xs-60 col-sm-60 col-md-47" id="main-menu" style="display:none">
+	<nav class="navbar navbar-default" role="navigation">
+		<ul class="nav navbar-nav">
+																	<li><a href="/societe" title=""><span class="ezstring-field">Société</span></a></li>
+		    								<li><a href="/modes-d-action" title=""><span class="ezstring-field">Modes d&#039;action</span></a></li>
+		    								<li class="active"><a href="/transformation-urbaine" title=""><span class="ezstring-field">Transformation urbaine</span> <span class="sr-only">(Menu déjà sélectionné)</span></a></li>
+		    								<li><a href="/politiques-publiques" title=""><span class="ezstring-field">Politiques Publiques</span></a></li>
+		    								<li><a href="/territoire" title=""><span class="ezstring-field">Territoire</span></a></li>
+		    								<li><a href="/soutenabilite" title=""><span class="ezstring-field">Soutenabilité</span></a></li>
+		             </ul>
+    </nav>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<div id="home">
+	    <div class="container" id="content">
+	    		    			                    <div class="row">
+        <div class="col-xs-60 block-breadcrumb" itemprop="breadcrumb">
+            <p class="before-breadcrumb">Vous êtes ici&nbsp;: </p><ol class="breadcrumb"><li><a title="Voir la page Accueil" href="/">Accueil</a></li><li><a title="Voir la page Transformation urbaine" href="/transformation-urbaine">Transformation urbaine</a></li><li class="active">Le robot iCub capable de coopérere avec l&#039;Homme</li></ol>        </div>
+    </div>
+
+                                                                                                                                
+	            	    			    						
+	    		    	
+            			
+<script type="text/javascript">
+	functionsInitialization.push(function ressourceInitialization(){
+		incrementerVues(4966);
+	});
+</script>
+
+<div class="row block-title">
+    <div class="col-xs-60 col-sm-47 col-md-47">
+        <h1 class="uppercase h1-special">
+							Le robot iCub capable de coopérere avec l&#039;Homme
+					</h1>
+    </div>
+
+	<div class="col-xs-60 col-sm-13 col-md-13 block-share">
+
+<ul class="clearfix share">
+	<li>
+		<!--a href="javascript:void(0);" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a-->
+		<a href="javascript:void(0);" data-toggle="collapse" data-target="#addtoany-container" aria-expanded="false" aria-controls="addtoany-container" role="button" title="Partager ce contenu sur les réseaux sociaux" class="m3-icons-share-global"></a>
+	</li>
+						<li><a href="/generated_pdf/4938" rel="nofollow" target="_blank" title="Télécharger la page en version PDF" class="m3-icons-share-pdf hidden-xs"></a></li>
+			<!--li><a href="https://www.millenaire3.com/layout/set/print/content/view/print/4938" target="_blank">p</a></li-->
+							<li id="print_current_content"><a href="javascript:window.print()" onclick="javascript:print()" rel="nofollow" title="Imprimer la page" class="m3-icons-share-print"></a></li>
+							<li><a href="/partage_email/4938" rel="nofollow" title="Partager ce contenu par e-mail" class="m3-icons-share-mail"></a></li>
+			</ul>
+
+</div>
+
+	<div class="collapse block-social-networks-share a2a_kit a2a_kit_size_32 a2a_default_style" id="addtoany-container">
+        <span class="tac_addtoanyshare"></span>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_linkedin"></a>
+    </div>
+
+<script type="text/javascript">
+	function deplierPartageReseauxSociaux()
+	{
+		fadeInOrFadeOut('#partages_reseaux_sociaux');
+	}
+
+	/**
+	* Affiche ou non (toogle), avec un effet JQuery
+	*/
+	function fadeInOrFadeOut(elementName)
+	{
+		$element = $(elementName);
+		if(! $element.hasClass("hide"))
+		{
+			$element.fadeOut(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+		else
+		{
+			$element.fadeIn(300, function(){
+				$element.toggleClass("hide");
+			});
+		}
+	}
+
+	// Alert a message when the user shares somewhere
+		function addThisEventHandler(evt) {
+		    switch (evt.type)
+		    {
+		        case "addthis.menu.share":
+		            incrementerPartages(4966, evt.data.service);
+		            break;
+		        default:
+		            console.log('received an unexpected event', evt);
+		    }
+		}
+
+	functionsInitialization.push(function shareInitialization()
+	{
+																						
+		// Listen to various events
+		try
+		{
+			addthis.addEventListener('addthis.menu.share', addThisEventHandler);
+		}
+		catch(err)
+		{}
+	});
+</script>
+
+</div>
+
+<div class="row">
+	<!--  main Content region -->
+        <div class="col-xs-60 col-sm-60 col-md-47">
+            <div class="item block-intro">
+                <p class="over-under-line uppercase">Interview de Peter FORD</p>
+
+                <div class="row">
+                				        	<div class="col-xs-60 col-sm-30 col-md-30">
+							    <figure><div class="container-align-vertical"><img src="https://www.millenaire3.com/var/m3/storage/images/0/6/3/7/87360-1-fre-FR/Peter_Ford_Dominey.gif"  width="227"   height="151"  class="img-responsive margin-bottom-5 " alt="" /></div></figure>
+			             				<div class="itw_qualite"><span class="ezstring-field">Directeur de recherche en neurosciences et robotique (ICSC-CNRS) à l&#039;INSERM de Bron</span></div>
+	
+			            </div>
+			        
+								        	<div class="col-xs-60 col-sm-30 col-md-30 margin-bottom-15">
+			        				        	                        <p class="item-face-face">&lt;&lt; Nous cherchons à rendre le robot capable de s&#039;intégrer et d&#039;apprendre dans un environnement inconnu, de se familiariser avec les objets constitutifs de cet environnement, de les manipuler, et de prendre les bonnes décisions &gt;&gt;.</p>
+	                                            <div class="ezrichtext-field"><p>Interview r&eacute;alis&eacute;e par Geoffroy Bing, le 23 novembre 2010</p><p>Peter Ford Dominey, directeur de recherche en neurosciences et robotique (ICSC-CNRS) nous expose les recherches en cours, au sein de l&rsquo;Institut Cellules Souches et Cerveau de l&rsquo;INSERM de Bron,&nbsp; sur le robot iCub. Le laboratoire lyonnais a en effet &eacute;t&eacute; s&eacute;lectionn&eacute; dans le cadre du programme europ&eacute;en Robotcub (6 M&euro; sur 5 ans) pour &eacute;tudier le fonctionnement de notre cerveau. Les recherches en cours laissent entrevoir le chemin sem&eacute; d&rsquo;emb&ucirc;ches vers le robot de demain, un robot capable d&rsquo;apprendre et de coop&eacute;rer avec l&rsquo;homme.</p>
+</div>
+
+                        <div class="informations">
+                        	                            <div class="ressource-meta">
+		                        	<p class="keywords-title">Tag(s)&nbsp;:</p>
+	<ul class="list-inline keywords">
+			            
+	<li>
+		<a href="/tag/numerique" title="">Numérique</a>, 	<li>
+
+	    	            
+	<li>
+		<a href="/tag/recherche" title="">Recherche</a>	<li>
+
+	    	</ul>
+
+		                    </div>
+		                    <div class="ressource-meta">
+		                        	<span class="keywords-title">Date : <span class="publication_date">23/11/2010</span></span>
+
+		                    </div>
+		                </div>
+                    </div>
+                </div>
+            </div>
+
+                        	            	<div class="ezrichtext-field"><p><strong><strong>Pour vous qu&rsquo;est-ce qu&rsquo;un robot&nbsp;?</strong></strong></p><p>Un robot, c&rsquo;est un ordinateur incarn&eacute; dans un corps m&eacute;catronique, qui peut ressembler au corps humain mais pas n&eacute;cessairement, et qui est capable d&rsquo;interagir avec son environnement.</p><p>&nbsp;</p><p><strong><strong>Vos recherches prennent appui sur les fertilisations crois&eacute;es entre les sciences du d&eacute;veloppement cognitif et la robotique. Qu&rsquo;est-ce que la robotique apporte aux sciences cognitives&nbsp;?</strong></strong></p><p>Notre robot est avant tout un outil de recherche au service des sciences cognitives. La m&eacute;thode scientifique s&rsquo;appuie sur l&rsquo;&eacute;laboration d&rsquo;hypoth&egrave;ses (par exemple, sur le r&ocirc;le du regard dans la communication humaine). Nous traduisons ensuite ces hypoth&egrave;ses dans un programme robotique. Le robot devient, comme dans toute d&eacute;marche scientifique, un mod&egrave;le qui va&nbsp; nous permettre de tester nos hypoth&egrave;ses. Dans nos recherches sur les interactions homme-homme par exemple, nous substituons une personne par le robot pour faire des tests. Dans les neurosciences, il nous permet aussi de comprendre comment perception, action et langage s&rsquo;articulent dans le cerveau humain.</p><p>&nbsp;</p><p><strong><strong>Dans l&rsquo;autre sens, qu&rsquo;est-ce que les neurosciences peuvent apporter &agrave; la robotique&nbsp;?</strong></strong></p><p>Si nos hypoth&egrave;ses sont concluantes, nous allons pouvoir humaniser davantage le robot. Nous allons en effet pouvoir am&eacute;liorer le traitement et la gestion du regard du robot, de sorte que celui-ci se rapproche davantage du regard humain par exemple. Les humains vont &ecirc;tre plus &agrave; l&rsquo;aise devant un tel robot.</p><p>&nbsp;</p><p><strong><strong>Est-ce &agrave; dire qu&rsquo;un ordinateur ne suffit pas &agrave; mod&eacute;liser notre cerveau, comme semble le soutenir un courant des sciences cognitives&nbsp;? </strong></strong></p><p>Il y a en effet deux approches des sciences cognitives. L&rsquo;approche traditionnelle de l&rsquo;Intelligence Artificielle d&rsquo;une part, selon laquelle le cerveau fonctionne comme un ordinateur, manipule des symboles, fonctionne par la logique. D&rsquo;autre part, il y a l&rsquo;approche dont se r&eacute;clame mon laboratoire, et qui est beaucoup plus fix&eacute;e sur l&rsquo;id&eacute;e que finalement, le sens n&rsquo;est pas d&eacute;sincarn&eacute;, qu&rsquo;il n&rsquo;est pas que symbolique mais ancr&eacute; dans l&rsquo;interaction physique qu&rsquo;un &ecirc;tre a avec d&rsquo;autres, ou avec son environnement.</p><p>&nbsp;</p><p><strong><strong><strong><strong>Quels sont les &eacute;cueils technologiques et scientifiques auxquels vous vous heurtez aujourd&rsquo;hui&nbsp;?</strong></strong></strong></strong></p><p>La partie sensori-motrice est un d&eacute;fi majeur. La pr&eacute;hension d&rsquo;un objet par une main articul&eacute;e est quelque chose d&rsquo;extr&ecirc;mement complexe et long &agrave; mettre au point. Nous nous attachons &eacute;galement &agrave; la dimension coop&eacute;rative du robot. Faire en sorte que le robot soit capable de coop&eacute;rer avec l&rsquo;homme est tr&egrave;s complexe &eacute;galement. Cela implique l&rsquo;anticipation, la compr&eacute;hension des objectifs de la personne avec laquelle le robot coop&egrave;re. L&rsquo;apprentissage du robot fait appel &agrave; des capacit&eacute;s multiples de perception, m&eacute;morisation, repr&eacute;sentation dans l&rsquo;espace et de motorisation. C&rsquo;est une cha&icirc;ne tr&egrave;s complexe.</p><p>&nbsp;</p><p><strong><strong>Est-ce que vous pr&eacute;parez la prochaine g&eacute;n&eacute;ration de robots&nbsp;?</strong></strong></p><p>Oui, &agrave; notre mani&egrave;re, nous contribuons aux avanc&eacute;es qui visent &agrave; rendre le robot capable de s&rsquo;int&eacute;grer et d&rsquo;apprendre dans un environnement inconnu, de se familiariser avec les objets constitutifs de cet environnement, de les manipuler, et de prendre les bonnes d&eacute;cisions. Cela n&eacute;cessite des algorithmes permettant de faire raisonner le robot dans un contexte qui ne lui d&eacute;livre pas toute l&rsquo;information dont il a besoin. Pour aller plus loin, on cherche &agrave; cr&eacute;er des robots capables de corriger leurs propres erreurs programmatiques&nbsp; (comme lorsque un homme a accidentellement un accident vasculaire qui se r&eacute;sorbe au bout de quelques jours). Nous sommes &agrave; l&rsquo;oppos&eacute; des robots industriels ou des robots en exp&eacute;dition sur la lune, qui doivent faire rien de plus et pr&eacute;cis&eacute;ment ce qu&rsquo;ils &eacute;taient programm&eacute;s &agrave; faire, au millim&egrave;tre. La derni&egrave;re chose que l&rsquo;ing&eacute;nieur souhaite de ces robots l&agrave;, c&rsquo;est qu&rsquo;ils prennent des initiatives&nbsp;!</p><p>&nbsp;</p><p><strong><strong>Quelle place dans la soci&eacute;t&eacute;, un robot comme iCub pourra-t-il avoir demain&nbsp;?</strong></strong></p><p>Les Japonais sont d&eacute;j&agrave; friands des robots compagnons, des robots &laquo;&nbsp;aide scolaire&nbsp;&raquo; ou des assistants dans les cours d&rsquo;&eacute;cole (pour compter les &eacute;l&egrave;ves notamment). Les recherches permettent &eacute;galement d&rsquo;envisager des robots aides-soignants ou des robots orthophonistes. Le robot peut en effet reproduire, de fa&ccedil;on simplifi&eacute;e, l&rsquo;interaction entre un patient et l&rsquo;orthophoniste. Dans le domaine de la r&eacute;&eacute;ducation en g&eacute;n&eacute;ral, il y a des d&eacute;bouch&eacute;s probables, car la reproduction d&rsquo;un geste r&eacute;p&eacute;titif est facile pour un robot. Des &eacute;quipes japonaises ont montr&eacute; par ailleurs que l&rsquo;interaction d&rsquo;un autiste avec le robot est plus facile qu&rsquo;avec un humain parce que le robot, contrairement &agrave; l&rsquo;humain, pr&eacute;sente une r&eacute;gularit&eacute; dans ses comportements qui sont plus facilement interpr&eacute;tables par les enfants autistes.</p><p>&nbsp;</p><p><strong><strong>Qu&rsquo;est-ce qui a rendu l&rsquo;&eacute;quipe de recherche lyonnaise &eacute;ligible au projet iCub selon vous&nbsp;?</strong></strong></p><p>Le comit&eacute; de s&eacute;lection iCub a r&eacute;parti les axes de recherche entre 6 laboratoires au d&eacute;but. Notre comp&eacute;tence autour de l&rsquo;interaction par la parole, de la reconnaissance des actions par la vision, et de la coop&eacute;ration a &eacute;t&eacute; reconnue.&nbsp; L&rsquo;Europe est tr&egrave;s investie dans les programmes de recherche &laquo; neurosciences-robotique &raquo;, c&rsquo;est un signe. Je la remercie d&rsquo;ailleurs pour les financements apport&eacute;s. Je pense que le programme iCub participe d&rsquo;une strat&eacute;gie astucieuse de plateforme commune &agrave; l&rsquo;ensemble&nbsp; des laboratoires de recherche travaillant sur le m&ecirc;me robot pour d&eacute;multiplier les efforts de recherche et &ecirc;tre comp&eacute;titif par rapport au Japon. L&rsquo;objectif, d&rsquo;ici 4 ans, est de mettre tous nos travaux en commun et de faire un iCub tirant le meilleur de chaque laboratoire partenaire.</p><p>&nbsp;</p><p><strong><strong>Comment voyez-vous Lyon dans sa contribution &agrave; la comp&eacute;titivit&eacute; europ&eacute;enne de la robotique&nbsp;?</strong></strong></p><p>Mon laboratoire n&rsquo;est pas tr&egrave;s en prise avec d&rsquo;autres acteurs lyonnais qui pourraient contribuer &agrave; la valorisation de la robotique. Je pense notamment &agrave; l&rsquo;expertise lyonnaise en informatique et en jeux vid&eacute;os, qui pourraient assez facilement &ecirc;tre r&eacute;orient&eacute;e pour faire des outils robotiques. Par exemple, les chercheurs et les entreprises de jeux vid&eacute;os sont comp&eacute;tents pour cr&eacute;er des repr&eacute;sentations en 3D permettant au robot de mieux naviguer dans son environnement. Nous travaillons avec le Gipsa-lab (Grenoble Images Parole Signal Automatique) et avec le LAAS de Toulouse. Il apparait que notre r&eacute;seau de collaboration est plus europ&eacute;en que r&eacute;gional.</p><p>&nbsp;</p>
+</div>
+
+	        
+           	
+            
+            	<section class="print_hidden">
+		<div class="row">
+	     	<div class="col-xs-60 col-sm-60">
+	   			<h2 class="h4 h4-dossier block-title-overline margin-right-10">En lien avec le sujet</h2>
+	       	</div>
+	  	</div>
+	 	<div class="margin-bottom-30">
+	 		<section class="carousel3x3 margin-bottom-30">
+		 				         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/dossiers/2010/les-revolutions-de-la-memoire-a-l-ere-du-numerique" title="">LES RÉVOLUTIONS DE LA MÉMOIRE À L&#039;ÈRE DU NUMÉRIQUE</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/3/0/9/9/129903-8-fre-FR/Carte mémoire.jpg"  width="1860"   height="1920"  class="img-responsive margin-bottom-15" alt="Illustration représentant l&#039;intérieur d&#039;une carte mémoire" /></figure>
+	<p>Comment les acteurs de la mémoire appréhendent-ils le passage d’une mémoire culturelle classique à une mémoire numérique ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/dossiers/2011/portrait-robot" title="">PORTRAIT-ROBOT</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/0/5/9/7/117950-27-fre-FR/portrait-robot.jpg"  width="332"   height="333"  class="img-responsive margin-bottom-15" alt="Image montrant un robot dans un mouvement de course, sur fond de ville en cube verts" /></figure>
+	<p>Quel avenir pour nous avec les robots ? La question se pose alors que les robots ne sont plus l&#039;apanage du monde industriel.</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/dossiers/2013/digital-humanities-archives" title="">DIGITAL HUMANITIES (Archives)</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/0/1/3/113109-11-fre-FR/Digital Humanity.jpg"  width="2824"   height="2824"  class="img-responsive margin-bottom-15" alt="Image représente le curseur d&#039;une souris d&#039;ordinateur sur des néons rouges, verts et bleus" /></figure>
+	<p>Que sont les digital humanities et comment contribuent-elles à ancrer les sciences sociales dans la société, à renforcer leur «utilité sociale» et dans une certaine mesure aussi, à les re-légitimer ?</p>
+
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2011/la-place-du-robot-comme-outil-de-recherche" title="">La place du robot comme outil de recherche</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/interview/la-place-du-robot-comme-outil-de-recherche/88263-1-fre-FR/la-place-du-robot-comme-outil-de-recherche.gif"  width="227"   height="335"  class="img-responsive margin-bottom-15" alt="" /></figure>
+  <p class="uppercase"><b>Interview de CHRISTIAN WOLF</b></p>
+       		   		<p>Maître de conférences</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2011/la-recherche-robotique-en-rhone-alpes" title="">La recherche robotique en Rhône-Alpes</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/1/3/8/7/87831-6-fre-FR/la-recherche-robotique-en-rhone-alpes.jpg"  width="1049"   height="1049"  class="img-responsive margin-bottom-15" alt="Illustration représentant la main d&#039;un individu soutenant un petit bras robotisé" /></figure>
+  <p class="uppercase"><b>Interview de Gérard BAILLY et Nicolas MARCHAND</b></p>
+    		<p>&quot;Il faut profiter de l’effet de levier du projet Robotex pour créer un pôle robotique régional au niveau de la recherche académique&quot;.</p>
+    
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2011/la-robotique-doit-se-centrer-sur-les-usages-pour-donner-du-sens-aux-robots-de-demain" title="">La robotique doit se centrer  sur les usages pour donner du sens aux robots de demain</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/interview/la-robotique-doit-se-centrer-sur-les-usages-pour-donner-du-sens-aux-robots-de-demain/87579-1-fre-FR/la-robotique-doit-se-centrer-sur-les-usages-pour-donner-du-sens-aux-robots-de-demain.gif"  width="224"   height="260"  class="img-responsive margin-bottom-15" alt="" /></figure>
+  <p class="uppercase"><b>Interview de Fabien SOLER</b></p>
+       		   		<p>Directeur du Cluster EDIT</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2009/projets-numeriques-et-shs" title="">Projets numériques et SHS</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/interview/projets-numeriques-et-shs/83105-1-fre-FR/projets-numeriques-et-shs.jpg"  width="170"   height="152"  class="img-responsive margin-bottom-15" alt="" /></figure>
+  <p class="uppercase"><b>Interview de Christine BERTHAUD</b></p>
+       		   		<p>Responsable du Service d&#039;Ingénierie Documentaire de l&#039;ISH de Lyon</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2009/rchivesSic-des-archives-ouvertes-pour-les-SHS" title="">@rchivesSic : des archives ouvertes pour les SHS</a></h3>
+				<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/6/0/3/83069-5-fre-FR/Ghislaine Chartron.PNG"  width="502"   height="502"  class="img-responsive margin-bottom-15" alt="Portrait de Ghislaine Chartron" /></figure>
+  <p class="uppercase"><b>Interview de Ghislaine Chartron</b></p>
+       		   		<p>Ghislaine Chartron est à l&#039;origine de la création de @rchivSIC et professeur titulaire de la chaire d&#039;ingénierie documentaire au Centre National des Arts et métiers (CNAM-Paris)</p>
+	
+	</article>
+</div>
+
+						         	
+<div class="item">
+	<article class="block-news">
+		<h3 class="h3 uppercase"><a href="/Interview/2008/les-impacts-de-l-internationalisation-et-d-internet-sur-l-enseignement-superieur-et-la-recherche" title="">Les impacts de l&#039;internationalisation et d&#039;internet sur l&#039;enseignement supérieur et la recherche</a></h3>
+		  <p class="uppercase"><b>Interview de Olivier REY</b></p>
+       		   		<p>Ingénieur de recherche au service de veille scientifique et technologique de l&#039;INRP (Institut national de recherche pédagogique)</p>
+	
+	</article>
+</div>
+
+							</section>
+		</div>
+	</section>
+
+        </div>
+<!--  /main Content region-->
+<!--  Right Sidebar -->
+        <div class="col-xs-60 col-md-13">
+            <div class="row">
+            	                            	                    		
+
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-dossiers">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="sidebar-picto m3-icons-sidebar-folders"></span>
+            <a title="" href=" /tous-les-dossiers ">   Dossiers
+            </a>
+        </h2>
+    </header>
+
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <div class="sidebar-block-content">
+        	                                    	<figure><img src="https://www.millenaire3.com/var/m3/storage/images/9/8/9/5/535989-1-fre-FR/3abfcaee6c8b-pms_light.jpg"  width="1413"   height="1414"  class="img-responsive margin-bottom-15" alt="Illustrations de personnes différentes sur une place" /></figure>
+                
+                <p class="publication-title"><a href="/dossiers/2023/action-publique-comment-penser-la-solidarite-depuis-un-territoire" title=""><span class="ezstring-field">Action publique : comment penser la solidarité depuis un territoire ?</span></a></p>
+	        
+            <footer class="sidebar-block-footer">
+            	                	<p><a  title="Consulter nos dossiers disponibles" href="/tous-les-dossiers">Tous les dossiers</a></p>
+                            </footer>
+        </div>
+    </div>
+</article>
+
+</div>
+<div class="col-xs-60 col-sm-20 col-md-60 sidebar-block">
+    <article class="sidebar-block-home">
+    <header class="sidebar-block-header">
+        <h2>
+            <span class="m3-icons-sidebar-picto-tags"></span>
+            <img src="/assets/images/unsprited/icons/tag.png" style= "margin-left: 4px; margin-right: 8px" alt="" />
+            <a href="/tous-les-tags" title="Consulter tous nos tags">Tags
+            </a>
+        </h2>
+    </header>
+    <div class="sidebar-block-content-container hidden-xs hidden-sm">
+        <footer class="sidebar-block-footer">
+                            <p><a href="/tous-les-tags" title="Consulter tous nos tags">Tous les tags</a></p>
+                    </footer>
+    </div>
+</article>
+
+</div>
+	        </div>
+		</div>
+<!--  Right Sidebar-->
+</div>
+			<script>
+	function onYouTubeIframeAPIReady()
+	{
+		//Redimensionner les div de vidéos
+		var elements = document.getElementsByClassName("youtube_frame");
+		for(var i = 0 ; i < elements.length ; i++)
+		{
+			var element = elements[i];
+			var subElements = element.getElementsByClassName("youtube_player");
+			for(var j = 0 ; j < subElements.length ; j++)
+			{
+				var subElement = subElements[j];
+				var proportion = element.getAttribute("proportion");
+				var width = element.parentNode.offsetWidth;
+				var height = width * proportion;
+				subElement.setAttribute("width", "100%");
+				subElement.setAttribute("height", height);
+			}
+		}
+	}
+
+	functionsInitialization.push(onYouTubeIframeAPIReady);
+</script>	    </div>
+	</div>
+
+	<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="col-xs-60 col-sm-45 col-md-36 col-lg-39">
+                <nav class="navbar navbar-default footer-nav" role="navigation">
+                    <ul class="nav navbar-nav">
+                                                                            <li><a href="/qui-sommes-nous" title="">Qui sommes-nous</a></li>
+                        
+                        <li><a href="/newsletter_subscribe"><span lang="en">Newsletter</span></a></li>
+
+                        <li><a href="/formulaire/contactez_nous" >Contact</a></li>
+
+                                                                            <li><a href="/Accessibilite" >Accessibilité</a></li>
+                        
+                                                                            <li><a href="/plan-du-site" >Plan du site</a></li>
+                        
+                                                                            <li><a href="/mentions-legales" >Mentions légales</a></li>
+                        
+                                                                            <li><a href="/donnees-personnelles" >Données personnelles</a></li>
+                        
+                        <li><a href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-60 col-sm-15 hidden-md hidden-lg">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+                                                                                                                                                <div class="col-xs-60 col-sm-60 col-md-24 col-lg-21">
+                <a class="acces_metro" href="http://www.grandlyon.com" target="_blank" title="Accéder au site de la Métropole de Lyon (nouvelle fenêtre)">Un site de la Métropole de Lyon</a>
+            </div>
+
+             <div class="hidden-xs visible-md visible-lg col-md-60 text-center">
+                <ul class="clearfix social-networks">
+					<li><a href="https://www.linkedin.com/company/millenaire3/" rel="nofollow" target="_blank" title="Ouvrir la page LinkedIn (nouvelle fenêtre)" class="social-network m3-icons-social-networks-linkedin"></a></li>
+					<li><a href="https://twitter.com/millenaire3" rel="nofollow" target="_blank" title="Ouvrir la page Twitter (nouvelle fenêtre)" class="social-network m3-icons-social-networks-twitter"></a></li>
+					<li><a href="/nos-flux-rss" rel="nofollow" title="Accès aux flux RSS de Millénaire 3" class="social-network m3-icons-social-networks-rss"></a></li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+	
+	<div id="know-the-breakpoint"></div>
+	<script src="/assets/vendor/vendor.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/video-js/video.min.js"></script>
+<script src="/assets/vendor/video-js/lang/fr.js"></script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+	<script type="text/javascript">
+		functionsInitialization.push(function owlCarouselInitialization()
+		{
+		    $(".carousel3x3").owlCarousel({
+		        pagination: false,
+		        navigation: true,
+		        navigationText: [
+		            "<i class='glyphicon glyphicon-chevron-left'></i>",
+		            "<i class='glyphicon glyphicon-chevron-right'></i>"
+		        ],
+		        items: 3,
+		        itemsDesktop: [1160, 3],
+		        itemsDesktopSmall: [979, 3],
+		        itemsTablet:[600,2],
+		        itemsMobile: [479,1],
+		        scrollPerPage:true
+		    });
+		});
+
+		$(document).ready(function(){
+			$.each(functionsInitialization, function( index, value ) {
+				functionsInitialization[index]();
+			});
+		});
+	</script>
+</body>
+</html>
