@@ -1,608 +1,608 @@
-,0
-Mobilité,188
-Climat,111
-Transition,322
-Innovation,484
-Citoyenneté,123
-Grand Lyon,336
-Économie,364
-Solidarité,269
-Inclusion,355
-Ressources,326
-Temps,92
-Politique de la ville,181
-Urbanisme,270
-Usage,252
-Service public,365
-Valeurs,228
-Cadre de vie,378
-Pauvreté,60
-Prospective,259
-Pensées politiques,56
-Numérique,420
-Biodiversité,212
-Entreprise,286
-Veille M3,333
-Institution,195
-Patrimoine,289
-Concertation,58
-Justice,43
-Culture,362
-Clivages,99
-Cohésion sociale,195
-Santé,380
-Social,64
-Insertion,43
-Genre,62
-Éducation,261
-Jeunesse,138
-Sport,51
-Recherche,208
-Handicap,110
-Travail,157
-Attractivité,170
-Démocratie,171
-Développement durable,14
-Management,22
-Data,66
-Évaluation,75
-Geoffroy BING,136
-Catherine PANASSIER,161
-Laïcité,99
-Stéphane AUTRAN,33
-Finance,34
-Sylvie  MAURIS-DEMOURIOUX,174
-Emile HOOGE,84
-International,146
-Boris CHABANEL,237
-Isabelle ROUGÉ,1
-Caroline JANUEL,168
-Action publique,5
-Revue M3,1
-Catherine FORET,80
-Philippe DUJARDIN,28
-Marianne CHOUTEAU,88
-Cédric POLÈRE,296
-Ludovic VIÉVARD,244
-Pierre GROSDEMOUGE,35
-Pierre-Alain FOUR,140
-Brigitte YVRAY-DANGUIS,9
-Pauline KERTUDO,1
-Nicolas NOVA,87
-Cécile COULMAIN,1
-Julien CASALS,40
-Didier VANONI,2
-Matthieu BOURY,8
-Quentin ZARAGORI,35
-Aurélien BOUTAUD,246
-Sandra DECELLE,25
-Geneviève BERNARDIN,11
-Laure BORNAREL,55
-Claire HARPET,11
-Miloud LEKOUARA,4
-Stéphane BIENVENUE,11
-Personnes âgées,23
-Sécurité,42
-Anne-Caroline JAMBAUD,150
-Emmanuelle LAMBREY,16
-Emmanuel ARLOT,8
-Caroline BROSSAT,1
-Florence LE NULZEC,8
-Valérie PUGIN,20
-Bertrand LABASSE,6
-Jean-Loup MOLIN,35
-Paul BOINO,9
-Annie HONNORAT,2
-Gilles CAYUELA,11
-Bruno BIGOURDAN,11
-Abdel MOKTARI,3
-Égalité,13
-Pierre MICHEL_,4
-Philippe GARGOV,40
-Margot BALDASSI,25
-Eddy MAAROUFI,122
-Benjamin LIPPENS,31
-Isabelle BARAUD-SERFATY,16
-David CHEVALLIER,34
-Caroline HAMON,51
-Anouk JORDAN,25
-Benjamin  PRADEL,58
-Catherine DEBRAND,37
-François MAYSSAL,44
-Camille DUTHY,17
-Manon SCOTTO,3
-Annabelle RICHARD,4
-Julie JEAMMAUD,68
-Lionel GASTINE,13
-Matias GOMEZ,3
-Frédérique SONNET,8
-Nicolas RIO,16
-Natacha ISRAËL,14
-Sophie KELLER,69
-Clément JOURDAN,23
-Théo BATTAGLIA,6
+,value,type
+Mobilité,188,Tags
+Climat,111,Tags
+Transition,322,Tags
+Innovation,484,Tags
+Citoyenneté,123,Tags
+Grand Lyon,336,Tags
+Économie,364,Tags
+Solidarité,269,Tags
+Inclusion,355,Tags
+Ressources,326,Tags
+Temps,92,Tags
+Politique de la ville,181,Tags
+Urbanisme,270,Tags
+Usage,252,Tags
+Service public,365,Tags
+Valeurs,228,Tags
+Cadre de vie,378,Tags
+Pauvreté,60,Tags
+Prospective,259,Tags
+Pensées politiques,56,Tags
+Numérique,420,Tags
+Biodiversité,212,Tags
+Entreprise,286,Tags
+Veille M3,333,Tags
+Institution,195,Tags
+Patrimoine,289,Tags
+Concertation,58,Tags
+Justice,43,Tags
+Culture,362,Tags
+Clivages,99,Tags
+Cohésion sociale,195,Tags
+Santé,380,Tags
+Social,64,Tags
+Insertion,43,Tags
+Genre,62,Tags
+Éducation,261,Tags
+Jeunesse,138,Tags
+Sport,51,Tags
+Recherche,208,Tags
+Handicap,110,Tags
+Travail,157,Tags
+Attractivité,170,Tags
+Démocratie,171,Tags
+Développement durable,14,Tags
+Management,22,Tags
+Data,66,Tags
+Évaluation,75,Tags
+Geoffroy BING,136,Auteurs
+Catherine PANASSIER,161,Auteurs
+Laïcité,99,Tags
+Stéphane AUTRAN,33,Auteurs
+Finance,34,Tags
+Sylvie  MAURIS-DEMOURIOUX,174,Auteurs
+Emile HOOGE,84,Auteurs
+International,146,Tags
+Boris CHABANEL,237,Auteurs
+Isabelle ROUGÉ,1,Auteurs
+Caroline JANUEL,168,Auteurs
+Action publique,5,Tags
+Revue M3,1,Tags
+Catherine FORET,80,Auteurs
+Philippe DUJARDIN,28,Auteurs
+Marianne CHOUTEAU,88,Auteurs
+Cédric POLÈRE,296,Auteurs
+Ludovic VIÉVARD,244,Auteurs
+Pierre GROSDEMOUGE,35,Auteurs
+Pierre-Alain FOUR,140,Auteurs
+Brigitte YVRAY-DANGUIS,9,Auteurs
+Pauline KERTUDO,1,Auteurs
+Nicolas NOVA,87,Auteurs
+Cécile COULMAIN,1,Auteurs
+Julien CASALS,40,Auteurs
+Didier VANONI,2,Auteurs
+Matthieu BOURY,8,Auteurs
+Quentin ZARAGORI,35,Auteurs
+Aurélien BOUTAUD,246,Auteurs
+Sandra DECELLE,25,Auteurs
+Geneviève BERNARDIN,11,Auteurs
+Laure BORNAREL,55,Auteurs
+Claire HARPET,11,Auteurs
+Miloud LEKOUARA,4,Auteurs
+Stéphane BIENVENUE,11,Auteurs
+Personnes âgées,23,Tags
+Sécurité,42,Tags
+Anne-Caroline JAMBAUD,150,Auteurs
+Emmanuelle LAMBREY,16,Auteurs
+Emmanuel ARLOT,8,Auteurs
+Caroline BROSSAT,1,Auteurs
+Florence LE NULZEC,8,Auteurs
+Valérie PUGIN,20,Auteurs
+Bertrand LABASSE,6,Auteurs
+Jean-Loup MOLIN,35,Auteurs
+Paul BOINO,9,Auteurs
+Annie HONNORAT,2,Auteurs
+Gilles CAYUELA,11,Auteurs
+Bruno BIGOURDAN,11,Auteurs
+Abdel MOKTARI,3,Auteurs
+Égalité,13,Tags
+Pierre MICHEL_,4,Auteurs
+Philippe GARGOV,40,Auteurs
+Margot BALDASSI,25,Auteurs
+Eddy MAAROUFI,122,Auteurs
+Benjamin LIPPENS,31,Auteurs
+Isabelle BARAUD-SERFATY,16,Auteurs
+David CHEVALLIER,34,Auteurs
+Caroline HAMON,51,Auteurs
+Anouk JORDAN,25,Auteurs
+Benjamin  PRADEL,58,Auteurs
+Catherine DEBRAND,37,Auteurs
+François MAYSSAL,44,Auteurs
+Camille DUTHY,17,Auteurs
+Manon SCOTTO,3,Auteurs
+Annabelle RICHARD,4,Auteurs
+Julie JEAMMAUD,68,Auteurs
+Lionel GASTINE,13,Auteurs
+Matias GOMEZ,3,Auteurs
+Frédérique SONNET,8,Auteurs
+Nicolas RIO,16,Auteurs
+Natacha ISRAËL,14,Auteurs
+Sophie KELLER,69,Auteurs
+Clément JOURDAN,23,Auteurs
+Théo BATTAGLIA,6,Auteurs
 "
    	Théo BATTAGLIA
-",3
-Sylvie  BOUTAUDOU,2
-Solène MANOUVRIER,1
-Claire DELIGANT,1
-Mylène MARTIN,1
-Anne-Sophie GORGE,1
-Gilles PINSON,4
-Deborah GALIMBERTI,2
-Rémi DORMOIS,1
-Hubert GUILLAUD,3
-Nicolas MATYJASIK,2
-Adeline CHARVET,1
-Charlotte VISAGE,1
-Yves CHALAS,1
-Emploi,1
-Gaspard LANDEL,3
-Bruno BENOIT,43
-Bruno FANTON,3
-Bruno MARZLOFF,5
-Jérôme SAINTE,1
-Leila BOUTAMINE,1
-Camille GUEZENNEC,1
-Guillaume MALOCHET,1
-Bruno DURIEZ,1
-Caroline RICHEMONT,7
-Brice DURY,15
-Brigitte AURIACOMBE,1
-Pascal BAVOUX,1
-Cyria EMELIANOFF,1
-Cyrille HARPET,1
-Danielle BILLY-ROUIS,1
-Danielle COLARDYN,1
-Claire BÉLISLE,1
-Claude BREVAN,1
-Dominique LAROUSSE,1
-Claudio BOLZMAN,2
-Chris OLIVIER,1
-Christelle MOREL-JOURNEL,2
-"CES - CONSEIL ÉCONOMIQUE, SOCIAL",5
-Christian LEFÈVRE,3
-CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,3
-Collectif ECONOMIE ET HUMANISME,10
- COMMUNAUTÉ URBAINE DE LYON,3
-"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",8
-Diane SAMAMA,1
-Roland JOUVENT,1
-Didier CAZELLES,5
-Didier LIVIO,1
-Dieter GRAU,1
-Jessica READ,1
-Corinne HOOGE,7
-Delphine GRAVIER,1
-Denis CERCLET,2
-Sociovision COFREMCA,1
-Delphine BALVET,1
-Delphine SCIARRINO,1
-Ludivine SCIARRINO,1
-Dominique BOURG,2
-Dominique CARDON,3
-Dominique LESTEL,1
-Dominique LORRAIN,1
-Enrico ALLASINO,1
-Emmanuel BOUTEFEU,1
-Emmanuel VIGNERON,1
-Faïza BOULKEROUA,1
-Emmanuelle HENRY,1
-Emmanuel THIMONIER-ROUZET,1
-Elinor KELLY,1
-Elisabeth PERROT,2
-Fernand BERTEN,1
-François ASCHER,3
-Edgar MORIN,1
-Edmond HERVÉ,1
-Jean-Louis BAL,1
-Jean-Louis DAYAN,1
-Jean-Luc VUILLEMENOT,1
-Jean-Baptiste LESTRA,1
-Jean-François ROUET,1
-Jean-François TCHERNIA,2
-Jean-Jack QUEYRANNE,1
-Hugues PUEL,1
- INSEE - RHÔNE-ALPES ,1
-Jean-Michel DELEUIL,1
-Jean-Marc BERTHET,21
-Jean-Philippe CLEMENT,1
-Jean-Yves BOULIN,2
-Jérôme BINDE,1
-Julia GUDEFIN,1
-Jany DHERVILLEZ,1
-Jaques-Antoine MALAREWICZ,1
-Jean BOISSONNAT,1
-Laure ISNARD,1
-Bernard BARRAQUE,1
-Jean-Michel FOURNIAU,1
-(LMDE) LA MUTUELLE DES ETUDIANTS,1
-Alain HAYS,2
-Ludovic ROGUET,1
-Marianne GUEROIS,1
-Fabien PAULUS,1
-Attila BASKURT,1
-Jean-Yves  TOUSSAINT,1
-Laurent ARON,1
- LA MAISON DU FLEUVE RHÔNE,1
-Lionel ARNAUD,2
-Jean-Paul ARVEILLER,1
-Rémi BARBIER,1
-René RIZZARDO,1
-Richard CANTIN,1
-Robert JONAC,1
-Stéphane CORDOBES,1
-Anne PINCHART,2
-Roland GORI,1
-Sandrine BOUCHER,3
-Sebastian ROCHE,32
-Stéphanie BEAUCHENE,15
-Stéphanie LEFORT-AUCHERE,1
-Sophie BODY-GENDROT,2
-Sophie BOISSARD,1
-Sophie DE GAILLARD,1
-Serge POUTS-LAJUS,1
-Marielle RICHIE-MAGNIER,1
-Siegfried Zhiqiang WU,1
-cabinet SILOÉ,2
-Serge BRUNEAU,1
-Thomas FAILLEBIN,1
-Thomas FAIST,1
-Thierry BRUHAT,1
-Hélène REIGNER,1
-Valérie DRAMARD,1
-Marie-Amandine VERMILLON,2
-Thérèse LAFERRIÈRE,1
-Étienne RODIN,1
-Antoine FLEURY,1
-Antoine LAZARUS,1
- NÉGAWATT,1
-Benoît GUILLEMONT,1
-Bernard CHOCAT,3
-Bernard DREANO,1
-Bernard JOUVE,6
-Bernard MARET,1
-Abdellatif CHAOUITE,1
-Antoine BAILLY,1
-Bernard PRÉEL,1
-Boris BEAUDE,3
-Aldo NAOURI,1
-Anna Paula BEJA HORTA,1
-Joana MIRANDA,1
-"""Association Nationale DES DIRECTEURS DE LEDUCATION DES VILLES DE FRANCE""",1
-André GIORDAN,1
-Laura PANDELLE,1
-Magali MARLIN,1
-Anne-Cécile RAGOT,1
-Hervé LE BRAS,1
-Adelina MIRANDA,1
-DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,59
-Guillaume GOURGUES,1
-Philippe JURY,6
-Aisling HEALY,1
-Guillaume POITRINAL,1
-Guy POUZARD,1
-Cécile FÉRÉ,2
-Catherine TRAUTMANN,1
-Chris BEYER,1
-Emilie RICHARD,1
-Dominique ROYOUX,1
-Gilles FINCHELSTEIN,2
-Gilles GUILLOT,1
-Gilles JEANNOT,1
-pôle universitaire de Lyon GIP,1
-Françoise LORCERIE,1
-Delphine CAVALLO,1
-Françoise SION,1
-Frédéric NAUDON,1
-Valérie DEFOY,17
-Georges DECOURT,2
-François DUBET,2
-François GRATEAU,1
-François GUERY,1
-Gilles BROCARD,1
-Lucie VERCHERE,5
-Marc BESSIN,1
-Marc CHAMBOLLE,1
-Michel COTE,1
-Michel WIEVIORKA,5
-Marine DOUCHY,1
-Elina LUMBROSO,1
-Marina VALENTE,1
-Michèle MASSON,1
-Marie-Elizabeth NICOLEAU,1
-Alain BENINI,1
-Martin GUESPEREAU,1
-Julie FABRE,1
-Marie-Christine POUCHELLE,1
-Mike RACO,1
-Martin VANIER,2
-Martine CHANAL,1
-Benoit EYRAUD,1
-Pascal BEAU,1
-Patrice AUBERTEL,1
-Paul RAVEAUD,1
-Thérèse SPECTOR,1
-Patrick GUIHOT,1
-Mohamed BENABBOU,1
-Mohamed EL MANKIBI,1
-Mónica COSTA,1
-Paulo Manuel COSTA,1
-Olivier COUSIN,1
-Olivier GALLAND,1
-Olivier GIVRE,3
-Nicolas BARRÉ,1
-Mélanie GAT,12
-Michaël FAURE,1
- Nicole GOLANCZYK,2
-Nicolas MERCAT,1
-Nicolas SOULIER,1
-Philippe GOUJON,1
-Philippe JARREAU,1
-Philippe MEIRIEU,2
-Paul D.REITER,1
-Patrick VIVERET,2
-Paul ARIÈS,1
-Pierre BRÉCHON,3
-Pierre MARGOT-CATTIN,1
-Philippe BILLET,1
-Olivier BLANDIN,1
-Pierre MICHEL,1
-Philippe GACHE,1
-Vinciane DESPRET,1
-Philippe MAZUEL,1
-Léa PEYRON,5
-Thierry THEURILLAT,1
-Jean-François DRAPERI,1
-Jean GADREY,1
-Michel CAPRON,1
-Idir CHERIEF,1
-Valérie BUTHION,1
-Martine LONG,1
-Michel BOUVIER,1
-Philippe CORCUFF,1
-Nicolas DUVOUX,1
-Jean-Michel BONVIN,1
-Yves CROZET,1
-Vincent BERTHET,1
-Marc GUILLAUME,1
-Eric CEDIEY,12
-Gabrielle FACK,1
-Annie COLLOVALD,1
-Chris YOUNÈS,1
-Beate COLLET,1
-Valérie SALA PALA,3
-Patricia BAUMANN,1
-François ROBERT,1
-Loïc BONNEVAL,1
-Lila COMBE,1
-Fatiha BELMESSOUS,1
-Sheila ROGERS,1
-Philippe ESTÈBE,1
-Surrendra SANTOKHI,1
-Marie-Christine JAILLET,1
-Hans WERDMÖLDER,1
-Andrea REA,1
-John WRENCH,1
-Joseph YACOUB,1
-Iván BAJOMI,1
-Richard TOMLINS,1
-Alain BATTEGAY,1
-Marie-Clotilde MEILLERAND,1
-Franck TANNERY,4
-Benoît MEYRONIN,2
-Frédérique BRUYAS,1
-Bernard PELLECUER,1
-Sophie LARGEAU,1
-Manu BODINIER,1
-Adèle SEYRIG,1
-Jeanne CARTILLIER,1
-Michel AGNAIEFF,1
-Julien TALPIN,1
-Luc FARALDI,1
-Pierre CALAME,1
-Jean-Pascal BONHOTAL,1
-Gérard SOUSI,1
-Abdelhafid HAMMOUCHE,1
-Yves LAMBERT,1
-Olivier CHAVANON,1
-Mohamed Chérif FERJANI,2
-Kamla CHOWDHRY,1
-André MICOUD,2
-""" HAUT CONSEIL À LINTÉGRATION""",2
-Bétoule FEKKAR-LAMBIOTTE,1
-Pierre MOEGLIN,1
-"""CFEEDD COLLECTIF FRANÇAIS DE LEDUCATION À LENVIRONNEMENT """,1
-Olivier MARTEL,2
-Marc JEANNEROD,1
-Jean NORMAND,1
-René MORNEX,1
-Véronique GRANGER,1
-Jean-Paul BRAVARD,3
-Michel RAFFIN,3
-Jean-Louis MICHELOT,1
-Paul MICHELET,1
-Jean-Claude DECOURT,1
-Jean-Paul DUMONTIER,1
-Jocelyne BEARD,4
-Gérard HYTTE,1
-François GRETHER,1
-Céline ROZENBLAT,2
-Patricia CICILLE,1
-Laurent LABORDE-TASTET,1
-Jacques LEVY,1
-Benoit GODIN,1
-Philippe AIGRAIN,1
-Manuel CASTELLS,2
-Pablo JENSEN,2
-Jean-Jacques WUNENBURGER,1
-François DENIEUL,1
-Yannick L’HORTY,1
-"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",2
-Patrick DESCHAMPS,1
-Alain BYENAIMÉ,1
-Alice TAGGER,1
-André GORZ,1
-Pierre WINICKI,1
-Mathieu BOSTYN,1
-Henry GEORGE,1
-Bruno VOISIN,2
-Virginie MILLIOT-BELMADANI,2
-Christian BROMBERGER,1
-Paul MOREAU,1
-Éric HEILMANN,1
-Patrick LUSSON,1
-Gilles GARRIGOS,1
-François-Régis GUILLAUME,1
-Patrice MARIE,1
-Jean-Claude BARTHEZ,2
-Alain BOURGAREL,1
-Elena DINGU-KYKLUND,1
-Nicolas BALTENNECK,1
-Gérard BERTOLINI,1
-Yannick LEMEL,1
-Raymond CURTET,1
-Olivier BLEYS,1
-Victor CHOMENTOWSKI,1
-COSF -  COMITÉ OLYMPIQUE SPORTIF FRANÇAIS,1
-Eurocités  EDURC,1
-Charlotte RECOQUILLON,1
-Gilles MARION,1
-Yannick BRUXELLE,2
-Gro Harlem BRUNDTLAND,1
-Jean-Stephan CLERC,1
-Gilbert AUGER,1
-Denis CLERC,1
-Gérard DEFOIS,1
-Philippe CHAUDOIR,1
-Marie-France ANTONA,1
-Jean-Marie AUZIAS,3
-Pierre BORDELEAU,1
-Luciano LOIACONO-CLOUET,1
-Luc BAPTISTE,1
-Anne-Sophie CLEMENÇON,1
-Élise HO-PUN-CHEUNG,2
-Lucas PIESSAT,55
-Gauthier BRAVAIS,17
-Mathilde DELAMARE,1
-Manon LOISEL,38
-Patrick SIMON,2
- Maryame AMAROUCHE,1
-Marie SENG,1
-Chloé SERME MORIN,1
-Justine SWORDY-BORIE,1
-Selene VILLALEJO COTA,1
-Eve DENJEAN,30
-Alexis SPIRE,3
-Vincent DUBOIS,3
-Sandra JARRY,3
-Irène GAILLARD,3
-Vanina MOLLO,3
-Thomas KIRSZBAUM,2
-Emmanuelle SANTELLI,3
-Marie Clémence LE PAPE,2
-Maël DIEUDONNÉ,2
-Jean-Loup AMSELLE,3
-Olivier OULLIER,2
-Astrid HOPFENSITZ,2
-Cabinet TRAJECTOIRES REFLEX,2
-Nicolas LEPRÊTRE,46
-Pierre HOUSSAIS,4
-Sylvère ANGOT,3
-Quentin VERNETTE,10
-Giorgio   DE AMBROGIO,2
-Mélissa POUPELLOZ,2
-Kamil HAJJI,3
-Hélène DELHAY,27
-Mathieu BRAND,4
-Thomas COISPEL,4
-Hervé CHAYGNEAUD-DUPUY,3
-Julie GAYRAL,11
-Xavier BRISBOIS,6
-Pauline VAN LAERE,6
-Frédéric SEGUR,4
-Philippe CLERGEAU,3
-Florent CHEVREAU,2
-Danielle GALEA,2
-Carine PRADELLES,2
-Maïder LAUSSUCQ,2
-Pierre DOMMERGUES,2
-Christine DELFOUR,2
-Arthur GRIMONPONT,12
-Antoine ROYER,4
-Malou ALLAGNAT,11
-Angela  LANTERI,4
-Alexandre MONNIN,16
-Gilbert CETTE,1
-Flavie FERCHAUD,1
-Marie JOMARD,1
-Paul COLONNA,3
-Egizio VALCESCHINI,3
-Thomas HAJDUKOWICZ,12
-Béatrice MAURINES,5
-Lilian PELLEGRINO,5
-Blandine CERISIER,4
-Clément RENAUD,3
-Camille PERRET,3
-Juliette PINARD,3
-Maéva BIGOT,8
-Diane GEFFROY,8
-Fabien GIRARDIN,5
-Antoine COURMONT,4
-Yoann PUPAT,8
-Elise ROCHE,1
-Guillaume SÉCHET,1
-Emilie DEFOORT,1
-Kim SAKHO,5
-Christine OLM,6
-Natacha GONDRAN,6
-Yoan OLLIVIER,26
-Romain BEAUCHER,2
-Valérie PEUGEOT,1
-Marie-Claire VILLEVAL,1
-Philippe STEINER,1
-Benjamin BADIA,1
-Patrice RAYMOND,1
-Daniel KAPLAN,1
-Gaëtan BRISEPIERRE,1
-Catherine GRANDCLEMENT,1
-Vincent RENAULD,1
-Robert LAFORE,1
-Chtristophe CHABROT,3
-Anne FORNEROD,4
-Laura DESMARIS,1
-Marc URHY,1
-Clara PERRIN,2
-Fanny VIRY,1
-Jean-Nicolas BIRCK,3
-Gilbert BERLIOZ,4
- LALCA,6
-Perrine TURGAULT,3
-Philippe VIDELIER,2
-Robert REVAT,2
-Bruno CARBONNET,2
-Antonio A. CASILLI,2
-Manon MOLINS,2
-Marine ALBAREDE,2
-Vivienne BOLSIUS,2
-Maaike OSIECK,2
-Magali TALANDIER,3
-Serge TISSERON,4
-Arnaud FLORENTIN,4
-Jocelyne CESARI,1
-François RIO,2
-Caroline MORICEAU,5
-Laure PERRIN-VIDOZ,5
-Hugues DE JOUVENEL,2
-Frédéric BERTRAND,2
-Philippe DURANCE,2
-Béatrice CHARRE,2
-Mireille LEMAHIEU,2
-David GRAND,3
-Jean-Pierre VIGNAT,2
-Jean FURTOS,2
-Stéphanie PORNIN,2
-Cécile PEETERS,2
-Florence ABITBOL,4
-Noé DELARGILLIÈRE,2
+",3,Tags
+Sylvie  BOUTAUDOU,2,Auteurs
+Solène MANOUVRIER,1,Auteurs
+Claire DELIGANT,1,Auteurs
+Mylène MARTIN,1,Auteurs
+Anne-Sophie GORGE,1,Auteurs
+Gilles PINSON,4,Auteurs
+Deborah GALIMBERTI,2,Auteurs
+Rémi DORMOIS,1,Auteurs
+Hubert GUILLAUD,3,Auteurs
+Nicolas MATYJASIK,2,Auteurs
+Adeline CHARVET,1,Auteurs
+Charlotte VISAGE,1,Auteurs
+Yves CHALAS,1,Auteurs
+Emploi,1,Tags
+Gaspard LANDEL,3,Auteurs
+Bruno BENOIT,43,Auteurs
+Bruno FANTON,3,Auteurs
+Bruno MARZLOFF,5,Auteurs
+Jérôme SAINTE,1,Auteurs
+Leila BOUTAMINE,1,Auteurs
+Camille GUEZENNEC,1,Auteurs
+Guillaume MALOCHET,1,Auteurs
+Bruno DURIEZ,1,Auteurs
+Caroline RICHEMONT,7,Auteurs
+Brice DURY,15,Auteurs
+Brigitte AURIACOMBE,1,Auteurs
+Pascal BAVOUX,1,Auteurs
+Cyria EMELIANOFF,1,Auteurs
+Cyrille HARPET,1,Auteurs
+Danielle BILLY-ROUIS,1,Auteurs
+Danielle COLARDYN,1,Auteurs
+Claire BÉLISLE,1,Auteurs
+Claude BREVAN,1,Auteurs
+Dominique LAROUSSE,1,Auteurs
+Claudio BOLZMAN,2,Auteurs
+Chris OLIVIER,1,Auteurs
+Christelle MOREL-JOURNEL,2,Auteurs
+"CES - CONSEIL ÉCONOMIQUE, SOCIAL",5,Auteurs
+Christian LEFÈVRE,3,Auteurs
+CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,3,Auteurs
+Collectif ECONOMIE ET HUMANISME,10,Auteurs
+ COMMUNAUTÉ URBAINE DE LYON,3,Auteurs
+"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",8,Auteurs
+Diane SAMAMA,1,Auteurs
+Roland JOUVENT,1,Auteurs
+Didier CAZELLES,5,Auteurs
+Didier LIVIO,1,Auteurs
+Dieter GRAU,1,Auteurs
+Jessica READ,1,Auteurs
+Corinne HOOGE,7,Auteurs
+Delphine GRAVIER,1,Auteurs
+Denis CERCLET,2,Auteurs
+Sociovision COFREMCA,1,Auteurs
+Delphine BALVET,1,Auteurs
+Delphine SCIARRINO,1,Auteurs
+Ludivine SCIARRINO,1,Auteurs
+Dominique BOURG,2,Auteurs
+Dominique CARDON,3,Auteurs
+Dominique LESTEL,1,Auteurs
+Dominique LORRAIN,1,Auteurs
+Enrico ALLASINO,1,Auteurs
+Emmanuel BOUTEFEU,1,Auteurs
+Emmanuel VIGNERON,1,Auteurs
+Faïza BOULKEROUA,1,Auteurs
+Emmanuelle HENRY,1,Auteurs
+Emmanuel THIMONIER-ROUZET,1,Auteurs
+Elinor KELLY,1,Auteurs
+Elisabeth PERROT,2,Auteurs
+Fernand BERTEN,1,Auteurs
+François ASCHER,3,Auteurs
+Edgar MORIN,1,Auteurs
+Edmond HERVÉ,1,Auteurs
+Jean-Louis BAL,1,Auteurs
+Jean-Louis DAYAN,1,Auteurs
+Jean-Luc VUILLEMENOT,1,Auteurs
+Jean-Baptiste LESTRA,1,Auteurs
+Jean-François ROUET,1,Auteurs
+Jean-François TCHERNIA,2,Auteurs
+Jean-Jack QUEYRANNE,1,Auteurs
+Hugues PUEL,1,Auteurs
+ INSEE - RHÔNE-ALPES ,1,Auteurs
+Jean-Michel DELEUIL,1,Auteurs
+Jean-Marc BERTHET,21,Auteurs
+Jean-Philippe CLEMENT,1,Auteurs
+Jean-Yves BOULIN,2,Auteurs
+Jérôme BINDE,1,Auteurs
+Julia GUDEFIN,1,Auteurs
+Jany DHERVILLEZ,1,Auteurs
+Jaques-Antoine MALAREWICZ,1,Auteurs
+Jean BOISSONNAT,1,Auteurs
+Laure ISNARD,1,Auteurs
+Bernard BARRAQUE,1,Auteurs
+Jean-Michel FOURNIAU,1,Auteurs
+(LMDE) LA MUTUELLE DES ETUDIANTS,1,Auteurs
+Alain HAYS,2,Auteurs
+Ludovic ROGUET,1,Auteurs
+Marianne GUEROIS,1,Auteurs
+Fabien PAULUS,1,Auteurs
+Attila BASKURT,1,Auteurs
+Jean-Yves  TOUSSAINT,1,Auteurs
+Laurent ARON,1,Auteurs
+ LA MAISON DU FLEUVE RHÔNE,1,Auteurs
+Lionel ARNAUD,2,Auteurs
+Jean-Paul ARVEILLER,1,Auteurs
+Rémi BARBIER,1,Auteurs
+René RIZZARDO,1,Auteurs
+Richard CANTIN,1,Auteurs
+Robert JONAC,1,Auteurs
+Stéphane CORDOBES,1,Auteurs
+Anne PINCHART,2,Auteurs
+Roland GORI,1,Auteurs
+Sandrine BOUCHER,3,Auteurs
+Sebastian ROCHE,32,Auteurs
+Stéphanie BEAUCHENE,15,Auteurs
+Stéphanie LEFORT-AUCHERE,1,Auteurs
+Sophie BODY-GENDROT,2,Auteurs
+Sophie BOISSARD,1,Auteurs
+Sophie DE GAILLARD,1,Auteurs
+Serge POUTS-LAJUS,1,Auteurs
+Marielle RICHIE-MAGNIER,1,Auteurs
+Siegfried Zhiqiang WU,1,Auteurs
+cabinet SILOÉ,2,Auteurs
+Serge BRUNEAU,1,Auteurs
+Thomas FAILLEBIN,1,Auteurs
+Thomas FAIST,1,Auteurs
+Thierry BRUHAT,1,Auteurs
+Hélène REIGNER,1,Auteurs
+Valérie DRAMARD,1,Auteurs
+Marie-Amandine VERMILLON,2,Auteurs
+Thérèse LAFERRIÈRE,1,Auteurs
+Étienne RODIN,1,Auteurs
+Antoine FLEURY,1,Auteurs
+Antoine LAZARUS,1,Auteurs
+ NÉGAWATT,1,Auteurs
+Benoît GUILLEMONT,1,Auteurs
+Bernard CHOCAT,3,Auteurs
+Bernard DREANO,1,Auteurs
+Bernard JOUVE,6,Auteurs
+Bernard MARET,1,Auteurs
+Abdellatif CHAOUITE,1,Auteurs
+Antoine BAILLY,1,Auteurs
+Bernard PRÉEL,1,Auteurs
+Boris BEAUDE,3,Auteurs
+Aldo NAOURI,1,Auteurs
+Anna Paula BEJA HORTA,1,Auteurs
+Joana MIRANDA,1,Auteurs
+"""Association Nationale DES DIRECTEURS DE LEDUCATION DES VILLES DE FRANCE""",1,Auteurs
+André GIORDAN,1,Auteurs
+Laura PANDELLE,1,Auteurs
+Magali MARLIN,1,Auteurs
+Anne-Cécile RAGOT,1,Auteurs
+Hervé LE BRAS,1,Auteurs
+Adelina MIRANDA,1,Auteurs
+DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,59,Auteurs
+Guillaume GOURGUES,1,Auteurs
+Philippe JURY,6,Auteurs
+Aisling HEALY,1,Auteurs
+Guillaume POITRINAL,1,Auteurs
+Guy POUZARD,1,Auteurs
+Cécile FÉRÉ,2,Auteurs
+Catherine TRAUTMANN,1,Auteurs
+Chris BEYER,1,Auteurs
+Emilie RICHARD,1,Auteurs
+Dominique ROYOUX,1,Auteurs
+Gilles FINCHELSTEIN,2,Auteurs
+Gilles GUILLOT,1,Auteurs
+Gilles JEANNOT,1,Auteurs
+pôle universitaire de Lyon GIP,1,Auteurs
+Françoise LORCERIE,1,Auteurs
+Delphine CAVALLO,1,Auteurs
+Françoise SION,1,Auteurs
+Frédéric NAUDON,1,Auteurs
+Valérie DEFOY,17,Auteurs
+Georges DECOURT,2,Auteurs
+François DUBET,2,Auteurs
+François GRATEAU,1,Auteurs
+François GUERY,1,Auteurs
+Gilles BROCARD,1,Auteurs
+Lucie VERCHERE,5,Auteurs
+Marc BESSIN,1,Auteurs
+Marc CHAMBOLLE,1,Auteurs
+Michel COTE,1,Auteurs
+Michel WIEVIORKA,5,Auteurs
+Marine DOUCHY,1,Auteurs
+Elina LUMBROSO,1,Auteurs
+Marina VALENTE,1,Auteurs
+Michèle MASSON,1,Auteurs
+Marie-Elizabeth NICOLEAU,1,Auteurs
+Alain BENINI,1,Auteurs
+Martin GUESPEREAU,1,Auteurs
+Julie FABRE,1,Auteurs
+Marie-Christine POUCHELLE,1,Auteurs
+Mike RACO,1,Auteurs
+Martin VANIER,2,Auteurs
+Martine CHANAL,1,Auteurs
+Benoit EYRAUD,1,Auteurs
+Pascal BEAU,1,Auteurs
+Patrice AUBERTEL,1,Auteurs
+Paul RAVEAUD,1,Auteurs
+Thérèse SPECTOR,1,Auteurs
+Patrick GUIHOT,1,Auteurs
+Mohamed BENABBOU,1,Auteurs
+Mohamed EL MANKIBI,1,Auteurs
+Mónica COSTA,1,Auteurs
+Paulo Manuel COSTA,1,Auteurs
+Olivier COUSIN,1,Auteurs
+Olivier GALLAND,1,Auteurs
+Olivier GIVRE,3,Auteurs
+Nicolas BARRÉ,1,Auteurs
+Mélanie GAT,12,Auteurs
+Michaël FAURE,1,Auteurs
+ Nicole GOLANCZYK,2,Auteurs
+Nicolas MERCAT,1,Auteurs
+Nicolas SOULIER,1,Auteurs
+Philippe GOUJON,1,Auteurs
+Philippe JARREAU,1,Auteurs
+Philippe MEIRIEU,2,Auteurs
+Paul D.REITER,1,Auteurs
+Patrick VIVERET,2,Auteurs
+Paul ARIÈS,1,Auteurs
+Pierre BRÉCHON,3,Auteurs
+Pierre MARGOT-CATTIN,1,Auteurs
+Philippe BILLET,1,Auteurs
+Olivier BLANDIN,1,Auteurs
+Pierre MICHEL,1,Auteurs
+Philippe GACHE,1,Auteurs
+Vinciane DESPRET,1,Auteurs
+Philippe MAZUEL,1,Auteurs
+Léa PEYRON,5,Auteurs
+Thierry THEURILLAT,1,Auteurs
+Jean-François DRAPERI,1,Auteurs
+Jean GADREY,1,Auteurs
+Michel CAPRON,1,Auteurs
+Idir CHERIEF,1,Auteurs
+Valérie BUTHION,1,Auteurs
+Martine LONG,1,Auteurs
+Michel BOUVIER,1,Auteurs
+Philippe CORCUFF,1,Auteurs
+Nicolas DUVOUX,1,Auteurs
+Jean-Michel BONVIN,1,Auteurs
+Yves CROZET,1,Auteurs
+Vincent BERTHET,1,Auteurs
+Marc GUILLAUME,1,Auteurs
+Eric CEDIEY,12,Auteurs
+Gabrielle FACK,1,Auteurs
+Annie COLLOVALD,1,Auteurs
+Chris YOUNÈS,1,Auteurs
+Beate COLLET,1,Auteurs
+Valérie SALA PALA,3,Auteurs
+Patricia BAUMANN,1,Auteurs
+François ROBERT,1,Auteurs
+Loïc BONNEVAL,1,Auteurs
+Lila COMBE,1,Auteurs
+Fatiha BELMESSOUS,1,Auteurs
+Sheila ROGERS,1,Auteurs
+Philippe ESTÈBE,1,Auteurs
+Surrendra SANTOKHI,1,Auteurs
+Marie-Christine JAILLET,1,Auteurs
+Hans WERDMÖLDER,1,Auteurs
+Andrea REA,1,Auteurs
+John WRENCH,1,Auteurs
+Joseph YACOUB,1,Auteurs
+Iván BAJOMI,1,Auteurs
+Richard TOMLINS,1,Auteurs
+Alain BATTEGAY,1,Auteurs
+Marie-Clotilde MEILLERAND,1,Auteurs
+Franck TANNERY,4,Auteurs
+Benoît MEYRONIN,2,Auteurs
+Frédérique BRUYAS,1,Auteurs
+Bernard PELLECUER,1,Auteurs
+Sophie LARGEAU,1,Auteurs
+Manu BODINIER,1,Auteurs
+Adèle SEYRIG,1,Auteurs
+Jeanne CARTILLIER,1,Auteurs
+Michel AGNAIEFF,1,Auteurs
+Julien TALPIN,1,Auteurs
+Luc FARALDI,1,Auteurs
+Pierre CALAME,1,Auteurs
+Jean-Pascal BONHOTAL,1,Auteurs
+Gérard SOUSI,1,Auteurs
+Abdelhafid HAMMOUCHE,1,Auteurs
+Yves LAMBERT,1,Auteurs
+Olivier CHAVANON,1,Auteurs
+Mohamed Chérif FERJANI,2,Auteurs
+Kamla CHOWDHRY,1,Auteurs
+André MICOUD,2,Auteurs
+""" HAUT CONSEIL À LINTÉGRATION""",2,Auteurs
+Bétoule FEKKAR-LAMBIOTTE,1,Auteurs
+Pierre MOEGLIN,1,Auteurs
+"""CFEEDD COLLECTIF FRANÇAIS DE LEDUCATION À LENVIRONNEMENT """,1,Auteurs
+Olivier MARTEL,2,Auteurs
+Marc JEANNEROD,1,Auteurs
+Jean NORMAND,1,Auteurs
+René MORNEX,1,Auteurs
+Véronique GRANGER,1,Auteurs
+Jean-Paul BRAVARD,3,Auteurs
+Michel RAFFIN,3,Auteurs
+Jean-Louis MICHELOT,1,Auteurs
+Paul MICHELET,1,Auteurs
+Jean-Claude DECOURT,1,Auteurs
+Jean-Paul DUMONTIER,1,Auteurs
+Jocelyne BEARD,4,Auteurs
+Gérard HYTTE,1,Auteurs
+François GRETHER,1,Auteurs
+Céline ROZENBLAT,2,Auteurs
+Patricia CICILLE,1,Auteurs
+Laurent LABORDE-TASTET,1,Auteurs
+Jacques LEVY,1,Auteurs
+Benoit GODIN,1,Auteurs
+Philippe AIGRAIN,1,Auteurs
+Manuel CASTELLS,2,Auteurs
+Pablo JENSEN,2,Auteurs
+Jean-Jacques WUNENBURGER,1,Auteurs
+François DENIEUL,1,Auteurs
+Yannick L’HORTY,1,Auteurs
+"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",2,Auteurs
+Patrick DESCHAMPS,1,Auteurs
+Alain BYENAIMÉ,1,Auteurs
+Alice TAGGER,1,Auteurs
+André GORZ,1,Auteurs
+Pierre WINICKI,1,Auteurs
+Mathieu BOSTYN,1,Auteurs
+Henry GEORGE,1,Auteurs
+Bruno VOISIN,2,Auteurs
+Virginie MILLIOT-BELMADANI,2,Auteurs
+Christian BROMBERGER,1,Auteurs
+Paul MOREAU,1,Auteurs
+Éric HEILMANN,1,Auteurs
+Patrick LUSSON,1,Auteurs
+Gilles GARRIGOS,1,Auteurs
+François-Régis GUILLAUME,1,Auteurs
+Patrice MARIE,1,Auteurs
+Jean-Claude BARTHEZ,2,Auteurs
+Alain BOURGAREL,1,Auteurs
+Elena DINGU-KYKLUND,1,Auteurs
+Nicolas BALTENNECK,1,Auteurs
+Gérard BERTOLINI,1,Auteurs
+Yannick LEMEL,1,Auteurs
+Raymond CURTET,1,Auteurs
+Olivier BLEYS,1,Auteurs
+Victor CHOMENTOWSKI,1,Auteurs
+COSF -  COMITÉ OLYMPIQUE SPORTIF FRANÇAIS,1,Auteurs
+Eurocités  EDURC,1,Auteurs
+Charlotte RECOQUILLON,1,Auteurs
+Gilles MARION,1,Auteurs
+Yannick BRUXELLE,2,Auteurs
+Gro Harlem BRUNDTLAND,1,Auteurs
+Jean-Stephan CLERC,1,Auteurs
+Gilbert AUGER,1,Auteurs
+Denis CLERC,1,Auteurs
+Gérard DEFOIS,1,Auteurs
+Philippe CHAUDOIR,1,Auteurs
+Marie-France ANTONA,1,Auteurs
+Jean-Marie AUZIAS,3,Auteurs
+Pierre BORDELEAU,1,Auteurs
+Luciano LOIACONO-CLOUET,1,Auteurs
+Luc BAPTISTE,1,Auteurs
+Anne-Sophie CLEMENÇON,1,Auteurs
+Élise HO-PUN-CHEUNG,2,Auteurs
+Lucas PIESSAT,55,Auteurs
+Gauthier BRAVAIS,17,Auteurs
+Mathilde DELAMARE,1,Auteurs
+Manon LOISEL,38,Auteurs
+Patrick SIMON,2,Auteurs
+ Maryame AMAROUCHE,1,Auteurs
+Marie SENG,1,Auteurs
+Chloé SERME MORIN,1,Auteurs
+Justine SWORDY-BORIE,1,Auteurs
+Selene VILLALEJO COTA,1,Auteurs
+Eve DENJEAN,30,Auteurs
+Alexis SPIRE,3,Auteurs
+Vincent DUBOIS,3,Auteurs
+Sandra JARRY,3,Auteurs
+Irène GAILLARD,3,Auteurs
+Vanina MOLLO,3,Auteurs
+Thomas KIRSZBAUM,2,Auteurs
+Emmanuelle SANTELLI,3,Auteurs
+Marie Clémence LE PAPE,2,Auteurs
+Maël DIEUDONNÉ,2,Auteurs
+Jean-Loup AMSELLE,3,Auteurs
+Olivier OULLIER,2,Auteurs
+Astrid HOPFENSITZ,2,Auteurs
+Cabinet TRAJECTOIRES REFLEX,2,Auteurs
+Nicolas LEPRÊTRE,46,Auteurs
+Pierre HOUSSAIS,4,Auteurs
+Sylvère ANGOT,3,Auteurs
+Quentin VERNETTE,10,Auteurs
+Giorgio   DE AMBROGIO,2,Auteurs
+Mélissa POUPELLOZ,2,Auteurs
+Kamil HAJJI,3,Auteurs
+Hélène DELHAY,27,Auteurs
+Mathieu BRAND,4,Auteurs
+Thomas COISPEL,4,Auteurs
+Hervé CHAYGNEAUD-DUPUY,3,Auteurs
+Julie GAYRAL,11,Auteurs
+Xavier BRISBOIS,6,Auteurs
+Pauline VAN LAERE,6,Auteurs
+Frédéric SEGUR,4,Auteurs
+Philippe CLERGEAU,3,Auteurs
+Florent CHEVREAU,2,Auteurs
+Danielle GALEA,2,Auteurs
+Carine PRADELLES,2,Auteurs
+Maïder LAUSSUCQ,2,Auteurs
+Pierre DOMMERGUES,2,Auteurs
+Christine DELFOUR,2,Auteurs
+Arthur GRIMONPONT,12,Auteurs
+Antoine ROYER,4,Auteurs
+Malou ALLAGNAT,11,Auteurs
+Angela  LANTERI,4,Auteurs
+Alexandre MONNIN,16,Auteurs
+Gilbert CETTE,1,Auteurs
+Flavie FERCHAUD,1,Auteurs
+Marie JOMARD,1,Auteurs
+Paul COLONNA,3,Auteurs
+Egizio VALCESCHINI,3,Auteurs
+Thomas HAJDUKOWICZ,12,Auteurs
+Béatrice MAURINES,5,Auteurs
+Lilian PELLEGRINO,5,Auteurs
+Blandine CERISIER,4,Auteurs
+Clément RENAUD,3,Auteurs
+Camille PERRET,3,Auteurs
+Juliette PINARD,3,Auteurs
+Maéva BIGOT,8,Auteurs
+Diane GEFFROY,8,Auteurs
+Fabien GIRARDIN,5,Auteurs
+Antoine COURMONT,4,Auteurs
+Yoann PUPAT,8,Auteurs
+Elise ROCHE,1,Auteurs
+Guillaume SÉCHET,1,Auteurs
+Emilie DEFOORT,1,Auteurs
+Kim SAKHO,5,Auteurs
+Christine OLM,6,Auteurs
+Natacha GONDRAN,6,Auteurs
+Yoan OLLIVIER,26,Auteurs
+Romain BEAUCHER,2,Auteurs
+Valérie PEUGEOT,1,Auteurs
+Marie-Claire VILLEVAL,1,Auteurs
+Philippe STEINER,1,Auteurs
+Benjamin BADIA,1,Auteurs
+Patrice RAYMOND,1,Auteurs
+Daniel KAPLAN,1,Auteurs
+Gaëtan BRISEPIERRE,1,Auteurs
+Catherine GRANDCLEMENT,1,Auteurs
+Vincent RENAULD,1,Auteurs
+Robert LAFORE,1,Auteurs
+Chtristophe CHABROT,3,Auteurs
+Anne FORNEROD,4,Auteurs
+Laura DESMARIS,1,Auteurs
+Marc URHY,1,Auteurs
+Clara PERRIN,2,Auteurs
+Fanny VIRY,1,Auteurs
+Jean-Nicolas BIRCK,3,Auteurs
+Gilbert BERLIOZ,4,Auteurs
+ LALCA,6,Auteurs
+Perrine TURGAULT,3,Auteurs
+Philippe VIDELIER,2,Auteurs
+Robert REVAT,2,Auteurs
+Bruno CARBONNET,2,Auteurs
+Antonio A. CASILLI,2,Auteurs
+Manon MOLINS,2,Auteurs
+Marine ALBAREDE,2,Auteurs
+Vivienne BOLSIUS,2,Auteurs
+Maaike OSIECK,2,Auteurs
+Magali TALANDIER,3,Auteurs
+Serge TISSERON,4,Auteurs
+Arnaud FLORENTIN,4,Auteurs
+Jocelyne CESARI,1,Auteurs
+François RIO,2,Auteurs
+Caroline MORICEAU,5,Auteurs
+Laure PERRIN-VIDOZ,5,Auteurs
+Hugues DE JOUVENEL,2,Auteurs
+Frédéric BERTRAND,2,Auteurs
+Philippe DURANCE,2,Auteurs
+Béatrice CHARRE,2,Auteurs
+Mireille LEMAHIEU,2,Auteurs
+David GRAND,3,Auteurs
+Jean-Pierre VIGNAT,2,Auteurs
+Jean FURTOS,2,Auteurs
+Stéphanie PORNIN,2,Auteurs
+Cécile PEETERS,2,Auteurs
+Florence ABITBOL,4,Auteurs
+Noé DELARGILLIÈRE,2,Auteurs
