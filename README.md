@@ -33,3 +33,9 @@ Ensemble de programme pour :
 
 * Problème avec le scraping : connection abort sur la 7888e urls (on peut relancer pour remplir le dictionnaire à partir de là) -- Resolu
 * Doublons dans les réseaux
+
+To Do :
+
+* DASH avec auteurs / tags : mots les plus fréquents (TDIDF ? / parmi NER ?), data sur présence temporel, tags les plus utilisés / auteurs les plus fréquents, type de soumissions... (pour pilotage de la revue ?)
+
+* Thématiques : soit gensim classic-shit, soit embeddings, soit en "supervisé" avec embeddings sur les tags ? Où à partir des mots les plus fréquents dans les tags ? (mais alors commenton fait pour les tags les moins représentés ? Comme développement durable ?)
