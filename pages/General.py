@@ -28,6 +28,8 @@ def graph_tag_nb():
                        "year" : tmp.tags.value_counts().sort_index().index})
 
     fig = px.bar(filtered_df, x="year", y="values")
+    fig.update_layout(barmode='stack', xaxis={'categoryorder':'total descending'})
+
     return(fig)
 
 def graph_tag_time():
@@ -47,7 +49,7 @@ def graph_tag_time():
 
     fig = px.bar(temp, x="tag", y="value", color="YEAR")
     fig.update_layout(barmode='stack', xaxis={'categoryorder':'total descending'})
-    
+
     return(fig)
 
 main_div = html.Div([
