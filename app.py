@@ -5,24 +5,27 @@ import plotly.express as px
 import pandas as pd
 
 
-app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.SPACELAB])
+app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.PULSE])
 
-sidebar = dbc.Nav(
-            [
-                dbc.NavLink(
-                    [
-                        html.Div(page["name"], className="ms-2"),
-                    ],
-                    href=page["path"],
-                    active="exact",
-                )
-                for page in dash.page_registry.values()
-            ],
-            vertical=True,
-            pills=True,
-            justified=True,
-            fill=True,
-)
+sidebar = html.Div([
+                    html.H3("Millénaire3 Analysis"),
+                    dbc.Nav(
+                        [
+                            dbc.NavLink(
+                                [
+                                    html.Div(page["name"], className="ms-2"),
+                                ],
+                                href=page["path"],
+                                active="exact",
+                            )
+                            for page in dash.page_registry.values()
+                        ],
+                        vertical=True,
+                        pills=True,
+                        justified=True,
+                        fill=True,
+            )
+])
 
 app.layout = dbc.Container([
     dbc.Row([

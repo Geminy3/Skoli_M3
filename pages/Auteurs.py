@@ -32,25 +32,26 @@ main_div = html.Div(children=[
     html.H1(children="Analyse sur les auteurs"),
 
     html.Div(children=f'''
-         A web application framework for your data.
+         Skoli - Alioscha Massein
     '''),
-    
+    html.Br(),
     html.Div([
         #html.H4("Auteurs tab"),
         #generate_table(aut),
         dcc.Dropdown(aut['auteurs'].unique(), 'Lucas PIESSAT', id='DropAut'),
+        html.Br(),
         html.Div([
             dcc.Graph(id="Gaut1"),
-        ], style={'width': '48%', 'display': 'inline-block'}),
+        ], style={'width': '49%', 'display': 'inline-block'}),
         html.Div([
             dcc.Graph(id="Gaut2")
-        ], style={'width': '48%', 'float': 'right', 'display': 'inline-block'}),
+        ], style={'width': '49%', 'float': 'right', 'display': 'inline-block'}),
         html.Div([
             dcc.Graph(id="Gaut3")
-        ], style={'width': '48%', 'display': 'inline-block'}),
+        ], style={'width': '49%', 'display': 'inline-block'}),
         html.Div([
             dcc.Graph(id="Gaut4")
-        ], style={'width': '48%', 'float': 'right', 'display': 'inline-block'})
+        ], style={'width': '49%', 'float': 'right', 'display': 'inline-block'})
     ])
     
 ])
