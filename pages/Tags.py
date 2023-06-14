@@ -24,7 +24,8 @@ def generate_table(dataframe, max_rows=10):
 
 tag = pd.read_csv("./pages/data/tags_db.csv")
 net = pd.read_csv("./pages/data/tags_link.csv")
-# aut_link = pd.read_csv("./pages/data/tag2aut.csv") To DO
+tag_link = pd.read_csv("./pages/data/tag2aut.csv")
+default = 'Mobilité'
 
 main_div = html.Div(children=[
     html.Br(),
@@ -38,7 +39,20 @@ main_div = html.Div(children=[
     html.Div([
         #html.H4("Auteurs tab"),
         #generate_table(aut),
-        dcc.Dropdown(tag['tags'].unique(), 'Mobilité', id='DropTag'),
+        html.Div([
+            dcc.Dropdown(tag['tags'].unique(), default, id='DropTag'),
+            html.Br(),
+            dcc.RangeSlider(
+                min = tag[tag.tags == default]['YEAR'].min(),
+                max = tag[tag.tags == default]['YEAR'].max(),
+                id='year-sliderT',
+                value=[tag[tag.tags == default]['YEAR'].min(), tag[tag.tags == default]['YEAR'].max()],
+                marks={str(int(year)): str(int(year)) for year in tag[tag.tags == default]['YEAR'].unique()},
+            ),
+            html.Br(),
+            dcc.Checklist(tag['TYPE'].unique(), tag['TYPE'].unique(), inline = True, id='DropTypeT'),
+        ]),
+
         html.Br(),
         html.Div([
             dcc.Graph(id="Gtag1"),
@@ -49,9 +63,9 @@ main_div = html.Div(children=[
         html.Div([
             dcc.Graph(id="Gtag3")
         ], style={'width': '49%', 'display': 'inline-block'}),
-        # html.Div([
-        #     dcc.Graph(id="Gtag4")
-        # ], style={'width': '49%', 'float': 'right', 'display': 'inline-block'})
+        html.Div([
+            dcc.Graph(id="Gtag4")
+        ], style={'width': '49%', 'float': 'right', 'display': 'inline-block'})
     ])
     
 ])
@@ -60,20 +74,29 @@ main_div = html.Div(children=[
     Output('Gtag1', 'figure'),
     Output("Gtag2", "figure"),
     Output("Gtag3", "figure"),
-    # Output("Gtag4", "figure"),
-    Input('DropTag', "value")
+    Output("Gtag4", "figure"),
+    Output("year-sliderT", "min"),
+    Output("year-sliderT", "max"),
+    Output("year-sliderT", "marks"),
+    Output('DropTypeT', "options"),
+    Input('DropTag', "value"),
+    Input("year-sliderT", "value"),    
+    Input('DropTypeT', "value"),
 )
-def update_Gaut(TAG):
+def update_Gtag(TAG, year, type):
+    min_y = int(year[0])
+    max_y = int(year[1])
+
     #Gaut1
-    filtered_df = pd.DataFrame({"values" : tag[tag.tags == TAG].YEAR.value_counts().sort_index(),
-                                "year" : tag[tag.tags == TAG].YEAR.value_counts().sort_index().index})
+    filtered_df = pd.DataFrame({"values" : tag[tag.tags == TAG][tag.TYPE.isin(type)].YEAR.value_counts().sort_index(),
+                                "year" : tag[tag.tags == TAG][tag.TYPE.isin(type)].YEAR.value_counts().sort_index().index})
     
     fig = px.bar(filtered_df, x = "year", y = "values")
     fig.update_layout(transition_duration = 500)
     
     #Gaut2
-    filtered_df = pd.DataFrame({"values" : tag[tag.tags == TAG].TYPE.value_counts().sort_index(), 
-                                "type" : tag[tag.tags == TAG].TYPE.value_counts().sort_index().index})
+    filtered_df = pd.DataFrame({"values" : tag[tag.tags == TAG][tag.YEAR >= min_y][tag.YEAR <= max_y].TYPE.value_counts().sort_index(), 
+                                "type" : tag[tag.tags == TAG][tag.YEAR >= min_y][tag.YEAR <= max_y].TYPE.value_counts().sort_index().index})
     
     fig2 = px.bar(filtered_df, x = "type", y = "values", color="type")
     fig2.update_layout(transition_duration = 500, showlegend=False)
@@ -84,11 +107,22 @@ def update_Gaut(TAG):
     fig3.update_layout(transition_duration = 500, showlegend=False)
     
     # #Gaut4
-    # filtered_df = aut_link[aut_link.source == auteur]
-    # fig4 = px.bar(filtered_df, x = "target", y = "values")
-    # fig4.update_layout(transition_duration = 500, showlegend=False)
+    filtered_df = tag_link[tag_link.source == TAG]
+    fig4 = px.bar(filtered_df, x = "target", y = "values")
+    fig4.update_layout(transition_duration = 500, showlegend=False)
     
-    return(fig, fig2, fig3)#, fig4)
+    #Slider
+    filtered_df = tag[tag.tags == TAG]
+    min = filtered_df.YEAR.min()
+    max = filtered_df.YEAR.max()
+    marks = {}
+    for year in tag[tag.tags == TAG]['YEAR'].unique():
+        marks[str(int(year))] = str(int(year))
+
+    #Dropdown_type
+    options = tag[tag.tags == TAG].TYPE.unique()
+
+    return(fig, fig2, fig3, fig4, min, max, marks, options)
 
 def layout():
     return(html.Div([

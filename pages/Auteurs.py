@@ -27,6 +27,8 @@ aut = pd.read_csv("./pages/data/auteurs_db.csv")
 net = pd.read_csv("./pages/data/auteurs_link.csv")
 aut_link = pd.read_csv("./pages/data/aut2tag.csv")
 
+default = "Lucas PIESSAT"
+
 main_div = html.Div(children=[
     html.Br(),
     html.H1(children="Analyse sur les auteurs"),
@@ -38,7 +40,21 @@ main_div = html.Div(children=[
     html.Div([
         #html.H4("Auteurs tab"),
         #generate_table(aut),
-        dcc.Dropdown(aut['auteurs'].unique(), 'Lucas PIESSAT', id='DropAut'),
+        html.Div([
+            dcc.Dropdown(aut['auteurs'].unique(), default, id='DropAut'),
+            html.Br(),
+            dcc.RangeSlider(
+                min = aut[aut.auteurs == default]['YEAR'].min(),
+                max = aut[aut.auteurs == default]['YEAR'].max(),
+                id='year-sliderA',
+                value=[aut[aut.auteurs == default]['YEAR'].min(), aut[aut.auteurs == default]['YEAR'].max()],
+                marks={str(int(year)): str(int(year)) for year in aut[aut.auteurs == default]['YEAR'].unique()},
+            ),
+            html.Br(),
+            dcc.Checklist(aut['TYPE'].unique(), aut['TYPE'].unique(), inline = True, id='DropTypeA'),
+
+        ]),
+
         html.Br(),
         html.Div([
             dcc.Graph(id="Gaut1"),
@@ -61,19 +77,28 @@ main_div = html.Div(children=[
     Output("Gaut2", "figure"),
     Output("Gaut3", "figure"),
     Output("Gaut4", "figure"),
-    Input('DropAut', "value")
+    Output("year-sliderA", "min"),
+    Output("year-sliderA", "max"),
+    Output("year-sliderA", "marks"),
+    Output('DropTypeA', "options"),
+    Input('DropAut', "value"),
+    Input("year-sliderA", "value"),
+    Input('DropTypeA', "value"),
 )
-def update_Gaut(auteur):
+def update_Gaut(auteur, year, type):
+
+    min_y = int(year[0])
+    max_y = int(year[1])
     #Gaut1
-    filtered_df = pd.DataFrame({"values" : aut[aut.auteurs == auteur].YEAR.value_counts().sort_index(),
-                                "year" : aut[aut.auteurs == auteur].YEAR.value_counts().sort_index().index})
+    filtered_df = pd.DataFrame({"values" : aut[aut.auteurs == auteur][aut.TYPE.isin(type)].YEAR.value_counts().sort_index(),
+                                "year" : aut[aut.auteurs == auteur][aut.TYPE.isin(type)].YEAR.value_counts().sort_index().index})
     
     fig = px.bar(filtered_df, x = "year", y = "values")
     fig.update_layout(transition_duration = 500)
     
     #Gaut2
-    filtered_df = pd.DataFrame({"values" : aut[aut.auteurs == auteur].TYPE.value_counts().sort_index(), 
-                                "type" : aut[aut.auteurs == auteur].TYPE.value_counts().sort_index().index})
+    filtered_df = pd.DataFrame({"values" : aut[aut.auteurs == auteur][aut.YEAR >= min_y][aut.YEAR <= max_y].TYPE.value_counts().sort_index(), 
+                                "type" : aut[aut.auteurs == auteur][aut.YEAR >= min_y][aut.YEAR <= max_y].TYPE.value_counts().sort_index().index})
     
     fig2 = px.bar(filtered_df, x = "type", y = "values", color="type")
     fig2.update_layout(transition_duration = 500, showlegend=False)
@@ -88,7 +113,17 @@ def update_Gaut(auteur):
     fig4 = px.bar(filtered_df, x = "target", y = "values")
     fig4.update_layout(transition_duration = 500, showlegend=False)
     
-    return(fig, fig2, fig3, fig4)
+    #Slider
+    filtered_df = aut[aut.auteurs == auteur]
+    min = filtered_df.YEAR.min()
+    max = filtered_df.YEAR.max()
+    marks = {}
+    for year in aut[aut.auteurs == auteur]['YEAR'].unique():
+        marks[str(int(year))] = str(int(year))
+    #Dropdown_type
+    options = aut[aut.auteurs == auteur].TYPE.unique()
+
+    return(fig, fig2, fig3, fig4, min, max, marks, options)
 
 def layout():
     return(html.Div([
