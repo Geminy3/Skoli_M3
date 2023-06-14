@@ -1,0 +1,4 @@
+.holygrail-nav, .holygrail-aside {
+    min-height: 100vh;
+    flex: 0 0 auto;
+}

@@ -7,6 +7,7 @@ import pandas as pd
 
 app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.PULSE])
 
+
 sidebar = html.Div([
                     html.H3("Millénaire3 Analysis"),
                     dbc.Nav(
@@ -29,8 +30,13 @@ sidebar = html.Div([
 
 app.layout = dbc.Container([
     dbc.Row([
-        dbc.Col(sidebar, width = 2),
-        dbc.Col(dash.page_container)
+        dbc.Col(sidebar, width = 2,
+		        class_name='border',
+                xs = 12, md  = 2),
+        dbc.Col(dash.page_container,
+		        style={'min-height':'100vh'},
+                class_name='border',
+                xs = 12 , md  = 10)
         ]),
     ], 
     fluid=True)
