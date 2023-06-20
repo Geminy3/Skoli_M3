@@ -50,7 +50,7 @@ def graph_tag_time():
 
     fig = px.bar(temp, x="tag", y="value", color="YEAR")
     fig.update_layout(barmode='stack', xaxis={'categoryorder':'total descending'})
-
+    
     return(fig)
 
 def area_tag():
