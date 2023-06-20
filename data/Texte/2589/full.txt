@@ -1,0 +1,4 @@
+Big Data et action publique
+Le big data est une opportunité de renouveler les services publics par la personnalisation de ses modalités selon les besoins des usagers et l’anticipation des comportements. 
+Le cas de la police prédictive constitue un bon exemple de l’intérêt mais aussi des limites que peut représenter l’application du big data à l’action publique.  
+Sommaire :  1. Vers une « action publique algorithmique » ?● Le big data fait apparaître des personnes aux yeux de l’administration● Les traitements qui donnent du sens aux données collectées deviennent beaucoup plus individualisés et prédictifs● Des décisions publiques peuvent dorénavant être prises de manière automatique2. Zoom sur un exemple d’application du big data à l’action publique : la "police prédictive"● De quoi s’agit-il ?● Quelle mise en oeuvre ?● Pour quels résultats ?● Quelles limites ?Quelles recommandations ?Ressources documentaires  
