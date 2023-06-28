@@ -85,7 +85,28 @@ main_div = html.Div(children=[
             html.Ul(id = "title_p"),
             html.Br()
         ]),
-        html.Br()
+        html.Br(),
+        html.Div([
+            html.H3("Observation des mots"),
+            html.Br(),
+            dcc.Slider(min = 1,
+                       step = 1,
+                       max = 100,
+                       value = 10,
+                       marks = None,
+                       tooltip={"placement": "bottom", "always_visible": True},
+                       id = "nb_rows"
+                       )
+        ]),
+        html.Div([
+            html.H3("Mots les plus fréquents pour\ncet auteur"),
+            html.Div(id="table_aut", style={"width" : "50%", "margin": "auto"}),
+            html.Br()
+        ], style = {'width': '49%', 'display': 'inline-block'}),
+        html.Div([
+            html.H3("Mots les plus spécifiques à cet auteur"),
+            html.Div(id="table_aut_tfidf", style={"width" : "50%","margin": "auto"}),
+        ], style = {'width': '49%', 'float': 'right', 'display': 'inline-block'})
     ])
     
 ])
@@ -171,10 +192,29 @@ def title_aut(tag, auteur): #, sub_aut):
     text = data[data.URL.isin(urls)].TITRE
 
 
-    text = [html.Li(titre) for titre in text]
+    text = [html.Li(html.A(titre, href=data[data.TITRE == titre].URL.values[0], target="_blank")) for titre in text]
 
     return(text, options_tags) #, options_aut)
 
+@callback(
+        Output("table_aut", "children"),
+        Output("table_aut_tfidf", "children"),
+        Input('DropAut', "value"),
+        Input('nb_rows', "value")
+)
+def table_aut_gen(auteur, nb_rows):
+
+    path = f"./pages/data/Txt/Auteurs/Occurences/{auteur}.csv"
+    dataframe = pd.read_csv(path)
+    dataframe.columns = ["Termes", "Occurences"]
+
+    nb_urls = len(aut[aut.auteurs == auteur])
+    path_tfidf = f"./pages/data/Txt/Auteurs/TF_IDF/{auteur}.csv"
+    dataframe_tfidf = pd.read_csv(path_tfidf)
+    dataframe_tfidf.columns = ["Termes", "tf-idf"]
+    dataframe_tfidf["tf-idf"] = round(dataframe_tfidf["tf-idf"] / nb_urls, 3)
+
+    return(generate_table(dataframe, max_rows=nb_rows), generate_table(dataframe_tfidf, max_rows=nb_rows))
 
 def layout():
     return(html.Div([

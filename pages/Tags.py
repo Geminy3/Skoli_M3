@@ -6,6 +6,8 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 import dash_bootstrap_components as dbc
 import pandas as pd
+import numpy as np
+
 
 dash.register_page(__name__)
 
@@ -25,6 +27,7 @@ def generate_table(dataframe, max_rows=10):
 tag = pd.read_csv("./pages/data/tags_db.csv")
 net = pd.read_csv("./pages/data/tags_link.csv")
 tag_link = pd.read_csv("./pages/data/tag2aut.csv")
+aut_db = pd.read_csv("./pages/data/auteurs_db.csv", index_col = 0)
 default = 'Mobilité'
 
 main_div = html.Div(children=[
@@ -67,7 +70,37 @@ main_div = html.Div(children=[
         html.Div([
             html.H3("Auteurs"),
             dcc.Graph(id="Gtag4")
-        ])
+        ]),
+        html.Div([
+            dcc.Dropdown(aut_db['auteurs'].unique(), "Tous les articles", id='DropDAutTag'),
+        ], style = {'width': '49%', 'display': 'inline-block'}),
+        html.Div([
+            html.Br(),
+            html.Ul(id = "title_p_tag"),
+            html.Br()
+        ]),
+        html.Br(),
+        html.Div([
+            html.H3("Observation des mots"),
+            html.Br(),
+            dcc.Slider(min = 1,
+                       step = 1,
+                       max = 100,
+                       value = 10,
+                       marks = None,
+                       tooltip={"placement": "bottom", "always_visible": True},
+                       id = "nb_row"
+                       )
+        ]),
+        html.Div([
+            html.H3("Mots les plus fréquents pour ce tag"),
+            html.Div(id="table_tag", style={"width" : "50%", "margin": "auto"}),
+            html.Br()
+        ], style = {'width': '49%', 'display': 'inline-block'}),
+        html.Div([
+            html.H3("Mots les plus spécifiques à ce tag"),
+            html.Div(id="table_tag_tfidf", style={"width" : "50%","margin": "auto"}),
+        ], style = {'width': '49%', 'float': 'right', 'display': 'inline-block'})
     ])
     
 ])
@@ -125,6 +158,59 @@ def update_Gtag(TAG, year, type):
     options = tag[tag.tags == TAG].TYPE.unique()
 
     return(fig, fig2, fig3, fig4, min, max, marks, options)
+
+@callback(
+    Output("title_p_tag", "children"),
+    Output("DropDAutTag", "options"),
+    # Output('DropAutTag', "options"),
+    Input("DropDAutTag", "value"),
+    Input('DropTag', "value"),
+    # Input("DropAutTag", "value")
+)
+def title_tag(aut, tag_input): #, sub_aut):
+
+    urls = tag[tag.tags == tag_input]["Unnamed: 0"]
+    tmp = aut_db[aut_db.index.isin(urls)]
+    options_auts = np.append(tmp.auteurs.unique(), "Tous les articles")
+    # options_aut = np.append(net[net.source == auteur].target.unique(), "Tous les auteurs")
+    if aut == "Tous les articles":
+        pass
+    else:
+        tmp = tmp[tmp.auteurs == aut]
+        urls = tmp.index.unique()
+    # if sub_aut == 'Tous les auteurs':
+    #     pass
+    # else:
+
+    #     pass
+    data = pd.read_csv("./data/data_article_clean.csv")
+    text = data[data.URL.isin(urls)].TITRE
+
+
+    text = [html.Li(html.A(titre, href=data[data.TITRE == titre].URL.values[0], target="_blank")) for titre in text]
+
+    return(text, options_auts) #, options_aut)
+
+
+@callback(
+        Output("table_tag", "children"),
+        Output("table_tag_tfidf", "children"),
+        Input('DropTag', "value"),
+        Input('nb_row', "value")
+)
+def table_aut_gen(tag_input, nb_rows):
+
+    path = f"./pages/data/Txt/Tags/Occurences/{tag_input}.csv"
+    dataframe = pd.read_csv(path)
+    dataframe.columns = ["Termes", "Occurences"]
+
+    nb_urls = len(tag[tag.tags == tag_input])
+    path_tfidf = f"./pages/data/Txt/Tags/TF_IDF/{tag_input}.csv"
+    dataframe_tfidf = pd.read_csv(path_tfidf)
+    dataframe_tfidf.columns = ["Termes", "tf-idf"]
+    dataframe_tfidf["tf-idf"] = round(dataframe_tfidf["tf-idf"] / nb_urls, 3)
+
+    return(generate_table(dataframe, max_rows=nb_rows), generate_table(dataframe_tfidf, max_rows=nb_rows))
 
 def layout():
     return(html.Div([
