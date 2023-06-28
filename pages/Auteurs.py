@@ -7,6 +7,7 @@ import plotly.express as px
 import dash_bootstrap_components as dbc
 import pandas as pd
 #from side_bar import sidebar
+import numpy as np
 
 dash.register_page(__name__)
 
@@ -26,6 +27,8 @@ def generate_table(dataframe, max_rows=10):
 aut = pd.read_csv("./pages/data/auteurs_db.csv")
 net = pd.read_csv("./pages/data/auteurs_link.csv")
 aut_link = pd.read_csv("./pages/data/aut2tag.csv")
+tag_db = pd.read_csv("./pages/data/tags_db.csv", index_col = 0)
+
 
 default = "Lucas PIESSAT"
 
@@ -63,11 +66,26 @@ main_div = html.Div(children=[
             dcc.Graph(id="Gaut2")
         ], style={'width': '49%', 'float': 'right', 'display': 'inline-block'}),
         html.Div([
+            html.H3("Collaboration"),
             dcc.Graph(id="Gaut3")
-        ], style={'width': '49%', 'display': 'inline-block'}),
+        ]),
         html.Div([
+            html.H3("Tags utilisés"),
             dcc.Graph(id="Gaut4")
-        ], style={'width': '49%', 'float': 'right', 'display': 'inline-block'})
+        ]), 
+        html.H3("Titre des contributions"),
+        html.Div([
+            dcc.Dropdown(tag_db['tags'].unique(), "Tous les articles", id='DropTagAut'),
+        ], style = {'width': '49%', 'display': 'inline-block'}),
+        # html.Div([
+        #     dcc.Dropdown(net["target"].unique(), id='DropAutTag')
+        # ], style = {'width': '49%', 'float': 'right', 'display': 'inline-block'}),
+        html.Div([
+            html.Br(),
+            html.Ul(id = "title_p"),
+            html.Br()
+        ]),
+        html.Br()
     ])
     
 ])
@@ -104,14 +122,14 @@ def update_Gaut(auteur, year, type):
     fig2.update_layout(transition_duration = 500, showlegend=False)
     
     #Gaut3
-    filtered_df = net[net.source == auteur]
+    filtered_df = net[net.source == auteur].sort_values(by="values")
     fig3 = px.bar(filtered_df, x = "target", y = "values")
-    fig3.update_layout(transition_duration = 500, showlegend=False)
+    fig3.update_layout(transition_duration = 500, showlegend=False, xaxis={'categoryorder':'total descending'})
     
     #Gaut4
-    filtered_df = aut_link[aut_link.source == auteur]
+    filtered_df = aut_link[aut_link.source == auteur].sort_values(by="values")
     fig4 = px.bar(filtered_df, x = "target", y = "values")
-    fig4.update_layout(transition_duration = 500, showlegend=False)
+    fig4.update_layout(transition_duration = 500, showlegend=False, xaxis={'categoryorder':'total descending'})
     
     #Slider
     filtered_df = aut[aut.auteurs == auteur]
@@ -124,6 +142,39 @@ def update_Gaut(auteur, year, type):
     options = aut[aut.auteurs == auteur].TYPE.unique()
 
     return(fig, fig2, fig3, fig4, min, max, marks, options)
+
+@callback(
+    Output("title_p", "children"),
+    Output("DropTagAut", "options"),
+    # Output('DropAutTag', "options"),
+    Input("DropTagAut", "value"),
+    Input('DropAut', "value"),
+    # Input("DropAutTag", "value")
+)
+def title_aut(tag, auteur): #, sub_aut):
+
+    urls = aut[aut.auteurs == auteur]["Unnamed: 0"]
+    tmp = tag_db[tag_db.index.isin(urls)]
+    options_tags = np.append(tmp.tags.unique(), "Tous les articles")
+    # options_aut = np.append(net[net.source == auteur].target.unique(), "Tous les auteurs")
+    if tag == "Tous les articles":
+        pass
+    else:
+        tmp = tmp[tmp.tags == tag]
+        urls = tmp.index.unique()
+    # if sub_aut == 'Tous les auteurs':
+    #     pass
+    # else:
+
+    #     pass
+    data = pd.read_csv("./data/data_article_clean.csv")
+    text = data[data.URL.isin(urls)].TITRE
+
+
+    text = [html.Li(titre) for titre in text]
+
+    return(text, options_tags) #, options_aut)
+
 
 def layout():
     return(html.Div([

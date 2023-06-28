@@ -61,11 +61,13 @@ main_div = html.Div(children=[
             dcc.Graph(id="Gtag2")
         ], style={'width': '49%', 'float': 'right', 'display': 'inline-block'}),
         html.Div([
+            html.H3("Tags commun"),
             dcc.Graph(id="Gtag3")
-        ], style={'width': '49%', 'display': 'inline-block'}),
+        ]),
         html.Div([
+            html.H3("Auteurs"),
             dcc.Graph(id="Gtag4")
-        ], style={'width': '49%', 'float': 'right', 'display': 'inline-block'})
+        ])
     ])
     
 ])
@@ -102,14 +104,14 @@ def update_Gtag(TAG, year, type):
     fig2.update_layout(transition_duration = 500, showlegend=False)
     
     #Gaut3
-    filtered_df = net[net.source == TAG]
+    filtered_df = net[net.source == TAG].sort_values(by="values")
     fig3 = px.bar(filtered_df, x = "target", y = "values")
-    fig3.update_layout(transition_duration = 500, showlegend=False)
+    fig3.update_layout(transition_duration = 500, showlegend=False, xaxis={'categoryorder':'total descending'})
     
     # #Gaut4
-    filtered_df = tag_link[tag_link.source == TAG]
+    filtered_df = tag_link[tag_link.source == TAG].sort_values(by="values")
     fig4 = px.bar(filtered_df, x = "target", y = "values")
-    fig4.update_layout(transition_duration = 500, showlegend=False)
+    fig4.update_layout(transition_duration = 500, showlegend=False, xaxis={'categoryorder':'total descending'})
     
     #Slider
     filtered_df = tag[tag.tags == TAG]

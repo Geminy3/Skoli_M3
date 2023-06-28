@@ -48,8 +48,8 @@ def graph_tag_time():
     temp["tag"] = temp.index
     temp = temp.sort_values(by="value")
 
-    fig = px.bar(temp, x="tag", y="value", color="YEAR")
-    fig.update_layout(barmode='stack', xaxis={'categoryorder':'total descending'})
+    fig = px.bar(temp, x="value", y="tag", color="YEAR")
+    fig.update_layout(barmode='stack', yaxis={'categoryorder':'total ascending'}, height=900, width=1000)
     
     return(fig)
 
@@ -119,11 +119,11 @@ main_div = html.Div([
         html.Div([
             html.P(html.B("Top 15")),
             dcc.Graph(figure=area_tag(), id="area_tag"),
-        ], style = {'width': '49%', 'display': 'inline-block'}),
+        ]),
         html.Div([
             html.P(html.B("Next 15")),
             dcc.Graph(figure=area_tag2(), id="area_tag2"),
-        ], style={'width': '49%', 'float': 'right', 'display': 'inline-block'}),
+        ]),
     ]),
     html.Div([
         html.H3("The big Bla")

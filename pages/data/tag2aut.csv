@@ -25,12 +25,12 @@
 123,Mobilité,Solène MANOUVRIER,1.0
 139,Mobilité,Bruno MARZLOFF,3.0
 146,Mobilité,Brice DURY,4.0
-164,Mobilité,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",1.0
+164,Mobilité,CdD,1.0
 206,Mobilité,Jean-Yves BOULIN,1.0
 233,Mobilité,Sandrine BOUCHER,1.0
 235,Mobilité,Stéphanie BEAUCHENE,2.0
 259,Mobilité,Bernard JOUVE,1.0
-275,Mobilité,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,4.0
+275,Mobilité,DPDP,4.0
 277,Mobilité,Philippe JURY,1.0
 280,Mobilité,Guy POUZARD,1.0
 281,Mobilité,Cécile FÉRÉ,2.0
@@ -66,7 +66,7 @@
 703,Climat,Eddy MAAROUFI,3.0
 707,Climat,Caroline HAMON,1.0
 739,Climat,Gaspard LANDEL,1.0
-767,Climat,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",1.0
+767,Climat,CdD,1.0
 781,Climat,Dominique BOURG,1.0
 845,Climat,Siegfried Zhiqiang WU,1.0
 880,Climat,Philippe JURY,1.0
@@ -109,17 +109,17 @@
 1331,Transition,Mylène MARTIN,1.0
 1343,Transition,Bruno BENOIT,1.0
 1352,Transition,Brice DURY,3.0
-1367,Transition,CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,1.0
+1367,Transition,CCSPL,1.0
 1368,Transition,Collectif ECONOMIE ET HUMANISME,6.0
 1369,Transition, COMMUNAUTÉ URBAINE DE LYON,1.0
-1370,Transition,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",1.0
+1370,Transition,CdD,1.0
 1422,Transition,Alain HAYS,1.0
 1434,Transition,Richard CANTIN,1.0
 1439,Transition,Sandrine BOUCHER,1.0
 1449,Transition,cabinet SILOÉ,1.0
 1463,Transition,Bernard CHOCAT,1.0
 1479,Transition,Hervé LE BRAS,1.0
-1481,Transition,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,2.0
+1481,Transition,DPDP,2.0
 1483,Transition,Philippe JURY,4.0
 1520,Transition,Mike RACO,1.0
 1536,Transition,Nicolas BARRÉ,1.0
@@ -132,7 +132,7 @@
 1569,Transition,Vincent BERTHET,1.0
 1572,Transition,Gabrielle FACK,1.0
 1613,Transition,André MICOUD,1.0
-1617,Transition,"""CFEEDD COLLECTIF FRANÇAIS DE LEDUCATION À LENVIRONNEMENT """,1.0
+1617,Transition,CFEEDD,1.0
 1618,Transition,Olivier MARTEL,2.0
 1674,Transition,Gro Harlem BRUNDTLAND,1.0
 1687,Transition,Lucas PIESSAT,3.0
@@ -297,7 +297,7 @@
 3153,Grand Lyon,Bruno FANTON,1.0
 3160,Grand Lyon,Caroline RICHEMONT,1.0
 3178,Grand Lyon, COMMUNAUTÉ URBAINE DE LYON,1.0
-3290,Grand Lyon,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,23.0
+3290,Grand Lyon,DPDP,23.0
 3309,Grand Lyon,Valérie DEFOY,8.0
 3330,Grand Lyon,Martin VANIER,1.0
 3348,Grand Lyon, Nicole GOLANCZYK,1.0
@@ -362,7 +362,7 @@
 3870,Économie,Étienne RODIN,1.0
 3875,Économie,Bernard CHOCAT,2.0
 3890,Économie,Anne-Cécile RAGOT,1.0
-3893,Économie,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,1.0
+3893,Économie,DPDP,1.0
 3895,Économie,Philippe JURY,2.0
 3897,Économie,Guillaume POITRINAL,1.0
 3911,Économie,Frédéric NAUDON,1.0
@@ -424,7 +424,7 @@
 4487,Solidarité,Anna Paula BEJA HORTA,1.0
 4488,Solidarité,Joana MIRANDA,1.0
 4493,Solidarité,Anne-Cécile RAGOT,1.0
-4496,Solidarité,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,1.0
+4496,Solidarité,DPDP,1.0
 4498,Solidarité,Philippe JURY,1.0
 4502,Solidarité,Cécile FÉRÉ,1.0
 4536,Solidarité,Martin VANIER,2.0
@@ -442,7 +442,7 @@
 4598,Solidarité,Philippe ESTÈBE,1.0
 4614,Solidarité,Manu BODINIER,1.0
 4657,Solidarité,Yannick L’HORTY,1.0
-4658,Solidarité,"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",1.0
+4658,Solidarité,GIPIV,1.0
 4683,Solidarité,Victor CHOMENTOWSKI,1.0
 4690,Solidarité,Jean-Stephan CLERC,1.0
 4691,Solidarité,Gilbert AUGER,1.0
@@ -514,7 +514,7 @@
 5221,Inclusion,Julien TALPIN,1.0
 5229,Inclusion,Mohamed Chérif FERJANI,1.0
 5232,Inclusion,""" HAUT CONSEIL À LINTÉGRATION""",1.0
-5261,Inclusion,"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",2.0
+5261,Inclusion,GIPIV,2.0
 5269,Inclusion,Bruno VOISIN,1.0
 5270,Inclusion,Virginie MILLIOT-BELMADANI,1.0
 5276,Inclusion,François-Régis GUILLAUME,1.0
@@ -553,7 +553,7 @@
 5538,Ressources,Annabelle RICHARD,1.0
 5539,Ressources,Julie JEAMMAUD,1.0
 5564,Ressources,Bruno BENOIT,1.0
-5588,Ressources,CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,1.0
+5588,Ressources,CCSPL,1.0
 5594,Ressources,Didier CAZELLES,4.0
 5596,Ressources,Dieter GRAU,1.0
 5597,Ressources,Jessica READ,1.0
@@ -569,7 +569,7 @@
 5677,Ressources,Marie-Amandine VERMILLON,1.0
 5684,Ressources,Bernard CHOCAT,2.0
 5700,Ressources,Hervé LE BRAS,1.0
-5702,Ressources,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,1.0
+5702,Ressources,DPDP,1.0
 5720,Ressources,Frédéric NAUDON,1.0
 5726,Ressources,Gilles BROCARD,1.0
 5729,Ressources,Marc CHAMBOLLE,1.0
@@ -659,7 +659,7 @@
 6796,Politique de la ville, COMMUNAUTÉ URBAINE DE LYON,1.0
 6837,Politique de la ville,Jean-Marc BERTHET,2.0
 6889,Politique de la ville,Benoît GUILLEMONT,1.0
-6908,Politique de la ville,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,1.0
+6908,Politique de la ville,DPDP,1.0
 7003,Politique de la ville,Valérie SALA PALA,2.0
 7004,Politique de la ville,Patricia BAUMANN,1.0
 7005,Politique de la ville,François ROBERT,1.0
@@ -670,7 +670,7 @@
 7012,Politique de la ville,Marie-Christine JAILLET,1.0
 7019,Politique de la ville,Alain BATTEGAY,1.0
 7035,Politique de la ville,Abdelhafid HAMMOUCHE,1.0
-7070,Politique de la ville,"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",1.0
+7070,Politique de la ville,GIPIV,1.0
 7130,Politique de la ville,Thomas KIRSZBAUM,1.0
 7142,Politique de la ville,Giorgio   DE AMBROGIO,1.0
 7179,Politique de la ville,Fabien GIRARDIN,1.0
@@ -711,7 +711,7 @@
 7382,Urbanisme,Brice DURY,1.0
 7384,Urbanisme,Pascal BAVOUX,1.0
 7394,Urbanisme,Christelle MOREL-JOURNEL,1.0
-7400,Urbanisme,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",1.0
+7400,Urbanisme,CdD,1.0
 7415,Urbanisme,Dominique CARDON,1.0
 7422,Urbanisme,Emmanuelle HENRY,1.0
 7423,Urbanisme,Emmanuel THIMONIER-ROUZET,1.0
@@ -730,7 +730,7 @@
 7481,Urbanisme,Thomas FAILLEBIN,1.0
 7489,Urbanisme,Antoine FLEURY,1.0
 7495,Urbanisme,Bernard JOUVE,1.0
-7511,Urbanisme,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,6.0
+7511,Urbanisme,DPDP,6.0
 7541,Urbanisme,Marine DOUCHY,1.0
 7542,Urbanisme,Elina LUMBROSO,1.0
 7543,Urbanisme,Marina VALENTE,1.0
@@ -881,8 +881,8 @@
 8587,Service public,Caroline RICHEMONT,1.0
 8588,Service public,Brice DURY,1.0
 8589,Service public,Brigitte AURIACOMBE,1.0
-8603,Service public,CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,1.0
-8606,Service public,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",2.0
+8603,Service public,CCSPL,1.0
+8606,Service public,CdD,2.0
 8609,Service public,Didier CAZELLES,1.0
 8639,Service public,Jean-Baptiste LESTRA,1.0
 8650,Service public,Julia GUDEFIN,1.0
@@ -966,7 +966,7 @@
 9252,Valeurs,Jérôme BINDE,1.0
 9279,Valeurs,Sebastian ROCHE,4.0
 9280,Valeurs,Stéphanie BEAUCHENE,1.0
-9320,Valeurs,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,3.0
+9320,Valeurs,DPDP,3.0
 9322,Valeurs,Philippe JURY,1.0
 9340,Valeurs,Georges DECOURT,2.0
 9341,Valeurs,François DUBET,1.0
@@ -1038,7 +1038,7 @@
 9793,Cadre de vie,Caroline RICHEMONT,1.0
 9794,Cadre de vie,Brice DURY,2.0
 9796,Cadre de vie,Pascal BAVOUX,1.0
-9812,Cadre de vie,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",4.0
+9812,Cadre de vie,CdD,4.0
 9815,Cadre de vie,Didier CAZELLES,1.0
 9821,Cadre de vie,Denis CERCLET,1.0
 9831,Cadre de vie,Emmanuel BOUTEFEU,1.0
@@ -1060,7 +1060,7 @@
 9897,Cadre de vie,Valérie DRAMARD,1.0
 9908,Cadre de vie,Bernard MARET,1.0
 9910,Cadre de vie,Antoine BAILLY,1.0
-9923,Cadre de vie,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,7.0
+9923,Cadre de vie,DPDP,7.0
 9925,Cadre de vie,Philippe JURY,1.0
 9931,Cadre de vie,Chris BEYER,1.0
 9932,Cadre de vie,Emilie RICHARD,1.0
@@ -1131,12 +1131,12 @@
 10954,Prospective,Eddy MAAROUFI,4.0
 10966,Prospective,Julie JEAMMAUD,1.0
 10970,Prospective,Nicolas RIO,2.0
-11015,Prospective,CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,1.0
+11015,Prospective,CCSPL,1.0
 11045,Prospective,François ASCHER,1.0
 11049,Prospective,Jean-Louis DAYAN,1.0
 11084,Prospective,Stéphane CORDOBES,1.0
 11113,Prospective,Bernard JOUVE,1.0
-11129,Prospective,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,1.0
+11129,Prospective,DPDP,1.0
 11131,Prospective,Philippe JURY,1.0
 11286,Prospective,Manuel CASTELLS,1.0
 11289,Prospective,François DENIEUL,1.0
@@ -1207,7 +1207,7 @@
 12301,Numérique,Marielle RICHIE-MAGNIER,1.0
 12311,Numérique,Thérèse LAFERRIÈRE,1.0
 12324,Numérique,Boris BEAUDE,2.0
-12335,Numérique,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,1.0
+12335,Numérique,DPDP,1.0
 12382,Numérique,Patrick GUIHOT,1.0
 12449,Numérique,Benoît MEYRONIN,1.0
 12492,Numérique,Manuel CASTELLS,1.0
@@ -1247,7 +1247,7 @@
 12797,Biodiversité,Yves CHALAS,1.0
 12800,Biodiversité,Bruno BENOIT,3.0
 12825,Biodiversité,Collectif ECONOMIE ET HUMANISME,1.0
-12827,Biodiversité,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",1.0
+12827,Biodiversité,CdD,1.0
 12830,Biodiversité,Didier CAZELLES,1.0
 12838,Biodiversité,Delphine BALVET,1.0
 12841,Biodiversité,Dominique BOURG,1.0
@@ -1262,7 +1262,7 @@
 12906,Biodiversité,cabinet SILOÉ,1.0
 12920,Biodiversité,Bernard CHOCAT,1.0
 12923,Biodiversité,Bernard MARET,1.0
-12938,Biodiversité,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,2.0
+12938,Biodiversité,DPDP,2.0
 12955,Biodiversité,Françoise SION,1.0
 12965,Biodiversité,Marc CHAMBOLLE,1.0
 13011,Biodiversité,Vinciane DESPRET,1.0
@@ -1318,7 +1318,7 @@
 13442,Entreprise,Delphine SCIARRINO,1.0
 13443,Entreprise,Ludivine SCIARRINO,1.0
 13518,Entreprise,Étienne RODIN,1.0
-13541,Entreprise,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,4.0
+13541,Entreprise,DPDP,4.0
 13620,Entreprise,Michel CAPRON,1.0
 13621,Entreprise,Idir CHERIEF,1.0
 13706,Entreprise,Alice TAGGER,1.0
@@ -1366,12 +1366,12 @@
 14632,Institution,Christian LEFÈVRE,1.0
 14634,Institution,Collectif ECONOMIE ET HUMANISME,1.0
 14635,Institution, COMMUNAUTÉ URBAINE DE LYON,1.0
-14636,Institution,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",1.0
+14636,Institution,CdD,1.0
 14639,Institution,Didier CAZELLES,1.0
 14663,Institution,François ASCHER,1.0
 14706,Institution,Sebastian ROCHE,1.0
 14731,Institution,Bernard JOUVE,3.0
-14747,Institution,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,4.0
+14747,Institution,DPDP,4.0
 14787,Institution,Martin VANIER,1.0
 14829,Institution,Martine LONG,1.0
 14848,Institution,Sheila ROGERS,1.0
@@ -1383,7 +1383,7 @@
 14890,Institution,Michel RAFFIN,1.0
 14892,Institution,Paul MICHELET,1.0
 14930,Institution,Gérard BERTOLINI,1.0
-14935,Institution,COSF -  COMITÉ OLYMPIQUE SPORTIF FRANÇAIS,1.0
+14935,Institution,COSF,1.0
 14936,Institution,Eurocités  EDURC,1.0
 14939,Institution,Yannick BRUXELLE,2.0
 14947,Institution,Jean-Marie AUZIAS,2.0
@@ -1429,7 +1429,7 @@
 15279,Patrimoine,Jean-Marc BERTHET,2.0
 15304,Patrimoine,Robert JONAC,1.0
 15310,Patrimoine,Stéphanie BEAUCHENE,5.0
-15350,Patrimoine,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,5.0
+15350,Patrimoine,DPDP,5.0
 15378,Patrimoine,Michel COTE,1.0
 15412,Patrimoine,Philippe JARREAU,1.0
 15437,Patrimoine,Yves CROZET,1.0
@@ -1458,7 +1458,7 @@
 15762,Concertation,Emmanuelle LAMBREY,1.0
 15779,Concertation,Benjamin LIPPENS,2.0
 15787,Concertation,Camille DUTHY,1.0
-15842,Concertation,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",4.0
+15842,Concertation,CdD,4.0
 15892,Concertation,Jean-Michel FOURNIAU,1.0
 15917,Concertation,Sophie DE GAILLARD,1.0
 15956,Concertation,Aisling HEALY,1.0
@@ -1519,7 +1519,7 @@
 17111,Culture,René RIZZARDO,1.0
 17120,Culture,Stéphanie LEFORT-AUCHERE,1.0
 17140,Culture,Benoît GUILLEMONT,1.0
-17159,Culture,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,6.0
+17159,Culture,DPDP,6.0
 17171,Culture,Gilles GUILLOT,1.0
 17187,Culture,Michel COTE,1.0
 17188,Culture,Michel WIEVIORKA,2.0
@@ -1546,7 +1546,7 @@
 17603,Clivages,Nicolas RIO,1.0
 17721,Clivages,Sebastian ROCHE,6.0
 17745,Clivages,Bernard DREANO,1.0
-17762,Clivages,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,1.0
+17762,Clivages,DPDP,1.0
 17791,Clivages,Michel WIEVIORKA,1.0
 17971,Clivages,Manon LOISEL,1.0
 17992,Clivages,Nicolas LEPRÊTRE,2.0
@@ -1569,14 +1569,14 @@
 18191,Cohésion sociale,Benjamin LIPPENS,4.0
 18206,Cohésion sociale,Nicolas RIO,1.0
 18208,Cohésion sociale,Sophie KELLER,1.0
-18254,Cohésion sociale,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",1.0
+18254,Cohésion sociale,CdD,1.0
 18278,Cohésion sociale,Elinor KELLY,1.0
 18290,Cohésion sociale,Jean-Jack QUEYRANNE,1.0
 18294,Cohésion sociale,Jean-Marc BERTHET,2.0
 18324,Cohésion sociale,Sebastian ROCHE,6.0
 18351,Cohésion sociale,Abdellatif CHAOUITE,1.0
 18364,Cohésion sociale,Adelina MIRANDA,1.0
-18365,Cohésion sociale,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,1.0
+18365,Cohésion sociale,DPDP,1.0
 18386,Cohésion sociale,François DUBET,1.0
 18433,Cohésion sociale,Pierre MARGOT-CATTIN,1.0
 18475,Cohésion sociale,Richard TOMLINS,1.0
@@ -1628,7 +1628,7 @@
 18940,Santé,Thierry BRUHAT,1.0
 18947,Santé,Antoine LAZARUS,1.0
 18955,Santé,Antoine BAILLY,1.0
-18968,Santé,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,2.0
+18968,Santé,DPDP,2.0
 18982,Santé,pôle universitaire de Lyon GIP,1.0
 18990,Santé,François GRATEAU,1.0
 19002,Santé,Marie-Elizabeth NICOLEAU,1.0
@@ -1694,7 +1694,7 @@
 20012,Insertion,Lionel GASTINE,1.0
 20017,Insertion,Sophie KELLER,1.0
 20335,Insertion,Yannick L’HORTY,1.0
-20336,Insertion,"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",1.0
+20336,Insertion,GIPIV,1.0
 20553,Genre,Sylvie  MAURIS-DEMOURIOUX,2.0
 20564,Genre,Cédric POLÈRE,9.0
 20565,Genre,Ludovic VIÉVARD,2.0
@@ -1751,7 +1751,7 @@
 21263,Éducation,Christelle MOREL-JOURNEL,1.0
 21264,Éducation,"CES - CONSEIL ÉCONOMIQUE, SOCIAL",1.0
 21267,Éducation,Collectif ECONOMIE ET HUMANISME,1.0
-21269,Éducation,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",1.0
+21269,Éducation,CdD,1.0
 21277,Éducation,Delphine GRAVIER,1.0
 21295,Éducation,Fernand BERTEN,1.0
 21297,Éducation,Edgar MORIN,1.0
@@ -1769,7 +1769,7 @@
 21370,Éducation,Aldo NAOURI,1.0
 21373,Éducation,"""Association Nationale DES DIRECTEURS DE LEDUCATION DES VILLES DE FRANCE""",1.0
 21374,Éducation,André GIORDAN,1.0
-21380,Éducation,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,1.0
+21380,Éducation,DPDP,1.0
 21385,Éducation,Guy POUZARD,1.0
 21395,Éducation,Françoise LORCERIE,1.0
 21396,Éducation,Delphine CAVALLO,1.0
@@ -1779,7 +1779,7 @@
 21436,Éducation,Mélanie GAT,1.0
 21443,Éducation,Philippe MEIRIEU,2.0
 21515,Éducation,Pierre MOEGLIN,1.0
-21516,Éducation,"""CFEEDD COLLECTIF FRANÇAIS DE LEDUCATION À LENVIRONNEMENT """,1.0
+21516,Éducation,CFEEDD,1.0
 21517,Éducation,Olivier MARTEL,2.0
 21518,Éducation,Marc JEANNEROD,1.0
 21557,Éducation,François-Régis GUILLAUME,1.0
@@ -1851,7 +1851,7 @@
 22546,Sport,Stéphanie BEAUCHENE,1.0
 22757,Sport,Virginie MILLIOT-BELMADANI,1.0
 22758,Sport,Christian BROMBERGER,1.0
-22774,Sport,COSF -  COMITÉ OLYMPIQUE SPORTIF FRANÇAIS,1.0
+22774,Sport,COSF,1.0
 22816,Sport,Nicolas LEPRÊTRE,1.0
 22960,Recherche,Geoffroy BING,9.0
 22961,Recherche,Catherine PANASSIER,1.0
@@ -1889,7 +1889,7 @@
 23148,Recherche,Sebastian ROCHE,1.0
 23162,Recherche,Hélène REIGNER,1.0
 23171,Recherche,Bernard CHOCAT,1.0
-23189,Recherche,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,2.0
+23189,Recherche,DPDP,2.0
 23208,Recherche,Valérie DEFOY,9.0
 23347,Recherche,Pablo JENSEN,2.0
 23413,Recherche,Marie Clémence LE PAPE,1.0
@@ -1949,13 +1949,13 @@
 24319,Travail,Jean-François TCHERNIA,1.0
 24326,Travail,Jean-Yves BOULIN,1.0
 24331,Travail,Jean BOISSONNAT,1.0
-24395,Travail,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,9.0
+24395,Travail,DPDP,9.0
 24408,Travail,Gilles JEANNOT,1.0
 24420,Travail,Lucie VERCHERE,1.0
 24470,Travail,Léa PEYRON,1.0
 24485,Travail,Eric CEDIEY,1.0
 24502,Travail,John WRENCH,1.0
-24557,Travail,"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",1.0
+24557,Travail,GIPIV,1.0
 24558,Travail,Patrick DESCHAMPS,1.0
 24561,Travail,André GORZ,1.0
 24611,Travail,Eve DENJEAN,4.0
@@ -1989,7 +1989,7 @@
 24945,Attractivité,Laurent ARON,1.0
 24946,Attractivité, LA MAISON DU FLEUVE RHÔNE,1.0
 24958,Attractivité,Stéphanie BEAUCHENE,4.0
-24998,Attractivité,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,17.0
+24998,Attractivité,DPDP,17.0
 25056,Attractivité, Nicole GOLANCZYK,1.0
 25111,Attractivité,Franck TANNERY,1.0
 25141,Attractivité,Michel RAFFIN,1.0
@@ -2034,7 +2034,7 @@
 25983,Développement durable,Boris CHABANEL,1.0
 25985,Développement durable,Caroline JANUEL,1.0
 26003,Développement durable,Aurélien BOUTAUD,1.0
-26090,Développement durable,CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,1.0
+26090,Développement durable,CCSPL,1.0
 26413,Développement durable,Manon LOISEL,1.0
 26444,Développement durable,Hervé CHAYGNEAUD-DUPUY,1.0
 26445,Développement durable,Julie GAYRAL,1.0
@@ -2091,7 +2091,7 @@
 27826,Évaluation,Valérie PUGIN,1.0
 27838,Évaluation,Eddy MAAROUFI,1.0
 27953,Évaluation,(LMDE) LA MUTUELLE DES ETUDIANTS,1.0
-28013,Évaluation,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,2.0
+28013,Évaluation,DPDP,2.0
 28069,Évaluation,Mélanie GAT,1.0
 28180,Évaluation,Pierre WINICKI,1.0
 28240,Évaluation,Olivier OULLIER,1.0
@@ -2232,7 +2232,7 @@
 30895,Finance,Camille GUEZENNEC,1.0
 30896,Finance,Guillaume MALOCHET,1.0
 30934,Finance,Dominique LORRAIN,1.0
-31028,Finance,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,1.0
+31028,Finance,DPDP,1.0
 31104,Finance,Thierry THEURILLAT,1.0
 31105,Finance,Jean-François DRAPERI,1.0
 31108,Finance,Idir CHERIEF,1.0
@@ -2347,7 +2347,7 @@
 32828,International,Anna Paula BEJA HORTA,1.0
 32829,International,Joana MIRANDA,1.0
 32836,International,Adelina MIRANDA,1.0
-32837,International,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,21.0
+32837,International,DPDP,21.0
 32849,International,Gilles GUILLOT,1.0
 32854,International,Françoise SION,1.0
 32867,International,Marine DOUCHY,1.0
@@ -3418,11 +3418,11 @@
 97105,Christian LEFÈVRE,Entreprise,2.0
 97107,Christian LEFÈVRE,Institution,1.0
 97137,Christian LEFÈVRE,International,2.0
-97688,CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,Transition,1.0
-97695,CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,Ressources,1.0
-97700,CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,Service public,1.0
-97704,CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,Prospective,1.0
-97729,CCSPL  COMMISSION CONSULTATIVE DES SERVICES PUBLICS LOCAUX DU GRAND LYON,Développement durable,1.0
+97688,CCSPL,Transition,1.0
+97695,CCSPL,Ressources,1.0
+97700,CCSPL,Service public,1.0
+97704,CCSPL,Prospective,1.0
+97729,CCSPL,Développement durable,1.0
 98291,Collectif ECONOMIE ET HUMANISME,Transition,6.0
 98295,Collectif ECONOMIE ET HUMANISME,Économie,1.0
 98296,Collectif ECONOMIE ET HUMANISME,Solidarité,1.0
@@ -3438,17 +3438,17 @@
 98916, COMMUNAUTÉ URBAINE DE LYON,Institution,1.0
 98923, COMMUNAUTÉ URBAINE DE LYON,Santé,1.0
 98975, COMMUNAUTÉ URBAINE DE LYON,Sécurité,1.0
-99495,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Mobilité,1.0
-99496,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Climat,1.0
-99497,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Transition,1.0
-99507,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Urbanisme,1.0
-99509,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Service public,2.0
-99511,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Cadre de vie,4.0
-99516,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Biodiversité,1.0
-99519,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Institution,1.0
-99521,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Concertation,4.0
-99525,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Cohésion sociale,1.0
-99530,"""CdD - CONSEIL DE DÉVELOPPEMENT DE LAGGLOMÉRATION LYONNAISE""",Éducation,1.0
+99495,CdD,Mobilité,1.0
+99496,CdD,Climat,1.0
+99497,CdD,Transition,1.0
+99507,CdD,Urbanisme,1.0
+99509,CdD,Service public,2.0
+99511,CdD,Cadre de vie,4.0
+99516,CdD,Biodiversité,1.0
+99519,CdD,Institution,1.0
+99521,CdD,Concertation,4.0
+99525,CdD,Cohésion sociale,1.0
+99530,CdD,Éducation,1.0
 100118,Diane SAMAMA,Numérique,1.0
 100721,Roland JOUVENT,Numérique,1.0
 101313,Didier CAZELLES,Ressources,4.0
@@ -3722,33 +3722,33 @@
 165231,Hervé LE BRAS,Ressources,1.0
 165855,Adelina MIRANDA,Cohésion sociale,1.0
 165879,Adelina MIRANDA,International,1.0
-166428,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Mobilité,4.0
-166430,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Transition,2.0
-166433,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Grand Lyon,23.0
-166434,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Économie,1.0
-166435,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Solidarité,1.0
-166437,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Ressources,1.0
-166439,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Politique de la ville,1.0
-166440,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Urbanisme,6.0
-166443,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Valeurs,3.0
-166444,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Cadre de vie,7.0
-166446,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Prospective,1.0
-166448,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Numérique,1.0
-166449,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Biodiversité,2.0
-166450,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Entreprise,4.0
-166452,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Institution,4.0
-166453,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Patrimoine,5.0
-166456,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Culture,6.0
-166457,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Clivages,1.0
-166458,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Cohésion sociale,1.0
-166459,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Santé,2.0
-166463,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Éducation,1.0
-166466,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Recherche,2.0
-166468,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Travail,9.0
-166469,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Attractivité,17.0
-166474,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Évaluation,2.0
-166479,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,Finance,1.0
-166482,DPDP -  DIRECTION DE LA PROSPECTIVE ET DU DIALOGUE PUBLIC,International,21.0
+166428,DPDP,Mobilité,4.0
+166430,DPDP,Transition,2.0
+166433,DPDP,Grand Lyon,23.0
+166434,DPDP,Économie,1.0
+166435,DPDP,Solidarité,1.0
+166437,DPDP,Ressources,1.0
+166439,DPDP,Politique de la ville,1.0
+166440,DPDP,Urbanisme,6.0
+166443,DPDP,Valeurs,3.0
+166444,DPDP,Cadre de vie,7.0
+166446,DPDP,Prospective,1.0
+166448,DPDP,Numérique,1.0
+166449,DPDP,Biodiversité,2.0
+166450,DPDP,Entreprise,4.0
+166452,DPDP,Institution,4.0
+166453,DPDP,Patrimoine,5.0
+166456,DPDP,Culture,6.0
+166457,DPDP,Clivages,1.0
+166458,DPDP,Cohésion sociale,1.0
+166459,DPDP,Santé,2.0
+166463,DPDP,Éducation,1.0
+166466,DPDP,Recherche,2.0
+166468,DPDP,Travail,9.0
+166469,DPDP,Attractivité,17.0
+166474,DPDP,Évaluation,2.0
+166479,DPDP,Finance,1.0
+166482,DPDP,International,21.0
 167035,Guillaume GOURGUES,Citoyenneté,1.0
 167073,Guillaume GOURGUES,Démocratie,1.0
 167634,Philippe JURY,Mobilité,1.0
@@ -4050,8 +4050,8 @@
 246676,""" HAUT CONSEIL À LINTÉGRATION""",Laïcité,1.0
 247279,Bétoule FEKKAR-LAMBIOTTE,Laïcité,1.0
 247868,Pierre MOEGLIN,Éducation,1.0
-248438,"""CFEEDD COLLECTIF FRANÇAIS DE LEDUCATION À LENVIRONNEMENT """,Transition,1.0
-248471,"""CFEEDD COLLECTIF FRANÇAIS DE LEDUCATION À LENVIRONNEMENT """,Éducation,1.0
+248438,CFEEDD,Transition,1.0
+248471,CFEEDD,Éducation,1.0
 249041,Olivier MARTEL,Transition,2.0
 249074,Olivier MARTEL,Éducation,2.0
 249673,Marc JEANNEROD,Santé,1.0
@@ -4104,11 +4104,11 @@
 262926,François DENIEUL,Prospective,1.0
 263518,Yannick L’HORTY,Solidarité,1.0
 263544,Yannick L’HORTY,Insertion,1.0
-264121,"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",Solidarité,1.0
-264122,"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",Inclusion,2.0
-264125,"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",Politique de la ville,1.0
-264147,"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",Insertion,1.0
-264154,"""Groupe dInitiatives Pour lIntégration dans la Ville GIPIV""",Travail,1.0
+264121,GIPIV,Solidarité,1.0
+264122,GIPIV,Inclusion,2.0
+264125,GIPIV,Politique de la ville,1.0
+264147,GIPIV,Insertion,1.0
+264154,GIPIV,Travail,1.0
 264751,Patrick DESCHAMPS,Genre,1.0
 264757,Patrick DESCHAMPS,Travail,1.0
 265362,Alain BYENAIMÉ,Démocratie,1.0
@@ -4154,8 +4154,8 @@
 279196,Victor CHOMENTOWSKI,Solidarité,1.0
 279203,Victor CHOMENTOWSKI,Service public,1.0
 279240,Victor CHOMENTOWSKI,Finance,1.0
-279816,COSF -  COMITÉ OLYMPIQUE SPORTIF FRANÇAIS,Institution,1.0
-279829,COSF -  COMITÉ OLYMPIQUE SPORTIF FRANÇAIS,Sport,1.0
+279816,COSF,Institution,1.0
+279829,COSF,Sport,1.0
 280419,Eurocités  EDURC,Institution,1.0
 280449,Eurocités  EDURC,International,1.0
 281010,Charlotte RECOQUILLON,Urbanisme,1.0
