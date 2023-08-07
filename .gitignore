@@ -4,3 +4,4 @@ urls
 api_key
 TEST_Chat/env
 TEST_Chat/HF_api_key
+export2txt
