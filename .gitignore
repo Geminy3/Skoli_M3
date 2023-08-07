@@ -6,3 +6,4 @@ TEST_Chat/env
 TEST_Chat/HF_api_key
 export2txt
 TEST_Chat/chroma/chroma.sqlite3
+env2

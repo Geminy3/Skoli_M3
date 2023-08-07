@@ -56,6 +56,6 @@ transformers==4.30.2
 typer==0.7.0
 typing_extensions==4.6.3
 tzdata==2023.3
-urllib3==2.0.3
+urllib3==2.0.4
 wasabi==1.1.2
 yarl==1.9.2
