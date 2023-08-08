@@ -1,30 +1,11 @@
 from dash import Dash, html, dcc, callback, State
 import dash
-# import dash_core_components as dcc 
-# import dash_html_components as html 
 from dash.dependencies import Input, Output
-# import plotly.express as px
-# import dash_bootstrap_components as dbc
-# import pandas as pd
-# from langchain.vectorstores import Chroma
-# from langchain.document_loaders import TextLoader
-# from langchain.embeddings import LlamaCppEmbeddings
-# from langchain.vectorstores import Chroma
-# from langchain.text_splitter import CharacterTextSplitter, RecursiveCharacterTextSplitter
-# from langchain.llms import OpenAI
-# from langchain.chains import ConversationalRetrievalChain
-# from langchain.llms import LlamaCpp
-# from langchain.chat_models import ChatOpenAI
-# from langchain import PromptTemplate, LLMChain
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-# from langchain.chains import RetrievalQA
-# from langchain.llms import LlamaCpp
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-# from langchain.embeddings import HuggingFaceEmbeddings
-# from langchain import HuggingFaceHub
-# from langchain.prompts import PromptTemplate
+
 from Lib.chat import chat
 import re
 
@@ -100,5 +81,4 @@ def interrogate_chat(n_clicks, value):
     return(ret, docs)
 
 def layout():
-
     return(main_div)

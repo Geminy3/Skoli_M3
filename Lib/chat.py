@@ -25,6 +25,7 @@ def chat(llm_info = None, kMos = 100, question = ""):
 
     prompt_template = """
     Utilise uniquement les informations données en contexte pour répondre de manières longues et détaillées aux questions posées.
+    Si l'information n'est pas présente dans les documents en contexte, n'invente pas de réponse.
     Cite des passages des informations en contexte pour appuyer tes réponses. N'invente pas de citation si tu ne cite pas précisément les informations en contexte
     N'essaye pas d'inventer de réponses si tu ne trouve pas la réponse.
     Propose des réponses points par points.
@@ -62,7 +63,7 @@ def chat(llm_info = None, kMos = 100, question = ""):
 
         case "OAI":
             
-                score_threshold = 0.2
+                score_threshold = 0.1
 
                 while True:
                         
