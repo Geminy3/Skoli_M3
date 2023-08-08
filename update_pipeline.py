@@ -15,12 +15,14 @@ EXPORT_FILE = "M3urls3.txt"
 HTML_FOLDER = "../urls/"
 DATA_FOLDER = "../data/"
 
+print("------------ GETTING URL ------------\n")
 Lib.URLM3.getURLSM3(EXPORT_FILE, HTML_FOLDER, DATA_FOLDER)
 
+print("\n------------ SCRAPPING HTML ------------\n")
 EXPORT_FOLDER = "../data2/"
-
 Lib.SCRAPM3.scrapM3(EXPORT_FOLDER, HTML_FOLDER, DATA_FOLDER, EXPORT_FILE)
 
+print("\n------------ CLEANING & CREATINGS FILES DEPENDENCIES ------------\n")
 
 #### TO DO
 #
@@ -36,3 +38,6 @@ Lib.SCRAPM3.scrapM3(EXPORT_FOLDER, HTML_FOLDER, DATA_FOLDER, EXPORT_FILE)
 #
 # 1. Problème dans le chargement des articles sur le site M3. Moins d'article à la seconde passe
 # 2. Pas résolu le problème de connection aborted dans la récupération des URLs (Try/Except enlevé)
+
+
+print("------------ UPDATE DONE ------------")
