@@ -22,3 +22,17 @@ EXPORT_FOLDER = "../data2/"
 Lib.SCRAPM3.scrapM3(EXPORT_FOLDER, HTML_FOLDER, DATA_FOLDER, EXPORT_FILE)
 
 
+#### TO DO
+#
+# 1. Les fichiers du dossier ./res issus des manip de Analyse_reseau
+# 2. Récupérer les manips pour la création des fichiers textes Analyse_items + Analyse_text
+# 3. Produire toutes les ressources textes pour le site. 
+# 4. Annoter le code
+# 5. Prévoir que le déploiement soit simple (Makefile ?)
+# 6. OU intégrer des outils dans le site pour MAJ.
+
+
+#### BUGS
+#
+# 1. Problème dans le chargement des articles sur le site M3. Moins d'article à la seconde passe
+# 2. Pas résolu le problème de connection aborted dans la récupération des URLs (Try/Except enlevé)

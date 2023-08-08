@@ -214,7 +214,35 @@ def scrapM3(EXPORT_FOLDER, HTML_FOLDER, DATA_FOLDER, EXPORT_FILE):
     for keys in container:
         print(keys, ":", len(container[keys]))
         
+        
+    ### EXPORT MULT_ITEM
     with open(EXPORT_FOLDER+"data_items.json", "w", encoding="utf8") as f:
         f.write(json.dumps(mult_items, indent=4))
+        
+    ### EXPORT ARTICLE_DATA
     tab = pd.DataFrame(container)
     tab.to_csv(EXPORT_FOLDER+"data_article.csv")
+    # tab.DATE = pd.to_datetime(tab.DATE) #On mac
+    # tab.DATE = pd.to_datetime(tab.DATE, format="%d/%m/%y") #On mac
+    
+    
+    ### CLEANING ARTICLE_DATA
+    tab.DATE = pd.to_datetime(tab.DATE, format="mixed", dayfirst=True) #On PC
+    df2 = tab.loc[tab.TITRE.duplicated() != True,].sort_values(by="IDinDB")
+    dfnotna = df2.loc[df2.IDinDB.notna()]
+    print(f"No NA : {dfnotna.shape}\nWith NA : {df2.shape}")
+    df2["YEAR"] = df2.DATE.dt.year
+    df2.to_csv(EXPORT_FOLDER+"data_article_clean.csv")
+    
+    ### CLEANING MULT_ITEMS DATA
+    print("length mult_items base", len(mult_items.keys()))
+    dedoubl = pd.read_csv(EXPORT_FOLDER+"data_article_clean.csv")
+    remove_list = list(set(mult_items.keys()) - set(list(dedoubl.URL)))
+    for item in remove_list:    
+        del mult_items[item]
+    with open(EXPORT_FOLDER+"data_items_clean.json", "w", encoding="utf8") as f:
+        f.write(json.dumps(mult_items, indent=4))
+    print("length mult-items dédoublonné", len(mult_items.keys()))
+    print("lenght df dédoublonné", len(dedoubl))
+    
+    
