@@ -5,7 +5,6 @@ from langchain.chains import RetrievalQA
 from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
 
-
 with open("./TEST_chat/api_key", "r", encoding="utf-8") as key:
     api_key = key.read()
 
@@ -14,21 +13,20 @@ with open("./TEST_chat/HF_api_key", "r", encoding="utf-8") as key:
 
 embeddings_model_name="all-MiniLM-L6-v2"
 embeddings = HuggingFaceEmbeddings(model_name=embeddings_model_name, model_kwargs={'device' : 'cpu'})
-vectorstore2 = Chroma(persist_directory = "./TEST_chat/chroma", embedding_function=embeddings)
+vectorstore2 = Chroma(persist_directory = "./TEST_Chat/chroma", embedding_function=embeddings)
 
 
 def chat(llm_info = None, kMos = 100, question = ""):
     
+    print(len(vectorstore2.get()["documents"]))
     print("LOG : chat trigerred")
     #user_message = input('Quelle questinon souhaitez vous poser ? :\n')
     llmOAI = ChatOpenAI(openai_api_key=api_key, model_name="gpt-3.5-turbo-16k")
 
     prompt_template = """
-    Utilise uniquement les informations données en contexte pour répondre de manières longues et détaillées aux questions posées.
-    Si l'information n'est pas présente dans les documents en contexte, n'invente pas de réponse.
-    Cite des passages des informations en contexte pour appuyer tes réponses. N'invente pas de citation si tu ne cite pas précisément les informations en contexte
-    N'essaye pas d'inventer de réponses si tu ne trouve pas la réponse.
-    Propose des réponses points par points.
+    1. Utilise uniquement les informations données en contexte pour répondre de manières longues et détaillées aux questions posées.
+    2. Si l'information n'est pas présente dans les documents en contexte, n'invente pas de réponse.
+    3. Répond points par points.
     {context}
     Question: {question}"""
 
