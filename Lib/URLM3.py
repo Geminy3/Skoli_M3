@@ -67,16 +67,17 @@ def read_urls(EXPORT_FILE):
     print(len(urls))
     return(urls)
 
-def getURLSM3(EXPORT_FILE, HTML_FOLDER, DATA_FOLDER):
+def getURLSM3(EXPORT_FILE, HTML_FOLDER, DATA_FOLDER, STATUS):
     
     verify = ""
-    STATUS = input( "What do you want to do ? [REBOOT][UPDATE][...] :\n")
+    #STATUS = input( "What do you want to do ? [REBOOT][UPDATE][...] :\n")
     if STATUS == "REBOOT":
         verify = input("REBOOT entraînera la reconstitution complète de la base de données. Êtes-vous sûr de vouloir continuer ? [Y/n]:\n")
             
     
     url_base = 'https://www.millenaire3.com'
     errors = []
+    clean_urls = []
 
     if STATUS == "REBOOT" and verify != "n":
         print("REBOOT")
@@ -114,15 +115,17 @@ def getURLSM3(EXPORT_FILE, HTML_FOLDER, DATA_FOLDER):
                 pass
             else:
                 print(f"\r{i} / {len(urls)}: {urls[i]}", end = "")
-
-                page = requests.get(urls[i])
-                if page.status_code == 200:
-                    getAllUrl(urls[i], url_base, urls, EXPORT_FILE, DATA_FOLDER, page)
-                    with open(f"{HTML_FOLDER}{URL}.html", "w", encoding="utf-8") as f:
-                        clean_urls.append(urls[i])
-                        f.write(page.text)
-                else:
-                    print(f"\r{urls[i]} ", page.status_code, end = "")
-                    errors.append(urls[i])
-                time.sleep(0.5)
+                try:
+                    page = requests.get(urls[i])
+                    if page.status_code == 200:
+                        getAllUrl(urls[i], url_base, urls, EXPORT_FILE, DATA_FOLDER, page)
+                        with open(f"{HTML_FOLDER}{URL}.html", "w", encoding="utf-8") as f:
+                            clean_urls.append(urls[i])
+                            f.write(page.text)
+                    else:
+                        print(f"\r{urls[i]} ", page.status_code, end = "")
+                        errors.append(urls[i])
+                    time.sleep(0.5)
+                except:
+                    print(f"Wrong URL : {urls[i]}")
             i += 1
