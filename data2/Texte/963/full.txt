@@ -1,0 +1,4 @@
+Modéliser les liens entre bien-être et urbanisme
+Ce travail s’inscrit dans la continuité d’un précédent rapport qui abordait la question de la mesure du bien-être à l’échelle d’un projet urbain. Il vise à explorer la possibilité d’une modélisation du bien-être en lien avec les enjeux d’aménagement d’un quartier ou d’une ville. 
+Plus particulièrement, il essaie d’identifier les déterminants du bien-être qui relèvent de l’aménagement du territoire, en proposant quelques chaînes de causalité assez simples qui pourraient permettre d’envisager une modélisation.
+Sommaire :  Introduction1. Les déterminants du bien-être : cadrage théorique2. L’importance relative des déterminants du bien-être : éléments de quantification à partir de la France3. Les déterminants du bien-être liés à l’urbanisme : quelques éléments de chiffrageConclusion et résuméBibliographie   
