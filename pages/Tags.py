@@ -27,7 +27,7 @@ def generate_table(dataframe, max_rows=10):
 tag = pd.read_csv("./pages/data/tags_db.csv")
 net = pd.read_csv("./pages/data/tags_link.csv")
 tag_link = pd.read_csv("./pages/data/tag2aut.csv")
-aut_db = pd.read_csv("./pages/data/auteurs_db.csv", index_col = 0)
+aut_db = pd.read_csv("./pages/data/auteurs_db.csv")
 default = 'Mobilité'
 
 main_div = html.Div(children=[
@@ -142,8 +142,8 @@ def update_Gtag(TAG, year, type):
     fig3.update_layout(transition_duration = 500, showlegend=False, xaxis={'categoryorder':'total descending'})
     
     # #Gaut4
-    filtered_df = tag_link[tag_link.source == TAG].sort_values(by="values")
-    fig4 = px.bar(filtered_df, x = "target", y = "values")
+    filtered_df = tag_link[tag_link.target == TAG].sort_values(by="values")
+    fig4 = px.bar(filtered_df, x = "source", y = "values")
     fig4.update_layout(transition_duration = 500, showlegend=False, xaxis={'categoryorder':'total descending'})
     
     #Slider
@@ -174,10 +174,10 @@ def title_tag(aut, tag_input): #, sub_aut):
     options_auts = np.append(tmp.auteurs.unique(), "Tous les articles")
     # options_aut = np.append(net[net.source == auteur].target.unique(), "Tous les auteurs")
     if aut == "Tous les articles":
-        pass
+        urls = tmp.url.unique()
     else:
         tmp = tmp[tmp.auteurs == aut]
-        urls = tmp.index.unique()
+        urls = tmp.url.unique()
     # if sub_aut == 'Tous les auteurs':
     #     pass
     # else:
@@ -185,7 +185,6 @@ def title_tag(aut, tag_input): #, sub_aut):
     #     pass
     data = pd.read_csv("./data/data_article_clean.csv")
     text = data[data.URL.isin(urls)].TITRE
-
 
     text = [html.Li(html.A(titre, href=data[data.TITRE == titre].URL.values[0], target="_blank")) for titre in text]
 

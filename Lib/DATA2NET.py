@@ -1,11 +1,8 @@
 
 import networkx as nx
 from bs4 import BeautifulSoup
-import requests
-import re
 import json
 import pandas as pd
-import os
 import numpy as np
 
 EXPORT_FOLDER = "./res/"
@@ -128,28 +125,20 @@ def auteurs_net(EXPORT_FOLDER, mult_items):
     # nx.draw(g)
 
     # nx.draw(G)
-    for i, item in enumerate(nx.connected_components(G)):
-        if len(item) > 2:
-            print(i, len(item), item)
+
+    #print(aut_dic)
+
     export = nx.cytoscape_data(G)
     with open(EXPORT_FOLDER+"aut_net.json", "w", encoding="utf8") as f:
         f.write(json.dumps(export))
 
     value = []
     for aut in aut_dic.keys():
-        print(f"\r{aut_dic[aut]['value']}")
+        #print(f"\r{aut_dic[aut]['value']}")
         value.append(aut_dic[aut]["value"])
     val = pd.DataFrame(value)
     val.index = aut_dic.keys()
     val.to_csv(EXPORT_FOLDER+"autnodes_attributes.csv")
-
-    g = nx.Graph(aut_dic)
-    d = nx.to_pandas_adjacency(g)
-    d.values[[np.arange(len(d))]*2] = np.nan
-    d = d.stack().reset_index()
-    d.columns = ["source", "target", "values"]
-    d = d[d["values"] > 0]
-    d.to_csv("./pages/data/aut2tag.csv")
 
 def tag2aut(EXPORT_FOLDER, mult_items):
 
@@ -171,35 +160,33 @@ def tag2aut(EXPORT_FOLDER, mult_items):
             elif tag in G.nodes:
                 G.nodes[tag]["value"] += 1
 
+    # for i, node in enumerate(G.nodes):
+    #     print(f"\r{i, node}", end="")
+    #     for item in mult_items.values():
+    #         tags = item["tags"]
+    #         auts = item["auteurs"]
+    #         if node in tags:
+    #             for aut in auts:
+    #                 if aut == 'A' or aut == "N":
+    #                     continue
+    #                 if node != aut and not G.has_edge(aut, node):
+    #                     G.add_edge(node, aut, weight = 1)
+    #                 elif node != aut and G.has_edge(aut, node):
+    #                     G.edges[(node, aut)]["weight"] += 1
+            #     for tag in tags:
+            #         if tag == 'A' or tag == "N":
+            #             continue
+            #         if node != tag and not G.has_edge(tag, node):
+            #             G.add_edge(node, tag, weight = 1)
+            #         elif node != tag and G.has_edge(tag, node):
+            #             G.edges[(node, tag)]["weight"] += 1
+
     for i, node in enumerate(G.nodes):
         print(f"\r{i, node}", end="")
         for item in mult_items.values():
             tags = item["tags"]
             auts = item["auteurs"]
-            if node in tags:
-                for aut in auts:
-                    if aut == 'A' or aut == "N":
-                        continue
-                    if node != aut and not G.has_edge(aut, node):
-                        G.add_edge(node, aut, weight = 1)
-                    elif node != aut and G.has_edge(aut, node):
-                        G.edges[(node, aut)]["weight"] += 1
-                for tag in tags:
-                    if tag == 'A' or tag == "N":
-                        continue
-                    if node != tag and not G.has_edge(tag, node):
-                        G.add_edge(node, tag, weight = 1)
-                    elif node != tag and G.has_edge(tag, node):
-                        G.edges[(node, tag)]["weight"] += 1
-                continue
             if node in auts:
-                for aut in auts:
-                    if aut == 'A' or aut == "N":
-                        continue
-                    if node != aut and not G.has_edge(aut, node):
-                        G.add_edge(node, aut, weight = 1)
-                    elif node != aut and G.has_edge(aut, node):
-                        G.edges[(node, aut)]["weight"] += 1
                 for tag in tags:
                     if tag == 'A' or tag == "N":
                         continue
@@ -223,10 +210,11 @@ def tag2aut(EXPORT_FOLDER, mult_items):
     val.to_csv(EXPORT_FOLDER+"allnodes_attributes.csv")
 
     d = nx.to_pandas_adjacency(G)
-    d.values[[np.arange(len(d))]*2] = np.nan
+    #d.values[[np.arange(len(d))]*2] = np.nan
     d = d.stack().reset_index()
     d.columns = ["source", "target", "values"]
     d = d[d["values"] > 0]
+    print(d)
     d.to_csv("./pages/data/tag2aut.csv")
 
 def auteurs_net2(EXPORT_FOLDER, mult_items):
@@ -285,7 +273,7 @@ def auteurs_links(mult_items):
 
     g = nx.Graph(aut_dic)
     d = nx.to_pandas_adjacency(g)
-    d.values[[np.arange(len(d))]*2] = np.nan
+    #d.values[[np.arange(len(d))]*2] = np.nan
     d = d.stack().reset_index()
     d.columns = ["source", "target", "values"]
     d = d[d["values"] > 0]
@@ -317,20 +305,20 @@ def tag_links(mult_items):
 
     g = nx.Graph(tag_dic)
     d = nx.to_pandas_adjacency(g)
-    d.values[[np.arange(len(d))]*2] = np.nan
+    #d.values[[np.arange(len(d))]*2] = np.nan
     d = d.stack().reset_index()
     d.columns = ["source", "target", "values"]
     d = d[d["values"] > 0]
     d.to_csv("./pages/data/tags_link.csv")
 
 def auteurs_db(df):
-    aut = pd.read_csv("./res/auteurs.csv", index_col=0)
+    aut = pd.read_csv("./res/auteurs.csv")
     tmp = aut.set_index("url").join(df.set_index("URL")[["YEAR", "DATE", "TYPE"]])
     tmp = tmp.loc[tmp.DATE.notna()]
     tmp.to_csv("./pages/data/auteurs_db.csv")
 
 def tags_db(df):
-    tag = pd.read_csv("./res/tags.csv", index_col=0)
+    tag = pd.read_csv("./res/tags.csv")
     tmp = tag.set_index("url").join(df.set_index("URL")[["YEAR", "DATE", "TYPE"]])
     tmp = tmp.loc[tmp.DATE.notna()]
     tmp.to_csv("./pages/data/tags_db.csv")

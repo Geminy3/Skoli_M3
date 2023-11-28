@@ -1,1 +1,1503 @@
 ,source,target,values
+1,Culture,Inclusion,11.0
+2,Culture,Clivages,1.0
+5,Culture,Entreprise,7.0
+6,Culture,Temps,2.0
+7,Culture,Transition,7.0
+9,Culture,Numérique,35.0
+10,Culture,Usage,4.0
+11,Culture,Innovation,16.0
+12,Culture,Solidarité,2.0
+13,Culture,Valeurs,6.0
+14,Culture,Économie,1.0
+15,Culture,Cadre de vie,4.0
+16,Culture,Citoyenneté,4.0
+17,Culture,Veille M3,24.0
+18,Culture,Cohésion sociale,35.0
+19,Culture,Biodiversité,2.0
+20,Culture,Politique de la ville,18.0
+21,Culture,Santé,3.0
+23,Culture,Ressources,11.0
+24,Culture,Prospective,24.0
+25,Culture,Éducation,4.0
+28,Culture,Genre,2.0
+29,Culture,Insertion,7.0
+30,Culture,International,5.0
+31,Culture,Jeunesse,20.0
+32,Culture,Institution,4.0
+35,Culture,Laïcité,3.0
+37,Culture,Urbanisme,7.0
+38,Culture,Grand Lyon,30.0
+39,Culture,Justice,4.0
+40,Culture,Patrimoine,51.0
+41,Culture,Attractivité,20.0
+42,Culture,Data,2.0
+44,Culture,Démocratie,2.0
+45,Culture,Recherche,2.0
+50,Culture,Sport,1.0
+53,Culture,Égalité,1.0
+54,Culture,Action publique,3.0
+58,Inclusion,Culture,11.0
+60,Inclusion,Clivages,16.0
+61,Inclusion,Pauvreté,38.0
+62,Inclusion,Travail,15.0
+63,Inclusion,Entreprise,1.0
+65,Inclusion,Transition,1.0
+67,Inclusion,Numérique,7.0
+68,Inclusion,Usage,1.0
+69,Inclusion,Innovation,9.0
+70,Inclusion,Solidarité,77.0
+71,Inclusion,Valeurs,12.0
+72,Inclusion,Économie,4.0
+73,Inclusion,Cadre de vie,11.0
+74,Inclusion,Citoyenneté,18.0
+75,Inclusion,Veille M3,6.0
+76,Inclusion,Cohésion sociale,38.0
+78,Inclusion,Politique de la ville,33.0
+79,Inclusion,Santé,26.0
+80,Inclusion,Handicap,41.0
+82,Inclusion,Prospective,4.0
+83,Inclusion,Éducation,9.0
+85,Inclusion,Service public,3.0
+87,Inclusion,Insertion,2.0
+88,Inclusion,International,22.0
+90,Inclusion,Institution,7.0
+93,Inclusion,Laïcité,6.0
+94,Inclusion,Évaluation,4.0
+95,Inclusion,Urbanisme,3.0
+96,Inclusion,Grand Lyon,1.0
+97,Inclusion,Justice,1.0
+98,Inclusion,Patrimoine,5.0
+99,Inclusion,Attractivité,2.0
+101,Inclusion,Développement durable,1.0
+102,Inclusion,Démocratie,4.0
+103,Inclusion,Recherche,6.0
+105,Inclusion,Social,8.0
+106,Inclusion,Concertation,1.0
+107,Inclusion,Personnes âgées,2.0
+108,Inclusion,Sport,1.0
+109,Inclusion,Habitat,8.0
+110,Inclusion,Sécurité,1.0
+111,Inclusion,Égalité,2.0
+112,Inclusion,Action publique,2.0
+116,Clivages,Culture,1.0
+117,Clivages,Inclusion,16.0
+119,Clivages,Pauvreté,8.0
+129,Clivages,Valeurs,12.0
+131,Clivages,Cadre de vie,5.0
+132,Clivages,Citoyenneté,15.0
+134,Clivages,Cohésion sociale,63.0
+136,Clivages,Politique de la ville,1.0
+137,Clivages,Santé,7.0
+143,Clivages,Service public,4.0
+148,Clivages,Institution,3.0
+151,Clivages,Laïcité,3.0
+154,Clivages,Grand Lyon,4.0
+160,Clivages,Démocratie,1.0
+161,Clivages,Recherche,1.0
+168,Clivages,Sécurité,8.0
+169,Clivages,Égalité,1.0
+175,Pauvreté,Inclusion,38.0
+176,Pauvreté,Clivages,8.0
+186,Pauvreté,Solidarité,24.0
+188,Pauvreté,Économie,1.0
+189,Pauvreté,Cadre de vie,3.0
+190,Pauvreté,Citoyenneté,5.0
+195,Pauvreté,Santé,1.0
+202,Pauvreté,Genre,2.0
+203,Pauvreté,Insertion,1.0
+205,Pauvreté,Jeunesse,1.0
+206,Pauvreté,Institution,1.0
+210,Pauvreté,Évaluation,1.0
+225,Pauvreté,Habitat,3.0
+233,Travail,Inclusion,15.0
+237,Travail,Entreprise,16.0
+238,Travail,Temps,3.0
+239,Travail,Transition,2.0
+241,Travail,Numérique,9.0
+242,Travail,Usage,2.0
+243,Travail,Innovation,10.0
+244,Travail,Solidarité,6.0
+245,Travail,Valeurs,7.0
+246,Travail,Économie,14.0
+247,Travail,Cadre de vie,5.0
+248,Travail,Citoyenneté,1.0
+249,Travail,Veille M3,6.0
+253,Travail,Santé,13.0
+254,Travail,Handicap,5.0
+256,Travail,Prospective,7.0
+257,Travail,Éducation,1.0
+258,Travail,Mobilité,2.0
+259,Travail,Service public,7.0
+260,Travail,Genre,1.0
+261,Travail,Insertion,8.0
+262,Travail,International,6.0
+263,Travail,Jeunesse,8.0
+268,Travail,Évaluation,1.0
+270,Travail,Grand Lyon,6.0
+271,Travail,Justice,1.0
+273,Travail,Attractivité,6.0
+278,Travail,Management,10.0
+279,Travail,Social,6.0
+288,Travail,Emploi,4.0
+289,Travail,Logistique,3.0
+290,Entreprise,Culture,7.0
+291,Entreprise,Inclusion,1.0
+294,Entreprise,Travail,16.0
+296,Entreprise,Temps,1.0
+297,Entreprise,Transition,3.0
+299,Entreprise,Numérique,14.0
+300,Entreprise,Usage,6.0
+301,Entreprise,Innovation,103.0
+302,Entreprise,Solidarité,1.0
+304,Entreprise,Économie,35.0
+305,Entreprise,Cadre de vie,3.0
+306,Entreprise,Citoyenneté,1.0
+311,Entreprise,Santé,10.0
+315,Entreprise,Éducation,1.0
+316,Entreprise,Mobilité,2.0
+317,Entreprise,Service public,1.0
+319,Entreprise,Insertion,5.0
+320,Entreprise,International,3.0
+321,Entreprise,Jeunesse,2.0
+322,Entreprise,Institution,2.0
+323,Entreprise,Finance,2.0
+327,Entreprise,Urbanisme,1.0
+328,Entreprise,Grand Lyon,8.0
+330,Entreprise,Patrimoine,4.0
+335,Entreprise,Recherche,1.0
+336,Entreprise,Management,7.0
+337,Entreprise,Social,2.0
+341,Entreprise,Habitat,2.0
+347,Entreprise,Logistique,1.0
+348,Temps,Culture,2.0
+352,Temps,Travail,3.0
+353,Temps,Entreprise,1.0
+357,Temps,Numérique,5.0
+358,Temps,Usage,1.0
+359,Temps,Innovation,2.0
+362,Temps,Économie,2.0
+363,Temps,Cadre de vie,9.0
+368,Temps,Politique de la ville,3.0
+369,Temps,Santé,9.0
+372,Temps,Prospective,1.0
+373,Temps,Éducation,3.0
+374,Temps,Mobilité,18.0
+375,Temps,Service public,5.0
+378,Temps,International,3.0
+379,Temps,Jeunesse,4.0
+385,Temps,Urbanisme,13.0
+386,Temps,Grand Lyon,1.0
+388,Temps,Patrimoine,1.0
+393,Temps,Recherche,1.0
+406,Transition,Culture,7.0
+407,Transition,Inclusion,1.0
+410,Transition,Travail,2.0
+411,Transition,Entreprise,3.0
+414,Transition,Climat,18.0
+415,Transition,Numérique,3.0
+416,Transition,Usage,5.0
+417,Transition,Innovation,7.0
+418,Transition,Solidarité,7.0
+419,Transition,Valeurs,21.0
+420,Transition,Économie,62.0
+421,Transition,Cadre de vie,50.0
+422,Transition,Citoyenneté,4.0
+423,Transition,Veille M3,35.0
+425,Transition,Biodiversité,28.0
+426,Transition,Politique de la ville,6.0
+427,Transition,Santé,1.0
+428,Transition,Handicap,2.0
+429,Transition,Ressources,35.0
+430,Transition,Prospective,8.0
+431,Transition,Éducation,9.0
+432,Transition,Mobilité,28.0
+433,Transition,Service public,8.0
+435,Transition,Insertion,2.0
+436,Transition,International,12.0
+437,Transition,Jeunesse,1.0
+439,Transition,Finance,1.0
+440,Transition,Pensées politiques,1.0
+442,Transition,Évaluation,1.0
+443,Transition,Urbanisme,10.0
+444,Transition,Grand Lyon,25.0
+445,Transition,Justice,4.0
+446,Transition,Patrimoine,2.0
+449,Transition,Développement durable,9.0
+450,Transition,Démocratie,1.0
+451,Transition,Recherche,1.0
+453,Transition,Social,3.0
+454,Transition,Concertation,2.0
+457,Transition,Habitat,3.0
+460,Transition,Action publique,5.0
+471,Climat,Transition,18.0
+479,Climat,Cadre de vie,29.0
+480,Climat,Citoyenneté,1.0
+481,Climat,Veille M3,9.0
+483,Climat,Biodiversité,27.0
+484,Climat,Politique de la ville,2.0
+485,Climat,Santé,4.0
+487,Climat,Ressources,32.0
+488,Climat,Prospective,2.0
+489,Climat,Éducation,3.0
+490,Climat,Mobilité,6.0
+491,Climat,Service public,3.0
+494,Climat,International,1.0
+501,Climat,Urbanisme,3.0
+502,Climat,Grand Lyon,21.0
+507,Climat,Développement durable,3.0
+514,Climat,Sport,5.0
+518,Climat,Action publique,3.0
+522,Numérique,Culture,35.0
+523,Numérique,Inclusion,7.0
+526,Numérique,Travail,9.0
+527,Numérique,Entreprise,14.0
+528,Numérique,Temps,5.0
+529,Numérique,Transition,3.0
+532,Numérique,Usage,45.0
+533,Numérique,Innovation,97.0
+534,Numérique,Solidarité,2.0
+535,Numérique,Valeurs,3.0
+536,Numérique,Économie,10.0
+537,Numérique,Cadre de vie,5.0
+538,Numérique,Citoyenneté,1.0
+539,Numérique,Veille M3,78.0
+540,Numérique,Cohésion sociale,4.0
+541,Numérique,Biodiversité,2.0
+542,Numérique,Politique de la ville,20.0
+543,Numérique,Santé,10.0
+544,Numérique,Handicap,1.0
+545,Numérique,Ressources,20.0
+546,Numérique,Prospective,11.0
+547,Numérique,Éducation,15.0
+548,Numérique,Mobilité,16.0
+549,Numérique,Service public,21.0
+552,Numérique,International,5.0
+553,Numérique,Jeunesse,22.0
+554,Numérique,Institution,5.0
+559,Numérique,Urbanisme,13.0
+560,Numérique,Grand Lyon,4.0
+562,Numérique,Patrimoine,8.0
+563,Numérique,Attractivité,1.0
+564,Numérique,Data,21.0
+566,Numérique,Démocratie,7.0
+567,Numérique,Recherche,12.0
+568,Numérique,Management,4.0
+569,Numérique,Social,1.0
+570,Numérique,Concertation,2.0
+571,Numérique,Personnes âgées,2.0
+580,Usage,Culture,4.0
+581,Usage,Inclusion,1.0
+584,Usage,Travail,2.0
+585,Usage,Entreprise,6.0
+586,Usage,Temps,1.0
+587,Usage,Transition,5.0
+589,Usage,Numérique,45.0
+591,Usage,Innovation,44.0
+592,Usage,Solidarité,2.0
+593,Usage,Valeurs,10.0
+594,Usage,Économie,5.0
+595,Usage,Cadre de vie,17.0
+596,Usage,Citoyenneté,3.0
+597,Usage,Veille M3,2.0
+599,Usage,Biodiversité,8.0
+600,Usage,Politique de la ville,11.0
+601,Usage,Santé,1.0
+602,Usage,Handicap,1.0
+603,Usage,Ressources,5.0
+604,Usage,Prospective,3.0
+605,Usage,Éducation,5.0
+606,Usage,Mobilité,13.0
+607,Usage,Service public,89.0
+612,Usage,Institution,3.0
+613,Usage,Finance,2.0
+615,Usage,Laïcité,5.0
+616,Usage,Évaluation,4.0
+617,Usage,Urbanisme,12.0
+618,Usage,Grand Lyon,3.0
+619,Usage,Justice,6.0
+620,Usage,Patrimoine,2.0
+623,Usage,Développement durable,5.0
+625,Usage,Recherche,2.0
+627,Usage,Social,2.0
+629,Usage,Personnes âgées,4.0
+636,Usage,Emploi,1.0
+637,Usage,Logistique,2.0
+638,Innovation,Culture,16.0
+639,Innovation,Inclusion,9.0
+642,Innovation,Travail,10.0
+643,Innovation,Entreprise,103.0
+644,Innovation,Temps,2.0
+645,Innovation,Transition,7.0
+647,Innovation,Numérique,97.0
+648,Innovation,Usage,44.0
+650,Innovation,Solidarité,6.0
+651,Innovation,Valeurs,4.0
+652,Innovation,Économie,27.0
+653,Innovation,Cadre de vie,5.0
+654,Innovation,Citoyenneté,3.0
+655,Innovation,Veille M3,2.0
+656,Innovation,Cohésion sociale,1.0
+657,Innovation,Biodiversité,2.0
+658,Innovation,Politique de la ville,11.0
+659,Innovation,Santé,26.0
+660,Innovation,Handicap,10.0
+661,Innovation,Ressources,2.0
+662,Innovation,Prospective,10.0
+663,Innovation,Éducation,7.0
+664,Innovation,Mobilité,32.0
+665,Innovation,Service public,50.0
+667,Innovation,Insertion,1.0
+668,Innovation,International,4.0
+669,Innovation,Jeunesse,2.0
+670,Innovation,Institution,4.0
+672,Innovation,Pensées politiques,1.0
+673,Innovation,Laïcité,2.0
+674,Innovation,Évaluation,1.0
+675,Innovation,Urbanisme,18.0
+676,Innovation,Grand Lyon,32.0
+678,Innovation,Patrimoine,8.0
+679,Innovation,Attractivité,3.0
+680,Innovation,Data,21.0
+682,Innovation,Démocratie,3.0
+683,Innovation,Recherche,12.0
+684,Innovation,Management,4.0
+685,Innovation,Social,7.0
+686,Innovation,Concertation,1.0
+687,Innovation,Personnes âgées,5.0
+696,Solidarité,Culture,2.0
+697,Solidarité,Inclusion,77.0
+699,Solidarité,Pauvreté,24.0
+700,Solidarité,Travail,6.0
+701,Solidarité,Entreprise,1.0
+703,Solidarité,Transition,7.0
+705,Solidarité,Numérique,2.0
+706,Solidarité,Usage,2.0
+707,Solidarité,Innovation,6.0
+709,Solidarité,Valeurs,17.0
+710,Solidarité,Économie,11.0
+711,Solidarité,Cadre de vie,5.0
+712,Solidarité,Citoyenneté,4.0
+713,Solidarité,Veille M3,4.0
+714,Solidarité,Cohésion sociale,1.0
+715,Solidarité,Biodiversité,1.0
+716,Solidarité,Politique de la ville,4.0
+717,Solidarité,Santé,17.0
+718,Solidarité,Handicap,3.0
+719,Solidarité,Ressources,2.0
+720,Solidarité,Prospective,5.0
+721,Solidarité,Éducation,6.0
+722,Solidarité,Mobilité,1.0
+723,Solidarité,Service public,7.0
+725,Solidarité,Insertion,1.0
+726,Solidarité,International,8.0
+727,Solidarité,Jeunesse,1.0
+728,Solidarité,Institution,3.0
+729,Solidarité,Finance,4.0
+730,Solidarité,Pensées politiques,7.0
+731,Solidarité,Laïcité,1.0
+732,Solidarité,Évaluation,4.0
+734,Solidarité,Grand Lyon,5.0
+736,Solidarité,Patrimoine,2.0
+740,Solidarité,Démocratie,4.0
+741,Solidarité,Recherche,3.0
+742,Solidarité,Management,1.0
+743,Solidarité,Social,14.0
+745,Solidarité,Personnes âgées,2.0
+746,Solidarité,Sport,1.0
+747,Solidarité,Habitat,6.0
+750,Solidarité,Action publique,1.0
+754,Valeurs,Culture,6.0
+755,Valeurs,Inclusion,12.0
+756,Valeurs,Clivages,12.0
+758,Valeurs,Travail,7.0
+761,Valeurs,Transition,21.0
+763,Valeurs,Numérique,3.0
+764,Valeurs,Usage,10.0
+765,Valeurs,Innovation,4.0
+766,Valeurs,Solidarité,17.0
+768,Valeurs,Économie,8.0
+769,Valeurs,Cadre de vie,14.0
+770,Valeurs,Citoyenneté,3.0
+771,Valeurs,Veille M3,9.0
+772,Valeurs,Cohésion sociale,11.0
+773,Valeurs,Biodiversité,4.0
+775,Valeurs,Santé,5.0
+777,Valeurs,Ressources,7.0
+778,Valeurs,Prospective,6.0
+779,Valeurs,Éducation,4.0
+780,Valeurs,Mobilité,2.0
+781,Valeurs,Service public,4.0
+784,Valeurs,International,2.0
+785,Valeurs,Jeunesse,1.0
+786,Valeurs,Institution,8.0
+788,Valeurs,Pensées politiques,15.0
+789,Valeurs,Laïcité,10.0
+790,Valeurs,Évaluation,1.0
+791,Valeurs,Urbanisme,2.0
+792,Valeurs,Grand Lyon,10.0
+793,Valeurs,Justice,2.0
+794,Valeurs,Patrimoine,28.0
+795,Valeurs,Attractivité,7.0
+797,Valeurs,Développement durable,5.0
+798,Valeurs,Démocratie,4.0
+801,Valeurs,Social,5.0
+802,Valeurs,Concertation,2.0
+804,Valeurs,Sport,1.0
+806,Valeurs,Sécurité,1.0
+812,Économie,Culture,1.0
+813,Économie,Inclusion,4.0
+815,Économie,Pauvreté,1.0
+816,Économie,Travail,14.0
+817,Économie,Entreprise,35.0
+818,Économie,Temps,2.0
+819,Économie,Transition,62.0
+821,Économie,Numérique,10.0
+822,Économie,Usage,5.0
+823,Économie,Innovation,27.0
+824,Économie,Solidarité,11.0
+825,Économie,Valeurs,8.0
+827,Économie,Cadre de vie,4.0
+828,Économie,Citoyenneté,3.0
+829,Économie,Veille M3,14.0
+830,Économie,Cohésion sociale,2.0
+831,Économie,Biodiversité,21.0
+832,Économie,Politique de la ville,3.0
+833,Économie,Santé,10.0
+834,Économie,Handicap,2.0
+835,Économie,Ressources,34.0
+836,Économie,Prospective,10.0
+837,Économie,Éducation,4.0
+838,Économie,Mobilité,2.0
+839,Économie,Service public,3.0
+841,Économie,Insertion,11.0
+842,Économie,International,2.0
+844,Économie,Institution,5.0
+845,Économie,Finance,2.0
+847,Économie,Laïcité,1.0
+848,Économie,Évaluation,1.0
+849,Économie,Urbanisme,4.0
+850,Économie,Grand Lyon,9.0
+852,Économie,Patrimoine,5.0
+853,Économie,Attractivité,10.0
+854,Économie,Data,2.0
+855,Économie,Développement durable,9.0
+857,Économie,Recherche,3.0
+858,Économie,Management,4.0
+859,Économie,Social,4.0
+864,Économie,Sécurité,1.0
+870,Cadre de vie,Culture,4.0
+871,Cadre de vie,Inclusion,11.0
+872,Cadre de vie,Clivages,5.0
+873,Cadre de vie,Pauvreté,3.0
+874,Cadre de vie,Travail,5.0
+875,Cadre de vie,Entreprise,3.0
+876,Cadre de vie,Temps,9.0
+877,Cadre de vie,Transition,50.0
+878,Cadre de vie,Climat,29.0
+879,Cadre de vie,Numérique,5.0
+880,Cadre de vie,Usage,17.0
+881,Cadre de vie,Innovation,5.0
+882,Cadre de vie,Solidarité,5.0
+883,Cadre de vie,Valeurs,14.0
+884,Cadre de vie,Économie,4.0
+886,Cadre de vie,Citoyenneté,8.0
+887,Cadre de vie,Veille M3,9.0
+888,Cadre de vie,Cohésion sociale,10.0
+889,Cadre de vie,Biodiversité,47.0
+890,Cadre de vie,Politique de la ville,6.0
+891,Cadre de vie,Santé,13.0
+892,Cadre de vie,Handicap,12.0
+893,Cadre de vie,Ressources,17.0
+894,Cadre de vie,Prospective,4.0
+895,Cadre de vie,Éducation,8.0
+896,Cadre de vie,Mobilité,16.0
+897,Cadre de vie,Service public,12.0
+900,Cadre de vie,International,3.0
+901,Cadre de vie,Jeunesse,12.0
+902,Cadre de vie,Institution,2.0
+903,Cadre de vie,Finance,3.0
+905,Cadre de vie,Laïcité,2.0
+906,Cadre de vie,Évaluation,2.0
+907,Cadre de vie,Urbanisme,44.0
+908,Cadre de vie,Grand Lyon,36.0
+909,Cadre de vie,Justice,3.0
+910,Cadre de vie,Patrimoine,8.0
+911,Cadre de vie,Attractivité,5.0
+917,Cadre de vie,Social,5.0
+918,Cadre de vie,Concertation,7.0
+919,Cadre de vie,Personnes âgées,3.0
+920,Cadre de vie,Sport,1.0
+921,Cadre de vie,Habitat,31.0
+922,Cadre de vie,Sécurité,7.0
+926,Cadre de vie,Emploi,2.0
+927,Cadre de vie,Logistique,2.0
+928,Citoyenneté,Culture,4.0
+929,Citoyenneté,Inclusion,18.0
+930,Citoyenneté,Clivages,15.0
+931,Citoyenneté,Pauvreté,5.0
+932,Citoyenneté,Travail,1.0
+933,Citoyenneté,Entreprise,1.0
+935,Citoyenneté,Transition,4.0
+936,Citoyenneté,Climat,1.0
+937,Citoyenneté,Numérique,1.0
+938,Citoyenneté,Usage,3.0
+939,Citoyenneté,Innovation,3.0
+940,Citoyenneté,Solidarité,4.0
+941,Citoyenneté,Valeurs,3.0
+942,Citoyenneté,Économie,3.0
+943,Citoyenneté,Cadre de vie,8.0
+945,Citoyenneté,Veille M3,5.0
+946,Citoyenneté,Cohésion sociale,21.0
+948,Citoyenneté,Politique de la ville,6.0
+949,Citoyenneté,Santé,6.0
+950,Citoyenneté,Handicap,5.0
+952,Citoyenneté,Prospective,6.0
+953,Citoyenneté,Éducation,1.0
+955,Citoyenneté,Service public,3.0
+957,Citoyenneté,Insertion,2.0
+958,Citoyenneté,International,3.0
+959,Citoyenneté,Jeunesse,4.0
+960,Citoyenneté,Institution,9.0
+961,Citoyenneté,Finance,1.0
+966,Citoyenneté,Grand Lyon,4.0
+967,Citoyenneté,Justice,1.0
+972,Citoyenneté,Démocratie,16.0
+973,Citoyenneté,Recherche,2.0
+976,Citoyenneté,Concertation,4.0
+979,Citoyenneté,Habitat,2.0
+980,Citoyenneté,Sécurité,3.0
+982,Citoyenneté,Action publique,1.0
+986,Veille M3,Culture,24.0
+987,Veille M3,Inclusion,6.0
+990,Veille M3,Travail,6.0
+993,Veille M3,Transition,35.0
+994,Veille M3,Climat,9.0
+995,Veille M3,Numérique,78.0
+996,Veille M3,Usage,2.0
+997,Veille M3,Innovation,2.0
+998,Veille M3,Solidarité,4.0
+999,Veille M3,Valeurs,9.0
+1000,Veille M3,Économie,14.0
+1001,Veille M3,Cadre de vie,9.0
+1002,Veille M3,Citoyenneté,5.0
+1004,Veille M3,Cohésion sociale,5.0
+1005,Veille M3,Biodiversité,11.0
+1007,Veille M3,Santé,21.0
+1009,Veille M3,Ressources,90.0
+1010,Veille M3,Prospective,33.0
+1013,Veille M3,Service public,4.0
+1014,Veille M3,Genre,6.0
+1016,Veille M3,International,6.0
+1018,Veille M3,Institution,7.0
+1025,Veille M3,Justice,4.0
+1026,Veille M3,Patrimoine,10.0
+1029,Veille M3,Développement durable,3.0
+1030,Veille M3,Démocratie,8.0
+1031,Veille M3,Recherche,6.0
+1033,Veille M3,Social,4.0
+1036,Veille M3,Sport,28.0
+1041,Veille M3,Ethique,2.0
+1044,Cohésion sociale,Culture,35.0
+1045,Cohésion sociale,Inclusion,38.0
+1046,Cohésion sociale,Clivages,63.0
+1053,Cohésion sociale,Numérique,4.0
+1055,Cohésion sociale,Innovation,1.0
+1056,Cohésion sociale,Solidarité,1.0
+1057,Cohésion sociale,Valeurs,11.0
+1058,Cohésion sociale,Économie,2.0
+1059,Cohésion sociale,Cadre de vie,10.0
+1060,Cohésion sociale,Citoyenneté,21.0
+1061,Cohésion sociale,Veille M3,5.0
+1064,Cohésion sociale,Politique de la ville,12.0
+1065,Cohésion sociale,Santé,12.0
+1066,Cohésion sociale,Handicap,9.0
+1068,Cohésion sociale,Prospective,7.0
+1071,Cohésion sociale,Service public,2.0
+1072,Cohésion sociale,Genre,2.0
+1073,Cohésion sociale,Insertion,3.0
+1074,Cohésion sociale,International,5.0
+1075,Cohésion sociale,Jeunesse,3.0
+1076,Cohésion sociale,Institution,3.0
+1078,Cohésion sociale,Pensées politiques,2.0
+1079,Cohésion sociale,Laïcité,6.0
+1081,Cohésion sociale,Urbanisme,5.0
+1082,Cohésion sociale,Grand Lyon,7.0
+1084,Cohésion sociale,Patrimoine,4.0
+1088,Cohésion sociale,Démocratie,6.0
+1089,Cohésion sociale,Recherche,1.0
+1091,Cohésion sociale,Social,1.0
+1093,Cohésion sociale,Personnes âgées,2.0
+1095,Cohésion sociale,Habitat,3.0
+1096,Cohésion sociale,Sécurité,7.0
+1098,Cohésion sociale,Action publique,3.0
+1102,Biodiversité,Culture,2.0
+1109,Biodiversité,Transition,28.0
+1110,Biodiversité,Climat,27.0
+1111,Biodiversité,Numérique,2.0
+1112,Biodiversité,Usage,8.0
+1113,Biodiversité,Innovation,2.0
+1114,Biodiversité,Solidarité,1.0
+1115,Biodiversité,Valeurs,4.0
+1116,Biodiversité,Économie,21.0
+1117,Biodiversité,Cadre de vie,47.0
+1119,Biodiversité,Veille M3,11.0
+1122,Biodiversité,Politique de la ville,2.0
+1123,Biodiversité,Santé,5.0
+1125,Biodiversité,Ressources,58.0
+1126,Biodiversité,Prospective,4.0
+1127,Biodiversité,Éducation,3.0
+1128,Biodiversité,Mobilité,1.0
+1129,Biodiversité,Service public,5.0
+1132,Biodiversité,International,2.0
+1134,Biodiversité,Institution,1.0
+1137,Biodiversité,Laïcité,1.0
+1138,Biodiversité,Évaluation,1.0
+1139,Biodiversité,Urbanisme,20.0
+1140,Biodiversité,Grand Lyon,9.0
+1141,Biodiversité,Justice,2.0
+1142,Biodiversité,Patrimoine,3.0
+1145,Biodiversité,Développement durable,21.0
+1147,Biodiversité,Recherche,3.0
+1156,Biodiversité,Action publique,6.0
+1160,Politique de la ville,Culture,18.0
+1161,Politique de la ville,Inclusion,33.0
+1162,Politique de la ville,Clivages,1.0
+1166,Politique de la ville,Temps,3.0
+1167,Politique de la ville,Transition,6.0
+1168,Politique de la ville,Climat,2.0
+1169,Politique de la ville,Numérique,20.0
+1170,Politique de la ville,Usage,11.0
+1171,Politique de la ville,Innovation,11.0
+1172,Politique de la ville,Solidarité,4.0
+1174,Politique de la ville,Économie,3.0
+1175,Politique de la ville,Cadre de vie,6.0
+1176,Politique de la ville,Citoyenneté,6.0
+1178,Politique de la ville,Cohésion sociale,12.0
+1179,Politique de la ville,Biodiversité,2.0
+1181,Politique de la ville,Santé,1.0
+1186,Politique de la ville,Mobilité,19.0
+1187,Politique de la ville,Service public,2.0
+1188,Politique de la ville,Genre,1.0
+1189,Politique de la ville,Insertion,1.0
+1190,Politique de la ville,International,3.0
+1191,Politique de la ville,Jeunesse,2.0
+1192,Politique de la ville,Institution,5.0
+1195,Politique de la ville,Laïcité,1.0
+1196,Politique de la ville,Évaluation,1.0
+1197,Politique de la ville,Urbanisme,35.0
+1198,Politique de la ville,Grand Lyon,14.0
+1199,Politique de la ville,Justice,4.0
+1201,Politique de la ville,Attractivité,2.0
+1208,Politique de la ville,Concertation,1.0
+1211,Politique de la ville,Habitat,2.0
+1213,Politique de la ville,Égalité,1.0
+1214,Politique de la ville,Action publique,2.0
+1218,Santé,Culture,3.0
+1219,Santé,Inclusion,26.0
+1220,Santé,Clivages,7.0
+1221,Santé,Pauvreté,1.0
+1222,Santé,Travail,13.0
+1223,Santé,Entreprise,10.0
+1224,Santé,Temps,9.0
+1225,Santé,Transition,1.0
+1226,Santé,Climat,4.0
+1227,Santé,Numérique,10.0
+1228,Santé,Usage,1.0
+1229,Santé,Innovation,26.0
+1230,Santé,Solidarité,17.0
+1231,Santé,Valeurs,5.0
+1232,Santé,Économie,10.0
+1233,Santé,Cadre de vie,13.0
+1234,Santé,Citoyenneté,6.0
+1235,Santé,Veille M3,21.0
+1236,Santé,Cohésion sociale,12.0
+1237,Santé,Biodiversité,5.0
+1238,Santé,Politique de la ville,1.0
+1240,Santé,Handicap,32.0
+1241,Santé,Ressources,2.0
+1242,Santé,Prospective,7.0
+1243,Santé,Éducation,4.0
+1244,Santé,Mobilité,9.0
+1245,Santé,Service public,11.0
+1249,Santé,Jeunesse,7.0
+1250,Santé,Institution,1.0
+1254,Santé,Évaluation,3.0
+1255,Santé,Urbanisme,10.0
+1256,Santé,Grand Lyon,4.0
+1257,Santé,Justice,1.0
+1258,Santé,Patrimoine,11.0
+1259,Santé,Attractivité,1.0
+1262,Santé,Démocratie,8.0
+1263,Santé,Recherche,16.0
+1264,Santé,Management,4.0
+1265,Santé,Social,7.0
+1267,Santé,Personnes âgées,1.0
+1270,Santé,Sécurité,4.0
+1273,Santé,Ethique,2.0
+1277,Handicap,Inclusion,41.0
+1280,Handicap,Travail,5.0
+1283,Handicap,Transition,2.0
+1285,Handicap,Numérique,1.0
+1286,Handicap,Usage,1.0
+1287,Handicap,Innovation,10.0
+1288,Handicap,Solidarité,3.0
+1290,Handicap,Économie,2.0
+1291,Handicap,Cadre de vie,12.0
+1292,Handicap,Citoyenneté,5.0
+1294,Handicap,Cohésion sociale,9.0
+1297,Handicap,Santé,32.0
+1306,Handicap,International,2.0
+1308,Handicap,Institution,1.0
+1327,Handicap,Habitat,2.0
+1334,Ressources,Culture,11.0
+1341,Ressources,Transition,35.0
+1342,Ressources,Climat,32.0
+1343,Ressources,Numérique,20.0
+1344,Ressources,Usage,5.0
+1345,Ressources,Innovation,2.0
+1346,Ressources,Solidarité,2.0
+1347,Ressources,Valeurs,7.0
+1348,Ressources,Économie,34.0
+1349,Ressources,Cadre de vie,17.0
+1351,Ressources,Veille M3,90.0
+1353,Ressources,Biodiversité,58.0
+1355,Ressources,Santé,2.0
+1358,Ressources,Prospective,5.0
+1359,Ressources,Éducation,1.0
+1360,Ressources,Mobilité,2.0
+1361,Ressources,Service public,10.0
+1364,Ressources,International,1.0
+1366,Ressources,Institution,2.0
+1370,Ressources,Évaluation,3.0
+1371,Ressources,Urbanisme,4.0
+1372,Ressources,Grand Lyon,8.0
+1373,Ressources,Justice,11.0
+1374,Ressources,Patrimoine,12.0
+1375,Ressources,Attractivité,3.0
+1377,Ressources,Développement durable,8.0
+1378,Ressources,Démocratie,8.0
+1379,Ressources,Recherche,8.0
+1382,Ressources,Concertation,4.0
+1384,Ressources,Sport,1.0
+1388,Ressources,Action publique,2.0
+1392,Prospective,Culture,24.0
+1393,Prospective,Inclusion,4.0
+1396,Prospective,Travail,7.0
+1398,Prospective,Temps,1.0
+1399,Prospective,Transition,8.0
+1400,Prospective,Climat,2.0
+1401,Prospective,Numérique,11.0
+1402,Prospective,Usage,3.0
+1403,Prospective,Innovation,10.0
+1404,Prospective,Solidarité,5.0
+1405,Prospective,Valeurs,6.0
+1406,Prospective,Économie,10.0
+1407,Prospective,Cadre de vie,4.0
+1408,Prospective,Citoyenneté,6.0
+1409,Prospective,Veille M3,33.0
+1410,Prospective,Cohésion sociale,7.0
+1411,Prospective,Biodiversité,4.0
+1413,Prospective,Santé,7.0
+1415,Prospective,Ressources,5.0
+1417,Prospective,Éducation,10.0
+1418,Prospective,Mobilité,5.0
+1419,Prospective,Service public,20.0
+1421,Prospective,Insertion,2.0
+1423,Prospective,Jeunesse,9.0
+1424,Prospective,Institution,3.0
+1427,Prospective,Laïcité,4.0
+1428,Prospective,Évaluation,17.0
+1429,Prospective,Urbanisme,12.0
+1430,Prospective,Grand Lyon,19.0
+1433,Prospective,Attractivité,4.0
+1434,Prospective,Data,2.0
+1436,Prospective,Démocratie,14.0
+1437,Prospective,Recherche,4.0
+1439,Prospective,Social,1.0
+1440,Prospective,Concertation,1.0
+1441,Prospective,Personnes âgées,5.0
+1444,Prospective,Sécurité,4.0
+1450,Éducation,Culture,4.0
+1451,Éducation,Inclusion,9.0
+1454,Éducation,Travail,1.0
+1455,Éducation,Entreprise,1.0
+1456,Éducation,Temps,3.0
+1457,Éducation,Transition,9.0
+1458,Éducation,Climat,3.0
+1459,Éducation,Numérique,15.0
+1460,Éducation,Usage,5.0
+1461,Éducation,Innovation,7.0
+1462,Éducation,Solidarité,6.0
+1463,Éducation,Valeurs,4.0
+1464,Éducation,Économie,4.0
+1465,Éducation,Cadre de vie,8.0
+1466,Éducation,Citoyenneté,1.0
+1469,Éducation,Biodiversité,3.0
+1471,Éducation,Santé,4.0
+1473,Éducation,Ressources,1.0
+1474,Éducation,Prospective,10.0
+1476,Éducation,Mobilité,1.0
+1477,Éducation,Service public,6.0
+1481,Éducation,Jeunesse,53.0
+1482,Éducation,Institution,2.0
+1485,Éducation,Laïcité,2.0
+1486,Éducation,Évaluation,3.0
+1487,Éducation,Urbanisme,1.0
+1488,Éducation,Grand Lyon,1.0
+1490,Éducation,Patrimoine,5.0
+1494,Éducation,Démocratie,4.0
+1495,Éducation,Recherche,9.0
+1497,Éducation,Social,1.0
+1502,Éducation,Sécurité,1.0
+1512,Mobilité,Travail,2.0
+1513,Mobilité,Entreprise,2.0
+1514,Mobilité,Temps,18.0
+1515,Mobilité,Transition,28.0
+1516,Mobilité,Climat,6.0
+1517,Mobilité,Numérique,16.0
+1518,Mobilité,Usage,13.0
+1519,Mobilité,Innovation,32.0
+1520,Mobilité,Solidarité,1.0
+1521,Mobilité,Valeurs,2.0
+1522,Mobilité,Économie,2.0
+1523,Mobilité,Cadre de vie,16.0
+1527,Mobilité,Biodiversité,1.0
+1528,Mobilité,Politique de la ville,19.0
+1529,Mobilité,Santé,9.0
+1531,Mobilité,Ressources,2.0
+1532,Mobilité,Prospective,5.0
+1533,Mobilité,Éducation,1.0
+1535,Mobilité,Service public,13.0
+1538,Mobilité,International,3.0
+1540,Mobilité,Institution,1.0
+1544,Mobilité,Évaluation,1.0
+1545,Mobilité,Urbanisme,42.0
+1546,Mobilité,Grand Lyon,10.0
+1548,Mobilité,Patrimoine,2.0
+1549,Mobilité,Attractivité,2.0
+1550,Mobilité,Data,4.0
+1560,Mobilité,Sécurité,1.0
+1567,Service public,Inclusion,3.0
+1568,Service public,Clivages,4.0
+1570,Service public,Travail,7.0
+1571,Service public,Entreprise,1.0
+1572,Service public,Temps,5.0
+1573,Service public,Transition,8.0
+1574,Service public,Climat,3.0
+1575,Service public,Numérique,21.0
+1576,Service public,Usage,89.0
+1577,Service public,Innovation,50.0
+1578,Service public,Solidarité,7.0
+1579,Service public,Valeurs,4.0
+1580,Service public,Économie,3.0
+1581,Service public,Cadre de vie,12.0
+1582,Service public,Citoyenneté,3.0
+1583,Service public,Veille M3,4.0
+1584,Service public,Cohésion sociale,2.0
+1585,Service public,Biodiversité,5.0
+1586,Service public,Politique de la ville,2.0
+1587,Service public,Santé,11.0
+1589,Service public,Ressources,10.0
+1590,Service public,Prospective,20.0
+1591,Service public,Éducation,6.0
+1592,Service public,Mobilité,13.0
+1597,Service public,Jeunesse,5.0
+1598,Service public,Institution,13.0
+1599,Service public,Finance,1.0
+1600,Service public,Pensées politiques,1.0
+1601,Service public,Laïcité,3.0
+1602,Service public,Évaluation,20.0
+1603,Service public,Urbanisme,7.0
+1604,Service public,Grand Lyon,33.0
+1605,Service public,Justice,6.0
+1606,Service public,Patrimoine,2.0
+1608,Service public,Data,16.0
+1610,Service public,Démocratie,12.0
+1612,Service public,Management,4.0
+1613,Service public,Social,4.0
+1614,Service public,Concertation,5.0
+1615,Service public,Personnes âgées,1.0
+1624,Genre,Culture,2.0
+1627,Genre,Pauvreté,2.0
+1628,Genre,Travail,1.0
+1641,Genre,Veille M3,6.0
+1642,Genre,Cohésion sociale,2.0
+1644,Genre,Politique de la ville,1.0
+1661,Genre,Urbanisme,6.0
+1668,Genre,Démocratie,1.0
+1669,Genre,Recherche,1.0
+1674,Genre,Sport,6.0
+1677,Genre,Égalité,5.0
+1682,Insertion,Culture,7.0
+1683,Insertion,Inclusion,2.0
+1685,Insertion,Pauvreté,1.0
+1686,Insertion,Travail,8.0
+1687,Insertion,Entreprise,5.0
+1689,Insertion,Transition,2.0
+1693,Insertion,Innovation,1.0
+1694,Insertion,Solidarité,1.0
+1696,Insertion,Économie,11.0
+1698,Insertion,Citoyenneté,2.0
+1700,Insertion,Cohésion sociale,3.0
+1702,Insertion,Politique de la ville,1.0
+1706,Insertion,Prospective,2.0
+1712,Insertion,International,4.0
+1713,Insertion,Jeunesse,4.0
+1718,Insertion,Évaluation,1.0
+1729,Insertion,Social,7.0
+1740,International,Culture,5.0
+1741,International,Inclusion,22.0
+1744,International,Travail,6.0
+1745,International,Entreprise,3.0
+1746,International,Temps,3.0
+1747,International,Transition,12.0
+1748,International,Climat,1.0
+1749,International,Numérique,5.0
+1751,International,Innovation,4.0
+1752,International,Solidarité,8.0
+1753,International,Valeurs,2.0
+1754,International,Économie,2.0
+1755,International,Cadre de vie,3.0
+1756,International,Citoyenneté,3.0
+1757,International,Veille M3,6.0
+1758,International,Cohésion sociale,5.0
+1759,International,Biodiversité,2.0
+1760,International,Politique de la ville,3.0
+1762,International,Handicap,2.0
+1763,International,Ressources,1.0
+1766,International,Mobilité,3.0
+1769,International,Insertion,4.0
+1772,International,Institution,6.0
+1773,International,Finance,2.0
+1774,International,Pensées politiques,1.0
+1775,International,Laïcité,3.0
+1777,International,Urbanisme,9.0
+1778,International,Grand Lyon,18.0
+1779,International,Justice,2.0
+1780,International,Patrimoine,1.0
+1781,International,Attractivité,17.0
+1785,International,Recherche,6.0
+1788,International,Concertation,2.0
+1789,International,Personnes âgées,1.0
+1792,International,Sécurité,1.0
+1798,Jeunesse,Culture,20.0
+1801,Jeunesse,Pauvreté,1.0
+1802,Jeunesse,Travail,8.0
+1803,Jeunesse,Entreprise,2.0
+1804,Jeunesse,Temps,4.0
+1805,Jeunesse,Transition,1.0
+1807,Jeunesse,Numérique,22.0
+1809,Jeunesse,Innovation,2.0
+1810,Jeunesse,Solidarité,1.0
+1811,Jeunesse,Valeurs,1.0
+1813,Jeunesse,Cadre de vie,12.0
+1814,Jeunesse,Citoyenneté,4.0
+1816,Jeunesse,Cohésion sociale,3.0
+1818,Jeunesse,Politique de la ville,2.0
+1819,Jeunesse,Santé,7.0
+1822,Jeunesse,Prospective,9.0
+1823,Jeunesse,Éducation,53.0
+1825,Jeunesse,Service public,5.0
+1827,Jeunesse,Insertion,4.0
+1834,Jeunesse,Évaluation,1.0
+1835,Jeunesse,Urbanisme,1.0
+1836,Jeunesse,Grand Lyon,6.0
+1838,Jeunesse,Patrimoine,1.0
+1839,Jeunesse,Attractivité,1.0
+1844,Jeunesse,Management,2.0
+1845,Jeunesse,Social,1.0
+1847,Jeunesse,Personnes âgées,4.0
+1852,Jeunesse,Action publique,1.0
+1856,Institution,Culture,4.0
+1857,Institution,Inclusion,7.0
+1858,Institution,Clivages,3.0
+1859,Institution,Pauvreté,1.0
+1861,Institution,Entreprise,2.0
+1865,Institution,Numérique,5.0
+1866,Institution,Usage,3.0
+1867,Institution,Innovation,4.0
+1868,Institution,Solidarité,3.0
+1869,Institution,Valeurs,8.0
+1870,Institution,Économie,5.0
+1871,Institution,Cadre de vie,2.0
+1872,Institution,Citoyenneté,9.0
+1873,Institution,Veille M3,7.0
+1874,Institution,Cohésion sociale,3.0
+1875,Institution,Biodiversité,1.0
+1876,Institution,Politique de la ville,5.0
+1877,Institution,Santé,1.0
+1878,Institution,Handicap,1.0
+1879,Institution,Ressources,2.0
+1880,Institution,Prospective,3.0
+1881,Institution,Éducation,2.0
+1882,Institution,Mobilité,1.0
+1883,Institution,Service public,13.0
+1886,Institution,International,6.0
+1889,Institution,Finance,3.0
+1890,Institution,Pensées politiques,1.0
+1891,Institution,Laïcité,1.0
+1892,Institution,Évaluation,2.0
+1893,Institution,Urbanisme,5.0
+1894,Institution,Grand Lyon,35.0
+1895,Institution,Justice,1.0
+1896,Institution,Patrimoine,4.0
+1898,Institution,Data,2.0
+1900,Institution,Démocratie,10.0
+1901,Institution,Recherche,4.0
+1903,Institution,Social,1.0
+1904,Institution,Concertation,5.0
+1906,Institution,Sport,1.0
+1908,Institution,Sécurité,5.0
+1909,Institution,Égalité,1.0
+1919,Finance,Entreprise,2.0
+1921,Finance,Transition,1.0
+1924,Finance,Usage,2.0
+1926,Finance,Solidarité,4.0
+1928,Finance,Économie,2.0
+1929,Finance,Cadre de vie,3.0
+1930,Finance,Citoyenneté,1.0
+1941,Finance,Service public,1.0
+1944,Finance,International,2.0
+1946,Finance,Institution,3.0
+1952,Finance,Grand Lyon,1.0
+1954,Finance,Patrimoine,1.0
+1955,Finance,Attractivité,1.0
+1965,Finance,Habitat,3.0
+1979,Pensées politiques,Transition,1.0
+1983,Pensées politiques,Innovation,1.0
+1984,Pensées politiques,Solidarité,7.0
+1985,Pensées politiques,Valeurs,15.0
+1990,Pensées politiques,Cohésion sociale,2.0
+1999,Pensées politiques,Service public,1.0
+2002,Pensées politiques,International,1.0
+2004,Pensées politiques,Institution,1.0
+2007,Pensées politiques,Laïcité,1.0
+2008,Pensées politiques,Évaluation,1.0
+2012,Pensées politiques,Patrimoine,2.0
+2016,Pensées politiques,Démocratie,3.0
+2019,Pensées politiques,Social,1.0
+2023,Pensées politiques,Habitat,1.0
+2030,Laïcité,Culture,3.0
+2031,Laïcité,Inclusion,6.0
+2032,Laïcité,Clivages,3.0
+2040,Laïcité,Usage,5.0
+2041,Laïcité,Innovation,2.0
+2042,Laïcité,Solidarité,1.0
+2043,Laïcité,Valeurs,10.0
+2044,Laïcité,Économie,1.0
+2045,Laïcité,Cadre de vie,2.0
+2048,Laïcité,Cohésion sociale,6.0
+2049,Laïcité,Biodiversité,1.0
+2050,Laïcité,Politique de la ville,1.0
+2054,Laïcité,Prospective,4.0
+2055,Laïcité,Éducation,2.0
+2057,Laïcité,Service public,3.0
+2060,Laïcité,International,3.0
+2062,Laïcité,Institution,1.0
+2064,Laïcité,Pensées politiques,1.0
+2068,Laïcité,Grand Lyon,1.0
+2070,Laïcité,Patrimoine,3.0
+2078,Laïcité,Concertation,1.0
+2083,Laïcité,Égalité,1.0
+2089,Évaluation,Inclusion,4.0
+2091,Évaluation,Pauvreté,1.0
+2092,Évaluation,Travail,1.0
+2095,Évaluation,Transition,1.0
+2098,Évaluation,Usage,4.0
+2099,Évaluation,Innovation,1.0
+2100,Évaluation,Solidarité,4.0
+2101,Évaluation,Valeurs,1.0
+2102,Évaluation,Économie,1.0
+2103,Évaluation,Cadre de vie,2.0
+2107,Évaluation,Biodiversité,1.0
+2108,Évaluation,Politique de la ville,1.0
+2109,Évaluation,Santé,3.0
+2111,Évaluation,Ressources,3.0
+2112,Évaluation,Prospective,17.0
+2113,Évaluation,Éducation,3.0
+2114,Évaluation,Mobilité,1.0
+2115,Évaluation,Service public,20.0
+2117,Évaluation,Insertion,1.0
+2119,Évaluation,Jeunesse,1.0
+2120,Évaluation,Institution,2.0
+2122,Évaluation,Pensées politiques,1.0
+2126,Évaluation,Grand Lyon,1.0
+2127,Évaluation,Justice,1.0
+2146,Urbanisme,Culture,7.0
+2147,Urbanisme,Inclusion,3.0
+2151,Urbanisme,Entreprise,1.0
+2152,Urbanisme,Temps,13.0
+2153,Urbanisme,Transition,10.0
+2154,Urbanisme,Climat,3.0
+2155,Urbanisme,Numérique,13.0
+2156,Urbanisme,Usage,12.0
+2157,Urbanisme,Innovation,18.0
+2159,Urbanisme,Valeurs,2.0
+2160,Urbanisme,Économie,4.0
+2161,Urbanisme,Cadre de vie,44.0
+2164,Urbanisme,Cohésion sociale,5.0
+2165,Urbanisme,Biodiversité,20.0
+2166,Urbanisme,Politique de la ville,35.0
+2167,Urbanisme,Santé,10.0
+2169,Urbanisme,Ressources,4.0
+2170,Urbanisme,Prospective,12.0
+2171,Urbanisme,Éducation,1.0
+2172,Urbanisme,Mobilité,42.0
+2173,Urbanisme,Service public,7.0
+2174,Urbanisme,Genre,6.0
+2176,Urbanisme,International,9.0
+2177,Urbanisme,Jeunesse,1.0
+2178,Urbanisme,Institution,5.0
+2184,Urbanisme,Grand Lyon,18.0
+2185,Urbanisme,Justice,1.0
+2186,Urbanisme,Patrimoine,6.0
+2187,Urbanisme,Attractivité,3.0
+2188,Urbanisme,Data,1.0
+2190,Urbanisme,Démocratie,3.0
+2192,Urbanisme,Management,1.0
+2194,Urbanisme,Concertation,3.0
+2198,Urbanisme,Sécurité,3.0
+2199,Urbanisme,Égalité,5.0
+2204,Grand Lyon,Culture,30.0
+2205,Grand Lyon,Inclusion,1.0
+2206,Grand Lyon,Clivages,4.0
+2208,Grand Lyon,Travail,6.0
+2209,Grand Lyon,Entreprise,8.0
+2210,Grand Lyon,Temps,1.0
+2211,Grand Lyon,Transition,25.0
+2212,Grand Lyon,Climat,21.0
+2213,Grand Lyon,Numérique,4.0
+2214,Grand Lyon,Usage,3.0
+2215,Grand Lyon,Innovation,32.0
+2216,Grand Lyon,Solidarité,5.0
+2217,Grand Lyon,Valeurs,10.0
+2218,Grand Lyon,Économie,9.0
+2219,Grand Lyon,Cadre de vie,36.0
+2220,Grand Lyon,Citoyenneté,4.0
+2222,Grand Lyon,Cohésion sociale,7.0
+2223,Grand Lyon,Biodiversité,9.0
+2224,Grand Lyon,Politique de la ville,14.0
+2225,Grand Lyon,Santé,4.0
+2227,Grand Lyon,Ressources,8.0
+2228,Grand Lyon,Prospective,19.0
+2229,Grand Lyon,Éducation,1.0
+2230,Grand Lyon,Mobilité,10.0
+2231,Grand Lyon,Service public,33.0
+2234,Grand Lyon,International,18.0
+2235,Grand Lyon,Jeunesse,6.0
+2236,Grand Lyon,Institution,35.0
+2237,Grand Lyon,Finance,1.0
+2239,Grand Lyon,Laïcité,1.0
+2240,Grand Lyon,Évaluation,1.0
+2241,Grand Lyon,Urbanisme,18.0
+2244,Grand Lyon,Patrimoine,19.0
+2245,Grand Lyon,Attractivité,25.0
+2247,Grand Lyon,Développement durable,5.0
+2248,Grand Lyon,Démocratie,6.0
+2249,Grand Lyon,Recherche,30.0
+2251,Grand Lyon,Social,1.0
+2256,Grand Lyon,Sécurité,1.0
+2257,Grand Lyon,Égalité,1.0
+2258,Grand Lyon,Action publique,6.0
+2262,Justice,Culture,4.0
+2263,Justice,Inclusion,1.0
+2266,Justice,Travail,1.0
+2269,Justice,Transition,4.0
+2272,Justice,Usage,6.0
+2275,Justice,Valeurs,2.0
+2277,Justice,Cadre de vie,3.0
+2278,Justice,Citoyenneté,1.0
+2279,Justice,Veille M3,4.0
+2281,Justice,Biodiversité,2.0
+2282,Justice,Politique de la ville,4.0
+2283,Justice,Santé,1.0
+2285,Justice,Ressources,11.0
+2289,Justice,Service public,6.0
+2292,Justice,International,2.0
+2294,Justice,Institution,1.0
+2298,Justice,Évaluation,1.0
+2299,Justice,Urbanisme,1.0
+2310,Justice,Concertation,2.0
+2314,Justice,Sécurité,1.0
+2320,Patrimoine,Culture,51.0
+2321,Patrimoine,Inclusion,5.0
+2325,Patrimoine,Entreprise,4.0
+2326,Patrimoine,Temps,1.0
+2327,Patrimoine,Transition,2.0
+2329,Patrimoine,Numérique,8.0
+2330,Patrimoine,Usage,2.0
+2331,Patrimoine,Innovation,8.0
+2332,Patrimoine,Solidarité,2.0
+2333,Patrimoine,Valeurs,28.0
+2334,Patrimoine,Économie,5.0
+2335,Patrimoine,Cadre de vie,8.0
+2337,Patrimoine,Veille M3,10.0
+2338,Patrimoine,Cohésion sociale,4.0
+2339,Patrimoine,Biodiversité,3.0
+2341,Patrimoine,Santé,11.0
+2343,Patrimoine,Ressources,12.0
+2345,Patrimoine,Éducation,5.0
+2346,Patrimoine,Mobilité,2.0
+2347,Patrimoine,Service public,2.0
+2350,Patrimoine,International,1.0
+2351,Patrimoine,Jeunesse,1.0
+2352,Patrimoine,Institution,4.0
+2353,Patrimoine,Finance,1.0
+2354,Patrimoine,Pensées politiques,2.0
+2355,Patrimoine,Laïcité,3.0
+2357,Patrimoine,Urbanisme,6.0
+2358,Patrimoine,Grand Lyon,19.0
+2361,Patrimoine,Attractivité,15.0
+2364,Patrimoine,Démocratie,1.0
+2365,Patrimoine,Recherche,5.0
+2378,Attractivité,Culture,20.0
+2379,Attractivité,Inclusion,2.0
+2382,Attractivité,Travail,6.0
+2387,Attractivité,Numérique,1.0
+2389,Attractivité,Innovation,3.0
+2391,Attractivité,Valeurs,7.0
+2392,Attractivité,Économie,10.0
+2393,Attractivité,Cadre de vie,5.0
+2398,Attractivité,Politique de la ville,2.0
+2399,Attractivité,Santé,1.0
+2401,Attractivité,Ressources,3.0
+2402,Attractivité,Prospective,4.0
+2404,Attractivité,Mobilité,2.0
+2408,Attractivité,International,17.0
+2409,Attractivité,Jeunesse,1.0
+2411,Attractivité,Finance,1.0
+2415,Attractivité,Urbanisme,3.0
+2416,Attractivité,Grand Lyon,25.0
+2418,Attractivité,Patrimoine,15.0
+2423,Attractivité,Recherche,2.0
+2428,Attractivité,Sport,1.0
+2436,Data,Culture,2.0
+2445,Data,Numérique,21.0
+2447,Data,Innovation,21.0
+2450,Data,Économie,2.0
+2460,Data,Prospective,2.0
+2462,Data,Mobilité,4.0
+2463,Data,Service public,16.0
+2468,Data,Institution,2.0
+2473,Data,Urbanisme,1.0
+2481,Data,Recherche,8.0
+2495,Développement durable,Inclusion,1.0
+2501,Développement durable,Transition,9.0
+2502,Développement durable,Climat,3.0
+2504,Développement durable,Usage,5.0
+2507,Développement durable,Valeurs,5.0
+2508,Développement durable,Économie,9.0
+2511,Développement durable,Veille M3,3.0
+2513,Développement durable,Biodiversité,21.0
+2517,Développement durable,Ressources,8.0
+2532,Développement durable,Grand Lyon,5.0
+2548,Développement durable,Action publique,7.0
+2552,Démocratie,Culture,2.0
+2553,Démocratie,Inclusion,4.0
+2554,Démocratie,Clivages,1.0
+2559,Démocratie,Transition,1.0
+2561,Démocratie,Numérique,7.0
+2563,Démocratie,Innovation,3.0
+2564,Démocratie,Solidarité,4.0
+2565,Démocratie,Valeurs,4.0
+2568,Démocratie,Citoyenneté,16.0
+2569,Démocratie,Veille M3,8.0
+2570,Démocratie,Cohésion sociale,6.0
+2573,Démocratie,Santé,8.0
+2575,Démocratie,Ressources,8.0
+2576,Démocratie,Prospective,14.0
+2577,Démocratie,Éducation,4.0
+2579,Démocratie,Service public,12.0
+2580,Démocratie,Genre,1.0
+2584,Démocratie,Institution,10.0
+2586,Démocratie,Pensées politiques,3.0
+2589,Démocratie,Urbanisme,3.0
+2590,Démocratie,Grand Lyon,6.0
+2592,Démocratie,Patrimoine,1.0
+2597,Démocratie,Recherche,2.0
+2599,Démocratie,Social,2.0
+2600,Démocratie,Concertation,7.0
+2602,Démocratie,Sport,6.0
+2603,Démocratie,Habitat,1.0
+2604,Démocratie,Sécurité,1.0
+2605,Démocratie,Égalité,1.0
+2610,Recherche,Culture,2.0
+2611,Recherche,Inclusion,6.0
+2612,Recherche,Clivages,1.0
+2615,Recherche,Entreprise,1.0
+2616,Recherche,Temps,1.0
+2617,Recherche,Transition,1.0
+2619,Recherche,Numérique,12.0
+2620,Recherche,Usage,2.0
+2621,Recherche,Innovation,12.0
+2622,Recherche,Solidarité,3.0
+2624,Recherche,Économie,3.0
+2626,Recherche,Citoyenneté,2.0
+2627,Recherche,Veille M3,6.0
+2628,Recherche,Cohésion sociale,1.0
+2629,Recherche,Biodiversité,3.0
+2631,Recherche,Santé,16.0
+2633,Recherche,Ressources,8.0
+2634,Recherche,Prospective,4.0
+2635,Recherche,Éducation,9.0
+2638,Recherche,Genre,1.0
+2640,Recherche,International,6.0
+2642,Recherche,Institution,4.0
+2648,Recherche,Grand Lyon,30.0
+2650,Recherche,Patrimoine,5.0
+2651,Recherche,Attractivité,2.0
+2652,Recherche,Data,8.0
+2654,Recherche,Démocratie,2.0
+2657,Recherche,Social,1.0
+2662,Recherche,Sécurité,1.0
+2672,Management,Travail,10.0
+2673,Management,Entreprise,7.0
+2677,Management,Numérique,4.0
+2679,Management,Innovation,4.0
+2680,Management,Solidarité,1.0
+2682,Management,Économie,4.0
+2689,Management,Santé,4.0
+2695,Management,Service public,4.0
+2699,Management,Jeunesse,2.0
+2705,Management,Urbanisme,1.0
+2715,Management,Social,1.0
+2727,Social,Inclusion,8.0
+2730,Social,Travail,6.0
+2731,Social,Entreprise,2.0
+2733,Social,Transition,3.0
+2735,Social,Numérique,1.0
+2736,Social,Usage,2.0
+2737,Social,Innovation,7.0
+2738,Social,Solidarité,14.0
+2739,Social,Valeurs,5.0
+2740,Social,Économie,4.0
+2741,Social,Cadre de vie,5.0
+2743,Social,Veille M3,4.0
+2744,Social,Cohésion sociale,1.0
+2747,Social,Santé,7.0
+2750,Social,Prospective,1.0
+2751,Social,Éducation,1.0
+2753,Social,Service public,4.0
+2755,Social,Insertion,7.0
+2757,Social,Jeunesse,1.0
+2758,Social,Institution,1.0
+2760,Social,Pensées politiques,1.0
+2764,Social,Grand Lyon,1.0
+2770,Social,Démocratie,2.0
+2771,Social,Recherche,1.0
+2772,Social,Management,1.0
+2775,Social,Personnes âgées,2.0
+2777,Social,Habitat,8.0
+2778,Social,Sécurité,1.0
+2785,Concertation,Inclusion,1.0
+2791,Concertation,Transition,2.0
+2793,Concertation,Numérique,2.0
+2795,Concertation,Innovation,1.0
+2797,Concertation,Valeurs,2.0
+2799,Concertation,Cadre de vie,7.0
+2800,Concertation,Citoyenneté,4.0
+2804,Concertation,Politique de la ville,1.0
+2807,Concertation,Ressources,4.0
+2808,Concertation,Prospective,1.0
+2811,Concertation,Service public,5.0
+2814,Concertation,International,2.0
+2816,Concertation,Institution,5.0
+2819,Concertation,Laïcité,1.0
+2821,Concertation,Urbanisme,3.0
+2823,Concertation,Justice,2.0
+2828,Concertation,Démocratie,7.0
+2835,Concertation,Habitat,4.0
+2843,Personnes âgées,Inclusion,2.0
+2851,Personnes âgées,Numérique,2.0
+2852,Personnes âgées,Usage,4.0
+2853,Personnes âgées,Innovation,5.0
+2854,Personnes âgées,Solidarité,2.0
+2857,Personnes âgées,Cadre de vie,3.0
+2860,Personnes âgées,Cohésion sociale,2.0
+2863,Personnes âgées,Santé,1.0
+2866,Personnes âgées,Prospective,5.0
+2869,Personnes âgées,Service public,1.0
+2872,Personnes âgées,International,1.0
+2873,Personnes âgées,Jeunesse,4.0
+2889,Personnes âgées,Social,2.0
+2900,Sport,Culture,1.0
+2901,Sport,Inclusion,1.0
+2908,Sport,Climat,5.0
+2912,Sport,Solidarité,1.0
+2913,Sport,Valeurs,1.0
+2915,Sport,Cadre de vie,1.0
+2917,Sport,Veille M3,28.0
+2923,Sport,Ressources,1.0
+2928,Sport,Genre,6.0
+2932,Sport,Institution,1.0
+2941,Sport,Attractivité,1.0
+2944,Sport,Démocratie,6.0
+2959,Habitat,Inclusion,8.0
+2961,Habitat,Pauvreté,3.0
+2963,Habitat,Entreprise,2.0
+2965,Habitat,Transition,3.0
+2970,Habitat,Solidarité,6.0
+2973,Habitat,Cadre de vie,31.0
+2974,Habitat,Citoyenneté,2.0
+2976,Habitat,Cohésion sociale,3.0
+2978,Habitat,Politique de la ville,2.0
+2980,Habitat,Handicap,2.0
+2991,Habitat,Finance,3.0
+2992,Habitat,Pensées politiques,1.0
+3002,Habitat,Démocratie,1.0
+3005,Habitat,Social,8.0
+3006,Habitat,Concertation,4.0
+3017,Sécurité,Inclusion,1.0
+3018,Sécurité,Clivages,8.0
+3029,Sécurité,Valeurs,1.0
+3030,Sécurité,Économie,1.0
+3031,Sécurité,Cadre de vie,7.0
+3032,Sécurité,Citoyenneté,3.0
+3034,Sécurité,Cohésion sociale,7.0
+3037,Sécurité,Santé,4.0
+3040,Sécurité,Prospective,4.0
+3041,Sécurité,Éducation,1.0
+3042,Sécurité,Mobilité,1.0
+3046,Sécurité,International,1.0
+3048,Sécurité,Institution,5.0
+3053,Sécurité,Urbanisme,3.0
+3054,Sécurité,Grand Lyon,1.0
+3055,Sécurité,Justice,1.0
+3060,Sécurité,Démocratie,1.0
+3061,Sécurité,Recherche,1.0
+3063,Sécurité,Social,1.0
+3074,Égalité,Culture,1.0
+3075,Égalité,Inclusion,2.0
+3076,Égalité,Clivages,1.0
+3094,Égalité,Politique de la ville,1.0
+3102,Égalité,Genre,5.0
+3106,Égalité,Institution,1.0
+3109,Égalité,Laïcité,1.0
+3111,Égalité,Urbanisme,5.0
+3112,Égalité,Grand Lyon,1.0
+3118,Égalité,Démocratie,1.0
+3132,Action publique,Culture,3.0
+3133,Action publique,Inclusion,2.0
+3139,Action publique,Transition,5.0
+3140,Action publique,Climat,3.0
+3144,Action publique,Solidarité,1.0
+3148,Action publique,Citoyenneté,1.0
+3150,Action publique,Cohésion sociale,3.0
+3151,Action publique,Biodiversité,6.0
+3152,Action publique,Politique de la ville,2.0
+3155,Action publique,Ressources,2.0
+3163,Action publique,Jeunesse,1.0
+3170,Action publique,Grand Lyon,6.0
+3175,Action publique,Développement durable,7.0
+3207,Ethique,Veille M3,2.0
+3211,Ethique,Santé,2.0
+3252,Emploi,Travail,4.0
+3258,Emploi,Usage,1.0
+3263,Emploi,Cadre de vie,2.0
+3305,Emploi,Logistique,2.0
+3310,Logistique,Travail,3.0
+3311,Logistique,Entreprise,1.0
+3316,Logistique,Usage,2.0
+3321,Logistique,Cadre de vie,2.0
+3362,Logistique,Emploi,2.0

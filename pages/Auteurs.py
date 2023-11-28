@@ -26,8 +26,8 @@ def generate_table(dataframe, max_rows=10):
 
 aut = pd.read_csv("./pages/data/auteurs_db.csv")
 net = pd.read_csv("./pages/data/auteurs_link.csv")
-aut_link = pd.read_csv("./pages/data/aut2tag.csv")
-tag_db = pd.read_csv("./pages/data/tags_db.csv", index_col = 0)
+aut_link = pd.read_csv("./pages/data/tag2aut.csv")
+tag_db = pd.read_csv("./pages/data/tags_db.csv")
 
 
 default = "Lucas PIESSAT"
@@ -178,11 +178,12 @@ def title_aut(tag, auteur): #, sub_aut):
     tmp = tag_db[tag_db.index.isin(urls)]
     options_tags = np.append(tmp.tags.unique(), "Tous les articles")
     # options_aut = np.append(net[net.source == auteur].target.unique(), "Tous les auteurs")
+
     if tag == "Tous les articles":
-        pass
+        urls = tmp.url.unique()
     else:
         tmp = tmp[tmp.tags == tag]
-        urls = tmp.index.unique()
+        urls = tmp.url.unique()
     # if sub_aut == 'Tous les auteurs':
     #     pass
     # else:
@@ -190,7 +191,6 @@ def title_aut(tag, auteur): #, sub_aut):
     #     pass
     data = pd.read_csv("./data/data_article_clean.csv")
     text = data[data.URL.isin(urls)].TITRE
-
 
     text = [html.Li(html.A(titre, href=data[data.TITRE == titre].URL.values[0], target="_blank")) for titre in text]
 
