@@ -9,6 +9,5 @@ TEST_Chat/chroma/chroma.sqlite3
 urls_backup/
 env_mac/
 res2/
-data/
+./data/
 env2/
-
