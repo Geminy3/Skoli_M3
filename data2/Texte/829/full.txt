@@ -1,4 +1,0 @@
-Politiques des données urbaines
-Les données publiques sont aujourd'hui un enjeu central pour de nombreuses métropoles qui développent des stratégies, mettent en oeuvre des instruments et transforment leur organisation en créant de nouveaux métiers pour gérer cette entité informationnelle. 
-Cet article, présente les résultats d'une thèse en science politique, réalisée par Antoine Courmont, en partenariat avec la Métropole de Lyon où il a pu suivre quotidiennement la mise en oeuvre de la politique d'open data du Grand Lyon pendant trois ans.
-Sommaire :  ● Quand les données arrivent en ville : le libéralisme informationnel à l'échelle urbaine● Les données entre attachements et détachements● Les données à l'épreuve de leur réutilisation● Gouverner les données pour gouverner la ville à l'ère du numérique  

@@ -1,5 +1,0 @@
-Portrait-Robot
-Robots domestiques, éducatifs, ludiques, robots d'assistance à la personne,... certains sont encore des prototypes, d'autres relèvent d'un cercle d'initiés, d'autres encore font déjà partie de nos vies ! 
-Une chose est sûre : désormais, les robots ne sont plus l'apanage du monde industriel. La robotique de service conçoit des robots destinés à évoluer parmi les humains. Et cela transforme la société ! Leur présence à nos côtés répond à des besoins mais soulève aussi de nombreuses questions. Voici quelques pistes de réflexions pour envisager l'avenir avec les robots.
-Support élaboré à l'occasion du salon international sur la robotique de service : Innorobo du 23 au 25 mars 2011 à Lyon
-Sommaire : IntroductionLe robot dans un monde de plus en plus intelligentsLe robot objet et challenge technologiqueLes robots, leurs champs d'application et leurs usagesRepères économiquesZoom sur la robotique d'assistance à la personneZoom sur la robotique au service de la mobilitéZoom sur la robotique ludique et éducativeZoom sur la robotique dans les services urbainsVivre demain avec des non-humains ?Quel avenir pour la robotique ?  
