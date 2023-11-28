@@ -13,7 +13,7 @@ with open("./TEST_Chat/HF_api_key", "r", encoding="utf-8") as key:
 
 embeddings_model_name="all-MiniLM-L6-v2"
 embeddings = HuggingFaceEmbeddings(model_name=embeddings_model_name, model_kwargs={'device' : 'cpu'})
-vectorstore2 = Chroma(persist_directory = "./TEST_Chat/chroma", embedding_function=embeddings)
+vectorstore2 = Chroma(persist_directory = "./Lib/chroma", embedding_function=embeddings)
 
 
 def chat(llm_info = None, kMos = 100, question = ""):

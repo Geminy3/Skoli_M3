@@ -9,7 +9,7 @@ import os
 import numpy as np
 
 EXPORT_FOLDER = "./res/"
-IMPORT_FOLDER = "./data2/"
+IMPORT_FOLDER = "./data/"
 
 # TAGS
 
