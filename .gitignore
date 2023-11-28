@@ -1,11 +1,8 @@
-dump
-export2txt
-urls
+dump/
+export2txt/
+urls/
 api_key
-TEST_Chat/env
-TEST_Chat/HF_api_key
-export2txt
-TEST_Chat/chroma/chroma.sqlite3
+TEST_Chat/
 urls_backup/
 env_mac/
 res2/
