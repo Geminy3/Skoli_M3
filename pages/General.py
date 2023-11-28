@@ -9,7 +9,7 @@ import pandas as pd
 
 dash.register_page(__name__, path="/")
 
-df = pd.read_csv("data2/data_article_clean.csv")
+df = pd.read_csv("data/data_article_clean.csv")
 
 def graph_time():
     

@@ -5,10 +5,10 @@ from langchain.chains import RetrievalQA
 from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
 
-with open("./TEST_Chat/api_key", "r", encoding="utf-8") as key:
+with open("api_key", "r", encoding="utf-8") as key:
     api_key = key.read()
 
-with open("./TEST_Chat/HF_api_key", "r", encoding="utf-8") as key:
+with open("HF_api_key", "r", encoding="utf-8") as key:
     HF_api_key = key.read()
 
 embeddings_model_name="all-MiniLM-L6-v2"
