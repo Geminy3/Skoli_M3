@@ -1,17 +1,14 @@
 
 import networkx as nx
-from bs4 import BeautifulSoup
 import json
 import pandas as pd
-import numpy as np
-
-EXPORT_FOLDER = "./res/"
-IMPORT_FOLDER = "./data/"
 
 # TAGS
-
-with open(IMPORT_FOLDER+"data_items.json", "r", encoding="utf8") as f:
-    mult_items = json.loads(f.read())
+def get_mult_item():
+    IMPORT_FOLDER = "./data/"
+    with open(IMPORT_FOLDER+"data_items.json", "r", encoding="utf8") as f:
+        mult_items = json.loads(f.read())
+    return(mult_items)
 
 def tag_net(EXPORT_FOLDER, mult_items):
 
@@ -37,7 +34,6 @@ def tag_net(EXPORT_FOLDER, mult_items):
                         elif t != tag and t in tag_dic[tag].keys():
                             tag_dic[tag][t]["weight"] += 1
 
-
     G = nx.Graph()
 
     for url in mult_items:
@@ -56,8 +52,8 @@ def tag_net(EXPORT_FOLDER, mult_items):
                     elif node != tag and G.has_edge(tag, node):
                         G[node][tag]["weight"] += 1
 
+
     g = nx.Graph(tag_dic)
-    nx.draw_shell(G)
     export = nx.cytoscape_data(G)
     with open(EXPORT_FOLDER+"tag_net.json", "w", encoding="utf8") as f:
         f.write(json.dumps(export))
@@ -68,7 +64,7 @@ def tag_net(EXPORT_FOLDER, mult_items):
     val = pd.DataFrame(value)
     val.index = tag_dic.keys()
     val.to_csv(EXPORT_FOLDER+"nodes_attributes.csv")
-    print(json.dumps(export, indent = 4))
+    #print(json.dumps(export, indent = 4))
 
 # AUTEURS
 

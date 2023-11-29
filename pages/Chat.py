@@ -54,6 +54,9 @@ main_div = html.Div([
     html.H2("Chat personnalisé"),
     html.Br(),
     html.Div([
+        html.Button("Importez votre corpus", id="import_corpus", style={"float: right;"})
+    ]),
+    html.Div([
         dcc.Textarea(value = "", placeholder = "Posez une question", id="inChat", style = {"width" : "80%"}),
         html.Br(),
         html.Button("Envoyer", id = "submit_button", n_clicks=0),

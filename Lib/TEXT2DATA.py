@@ -81,6 +81,25 @@ def get_tags_term_doc(tfidf_sklearn, nOcc):
             tmp2 = tmp2[tmp2 > 0].sort_values(ascending=False)
             tmp2.to_csv(f"./pages/data/Txt/Tags/{export}/{tag}.csv")
 
+def get_a_tag_termdoc(tfidf_sklearn, nOcc, tag):
+
+    methods = ["tfidf", "Occ"]
+
+    for method in methods:
+        print(method)
+        if method == "tfidf":
+            method = tfidf_sklearn
+            export = "TF_IDF"
+        else:
+            method = nOcc
+            export = "Occurences"
+
+        tag_info = pd.read_csv("./pages/data/tags_db.csv", index_col=0)
+        tmp = tag_info[tag_info.tags == tag].index
+        tmp2 = method[method.index.isin(tmp)].sum()
+        tmp2 = tmp2[tmp2 > 0].sort_values(ascending=False)
+        tmp2.to_csv(f"./pages/data/Txt/Tags/{export}/{tag}.csv")
+
 def get_aut_term_doc(tfidf_sklearn, nOcc):
 
     methods = ["tfidf", "Occ"]
@@ -102,3 +121,23 @@ def get_aut_term_doc(tfidf_sklearn, nOcc):
             tmp2 = method[method.index.isin(tmp)].sum()
             tmp2 = tmp2[tmp2 > 0].sort_values(ascending=False)
             tmp2.to_csv(f"./pages/data/Txt/Auteurs/{export}/{auteur}.csv")
+
+def get_an_aut_termdoc(tfidf_sklearn, nOcc, auteur):
+
+    methods = ["tfidf", "Occ"]
+
+    for method in methods:
+        print(method)
+        if method == "tfidf":
+            method = tfidf_sklearn
+            export = "TF_IDF"
+        else:
+            method = nOcc
+            export = "Occurences"
+
+        aut_info = pd.read_csv("./pages/data/auteurs_db.csv", index_col=0)
+
+        tmp = aut_info[aut_info.auteurs == auteur].index
+        tmp2 = method[method.index.isin(tmp)].sum()
+        tmp2 = tmp2[tmp2 > 0].sort_values(ascending=False)
+        tmp2.to_csv(f"./pages/data/Txt/Auteurs/{export}/{auteur}.csv")

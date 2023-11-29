@@ -1,13 +1,14 @@
 from dash import Dash, html, dcc, callback
 import dash
-# import dash_core_components as dcc 
-# import dash_html_components as html 
 from dash.dependencies import Input, Output
 import plotly.express as px
 import dash_bootstrap_components as dbc
 import pandas as pd
-#from side_bar import sidebar
 import numpy as np
+import Lib.TEXT2DATA as text
+IMPORT_FOLDER = "./data/"
+df = pd.read_csv(IMPORT_FOLDER+"data_article_clean.csv")
+
 
 dash.register_page(__name__)
 
@@ -28,6 +29,7 @@ aut = pd.read_csv("./pages/data/auteurs_db.csv")
 net = pd.read_csv("./pages/data/auteurs_link.csv")
 aut_link = pd.read_csv("./pages/data/tag2aut.csv")
 tag_db = pd.read_csv("./pages/data/tags_db.csv")
+nOcc, tfidf = text.instanciate_method(IMPORT_FOLDER, df)
 
 
 default = "Lucas PIESSAT"
@@ -204,6 +206,7 @@ def title_aut(tag, auteur): #, sub_aut):
 )
 def table_aut_gen(auteur, nb_rows):
 
+    text.get_an_aut_termdoc(tfidf, nOcc, auteur)
     path = f"./pages/data/Txt/Auteurs/Occurences/{auteur}.csv"
     dataframe = pd.read_csv(path)
     dataframe.columns = ["Termes", "Occurences"]
