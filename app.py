@@ -1,17 +1,14 @@
 from dash import Dash, html, dcc, Output, Input
 import dash_bootstrap_components as dbc
-from dash.long_callback import DiskcacheLongCallbackManager
 import dash
 import plotly.express as px
 import pandas as pd
-import diskcache
 
-cache = diskcache.Cache("./cache")
-long_callback_manager = DiskcacheLongCallbackManager(cache)
+#cache = diskcache.Cache("./cache")
+#long_callback_manager = DiskcacheLongCallbackManager(cache)
 
 app = Dash(__name__, 
 		   use_pages=True,
-		   long_callback_manager=long_callback_manager,
 		   external_stylesheets=[dbc.themes.PULSE]
 		   )
 

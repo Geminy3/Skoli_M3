@@ -64,6 +64,6 @@ def make_chroma_db():
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=4096, chunk_overlap=300, length_function = len, add_start_index = True)
     documents = text_splitter.split_documents(docs)
 
-    print(f" Nombre de documents : {len(documents)}")
+    print(f"\nNombre de documents : {len(documents)}")
 
-    vectorstore = Chroma.from_documents(documents=documents, embedding=embeddings, persist_directory="./Lib/chroma")
+    Chroma.from_documents(documents=documents, embedding=embeddings, persist_directory="./Lib/chroma")

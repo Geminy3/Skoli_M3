@@ -144,12 +144,14 @@ def update_Gtag(TAG, year, type):
     #Gaut3
     filtered_df = net[net.source == TAG].sort_values(by="values")
     fig3 = px.bar(filtered_df, x = "target", y = "values")
-    fig3.update_layout(transition_duration = 500, showlegend=False, xaxis={'categoryorder':'total descending'})
+    fig3.update_layout(transition_duration = 500, showlegend=False, 
+                       xaxis={'categoryorder':'total descending'})
     
     # #Gaut4
     filtered_df = tag_link[tag_link.target == TAG].sort_values(by="values")
     fig4 = px.bar(filtered_df, x = "source", y = "values")
-    fig4.update_layout(transition_duration = 500, showlegend=False, xaxis={'categoryorder':'total descending'})
+    fig4.update_layout(transition_duration = 500, showlegend=False, 
+                       xaxis={'categoryorder':'total descending'})
     
     #Slider
     filtered_df = tag[tag.tags == TAG]
@@ -170,6 +172,7 @@ def update_Gtag(TAG, year, type):
     # Output('DropAutTag', "options"),
     Input("DropDAutTag", "value"),
     Input('DropTag', "value"),
+    suppress_callback_exceptions=True
     # Input("DropAutTag", "value")
 )
 def title_tag(aut, tag_input): #, sub_aut):
@@ -200,7 +203,8 @@ def title_tag(aut, tag_input): #, sub_aut):
         Output("table_tag", "children"),
         Output("table_tag_tfidf", "children"),
         Input('DropTag', "value"),
-        Input('nb_row', "value")
+        Input('nb_row', "value"),
+        suppress_callback_exceptions=True
 )
 def table_aut_gen(tag_input, nb_rows):
 

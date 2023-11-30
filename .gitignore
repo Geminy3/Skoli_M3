@@ -11,3 +11,4 @@ HF_api_key
 test.ipynb
 cache/
 __pycache__
+tmp/
